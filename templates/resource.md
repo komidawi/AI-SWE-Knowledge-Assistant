@@ -6,7 +6,7 @@ title: Full title
 author:
 url:
 source:                      # raindrop | manual, optional — where this entry came from
-raindrop_id:                 # Raindrop bookmark id, set by /raindrop-triage, optional
+raindrop_id:                 # Raindrop bookmark id, or [ id, id ] for a cluster, optional
 topics: [ ]
 goals: [ ]
 status: backlog              # backlog | in-progress | done | dropped | reference

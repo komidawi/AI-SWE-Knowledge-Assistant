@@ -9,7 +9,7 @@ goals: [ ]                    # goal ids this would serve, e.g. [fullstack-2027]
 resources: [ ]                # resource ids, optional
 url:                         # the link that sparked this, optional
 source:                      # raindrop | manual, optional — where this entry came from
-raindrop_id:                 # Raindrop bookmark id, set by /raindrop-triage, optional
+raindrop_id:                 # Raindrop bookmark id, or [ id, id ] for a cluster, optional
 effort:                      # rough estimate, e.g. 10h, 3d, unknown
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
