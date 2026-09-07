@@ -1,0 +1,21 @@
+---
+description: Capture an idea, resource or goal into the right folder with valid frontmatter
+argument-hint: <url, title, or a sentence describing the thing>
+---
+
+Capture this into the knowledge base: $ARGUMENTS
+
+1. Decide the entity type: resource (a concrete artifact to consume), idea (something to learn or
+   build), or goal (an outcome with a horizon). If it is genuinely ambiguous, ask once.
+2. If a URL was given, fetch it to get the real title, author and scope. Do not guess metadata that
+   the page states.
+3. Check `ideas/`, `resources/` and `goals/` for an existing entry on the same thing. If one exists,
+   update it rather than creating a near-duplicate, and say that is what you did.
+4. Copy the matching file from `templates/` and fill every field.
+5. Map topics to ids in `taxonomy/topics.yml`. If a needed topic is missing, add it to the taxonomy
+   in the same change, under the right area, with the aliases someone would actually type.
+6. Link it: set `goals:` if it serves an active goal, and add a `[[link]]` from any related entry.
+7. Print the path and the frontmatter you wrote.
+
+Capture is meant to be cheap. Do not interrogate. Fill in what is knowable, leave optional fields
+empty, and let triage happen later in `/groom`.

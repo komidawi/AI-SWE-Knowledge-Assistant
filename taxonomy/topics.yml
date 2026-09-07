@@ -1,0 +1,112 @@
+# Controlled vocabulary for `topics:` frontmatter.
+#
+# Only the `id` values below may appear in a file's `topics:` list.
+# `aliases` exist so a query for "JS", "k8s" or "DDD" resolves to the right id.
+# `parent` builds the hierarchy: a query for a parent topic also matches its children,
+# and a query for an area matches every topic inside it.
+version: 1
+
+areas:
+  - id: languages
+    label: Languages & Runtimes
+    topics:
+      - {id: java,        label: Java,        aliases: [jvm, jdk]}
+      - {id: kotlin,      label: Kotlin}
+      - {id: javascript,  label: JavaScript,  aliases: [js, ecmascript, es6, node, nodejs]}
+      - {id: typescript,  label: TypeScript,  aliases: [ts], parent: javascript}
+      - {id: python,      label: Python,      aliases: [py]}
+      - {id: go,          label: Go,          aliases: [golang]}
+      - {id: rust,        label: Rust}
+      - {id: sql,         label: SQL}
+
+  - id: frontend
+    label: Frontend
+    topics:
+      - {id: html-css,    label: HTML & CSS,  aliases: [css, html, tailwind]}
+      - {id: react,       label: React,       aliases: [reactjs, hooks]}
+      - {id: angular,     label: Angular}
+      - {id: vue,         label: Vue,         aliases: [vuejs]}
+      - {id: frontend-build, label: Build Tooling, aliases: [webpack, vite, bundler]}
+      - {id: web-perf,    label: Web Performance, aliases: [core-web-vitals, lighthouse]}
+      - {id: accessibility, label: Accessibility, aliases: [a11y, wcag]}
+      - {id: browser-apis, label: Browser APIs, aliases: [dom, web-api]}
+
+  - id: backend
+    label: Backend
+    topics:
+      - {id: spring,      label: Spring / Spring Boot, aliases: [spring-boot]}
+      - {id: rest-api,    label: REST API Design, aliases: [rest, http-api]}
+      - {id: graphql,     label: GraphQL}
+      - {id: grpc,        label: gRPC,        aliases: [protobuf]}
+      - {id: auth,        label: AuthN / AuthZ, aliases: [oauth, oidc, jwt, authentication, authorization]}
+      - {id: caching,     label: Caching,     aliases: [redis, memcached]}
+      - {id: concurrency, label: Concurrency, aliases: [threads, async, parallelism, coroutines]}
+
+  - id: data
+    label: Data
+    topics:
+      - {id: databases,       label: Databases,       aliases: [rdbms, postgres, postgresql, mysql]}
+      - {id: nosql,           label: NoSQL,           aliases: [mongodb, cassandra, dynamodb], parent: databases}
+      - {id: data-modeling,   label: Data Modeling,   aliases: [schema-design, normalization]}
+      - {id: transactions,    label: Transactions & Consistency, aliases: [acid, isolation-levels]}
+      - {id: streaming,       label: Stream Processing, aliases: [kafka, flink, kafka-streams]}
+      - {id: data-engineering, label: Data Engineering, aliases: [etl, elt, warehouse]}
+
+  - id: architecture
+    label: Architecture & Distributed Systems
+    topics:
+      - {id: system-design,       label: System Design,        aliases: [sysdesign, scalability, hld]}
+      - {id: distributed-systems, label: Distributed Systems,  aliases: [consensus, raft, cap]}
+      - {id: microservices,       label: Microservices,        aliases: [service-decomposition]}
+      - {id: event-driven,        label: Event-Driven Architecture, aliases: [eda, event-sourcing, cqrs, pub-sub]}
+      - {id: integration-patterns, label: Integration Patterns, aliases: [eip, messaging-patterns]}
+      - {id: clean-architecture,  label: Clean & Hexagonal Architecture, aliases: [hexagonal, ports-and-adapters, onion]}
+      - {id: ddd,                 label: Domain-Driven Design, aliases: [domain-driven-design, bounded-context]}
+      - {id: design-patterns,     label: Design Patterns,      aliases: [gof, patterns]}
+      - {id: resilience,          label: Resilience,           aliases: [circuit-breaker, retry, backpressure, fault-tolerance]}
+
+  - id: devops
+    label: DevOps & Infrastructure
+    topics:
+      - {id: docker,       label: Docker,       aliases: [containers, containerization]}
+      - {id: kubernetes,   label: Kubernetes,   aliases: [k8s], parent: docker}
+      - {id: ci-cd,        label: CI/CD,        aliases: [pipelines, github-actions, jenkins]}
+      - {id: iac,          label: Infrastructure as Code, aliases: [terraform, pulumi, ansible]}
+      - {id: cloud,        label: Cloud Platforms, aliases: [aws, azure, gcp]}
+      - {id: observability, label: Observability, aliases: [monitoring, tracing, logging, opentelemetry, prometheus]}
+      - {id: linux,        label: Linux & Shell, aliases: [bash, unix, cli]}
+      - {id: networking,   label: Networking,   aliases: [tcp, dns, http, tls]}
+
+  - id: quality
+    label: Quality & Craft
+    topics:
+      - {id: testing,       label: Testing,        aliases: [unit-tests, integration-tests, tdd]}
+      - {id: test-automation, label: Test Automation, aliases: [e2e, selenium, playwright, cypress], parent: testing}
+      - {id: refactoring,   label: Refactoring,    aliases: [legacy-code, code-smells]}
+      - {id: clean-code,    label: Clean Code,     aliases: [readability, naming]}
+      - {id: code-review,   label: Code Review}
+      - {id: performance,   label: Performance & Profiling, aliases: [optimization, benchmarking, jmh]}
+      - {id: git,           label: Git & Version Control, aliases: [version-control]}
+
+  - id: security
+    label: Security
+    topics:
+      - {id: appsec,        label: Application Security, aliases: [owasp, xss, sql-injection]}
+      - {id: cryptography,  label: Cryptography,   aliases: [crypto, encryption, hashing]}
+      - {id: secure-design, label: Secure Design,  aliases: [threat-modeling, zero-trust]}
+
+  - id: ai
+    label: AI & ML
+    topics:
+      - {id: llm,           label: LLMs,           aliases: [gpt, claude, prompt-engineering]}
+      - {id: ai-engineering, label: AI Engineering, aliases: [rag, agents, embeddings, vector-db]}
+      - {id: ml-basics,     label: ML Fundamentals, aliases: [machine-learning, ml]}
+
+  - id: career
+    label: Career & Working
+    topics:
+      - {id: interviewing,  label: Interviewing,   aliases: [interview-prep, leetcode]}
+      - {id: communication, label: Communication,  aliases: [writing, presenting, docs]}
+      - {id: leadership,    label: Technical Leadership, aliases: [mentoring, tech-lead]}
+      - {id: productivity,  label: Productivity,   aliases: [focus, workflow, note-taking]}
+      - {id: estimation,    label: Estimation & Planning, aliases: [agile, scrum, story-points]}
