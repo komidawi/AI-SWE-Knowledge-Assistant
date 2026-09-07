@@ -1,0 +1,369 @@
+#!/usr/bin/env node
+
+// Builds DASHBOARD.md from the Markdown frontmatter. Derived, disposable, always rebuildable:
+//
+//   node scripts/dashboard.mjs
+//
+// Reads nothing but the entity files. Writes nothing but DASHBOARD.md.
+
+import {readdirSync, readFileSync, writeFileSync} from 'node:fs'
+import {basename, dirname, join} from 'node:path'
+import {fileURLToPath} from 'node:url'
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
+const TODAY = isoDate(new Date())
+const STALE_DAYS = 21
+
+// --- Reading -----------------------------------------------------------------------------------
+
+function walk(dir) {
+    let entries
+    try {
+        entries = readdirSync(join(ROOT, dir), {withFileTypes: true})
+    } catch {
+        return []
+    }
+    return entries.flatMap(e =>
+        e.isDirectory() ? walk(join(dir, e.name))
+            : e.name.endsWith('.md') ? [join(dir, e.name)]
+                : []
+    )
+}
+
+function load(dir) {
+    return walk(dir).map(rel => {
+        const text = readFileSync(join(ROOT, rel), 'utf8')
+        const split = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(text)
+        if (!split) return {rel, id: basename(rel, '.md'), fm: {}, body: text}
+        return {rel, id: basename(rel, '.md'), fm: parseFrontmatter(split[1]), body: split[2]}
+    })
+}
+
+// A deliberately small YAML subset: `key: scalar` and `key: [ a, b ]`. That is all the templates
+// use. Anything more and this should pull in a real parser rather than grow a fake one.
+function parseFrontmatter(block) {
+    const fm = {}
+    for (const line of block.split(/\r?\n/)) {
+        const kv = /^([A-Za-z_][\w-]*):\s*(.*)$/.exec(line)
+        if (kv) fm[kv[1]] = parseValue(kv[2])
+    }
+    return fm
+}
+
+function parseValue(raw) {
+    const value = raw.trim()
+    if (value.startsWith('[') && value.endsWith(']')) {
+        return value.slice(1, -1).split(',').map(item => unquote(item)).filter(Boolean)
+    }
+    return unquote(value)
+}
+
+function unquote(raw) {
+    const value = raw.trim()
+    if (/^"[\s\S]*"$/.test(value) || /^'[\s\S]*'$/.test(value)) return value.slice(1, -1)
+    return value.replace(/\s+#.*$/, '').trim()
+}
+
+// --- Markdown body helpers ---------------------------------------------------------------------
+
+function section(body, heading) {
+    const start = new RegExp(`^##+\\s+${heading}\\s*$`, 'mi').exec(body)
+    if (!start) return ''
+    const rest = body.slice(start.index + start[0].length)
+    const end = /^##\s+/m.exec(rest)
+    return end ? rest.slice(0, end.index) : rest
+}
+
+function tasks(text) {
+    return [...text.matchAll(/^\s*[-*]\s+\[([ xX])\]\s*(.*)$/gm)].map(m => ({
+        done: m[1] !== ' ',
+        text: m[2].trim(),
+        date: (/`(\d{4}-\d{2}-\d{2})`/.exec(m[2]) || [])[1] ?? null
+    }))
+}
+
+function stripDate(text) {
+    return text.replace(/^`\d{4}-\d{2}-\d{2}`\s*[—-]?\s*/, '').trim()
+}
+
+// --- Dates -------------------------------------------------------------------------------------
+
+function isoDate(d) {
+    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`
+}
+
+function pad(n) {
+    return String(n).padStart(2, '0')
+}
+
+function isDate(value) {
+    return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)
+}
+
+function daysBetween(from, to) {
+    if (!isDate(from) || !isDate(to)) return null
+    return Math.round((Date.parse(to) - Date.parse(from)) / 86400000)
+}
+
+function isoWeekId(date) {
+    const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()))
+    d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7))
+    const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1))
+    const week = Math.ceil(((d - yearStart) / 86400000 + 1) / 7)
+    return `${d.getUTCFullYear()}-W${pad(week)}`
+}
+
+function age(date) {
+    const days = daysBetween(date, TODAY)
+    if (days === null) return '?'
+    return days === 0 ? 'today' : `${days}d ago`
+}
+
+// --- Rendering ---------------------------------------------------------------------------------
+
+// Pads columns so the raw Markdown stays readable in an editor, not only once rendered.
+function table(headers, rows) {
+    if (rows.length === 0) return '_None._\n'
+    const widths = headers.map((h, i) =>
+        Math.max(h.length, ...rows.map(r => String(r[i] ?? '').length))
+    )
+    const line = cells => `| ${cells.map((c, i) => String(c ?? '').padEnd(widths[i])).join(' | ')} |`
+    return [
+        line(headers),
+        `|${widths.map(w => '-'.repeat(w + 2)).join('|')}|`,
+        ...rows.map(line)
+    ].join('\n') + '\n'
+}
+
+function link(id) {
+    return `[[${id}]]`
+}
+
+// --- Model -------------------------------------------------------------------------------------
+
+const ideas = load('ideas')
+const resources = load('resources')
+const areas = load('areas')
+const plans = load('planning')
+
+const goals = load('goals').map(g => {
+    const milestones = tasks(section(g.body, 'Milestones'))
+    const criteria = tasks(section(g.body, 'Success criteria'))
+    return {
+        ...g,
+        milestones,
+        criteria,
+        weeksLeft: isDate(g.fm.target) ? Math.round(daysBetween(TODAY, g.fm.target) / 7) : null,
+        overdue: milestones.filter(m => !m.done && isDate(m.date) && m.date < TODAY)
+    }
+})
+
+const activeGoals = goals.filter(g => g.fm.status === 'active')
+const draftGoals = goals.filter(g => g.fm.status === 'draft')
+const liveGoals = [...activeGoals, ...draftGoals]
+
+const inFlight = resources.filter(r => r.fm.status === 'in-progress')
+const stalled = inFlight.filter(r => (daysBetween(r.fm.updated, TODAY) ?? 0) > STALE_DAYS)
+const inbox = ideas.filter(i => i.fm.status === 'inbox')
+
+const weekId = isoWeekId(new Date())
+const week = plans.find(p => p.id === weekId)
+const committed = week ? tasks(section(week.body, 'Committed')) : []
+const weekDone = committed.filter(t => t.done).length
+
+const gaps = areas
+    .map(a => ({...a, gap: Number(a.fm.target_level) - Number(a.fm.level)}))
+    .filter(a => Number.isFinite(a.gap))
+    .sort((a, b) => b.gap - a.gap)
+
+// --- Needs attention ---------------------------------------------------------------------------
+// Ordered by how much each item blocks everything downstream of it. The first one becomes the lead.
+
+const attention = []
+
+for (const g of goals) {
+    for (const m of g.overdue) {
+        attention.push({
+            what: `Milestone slipped \`${m.date}\``,
+            where: link(g.id),
+            why: stripDate(m.text) || 'past its date and still open'
+        })
+    }
+}
+
+if (goals.length > 0 && activeGoals.length === 0) {
+    attention.push({
+        what: 'No goal is `active`',
+        where: draftGoals.map(g => link(g.id)).join(', ') || '`goals/`',
+        why: 'Nothing for resources or weeks to be prioritised against'
+    })
+}
+
+for (const g of activeGoals) {
+    if (!Number(g.fm.weekly_hours)) {
+        attention.push({
+            what: '`weekly_hours` is 0',
+            where: link(g.id),
+            why: 'Capacity cannot be checked, so the milestone pace is unverified'
+        })
+    }
+}
+
+if (week && !Number(week.fm.capacity_hours)) {
+    attention.push({
+        what: '`capacity_hours` is 0',
+        where: link(weekId),
+        why: 'The week is committed to work with no stated budget'
+    })
+}
+
+for (const r of stalled) {
+    attention.push({
+        what: `Stalled ${daysBetween(r.fm.updated, TODAY)}d`,
+        where: link(r.id),
+        why: `In progress, untouched since \`${r.fm.updated}\``
+    })
+}
+
+if (inbox.length > 4) {
+    attention.push({
+        what: `${inbox.length} untriaged ideas`,
+        where: '`ideas/`',
+        why: 'Run `/groom` — inbox items are invisible to planning'
+    })
+}
+
+if (!week) {
+    attention.push({
+        what: `No plan for ${weekId}`,
+        where: '`planning/`',
+        why: 'Run `/plan-week`'
+    })
+}
+
+const lead = attention[0]
+    ? `**${attention[0].what}** — ${attention[0].where}. ${attention[0].why}.`
+    : '**Nothing is blocked.** Goals, the week and in-flight work are all current.'
+
+function breakdown(items) {
+    const counts = new Map()
+    for (const item of items) {
+        const status = item.fm.status || 'none'
+        counts.set(status, (counts.get(status) ?? 0) + 1)
+    }
+    return [...counts].sort().map(([status, n]) => `${status} ${n}`).join(' · ') || '—'
+}
+
+// --- Output ------------------------------------------------------------------------------------
+
+const out = []
+
+out.push('<!-- Generated by scripts/dashboard.mjs. Do not edit by hand — edit the entity files and')
+out.push('     rerun `node scripts/dashboard.mjs`. The Markdown entities are the source of truth. -->')
+out.push('')
+out.push('# Dashboard')
+out.push('')
+out.push(`\`${TODAY}\` · ${activeGoals.length} active goal(s) · ${inFlight.length} in flight`
+    + ` · ${inbox.length} in inbox · \`${weekId}\` ${weekDone}/${committed.length} done`)
+out.push('')
+
+out.push('## Right now')
+out.push('')
+out.push(`> ${lead}`)
+out.push('')
+
+out.push('## Needs attention')
+out.push('')
+out.push(table(
+    ['What', 'Where', 'Why it matters'],
+    attention.slice(0, 5).map(a => [a.what, a.where, a.why])
+))
+
+out.push('## Goals')
+out.push('')
+out.push(table(
+    ['Goal', 'Status', 'Target', 'Weeks left', 'Milestones', 'Criteria', 'h/wk'],
+    liveGoals.map(g => [
+        link(g.id),
+        `\`${g.fm.status}\``,
+        isDate(g.fm.target) ? `\`${g.fm.target}\`` : '—',
+        g.weeksLeft ?? '—',
+        `${g.milestones.filter(m => m.done).length}/${g.milestones.length}`,
+        `${g.criteria.filter(c => c.done).length}/${g.criteria.length}`,
+        Number(g.fm.weekly_hours) || '**0**'
+    ])
+))
+
+const nextMilestones = goals
+    .flatMap(g => g.milestones.filter(m => !m.done && isDate(m.date)).map(m => ({...m, goal: g.id})))
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .slice(0, 5)
+
+if (nextMilestones.length > 0) {
+    out.push('### Next milestones')
+    out.push('')
+    out.push(table(
+        ['Due', 'In', 'Goal', 'Milestone'],
+        nextMilestones.map(m => [
+            `\`${m.date}\``,
+            `${daysBetween(TODAY, m.date)}d`,
+            link(m.goal),
+            stripDate(m.text)
+        ])
+    ))
+}
+
+out.push('## In flight')
+out.push('')
+out.push(table(
+    ['Resource', 'Kind', 'Progress', 'Effort', 'Priority', 'Updated'],
+    inFlight.map(r => [
+        link(r.id),
+        r.fm.kind || '—',
+        r.fm.progress || '—',
+        r.fm.effort || '—',
+        r.fm.priority || '—',
+        age(r.fm.updated)
+    ])
+))
+
+out.push(`## This week — \`${weekId}\``)
+out.push('')
+if (!week) {
+    out.push('_No week file. Run `/plan-week`._')
+} else {
+    out.push(`${weekDone}/${committed.length} committed done · capacity \`${week.fm.capacity_hours}h\``
+        + ` · \`${week.fm.start}\` → \`${week.fm.end}\``)
+    out.push('')
+    for (const t of committed) out.push(`- [${t.done ? 'x' : ' '}] ${t.text}`)
+}
+out.push('')
+
+out.push('## Areas')
+out.push('')
+out.push(table(
+    ['Area', 'Level', 'Target', 'Gap', 'Reviewed'],
+    gaps.map(a => [
+        link(a.id),
+        a.fm.level,
+        a.fm.target_level,
+        a.gap > 0 ? `+${a.gap}` : '—',
+        `\`${a.fm.reviewed}\` (${age(a.fm.reviewed)})`
+    ])
+))
+
+out.push('## Everything else')
+out.push('')
+out.push(table(
+    ['Entity', 'Count', 'By status'],
+    [
+        ['Ideas', ideas.length, breakdown(ideas)],
+        ['Resources', resources.length, breakdown(resources)],
+        ['Goals', goals.length, breakdown(goals)],
+        ['Areas', areas.length, '—'],
+        ['Plans', plans.length, '—']
+    ]
+))
+
+writeFileSync(join(ROOT, 'DASHBOARD.md'), out.join('\n').replace(/\n{3,}/g, '\n\n').trimEnd() + '\n')
+console.log(`DASHBOARD.md written — ${TODAY}, ${attention.length} item(s) needing attention`)

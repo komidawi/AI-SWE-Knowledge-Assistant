@@ -35,7 +35,7 @@ ij_typescript_use_semicolon_after_statement = false
 
 
 # JavaScript
-[{*.cjs,*.js}]
+[{*.cjs,*.js,*.mjs}]
 quote_type = single
 ij_javascript_use_double_quotes = false
 ij_javascript_use_semicolon_after_statement = false

@@ -10,6 +10,7 @@ Markdown files are the source of truth. `CLAUDE.md` holds the conventions that k
 
 | Path                  | Holds                                                        |
 |-----------------------|--------------------------------------------------------------|
+| `DASHBOARD.md`        | Generated front page — where everything stands, at a glance  |
 | `ideas/`              | Things worth learning or building, one file each             |
 | `resources/`          | Books, courses, articles, videos, talks, repos               |
 | `goals/`              | Outcomes with horizons, success criteria and milestones      |
@@ -20,7 +21,7 @@ Markdown files are the source of truth. `CLAUDE.md` holds the conventions that k
 | `taxonomy/rubrics.md` | How ideas, resources and goals get scored                    |
 | `templates/`          | Copy these when creating anything                            |
 | `.claude/commands/`   | Slash commands                                               |
-| `scripts/`            | Stage B indexer and validator (not built yet)                |
+| `scripts/`            | `dashboard.mjs`; Stage B indexer and validator (not built)   |
 
 ## Commands
 
@@ -32,7 +33,21 @@ Markdown files are the source of truth. `CLAUDE.md` holds the conventions that k
 | `/plan-week [YYYY-Www]`         | Builds the week's plan from goals, capacity and work in flight          |
 | `/review-week [YYYY-Www]`       | Retro, status updates, roll-up into the month                           |
 | `/groom`                        | Triages the inbox, finds duplicates, orphans, stale items, broken links |
-| `/status`                       | Where things stand and what most needs attention                        |
+| `/standup`                      | Where things stand and what most needs attention                        |
+
+## Dashboard
+
+`DASHBOARD.md` is the front page: active goals, in-flight resources, this week, area gaps, and the
+five things most worth attention. Open it any time — no query, no Claude. Regenerate it after
+editing entity files:
+
+```bash
+node scripts/dashboard.mjs
+```
+
+It is derived from the frontmatter and safe to delete. Never edit it by hand; edit the entity file
+and rerun. `/standup` answers the same question conversationally and with judgement the script
+cannot apply.
 
 ## Querying without Claude
 
@@ -52,6 +67,6 @@ taxonomy in the same change.
 
 ## Stage B
 
-`scripts/` will hold a Node indexer that builds `.index/index.json` from the Markdown, plus a
+`scripts/` will also hold a Node indexer that builds `.index/index.json` from the Markdown, plus a
 frontmatter validator wired to a pre-commit hook. See `scripts/README.md`. The index is a cache —
-always rebuildable, never authoritative.
+always rebuildable, never authoritative. So is `DASHBOARD.md`.

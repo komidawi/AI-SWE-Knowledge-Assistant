@@ -1,3 +1,19 @@
+# scripts
+
+## Built
+
+**`dashboard.mjs`** — reads the entity frontmatter and writes `DASHBOARD.md`, the front page you
+open without asking anything: active goals with milestone counts and weeks remaining, in-flight
+resources with staleness, the current week's commitments, area gaps, and the five items most
+worth attention. Zero dependencies; it parses the small YAML subset the templates actually use, and
+should pull in a real parser rather than grow a fake one if the frontmatter ever gets richer.
+
+```bash
+node scripts/dashboard.mjs
+```
+
+Output is derived and rebuildable. Edit the entity files, never `DASHBOARD.md`.
+
 # Stage B — indexer and validator (not built yet)
 
 Deliberately deferred. Building query tooling against an empty repository means guessing at the
@@ -18,8 +34,9 @@ Planned, in order of value:
 3. **`query.mjs <term>`** — alias- and hierarchy-aware search over the index, grouped by entity
    type. What `/query` does today by reading files, done in milliseconds over thousands of entries.
 
-4. **`report.mjs`** — derived views worth having once there is history: hours planned vs actual over
-   time, topic coverage against active goals, staleness, completion rates by resource kind.
+4. **`report.mjs`** — derived views worth having once there is history, which `dashboard.mjs`
+   deliberately does not attempt: hours planned vs actual over time, topic coverage against active
+   goals, completion rates by resource kind. The dashboard is a snapshot; this is the trend.
 
 Node 24 is available locally, with a built-in test runner and `node:sqlite` if the JSON index ever
 outgrows itself. No dependencies needed for any of the above beyond a YAML parser.

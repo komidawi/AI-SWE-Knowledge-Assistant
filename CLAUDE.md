@@ -1,7 +1,9 @@
 # AI_SKILL_ASSISTANT — conventions
 
 A Git + Markdown knowledge base for planning and tracking software-engineering skill growth.
-Markdown files are the **single source of truth**. Anything under `.index/` is generated and disposable.
+Markdown files under the entity folders are the **single source of truth**. `DASHBOARD.md` and
+anything under `.index/` are generated and disposable — never hand-edit them. `DASHBOARD.md` is
+rebuilt with `node scripts/dashboard.mjs`; rerun it after any change that would move the numbers.
 
 ## Entities
 
