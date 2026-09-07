@@ -2,7 +2,7 @@
 id: YYYY
 type: plan
 horizon: year
-goals: []
+goals: [ ]
 weekly_hours: 0              # sustainable weekly learning budget
 ---
 

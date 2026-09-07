@@ -4,10 +4,11 @@ type: idea
 title: Short, specific statement of what to learn or build
 status: inbox                # inbox | considering | accepted | active | done | dropped
 priority: medium             # high | medium | low
-topics: []                   # topic ids from taxonomy/topics.yml
-goals: []                    # goal ids this would serve, e.g. [fullstack-2027]
-resources: []                # resource ids, optional
-effort: ?                    # rough estimate, e.g. 10h, 3d, unknown
+topics: [ ]                   # topic ids from taxonomy/topics.yml
+goals: [ ]                    # goal ids this would serve, e.g. [fullstack-2027]
+resources: [ ]                # resource ids, optional
+effort:
+  ?                    # rough estimate, e.g. 10h, 3d, unknown
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 ---

@@ -5,14 +5,14 @@ Markdown files are the **single source of truth**. Anything under `.index/` is g
 
 ## Entities
 
-| Folder | Entity | What it holds |
-|---|---|---|
-| `ideas/` | Idea | Something I might learn or build. Cheap to add, triaged later. |
-| `resources/` | Resource | A concrete artifact to consume: book, course, article, video, repo, talk. |
-| `goals/` | Goal | An outcome with a horizon and success criteria. Milestones live inside the goal file. |
-| `areas/` | Area | Living self-assessment of one skill area: current level, evidence, gaps. |
-| `planning/` | Plan | Year / month / week files. What is actually committed to, plus retros. |
-| `logs/` | Log | Optional record of what was actually done. |
+| Folder       | Entity   | What it holds                                                                         |
+|--------------|----------|---------------------------------------------------------------------------------------|
+| `ideas/`     | Idea     | Something I might learn or build. Cheap to add, triaged later.                        |
+| `resources/` | Resource | A concrete artifact to consume: book, course, article, video, repo, talk.             |
+| `goals/`     | Goal     | An outcome with a horizon and success criteria. Milestones live inside the goal file. |
+| `areas/`     | Area     | Living self-assessment of one skill area: current level, evidence, gaps.              |
+| `planning/`  | Plan     | Year / month / week files. What is actually committed to, plus retros.                |
+| `logs/`      | Log      | Optional record of what was actually done.                                            |
 
 ## Hard rules
 

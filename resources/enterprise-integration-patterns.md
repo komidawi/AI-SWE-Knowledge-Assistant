@@ -5,8 +5,8 @@ kind: book
 title: "Enterprise Integration Patterns"
 author: Gregor Hohpe, Bobby Woolf
 url: https://www.enterpriseintegrationpatterns.com/
-topics: [integration-patterns, event-driven, system-design]
-goals: []
+topics: [ integration-patterns, event-driven, system-design ]
+goals: [ ]
 status: reference
 priority: medium
 effort: 30h

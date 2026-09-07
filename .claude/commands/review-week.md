@@ -1,6 +1,6 @@
 ---
 description: Close out the week - retro, status updates, and roll-up into the month
-argument-hint: [YYYY-Www, defaults to the current ISO week]
+argument-hint: [ YYYY-Www, defaults to the current ISO week ]
 ---
 
 Review the week: $ARGUMENTS (default: the current ISO week)
@@ -13,7 +13,7 @@ Review the week: $ARGUMENTS (default: the current ISO week)
    The "why" is the part with value - chase the real cause, not "was busy".
 4. Update the month file's retro section if this is the last week of the month.
 5. Flag honestly:
-   - Anything `in-progress` untouched for 3+ weeks. Finish it, or set it to `dropped`.
-   - Systematic overcommitment - compare planned vs actual hours across the last four weeks.
-   - Milestones on `active` goals whose dates have slipped past today.
+    - Anything `in-progress` untouched for 3+ weeks. Finish it, or set it to `dropped`.
+    - Systematic overcommitment - compare planned vs actual hours across the last four weeks.
+    - Milestones on `active` goals whose dates have slipped past today.
 6. End with one observation about the pattern across recent weeks, not just this one.

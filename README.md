@@ -8,31 +8,31 @@ Markdown files are the source of truth. `CLAUDE.md` holds the conventions that k
 
 ## Layout
 
-| Path | Holds |
-|---|---|
-| `ideas/` | Things worth learning or building, one file each |
-| `resources/` | Books, courses, articles, videos, talks, repos |
-| `goals/` | Outcomes with horizons, success criteria and milestones |
-| `areas/` | Living self-assessment per skill area: level, evidence, gaps |
-| `planning/` | Year, month and week plans, each with a retro |
-| `logs/` | Optional record of what was actually done |
-| `taxonomy/topics.yml` | The controlled vocabulary every `topics:` field draws from |
-| `taxonomy/rubrics.md` | How ideas, resources and goals get scored |
-| `templates/` | Copy these when creating anything |
-| `.claude/commands/` | Slash commands |
-| `scripts/` | Stage B indexer and validator (not built yet) |
+| Path                  | Holds                                                        |
+|-----------------------|--------------------------------------------------------------|
+| `ideas/`              | Things worth learning or building, one file each             |
+| `resources/`          | Books, courses, articles, videos, talks, repos               |
+| `goals/`              | Outcomes with horizons, success criteria and milestones      |
+| `areas/`              | Living self-assessment per skill area: level, evidence, gaps |
+| `planning/`           | Year, month and week plans, each with a retro                |
+| `logs/`               | Optional record of what was actually done                    |
+| `taxonomy/topics.yml` | The controlled vocabulary every `topics:` field draws from   |
+| `taxonomy/rubrics.md` | How ideas, resources and goals get scored                    |
+| `templates/`          | Copy these when creating anything                            |
+| `.claude/commands/`   | Slash commands                                               |
+| `scripts/`            | Stage B indexer and validator (not built yet)                |
 
 ## Commands
 
-| Command | Does |
-|---|---|
-| `/capture <url or description>` | Files a new idea, resource or goal with valid frontmatter |
-| `/query <topic>` | Everything about a topic or area, grouped by entity type |
-| `/assess <id or topic>` | Scores against the rubric, appends a dated assessment |
-| `/plan-week [YYYY-Www]` | Builds the week's plan from goals, capacity and work in flight |
-| `/review-week [YYYY-Www]` | Retro, status updates, roll-up into the month |
-| `/groom` | Triages the inbox, finds duplicates, orphans, stale items, broken links |
-| `/status` | Where things stand and what most needs attention |
+| Command                         | Does                                                                    |
+|---------------------------------|-------------------------------------------------------------------------|
+| `/capture <url or description>` | Files a new idea, resource or goal with valid frontmatter               |
+| `/query <topic>`                | Everything about a topic or area, grouped by entity type                |
+| `/assess <id or topic>`         | Scores against the rubric, appends a dated assessment                   |
+| `/plan-week [YYYY-Www]`         | Builds the week's plan from goals, capacity and work in flight          |
+| `/review-week [YYYY-Www]`       | Retro, status updates, roll-up into the month                           |
+| `/groom`                        | Triages the inbox, finds duplicates, orphans, stale items, broken links |
+| `/status`                       | Where things stand and what most needs attention                        |
 
 ## Querying without Claude
 
@@ -46,8 +46,8 @@ Expand aliases through `taxonomy/topics.yml` first — a raw search for "k8s" wi
 
 ## The one rule that matters
 
-`topics:` accepts **only** ids from `taxonomy/topics.yml`. Free-text tags fragment the vocabulary
-(`js` / `JavaScript` / `ES6`) and quietly break every query afterwards. Missing topic? Add it to the
+`topics:` accepts **only** ids from `taxonomy/topics.yml`. Free-text tags fragment the vocabulary (`js` / `JavaScript` /
+`ES6`) and quietly break every query afterwards. Missing topic? Add it to the
 taxonomy in the same change.
 
 ## Stage B

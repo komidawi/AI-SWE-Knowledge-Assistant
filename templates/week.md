@@ -5,7 +5,7 @@ horizon: week
 start: YYYY-MM-DD
 end: YYYY-MM-DD
 capacity_hours: 0            # hours realistically available this week
-goals: []                    # goal ids this week serves
+goals: [ ]                    # goal ids this week serves
 ---
 
 ## Committed

@@ -1,6 +1,6 @@
 ---
 description: Build the plan for the coming week from goals, capacity and what is in flight
-argument-hint: [YYYY-Www, defaults to the current ISO week]
+argument-hint: [ YYYY-Www, defaults to the current ISO week ]
 ---
 
 Plan the week: $ARGUMENTS (default: the current ISO week)
@@ -13,8 +13,8 @@ Plan the week: $ARGUMENTS (default: the current ISO week)
    starting more) and `ideas/` with `status: accepted`.
 5. Ask for this week's real available hours if `capacity_hours` is unset. Do not assume.
 6. Write the week file from `templates/week.md`. Rules:
-   - Total committed hours no more than 80% of capacity. The remainder absorbs reality.
-   - Every item names the entity it advances, with a `[[link]]`.
-   - Every item is finishable within the week. "Read DDIA" is not an item; "DDIA ch. 5-6" is.
-   - At most one new start. Finishing beats starting.
+    - Total committed hours no more than 80% of capacity. The remainder absorbs reality.
+    - Every item names the entity it advances, with a `[[link]]`.
+    - Every item is finishable within the week. "Read DDIA" is not an item; "DDIA ch. 5-6" is.
+    - At most one new start. Finishing beats starting.
 7. Say plainly what did not fit and why, rather than quietly dropping it.

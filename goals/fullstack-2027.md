@@ -6,7 +6,7 @@ horizon: year
 status: draft
 start: 2026-09-07
 target: 2027-09-07
-topics: [javascript, typescript, react, rest-api, databases, ci-cd]
+topics: [ javascript, typescript, react, rest-api, databases, ci-cd ]
 priority: high
 weekly_hours: 0
 created: 2026-09-07

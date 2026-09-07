@@ -6,7 +6,7 @@ horizon: year                # year | quarter | month
 status: draft                # draft | active | achieved | missed | dropped
 start: YYYY-MM-DD
 target: YYYY-MM-DD
-topics: []
+topics: [ ]
 priority: high
 weekly_hours: 0              # hours per week realistically available for this
 created: YYYY-MM-DD

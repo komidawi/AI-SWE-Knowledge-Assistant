@@ -4,9 +4,9 @@ type: idea
 title: Close out the second pass on the two architecture books already started
 status: considering
 priority: high
-topics: [microservices, event-driven, system-design]
-goals: []
-resources: [building-microservices, designing-event-driven-systems]
+topics: [ microservices, event-driven, system-design ]
+goals: [ ]
+resources: [ building-microservices, designing-event-driven-systems ]
 effort: 15h
 created: 2026-09-07
 updated: 2026-09-07

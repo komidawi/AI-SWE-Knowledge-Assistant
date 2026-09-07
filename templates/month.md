@@ -2,7 +2,7 @@
 id: YYYY-MM
 type: plan
 horizon: month
-goals: []
+goals: [ ]
 capacity_hours: 0
 ---
 

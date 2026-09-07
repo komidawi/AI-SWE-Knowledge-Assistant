@@ -5,8 +5,8 @@ kind: book
 title: Monolith to Microservices
 author: Sam Newman
 url: https://www.oreilly.com/library/view/monolith-to-microservices/9781492047834/
-topics: [microservices, system-design, refactoring]
-goals: []
+topics: [ microservices, system-design, refactoring ]
+goals: [ ]
 status: backlog
 priority: medium
 effort: 10h
