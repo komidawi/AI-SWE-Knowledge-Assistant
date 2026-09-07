@@ -5,12 +5,13 @@ kind: book                   # book | course | article | video | talk | repo | d
 title: Full title
 author:
 url:
+source:                      # raindrop | manual, optional — where this entry came from
+raindrop_id:                 # Raindrop bookmark id, set by /raindrop-triage, optional
 topics: [ ]
 goals: [ ]
 status: backlog              # backlog | in-progress | done | dropped | reference
 priority: medium
-effort:
-  ?                    # estimated hours/pages
+effort:                      # estimated hours/pages
 progress:                    # e.g. "ch. 6/12", optional
 rating:                      # 1-10, only once started
 started:                     # YYYY-MM-DD, optional

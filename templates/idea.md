@@ -7,8 +7,10 @@ priority: medium             # high | medium | low
 topics: [ ]                   # topic ids from taxonomy/topics.yml
 goals: [ ]                    # goal ids this would serve, e.g. [fullstack-2027]
 resources: [ ]                # resource ids, optional
-effort:
-  ?                    # rough estimate, e.g. 10h, 3d, unknown
+url:                         # the link that sparked this, optional
+source:                      # raindrop | manual, optional — where this entry came from
+raindrop_id:                 # Raindrop bookmark id, set by /raindrop-triage, optional
+effort:                      # rough estimate, e.g. 10h, 3d, unknown
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 ---

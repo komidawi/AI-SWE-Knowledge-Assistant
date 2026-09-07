@@ -34,6 +34,18 @@ Markdown files are the source of truth. `CLAUDE.md` holds the conventions that k
 | `/review-week [YYYY-Www]`       | Retro, status updates, roll-up into the month                           |
 | `/groom`                        | Triages the inbox, finds duplicates, orphans, stale items, broken links |
 | `/standup`                      | Where things stand and what most needs attention                        |
+| `/raindrop-triage [filter]`     | Promotes untriaged Raindrop.io bookmarks in, tags them `captured`       |
+
+## Capture from Raindrop
+
+Links get bookmarked in Raindrop.io, where capturing costs one click. `/raindrop-triage` pulls the
+ones not yet tagged `captured`, proposes which deserve a file, writes them, and tags them back.
+
+It is **promotion, not sync** — one way, once. Raindrop holds no judgement, so nothing there can
+overwrite `topics`, `goals`, ratings or assessments here. Once a bookmark is promoted, the Markdown
+file stands alone: editing, moving or deleting that bookmark in Raindrop changes nothing. Bookmarks
+are never deleted by this repo, `raindrop_id:` is the join key, and dropping a bookmark instead of
+filing it is the common, correct outcome.
 
 ## Dashboard
 

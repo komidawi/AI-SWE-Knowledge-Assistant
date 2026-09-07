@@ -3,7 +3,7 @@
 
 # Dashboard
 
-`2026-09-07` · 0 active goal (s) · 2 in flight · 0 in inbox · `2026-W37` 0/4 done
+`2026-09-07` · 0 active goal(s) · 2 in flight · 0 in inbox · `2026-W37` 0/4 done
 
 ## Right now
 

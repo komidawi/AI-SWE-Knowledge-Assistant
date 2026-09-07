@@ -64,6 +64,23 @@ what is being aimed at right now.
   "Learn Kafka".
 - New topics go into `taxonomy/topics.yml` under the right area, with aliases people actually type.
 
+## External capture (Raindrop)
+
+Bookmarks arrive in Raindrop.io, and `/raindrop-triage` promotes the worthwhile ones into here.
+The relationship is deliberately **one-way and one-time — promotion, not sync**:
+
+- Raindrop is an inbox. It holds URLs, page text and highlights. It holds no judgement.
+- This repo holds the judgement: `topics`, `goals`, `priority`, `rating`, dated assessments.
+  Nothing in Raindrop may overwrite any of it, ever.
+- A bookmark is promoted once. After that the Markdown file is independent, and the bookmark being
+  edited, moved, retitled or deleted in Raindrop means nothing here.
+- Nothing is ever deleted in Raindrop. Triaged bookmarks get the tag `captured` — including the
+  ones judged not worth a file — so `lacks_tags: ["captured"]` is the exact untriaged queue.
+- `raindrop_id:` is the join key, not the URL: it survives retitles, moves and tracking params.
+- Not every bookmark deserves a file. Dropping is the common, correct outcome.
+
+Nothing in this repo may depend on Raindrop being reachable. The MCP server is not always
+connected, and every command except `/raindrop-triage` must work without it.
 ## Stage B (planned, not built)
 
 `scripts/` will hold a Node indexer producing `.index/index.json` plus a frontmatter validator.
