@@ -15,7 +15,7 @@ Find everything related to: $ARGUMENTS
 
     - **Goals** - title, status, target date, progress through milestones
     - **Ideas** - title, status, priority
-    - **Resources** - title, kind, status, progress, rating
+    - **Resources** - title, kind, scale, nature, status, progress, rating
     - **Areas** - current level vs target
     - **Planning** - which weeks and months committed to this
 

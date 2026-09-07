@@ -15,7 +15,7 @@ Score each dimension 1–5.
 |----------------------|--------------------------------------------------|-----------------------------------------------------------------|
 | **Goal fit**         | Unrelated to any active goal                     | Directly unblocks a milestone of an active goal                 |
 | **Source quality**   | Anonymous blog post, no depth, likely wrong      | Primary source or recognised authority; still cited years later |
-| **Effort vs payoff** | 40h for a marginal skill                         | Hours for something used weekly                                 |
+| **Effort vs payoff** | `multi-day` for a marginal skill                 | `deep-dive` or smaller for something used weekly                |
 | **Prerequisite fit** | Needs foundations not yet held → will bounce off | Sits exactly at the edge of current ability                     |
 | **Decay risk**       | Framework-version-specific, stale in 12 months   | Concepts that outlive the tools (protocols, tradeoffs, theory)  |
 
@@ -26,6 +26,13 @@ Score each dimension 1–5.
 - `skip` — say why, so it is not re-litigated in six months
 
 A high total with poor prerequisite fit is still `queue`, never `do-now`. Sequencing beats enthusiasm.
+
+`nature:` gates the verdict before the scores are weighed:
+
+- `trivia` is never `do-now`. It scores what it scores and is still read in the gaps or not at all.
+- `lookup` is `reference` by definition — that is what the value means, so do not re-argue it.
+- `perspective` is judged on whether the argument changes a decision, not on how much it teaches.
+  A convincing one usually belongs in `ideas/` as well as here.
 
 ## Idea rubric
 

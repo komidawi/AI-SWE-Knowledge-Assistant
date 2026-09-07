@@ -33,10 +33,16 @@
 
 ## In flight
 
-| Resource                           | Kind | Progress                             | Effort | Priority | Updated |
-|------------------------------------|------|--------------------------------------|--------|----------|---------|
-| [[building-microservices]]         | book | first pass done, second pass pending | 20h    | high     | today   |
-| [[designing-event-driven-systems]] | book | first pass done, second pass pending | 10h    | high     | today   |
+| Resource                           | Kind | Scale     | Progress                             | Effort | Priority | Updated |
+|------------------------------------|------|-----------|--------------------------------------|--------|----------|---------|
+| [[building-microservices]]         | book | multi-day | first pass done, second pass pending | 20h    | high     | today   |
+| [[designing-event-driven-systems]] | book | multi-day | first pass done, second pass pending | 10h    | high     | today   |
+
+## Pick by time
+
+_Backlog resources small enough to finish in a gap._
+
+_None._
 
 ## This week — `2026-W37`
 
@@ -52,6 +58,13 @@
 | Area             | Level | Target | Gap | Reviewed             |
 |------------------|-------|--------|-----|----------------------|
 | [[architecture]] | 1     | 3      | +2  | `2026-09-07` (today) |
+
+## Resource shape
+
+| Axis      | Breakdown                              |
+|-----------|----------------------------------------|
+| By scale  | multi-day 6 · full-day 2 · deep-dive 2 |
+| By nature | applied 2 · core 7 · lookup 1          |
 
 ## Everything else
 

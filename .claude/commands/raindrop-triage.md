@@ -43,6 +43,10 @@ clearly a single study cluster.
   `Kafka` suggests the `kafka` id, but `Great Courses` is a quality signal and maps to nothing.
   If a needed topic is missing, add it to the taxonomy in the same change (rule 3 in `CLAUDE.md`).
 - `kind:` — from the bookmark `type` where it is set (`video`, `article`), corrected by the URL.
+- `scale:`/`nature:` — the vocabularies in `CLAUDE.md`. These sharpen the call in step 3 rather than
+  repeat it: a bookmark that reads `snack` + `trivia` is usually a **drop**, and one whose value is
+  `perspective` — an argument being made, not knowledge being taught — is usually the **idea** call.
+  A page's own reading-time estimate is a better source for `scale:` than a guess from the title.
 - `source: raindrop` and `raindrop_id: <bookmark_id>` — a list, `[ id, id, id ]`, when several
   bookmarks were folded into one entry, so every one of them stays matchable on the next run.
 - `goals:` — set it if the topics serve an `active` goal. Otherwise leave empty and let `/groom` catch it.

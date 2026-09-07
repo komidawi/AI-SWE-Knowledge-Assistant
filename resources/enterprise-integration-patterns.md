@@ -10,6 +10,8 @@ goals: [ ]
 status: reference
 priority: medium
 effort: 30h
+scale: multi-day
+nature: lookup
 progress:
 rating:
 started:

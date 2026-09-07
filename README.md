@@ -67,7 +67,13 @@ cannot apply.
 rg -l 'topics:.*\bmicroservices\b' ideas resources goals areas
 rg -l 'status: in-progress' resources
 rg -n 'target: 2027' goals
+rg -l 'scale: snack' resources     # what fits a twenty-minute gap
+rg -l 'nature: trivia' resources   # what must never eat planned hours
 ```
+
+`kind:` is the medium, `scale:` is what it costs and `nature:` is what kind of value it delivers.
+The three are independent: a ten-minute curio and a ten-minute foundational explainer share a
+`kind` and a `scale`, and only `nature` tells them apart. Both vocabularies are in `CLAUDE.md`.
 
 Expand aliases through `taxonomy/topics.yml` first — a raw search for "k8s" will miss `kubernetes`.
 

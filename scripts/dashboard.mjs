@@ -119,6 +119,29 @@ function age(date) {
     return days === 0 ? 'today' : `${days}d ago`
 }
 
+// --- Scale -------------------------------------------------------------------------------------
+// `scale:` is the bucket, `effort:` is the number. Both are stored so `rg 'scale: snack'` works
+// without tooling, so the two can drift — scaleFor() is the single definition of the bands and
+// the mismatch check below is what keeps them honest.
+
+const SCALES = ['multi-day', 'full-day', 'deep-dive', 'short', 'snack']
+const SMALL = ['short', 'snack']
+
+function parseEffort(value) {
+    const m = /^\s*(\d+(?:\.\d+)?)\s*(h|hr|hrs|hours?|m|min|mins|minutes?)\s*$/i.exec(value ?? '')
+    if (!m) return null
+    return /^m/i.test(m[2]) ? Number(m[1]) / 60 : Number(m[1])
+}
+
+function scaleFor(hours) {
+    if (hours === null) return null
+    if (hours > 8) return 'multi-day'
+    if (hours >= 3) return 'full-day'
+    if (hours >= 1) return 'deep-dive'
+    if (hours >= 1 / 3) return 'short'
+    return 'snack'
+}
+
 // --- Rendering ---------------------------------------------------------------------------------
 
 // Pads columns so the raw Markdown stays readable in an editor, not only once rendered.
@@ -165,6 +188,19 @@ const liveGoals = [...activeGoals, ...draftGoals]
 const inFlight = resources.filter(r => r.fm.status === 'in-progress')
 const stalled = inFlight.filter(r => (daysBetween(r.fm.updated, TODAY) ?? 0) > STALE_DAYS)
 const inbox = ideas.filter(i => i.fm.status === 'inbox')
+
+// What fits a gap: small, still unread, and not something that only entertains.
+const PRIORITIES = ['high', 'medium', 'low']
+const quickWins = resources
+    .filter(r => r.fm.status === 'backlog' && SMALL.includes(r.fm.scale) && r.fm.nature !== 'trivia')
+    .sort((a, b) => PRIORITIES.indexOf(a.fm.priority) - PRIORITIES.indexOf(b.fm.priority)
+        || SMALL.indexOf(a.fm.scale) - SMALL.indexOf(b.fm.scale))
+
+const misScaled = resources
+    .map(r => ({...r, expected: scaleFor(parseEffort(r.fm.effort))}))
+    .filter(r => r.expected && r.fm.scale && r.fm.scale !== r.expected)
+
+const unclassified = resources.filter(r => !r.fm.scale || !r.fm.nature)
 
 const weekId = isoWeekId(new Date())
 const week = plans.find(p => p.id === weekId)
@@ -225,6 +261,22 @@ for (const r of stalled) {
     })
 }
 
+for (const r of misScaled) {
+    attention.push({
+        what: `\`scale: ${r.fm.scale}\` vs \`effort: ${r.fm.effort}\``,
+        where: link(r.id),
+        why: `\`${r.fm.effort}\` falls in \`${r.expected}\` — one of the two is wrong`
+    })
+}
+
+for (const r of unclassified) {
+    attention.push({
+        what: `Missing \`${!r.fm.scale ? 'scale' : 'nature'}\``,
+        where: link(r.id),
+        why: 'Cannot be picked by available time or filtered out of planned hours'
+    })
+}
+
 if (inbox.length > 4) {
     attention.push({
         what: `${inbox.length} untriaged ideas`,
@@ -245,13 +297,17 @@ const lead = attention[0]
     ? `**${attention[0].what}** — ${attention[0].where}. ${attention[0].why}.`
     : '**Nothing is blocked.** Goals, the week and in-flight work are all current.'
 
-function breakdown(items) {
+function breakdown(items, field = 'status', order = null) {
     const counts = new Map()
     for (const item of items) {
-        const status = item.fm.status || 'none'
-        counts.set(status, (counts.get(status) ?? 0) + 1)
+        const value = item.fm[field] || 'none'
+        counts.set(value, (counts.get(value) ?? 0) + 1)
     }
-    return [...counts].sort().map(([status, n]) => `${status} ${n}`).join(' · ') || '—'
+    const rank = value => (order ? order.indexOf(value) : -1)
+    const entries = [...counts].sort((a, b) =>
+        order ? rank(a[0]) - rank(b[0]) : a[0].localeCompare(b[0])
+    )
+    return entries.map(([value, n]) => `${value} ${n}`).join(' · ') || '—'
 }
 
 // --- Output ------------------------------------------------------------------------------------
@@ -316,14 +372,30 @@ if (nextMilestones.length > 0) {
 out.push('## In flight')
 out.push('')
 out.push(table(
-    ['Resource', 'Kind', 'Progress', 'Effort', 'Priority', 'Updated'],
+    ['Resource', 'Kind', 'Scale', 'Progress', 'Effort', 'Priority', 'Updated'],
     inFlight.map(r => [
         link(r.id),
         r.fm.kind || '—',
+        r.fm.scale || '—',
         r.fm.progress || '—',
         r.fm.effort || '—',
         r.fm.priority || '—',
         age(r.fm.updated)
+    ])
+))
+
+out.push('## Pick by time')
+out.push('')
+out.push('_Backlog resources small enough to finish in a gap._')
+out.push('')
+out.push(table(
+    ['Resource', 'Scale', 'Effort', 'Nature', 'Priority'],
+    quickWins.map(r => [
+        link(r.id),
+        r.fm.scale,
+        r.fm.effort || '—',
+        r.fm.nature || '—',
+        r.fm.priority || '—'
     ])
 ))
 
@@ -350,6 +422,16 @@ out.push(table(
         a.gap > 0 ? `+${a.gap}` : '—',
         `\`${a.fm.reviewed}\` (${age(a.fm.reviewed)})`
     ])
+))
+
+out.push('## Resource shape')
+out.push('')
+out.push(table(
+    ['Axis', 'Breakdown'],
+    [
+        ['By scale', breakdown(resources, 'scale', SCALES)],
+        ['By nature', breakdown(resources, 'nature')]
+    ]
 ))
 
 out.push('## Everything else')

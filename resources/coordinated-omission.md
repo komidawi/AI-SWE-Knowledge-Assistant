@@ -12,6 +12,8 @@ goals: [ ]
 status: backlog
 priority: medium
 effort: 1h
+scale: deep-dive
+nature: core
 progress:
 rating:
 started:

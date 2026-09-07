@@ -16,7 +16,9 @@ and move it to `considering`, `accepted` or `dropped`. Nothing stays in `inbox` 
 - **Duplicates** - near-identical entries, and resources that substantially overlap something
   already `done`.
 - **Schema breaks** - missing or unknown frontmatter fields, statuses outside the vocabulary in
-  `CLAUDE.md`, dates not in ISO form.
+  `CLAUDE.md`, dates not in ISO form. Resources additionally need `scale:` and `nature:`, both from
+  the vocabularies in `CLAUDE.md`. Do not re-derive the `scale:`/`effort:` bands here - run
+  `node scripts/dashboard.mjs` and read the disagreements off **Needs attention**.
 - **Taxonomy breaks** - `topics:` values not present in `taxonomy/topics.yml`; topics defined in the
   taxonomy but used by nothing (candidates for removal).
 - **Broken links** - `[[ids]]` pointing at files that do not exist.

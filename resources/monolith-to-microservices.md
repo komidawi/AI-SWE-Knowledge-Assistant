@@ -10,6 +10,8 @@ goals: [ ]
 status: backlog
 priority: medium
 effort: 10h
+scale: multi-day
+nature: applied
 progress:
 rating:
 started:

@@ -11,7 +11,9 @@ Capture this into the knowledge base: $ARGUMENTS
    the page states.
 3. Check `ideas/`, `resources/` and `goals/` for an existing entry on the same thing. If one exists,
    update it rather than creating a near-duplicate, and say that is what you did.
-4. Copy the matching file from `templates/` and fill every field.
+4. Copy the matching file from `templates/` and fill every field. For a resource, `scale:` follows
+   from the effort estimate and `nature:` from what the thing actually is — both vocabularies are in
+   `CLAUDE.md`. Two words, not an interrogation; a wrong `scale:` shows up in the next dashboard.
 5. Map topics to ids in `taxonomy/topics.yml`. If a needed topic is missing, add it to the taxonomy
    in the same change, under the right area, with the aliases someone would actually type.
 6. Link it: set `goals:` if it serves an active goal, and add a `[[link]]` from any related entry.

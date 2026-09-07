@@ -17,4 +17,8 @@ Plan the week: $ARGUMENTS (default: the current ISO week)
     - Every item names the entity it advances, with a `[[link]]`.
     - Every item is finishable within the week. "Read DDIA" is not an item; "DDIA ch. 5-6" is.
     - At most one new start. Finishing beats starting.
+    - Commit by `scale:`. A `multi-day` resource is never a week's line item — commit the slice of
+      it that finishes this week. `short` and `snack` items are what the 20% reserve absorbs, so
+      they are added last and cut first.
+    - `nature: trivia` never gets planned hours. It is read in the gaps or not at all.
 7. Say plainly what did not fit and why, rather than quietly dropping it.

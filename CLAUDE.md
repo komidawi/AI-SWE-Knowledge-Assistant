@@ -27,13 +27,47 @@ rebuilt with `node scripts/dashboard.mjs`; rerun it after any change that would 
 5. **Dates are ISO `YYYY-MM-DD`.** Never "last week", never a relative date.
 6. **Append, don't overwrite, assessments.** Each is its own dated `### Assessment YYYY-MM-DD` block
    so the history of judgment stays visible in the file and in `git log`.
+7. **`scale:` must agree with `effort:`.** It is the bucket, `effort:` is the number. They are stored
+   separately so `rg` can find a bucket without tooling; `node scripts/dashboard.mjs` flags any
+   disagreement under **Needs attention**. New values for any vocabulary below go in, in the same
+   change — the discipline rule 3 imposes on topics applies to every controlled field.
 
-## Status vocabularies
+## Vocabularies
 
-- Idea: `inbox` → `considering` → `accepted` → `active` → `done` | `dropped`
-- Resource: `backlog` → `in-progress` → `done` | `dropped` | `reference` (kept for lookup, not read start-to-finish)
-- Goal: `draft` → `active` → `achieved` | `missed` | `dropped`
+- Idea status: `inbox` → `considering` → `accepted` → `active` → `done` | `dropped`
+- Resource status: `backlog` → `in-progress` → `done` | `dropped` | `reference` (kept for lookup, not read start-to-finish)
+- Goal status: `draft` → `active` → `achieved` | `missed` | `dropped`
 - Priority everywhere: `high` | `medium` | `low`
+- Resource `kind:` — the medium: `book` | `course` | `article` | `video` | `talk` | `repo` | `docs` | `newsletter`
+
+### Resource `scale:` — how much time and scheduling it needs
+
+Bands are on `effort:`. `kind:` says what medium it is; `scale:` says what it costs.
+
+| Value       | Effort | Means                                                     |
+|-------------|--------|-----------------------------------------------------------|
+| `multi-day` | > 8h   | Multi-module. Spans days — needs a milestone, not a slot. |
+| `full-day`  | 3–8h   | ~1 MD. One subject end to end in a day.                   |
+| `deep-dive` | 1–3h   | One specific topic, in depth. One long sitting.           |
+| `short`     | 20–60m | One sitting.                                              |
+| `snack`     | < 20m  | Fits a gap.                                               |
+
+### Resource `nature:` — what kind of value it delivers
+
+Orthogonal to `scale:`. A 10-minute curio and a 10-minute foundational explainer are the same size
+and not the same value; this is the field that separates them.
+
+| Value         | Means                                                                    |
+|---------------|--------------------------------------------------------------------------|
+| `core`        | Durable concepts, theory, protocols. Outlives the tools.                 |
+| `applied`     | Hands-on — build it, follow it, produce an artifact.                      |
+| `case-study`  | How someone actually did it: war story, incident write-up, architecture. |
+| `perspective` | An argument or proposal. An idea described, not knowledge conveyed.      |
+| `lookup`      | Spec, docs, pattern catalogue. Consulted, not read start to finish.      |
+| `trivia`      | Curio, fun fact, entertainment. Real, but never earns planned hours.     |
+
+`lookup` deliberately avoids the word `reference`, which is already a `status:` value. Both fields
+are **resource-only** — an idea is not consumed, so neither axis means anything for it.
 
 ## Querying (stage A — no build step)
 

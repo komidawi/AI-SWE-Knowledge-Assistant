@@ -10,6 +10,8 @@ goals: [ ]
 status: done
 priority: medium
 effort: 12h
+scale: multi-day
+nature: core
 progress: complete
 rating:
 started:

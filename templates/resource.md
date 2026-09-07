@@ -12,6 +12,8 @@ goals: [ ]
 status: backlog              # backlog | in-progress | done | dropped | reference
 priority: medium
 effort:                      # estimated hours/pages
+scale:                       # multi-day | full-day | deep-dive | short | snack — must match effort
+nature:                      # core | applied | case-study | perspective | lookup | trivia
 progress:                    # e.g. "ch. 6/12", optional
 rating:                      # 1-10, only once started
 started:                     # YYYY-MM-DD, optional

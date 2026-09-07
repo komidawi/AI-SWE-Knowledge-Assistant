@@ -12,6 +12,8 @@ goals: [ ]
 status: backlog
 priority: low
 effort: 6h
+scale: full-day
+nature: core
 progress:
 rating:
 started:

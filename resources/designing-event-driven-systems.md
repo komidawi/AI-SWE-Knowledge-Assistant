@@ -10,6 +10,8 @@ goals: [ ]
 status: in-progress
 priority: high
 effort: 10h
+scale: multi-day
+nature: core
 progress: "first pass done, second pass pending"
 rating:
 started:
