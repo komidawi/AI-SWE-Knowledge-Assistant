@@ -23,4 +23,6 @@ reading five architecture books is not by itself evidence above level 2.
 
 ### Next moves
 
-- Second pass on `[[building-microservices]]` and `[[designing-event-driven-systems]]`
+- `[[system-design-fluency]]` is the active goal: finish `[[hello-interview-system-design-course]]`
+  by 2026-12-13, then re-assess this file against `taxonomy/rubrics.md` citing the designs produced
+- Decide `[[second-pass-on-architecture-books]]` — queued behind the goal above, or dropped

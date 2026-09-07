@@ -23,7 +23,7 @@ rebuilt with `node scripts/dashboard.mjs`; rerun it after any change that would 
 2. **Every file starts with YAML frontmatter** matching `templates/`. Missing or extra fields are a bug.
 3. **`topics:` accepts only topic IDs from `taxonomy/topics.yml`.** Never labels, never aliases,
    never free text. If a topic is missing, add it to the taxonomy first, in the same change.
-4. **Cross-reference by ID with wiki links**: `[[ddia]]`, `[[fullstack-2027]]`. Works in plain text and Obsidian.
+4. **Cross-reference by ID with wiki links**: `[[ddia]]`, `[[system-design-fluency]]`. Works in plain text and Obsidian.
 5. **Dates are ISO `YYYY-MM-DD`.** Never "last week", never a relative date.
 6. **Append, don't overwrite, assessments.** Each is its own dated `### Assessment YYYY-MM-DD` block
    so the history of judgment stays visible in the file and in `git log`.

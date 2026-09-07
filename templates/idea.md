@@ -5,7 +5,7 @@ title: Short, specific statement of what to learn or build
 status: inbox                # inbox | considering | accepted | active | done | dropped
 priority: medium             # high | medium | low
 topics: [ ]                   # topic ids from taxonomy/topics.yml
-goals: [ ]                    # goal ids this would serve, e.g. [fullstack-2027]
+goals: [ ]                    # goal ids this would serve, e.g. [system-design-fluency]
 resources: [ ]                # resource ids, optional
 url:                         # the link that sparked this, optional
 source:                      # raindrop | manual, optional — where this entry came from

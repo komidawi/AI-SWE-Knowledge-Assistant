@@ -23,4 +23,9 @@ Deciding to finish or to drop them both beats leaving them open.
 Before scheduling: name the specific chapters that need the second pass. "Re-read the book" is not
 a plannable unit of work.
 
+`2026-09-07` — `[[system-design-fluency]]` is now the active goal and owns the whole 4h/week budget,
+so this cannot be scheduled alongside it. That makes the decision easier, not harder: the choice is
+between dropping these books and queueing them behind 2026-12-13, not between reading them now and
+reading them later.
+
 ## Assessments

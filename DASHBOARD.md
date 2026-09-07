@@ -3,33 +3,31 @@
 
 # Dashboard
 
-`2026-09-07` · 0 active goal(s) · 2 in flight · 0 in inbox · `2026-W37` 0/4 done
+`2026-09-07` · 1 active goal(s) · 2 in flight · 0 in inbox · `2026-W37` 1/5 done
 
 ## Right now
 
-> **No goal is `active`** — [[fullstack-2027]]. Nothing for resources or weeks to be prioritised against.
+> **Nothing is blocked.** Goals, the week and in-flight work are all current.
 
 ## Needs attention
 
-| What                  | Where              | Why it matters                                           |
-|-----------------------|--------------------|----------------------------------------------------------|
-| No goal is `active`   | [[fullstack-2027]] | Nothing for resources or weeks to be prioritised against |
-| `capacity_hours` is 0 | [[2026-W37]]       | The week is committed to work with no stated budget      |
+_None._
 
 ## Goals
 
-| Goal               | Status  | Target       | Weeks left | Milestones | Criteria | h/wk  |
-|--------------------|---------|--------------|------------|------------|----------|-------|
-| [[fullstack-2027]] | `draft` | `2027-09-07` | 52         | 0/4        | 0/4      | **0** |
+| Goal                      | Status   | Target       | Weeks left | Milestones | Criteria | h/wk |
+|---------------------------|----------|--------------|------------|------------|----------|------|
+| [[system-design-fluency]] | `active` | `2026-12-13` | 14         | 0/5        | 0/4      | 4    |
 
 ### Next milestones
 
-| Due          | In   | Goal               | Milestone                                        |
-|--------------|------|--------------------|--------------------------------------------------|
-| `2026-12-31` | 115d | [[fullstack-2027]] | API + persistence layer, tested, running locally |
-| `2027-03-31` | 205d | [[fullstack-2027]] | frontend talking to the API, deployed to staging |
-| `2027-06-30` | 296d | [[fullstack-2027]] | CI/CD, auth, observability                       |
-| `2027-09-07` | 365d | [[fullstack-2027]] | public release                                   |
+| Due          | In  | Goal                      | Milestone                                                                       |
+|--------------|-----|---------------------------|---------------------------------------------------------------------------------|
+| `2026-09-27` | 20d | [[system-design-fluency]] | Part 1 done: Orientation, Foundations, Thinking in Scale (~8h)                  |
+| `2026-10-18` | 41d | [[system-design-fluency]] | Scaling Reads and Scaling Writes, incl. Postgres, Redis, Kafka, Cassandra (~8h) |
+| `2026-11-08` | 62d | [[system-design-fluency]] | Real-time Updates, Contention, Multi-step Processes (~7h)                       |
+| `2026-11-29` | 83d | [[system-design-fluency]] | Large Blobs, Long Running Tasks, Proximity-Based Services (~5h)                 |
+| `2026-12-13` | 97d | [[system-design-fluency]] | Final Designs, plus the cold design that is not from the course (~6h)           |
 
 ## In flight
 
@@ -46,11 +44,12 @@ _None._
 
 ## This week — `2026-W37`
 
-0/4 committed done · capacity `0h` · `2026-09-07` → `2026-09-13`
+1/5 committed done · capacity `4h` · `2026-09-07` → `2026-09-13`
 
-- [ ] (0.5h) — set `capacity_hours` here and `weekly_hours` in `[[2026]]`
-- [ ] (1h) — correct the seeded statuses in `resources/` (two are guesses)
-- [ ] (1h) — replace the example goal `[[fullstack-2027]]` with a real one
+- [x] (1h) — replace the example goal with `[[system-design-fluency]]`
+- [ ] (1h) — `[[hello-interview-system-design-course]]` module 01 Orientation + start 02 Foundations
+- [ ] (1h) — `[[hello-interview-system-design-course]]` Networking Essentials, first half
+- [ ] (0.5h) — correct the seeded statuses in `resources/` (two are guesses)
 - [ ] (0.5h) — decide on `[[second-pass-on-architecture-books]]`: finish or drop
 
 ## Areas
@@ -63,15 +62,15 @@ _None._
 
 | Axis      | Breakdown                              |
 |-----------|----------------------------------------|
-| By scale  | multi-day 6 · full-day 2 · deep-dive 2 |
-| By nature | applied 2 · core 7 · lookup 1          |
+| By scale  | multi-day 7 · full-day 2 · deep-dive 2 |
+| By nature | applied 2 · core 8 · lookup 1          |
 
 ## Everything else
 
 | Entity    | Count | By status                                        |
 |-----------|-------|--------------------------------------------------|
 | Ideas     | 1     | considering 1                                    |
-| Resources | 10    | backlog 6 · done 1 · in-progress 2 · reference 1 |
-| Goals     | 1     | draft 1                                          |
+| Resources | 11    | backlog 7 · done 1 · in-progress 2 · reference 1 |
+| Goals     | 1     | active 1                                         |
 | Areas     | 1     | —                                                |
 | Plans     | 3     | —                                                |
