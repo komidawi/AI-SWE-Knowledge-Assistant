@@ -58,7 +58,7 @@
 | Entity    | Count | By status                                        |
 |-----------|-------|--------------------------------------------------|
 | Ideas     | 1     | considering 1                                    |
-| Resources | 5     | backlog 1 · done 1 · in-progress 2 · reference 1 |
+| Resources | 10    | backlog 6 · done 1 · in-progress 2 · reference 1 |
 | Goals     | 1     | draft 1                                          |
 | Areas     | 1     | —                                                |
 | Plans     | 3     | —                                                |
