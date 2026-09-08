@@ -3,17 +3,17 @@
 
 # Dashboard
 
-`2026-09-08` · 2 active goal(s) · 2 in flight · 8 in inbox · `2026-W37` 1/8 done
+`2026-09-08` · 2 active goal(s) · 2 in flight · 15 in inbox · `2026-W37` 1/8 done
 
 ## Right now
 
-> **8 untriaged ideas** — `ideas/`. Run `/groom` — inbox items are invisible to planning.
+> **15 untriaged ideas** — `ideas/`. Run `/groom` — inbox items are invisible to planning.
 
 ## Needs attention
 
-| What              | Where    | Why it matters                                       |
-|-------------------|----------|------------------------------------------------------|
-| 8 untriaged ideas | `ideas/` | Run `/groom` — inbox items are invisible to planning |
+| What               | Where    | Why it matters                                       |
+|--------------------|----------|------------------------------------------------------|
+| 15 untriaged ideas | `ideas/` | Run `/groom` — inbox items are invisible to planning |
 
 ## Goals
 
@@ -48,12 +48,18 @@ _Backlog resources small enough to finish in a gap._
 | [[fowler-evolutionary-database-design]] | short | 30m    | core        | high     |
 | [[allegro-db-maintenance-3tb-to-100gb]] | short | 20m    | case-study  | medium   |
 | [[allegro-transactions-in-mongodb]]     | short | 20m    | core        | medium   |
+| [[calculus-of-service-availability]]    | short | 45m    | core        | medium   |
 | [[discord-trillions-of-messages]]       | short | 25m    | case-study  | medium   |
+| [[distributed-snapshots-paper]]         | short | 45m    | core        | medium   |
 | [[feature-flags-primer]]                | short | 30m    | core        | medium   |
+| [[functional-core-imperative-shell]]    | short | 30m    | core        | medium   |
 | [[google-cloud-spanner-talk]]           | short | 45m    | case-study  | medium   |
+| [[inverse-conway-maneuver]]             | short | 20m    | core        | medium   |
+| [[joel-things-you-should-never-do]]     | short | 20m    | perspective | medium   |
 | [[kotlin-programming-with-result]]      | short | 20m    | applied     | medium   |
 | [[netflix-system-design]]               | short | 30m    | case-study  | medium   |
 | [[service-mesh-survey]]                 | short | 25m    | case-study  | medium   |
+| [[why-pick-strong-consistency]]         | short | 20m    | core        | medium   |
 | [[fowler-tolerant-reader]]              | snack | 10m    | core        | medium   |
 | [[mocking-is-a-code-smell]]             | snack | 15m    | perspective | medium   |
 | [[google-monorepo-billions-of-lines]]   | short | 25m    | case-study  | low      |
@@ -84,17 +90,17 @@ _Backlog resources small enough to finish in a gap._
 
 ## Resource shape
 
-| Axis      | Breakdown                                                     |
-|-----------|---------------------------------------------------------------|
-| By scale  | multi-day 13 · full-day 8 · deep-dive 6 · short 12 · snack 4  |
-| By nature | applied 5 · case-study 6 · core 24 · lookup 6 · perspective 2 |
+| Axis      | Breakdown                                                      |
+|-----------|----------------------------------------------------------------|
+| By scale  | multi-day 17 · full-day 12 · deep-dive 10 · short 18 · snack 4 |
+| By nature | applied 5 · case-study 6 · core 41 · lookup 6 · perspective 3  |
 
 ## Everything else
 
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
-| Ideas     | 10    | considering 2 · inbox 8                           |
-| Resources | 43    | backlog 38 · done 1 · in-progress 2 · reference 2 |
+| Ideas     | 17    | considering 2 · inbox 15                          |
+| Resources | 61    | backlog 56 · done 1 · in-progress 2 · reference 2 |
 | Goals     | 2     | active 2                                          |
 | Areas     | 2     | —                                                 |
 | Plans     | 3     | —                                                 |
