@@ -10,8 +10,7 @@ reviewed: 2026-09-07
 
 ## Current level: 1 — placeholder, not yet self-assessed
 
-`level` is a placeholder. Set it honestly against `taxonomy/rubrics.md`, and only with evidence —
-reading five architecture books is not by itself evidence above level 2.
+Set honestly against `taxonomy/rubrics.md`, with evidence. Five books read is not evidence above level 2.
 
 ### Evidence
 
@@ -23,6 +22,5 @@ reading five architecture books is not by itself evidence above level 2.
 
 ### Next moves
 
-- `[[system-design-fluency]]` is the active goal: finish `[[hello-interview-system-design-course]]`
-  by 2026-12-13, then re-assess this file against `taxonomy/rubrics.md` citing the designs produced
-- Decide `[[second-pass-on-architecture-books]]` — queued behind the goal above, or dropped
+- `[[system-design-fluency]]` (active): finish `[[hello-interview-system-design-course]]` by 2026-12-13, then re-assess here citing the designs produced.
+- Decide `[[second-pass-on-architecture-books]]` — queue behind that goal, or drop.

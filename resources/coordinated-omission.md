@@ -24,9 +24,9 @@ updated: 2026-09-07
 
 ## Why this one
 
-Coordinated omission is the measurement bug that makes most latency benchmarks quietly wrong —
-the load generator stalls with the system under test, so the worst latencies never get recorded.
-Short, and it changes how every other performance number gets read.
+The measurement bug that makes most latency benchmarks wrong: the load generator stalls with the
+system under test, so the worst latencies are never recorded. Short, and it changes how every other
+performance number reads.
 
 ## Notes
 

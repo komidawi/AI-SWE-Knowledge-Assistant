@@ -24,12 +24,11 @@ updated: 2026-09-07
 
 ## Why this one
 
-General database fundamentals as a single long course. Captured from the same session as the NoSQL
-videos, but it is not NoSQL-specific.
+Database fundamentals as one long course. Captured with the NoSQL videos, but not NoSQL-specific.
 
 ## Notes
 
-Overlaps [[how-does-a-database-work]], which covers the same internals hands-on in C. Pick one
-before starting either — see `/assess`. Held at `low` until that call is made.
+Overlaps `[[how-does-a-database-work]]` (same internals, hands-on in C). Pick one before starting
+either — see `/assess`. Held at `low` until then.
 
 ## Assessments

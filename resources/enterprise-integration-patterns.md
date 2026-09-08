@@ -22,8 +22,8 @@ updated: 2026-09-07
 
 ## Why this one
 
-Seeded from `../ENTERPRISE INTEGRATION PATTERNS/`. Set to `reference` because it is a pattern
-catalogue, not a cover-to-cover read — **verify this status**, the source folder carried no marker.
+Seeded from `../ENTERPRISE INTEGRATION PATTERNS/`. Set to `reference` as a pattern catalogue, not a
+cover-to-cover read — **verify this status**, the source folder carried no marker.
 
 ## Notes
 

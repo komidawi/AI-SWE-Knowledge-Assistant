@@ -17,7 +17,7 @@ updated: YYYY-MM-DD
 
 ## Success criteria
 
-Falsifiable. Someone else could rule on whether these were met.
+Falsifiable — someone else could rule on whether these were met.
 
 - [ ]
 - [ ]
@@ -29,10 +29,10 @@ Falsifiable. Someone else could rule on whether these were met.
 
 ## Capacity check
 
-Estimated total: ?h · Available: `weekly_hours` × ? weeks = ?h · Verdict:
+Estimated ?h · `weekly_hours` × ? weeks = ?h · Verdict:
 
 ## Linked
 
-Ideas: · Resources:
+Ideas: · Resources: · Goals: · Areas:
 
 ## Assessments

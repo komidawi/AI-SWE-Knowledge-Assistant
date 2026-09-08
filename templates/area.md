@@ -12,7 +12,7 @@ reviewed: YYYY-MM-DD
 
 ### Evidence
 
-What was actually shipped, debugged or taught. No evidence → level 2 at most.
+What was shipped, debugged or taught. No evidence → level 2 at most.
 
 -
 
@@ -24,6 +24,6 @@ Named, specific. "Cannot reason about consumer-group rebalancing", not "need mor
 
 ### Next moves
 
-Links to ideas, resources or goals that close the gaps above.
+Ideas, resources or goals that close the gaps above.
 
 -

@@ -17,8 +17,8 @@ updated: YYYY-MM-DD
 
 ## Why
 
-What triggered this. What it would unblock. Be concrete — "the deploy broke and I could not read
-the k8s events" is worth more than "Kubernetes seems important".
+What triggered this, what it unblocks. Concrete: "the deploy broke and I could not read the k8s
+events" beats "Kubernetes seems important".
 
 ## Notes
 

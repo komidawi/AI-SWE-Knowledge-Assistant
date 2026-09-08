@@ -24,13 +24,12 @@ updated: 2026-09-07
 
 ## Why this one
 
-Builds a SQLite clone in C from scratch — REPL, pager, cursor, B-tree, SQL parsing. Hands-on
-rather than descriptive, so it produces real evidence of understanding database internals rather
-than familiarity with them.
+Builds a SQLite clone in C from scratch — REPL, pager, cursor, B-tree, SQL parsing. Hands-on, so it
+produces real evidence of understanding database internals rather than familiarity with them.
 
 ## Notes
 
-Overlaps [[databases-in-depth-course]], which covers the same ground as video. This is the
-hands-on version of that material — pick one before starting either.
+Overlaps `[[databases-in-depth-course]]` (same ground, as video). This is the hands-on version —
+pick one before starting either.
 
 ## Assessments

@@ -8,7 +8,7 @@ weekly_hours: 0              # sustainable weekly learning budget
 
 ## Theme
 
-One sentence describing what this year is for.
+One sentence: what this year is for.
 
 ## Goals
 
@@ -16,7 +16,7 @@ One sentence describing what this year is for.
 
 ## Budget
 
-`weekly_hours` × 46 effective weeks = ?h total. Allocated across goals:
+`weekly_hours` × 46 effective weeks = ?h. Allocated across goals:
 
 ## Quarterly checkpoints
 

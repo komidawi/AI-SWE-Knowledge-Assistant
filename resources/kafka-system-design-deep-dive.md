@@ -24,12 +24,12 @@ updated: 2026-09-07
 
 ## Why this one
 
-Kafka framed as a system-design problem rather than an API tour — partitioning, replication and
-consumer groups as design decisions with trade-offs.
+Kafka as a system-design problem rather than an API tour — partitioning, replication and consumer
+groups as decisions with tradeoffs.
 
 ## Notes
 
-Pairs with [[designing-event-driven-systems]], which is already in flight. Watch this first as the
-cheaper orientation, then use it to make the book's chapters concrete.
+Pairs with `[[designing-event-driven-systems]]`, already in flight. Watch first as the cheaper
+orientation, then use it to make the book's chapters concrete.
 
 ## Assessments

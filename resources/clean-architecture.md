@@ -22,7 +22,7 @@ updated: 2026-09-07
 
 ## Why this one
 
-Seeded from `../CLEAN ARCHITECTURE - DONE/`. Notes from the read live in that folder.
+Seeded from `../CLEAN ARCHITECTURE - DONE/`. Read notes live in that folder.
 
 ## Notes
 

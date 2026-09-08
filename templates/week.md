@@ -17,7 +17,7 @@ Small enough to finish. Each line names the entity it advances.
 
 ## Retro
 
-Filled at the end of the week, not skipped.
+Filled at the end of the week, never skipped.
 
 - **Done:**
 - **Not done, and why:**

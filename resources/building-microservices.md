@@ -22,8 +22,8 @@ updated: 2026-09-07
 
 ## Why this one
 
-Seeded from `../BUILDING MICROSERVICES - NEEDS 2ND PASS/`. Marked in-progress because a second
-pass is outstanding — name the specific chapters that need it before scheduling the time.
+Seeded from `../BUILDING MICROSERVICES - NEEDS 2ND PASS/`. `in-progress` because a second pass is
+outstanding — name the chapters before scheduling time.
 
 ## Notes
 

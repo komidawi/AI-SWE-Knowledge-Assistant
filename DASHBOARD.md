@@ -22,13 +22,13 @@ _None._
 
 ### Next milestones
 
-| Due          | In  | Goal                       | Milestone                                                                      |
-|--------------|-----|----------------------------|--------------------------------------------------------------------------------|
-| `2026-09-13` | 5d  | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews for every term I remember not |
-| `2026-09-20` | 12d | [[interview-gap-coverage]] | Messaging sweep part 1: `[[microservices-io-pattern-catalogue]]` marked end to |
-| `2026-09-27` | 19d | [[interview-gap-coverage]] | Messaging sweep part 2: `[[enterprise-integration-patterns]]` headings marked; |
-| `2026-09-27` | 19d | [[system-design-fluency]]  | Part 1 done: Orientation, Foundations, Thinking in Scale (~8h)                 |
-| `2026-10-04` | 26d | [[interview-gap-coverage]] | Runtime boundary sweep: the negative question asked for browser, JVM process,  |
+| Due          | In  | Goal                       | Milestone                                                                                                                     |
+|--------------|-----|----------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `2026-09-13` | 5d  | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) |
+| `2026-09-20` | 12d | [[interview-gap-coverage]] | Messaging sweep 1: `[[microservices-io-pattern-catalogue]]` marked end to end, no skipping the obvious (~4h)                  |
+| `2026-09-27` | 19d | [[interview-gap-coverage]] | Messaging sweep 2: `[[enterprise-integration-patterns]]` headings marked; all unknowns from both sweeps written up (~4h)      |
+| `2026-09-27` | 19d | [[system-design-fluency]]  | Part 1: Orientation, Foundations, Thinking in Scale (~8h)                                                                     |
+| `2026-10-04` | 26d | [[interview-gap-coverage]] | Runtime boundary sweep: browser, JVM process, container, serverless; findings written up (~4h)                                |
 
 ## In flight
 
@@ -51,10 +51,10 @@ _None._
 - [ ] (1h) — `[[hello-interview-system-design-course]]` module 01 Orientation + start 02 Foundations
 - [ ] (1h) — `[[hello-interview-system-design-course]]` Networking Essentials, first half
 - [ ] (0.5h) — correct the seeded statuses in `resources/` (two are guesses)
-- [ ] (0.5h) — decide on `[[second-pass-on-architecture-books]]`: finish or drop
-- [ ] (1h) — seed the gap ledger in `[[interviewing]]`: recall pass over past interviews, one row per
-- [ ] (1h) — rewrite the two seed entries in `[[interviewing]]` (Outbox, browser-cannot-listen) in my
-- [ ] (2h) — `[[microservices-io-pattern-catalogue]]`: mark the index end to end, `cold` only where
+- [ ] (0.5h) — decide `[[second-pass-on-architecture-books]]`: finish or drop
+- [ ] (1h) — seed the gap ledger in `[[interviewing]]` from recall of past interviews
+- [ ] (1h) — rewrite the two seed entries in `[[interviewing]]` (Outbox, browser-cannot-listen) in my own words — they were drafted for me, which does not count as knowing them
+- [ ] (2h) — `[[microservices-io-pattern-catalogue]]`: mark the index end to end, `cold` only where the tradeoff can be said out loud without opening the page
 
 ## Areas
 
