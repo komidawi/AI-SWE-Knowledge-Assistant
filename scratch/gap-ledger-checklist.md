@@ -238,3 +238,78 @@ Already ledgered, not repeated here: Outbox Pattern, "browser cannot listen on a
 - [ ] Graceful degradation →3
 - [ ] Load shedding →2
 - [ ] Horizontal vs vertical scaling →4
+
+## F — `taxonomy/stack.yml` sweep (on-stack, not covered by A-E)
+
+### Backend (Java / Kotlin / Spring / Build)
+- [ ] Dependency Injection: constructor vs field injection →
+- [ ] Spring Bean lifecycle & scopes →
+- [ ] Spring AOP / proxies →
+- [ ] Spring Data repositories →
+- [ ] Spring Security filter chain →
+- [ ] Spring Cloud Config / service discovery (Eureka) →
+- [ ] Kotlin coroutines vs Java threads →
+- [ ] Kotlin null safety / sealed classes →
+- [ ] Maven/Gradle dependency scopes →
+- [ ] Multi-module build & BOM →
+
+### Databases / ORM / Migrations
+- [ ] Hibernate first-level vs second-level cache →
+- [ ] Lazy vs eager loading →
+- [ ] JPA entity lifecycle (transient/managed/detached) →
+- [ ] Liquibase changelog & rollback →
+- [ ] Flyway versioned vs repeatable migrations →
+- [ ] Database indexing strategy →
+- [ ] Connection pooling (HikariCP) →
+
+### DevOps (Kubernetes / CI-CD / Observability)
+- [ ] Kubernetes Pod / Deployment / ReplicaSet →
+- [ ] Kubernetes Service vs Ingress →
+- [ ] ConfigMap vs Secret →
+- [ ] Readiness vs liveness probe →
+- [ ] Horizontal Pod Autoscaler →
+- [ ] CI/CD pipeline stages & quality gates →
+- [ ] OpenTelemetry spans/traces →
+- [ ] Prometheus metrics & Grafana dashboards →
+
+### Architecture (Service Mesh / Design Patterns)
+- [ ] Service mesh sidecar proxy →
+- [ ] Istio traffic management (VirtualService/DestinationRule) →
+- [ ] mTLS between services →
+- [ ] GoF: Strategy, Decorator, Observer, Factory, Adapter, Builder →
+- [ ] Hexagonal / ports & adapters →
+
+### APIs (REST / SOAP)
+- [ ] REST idempotent methods (PUT vs POST) →
+- [ ] HATEOAS →
+- [ ] API versioning strategies →
+- [ ] OpenAPI/Swagger: contract-first vs code-first →
+- [ ] SOAP envelope / WSDL contract →
+- [ ] WS-Security →
+
+### Messaging (Streaming)
+- [ ] Kafka partitions & consumer groups →
+- [ ] Kafka offsets & consumer lag →
+- [ ] Kafka Streams: KTable vs KStream →
+- [ ] Exactly-once vs at-least-once semantics →
+
+### Testing
+- [ ] Test doubles: mock vs stub vs fake vs spy →
+- [ ] TDD red-green-refactor →
+- [ ] BDD / Gherkin →
+- [ ] Test pyramid →
+- [ ] Contract testing tooling (Pact) →
+
+### Frontend (Angular / TypeScript)
+- [ ] Angular change detection (zone.js, OnPush) →
+- [ ] RxJS operators & subscription management →
+- [ ] Angular dependency injection hierarchy →
+- [ ] TypeScript generics & utility types →
+- [ ] Standalone components vs NgModules →
+
+### AI (LLM / AI Engineering / AI Tooling)
+- [ ] RAG pipeline: retrieval + generation →
+- [ ] Embeddings & vector search →
+- [ ] Prompt engineering / few-shot →
+- [ ] Agent tool-use loop →
+- [ ] Context window / token limits →
