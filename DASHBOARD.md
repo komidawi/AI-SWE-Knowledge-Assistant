@@ -3,15 +3,17 @@
 
 # Dashboard
 
-`2026-09-08` · 2 active goal(s) · 2 in flight · 0 in inbox · `2026-W37` 1/8 done
+`2026-09-08` · 2 active goal(s) · 2 in flight · 8 in inbox · `2026-W37` 1/8 done
 
 ## Right now
 
-> **Nothing is blocked.** Goals, the week and in-flight work are all current.
+> **8 untriaged ideas** — `ideas/`. Run `/groom` — inbox items are invisible to planning.
 
 ## Needs attention
 
-_None._
+| What              | Where    | Why it matters                                       |
+|-------------------|----------|------------------------------------------------------|
+| 8 untriaged ideas | `ideas/` | Run `/groom` — inbox items are invisible to planning |
 
 ## Goals
 
@@ -41,7 +43,24 @@ _None._
 
 _Backlog resources small enough to finish in a gap._
 
-_None._
+| Resource                                | Scale | Effort | Nature      | Priority |
+|-----------------------------------------|-------|--------|-------------|----------|
+| [[fowler-evolutionary-database-design]] | short | 30m    | core        | high     |
+| [[allegro-db-maintenance-3tb-to-100gb]] | short | 20m    | case-study  | medium   |
+| [[allegro-transactions-in-mongodb]]     | short | 20m    | core        | medium   |
+| [[discord-trillions-of-messages]]       | short | 25m    | case-study  | medium   |
+| [[feature-flags-primer]]                | short | 30m    | core        | medium   |
+| [[google-cloud-spanner-talk]]           | short | 45m    | case-study  | medium   |
+| [[kotlin-programming-with-result]]      | short | 20m    | applied     | medium   |
+| [[netflix-system-design]]               | short | 30m    | case-study  | medium   |
+| [[service-mesh-survey]]                 | short | 25m    | case-study  | medium   |
+| [[fowler-tolerant-reader]]              | snack | 10m    | core        | medium   |
+| [[mocking-is-a-code-smell]]             | snack | 15m    | perspective | medium   |
+| [[google-monorepo-billions-of-lines]]   | short | 25m    | case-study  | low      |
+| [[jol-java-object-layout-plugin]]       | short | 20m    | lookup      | low      |
+| [[tests-execution-chart]]               | short | 30m    | lookup      | low      |
+| [[boolean-blindness]]                   | snack | 15m    | perspective | low      |
+| [[fowler-value-object]]                 | snack | 10m    | core        | low      |
 
 ## This week — `2026-W37`
 
@@ -65,17 +84,17 @@ _None._
 
 ## Resource shape
 
-| Axis      | Breakdown                              |
-|-----------|----------------------------------------|
-| By scale  | multi-day 7 · full-day 3 · deep-dive 2 |
-| By nature | applied 2 · core 8 · lookup 2          |
+| Axis      | Breakdown                                                     |
+|-----------|---------------------------------------------------------------|
+| By scale  | multi-day 13 · full-day 8 · deep-dive 6 · short 12 · snack 4  |
+| By nature | applied 5 · case-study 6 · core 24 · lookup 6 · perspective 2 |
 
 ## Everything else
 
-| Entity    | Count | By status                                        |
-|-----------|-------|--------------------------------------------------|
-| Ideas     | 2     | considering 2                                    |
-| Resources | 12    | backlog 7 · done 1 · in-progress 2 · reference 2 |
-| Goals     | 2     | active 2                                         |
-| Areas     | 2     | —                                                |
-| Plans     | 3     | —                                                |
+| Entity    | Count | By status                                         |
+|-----------|-------|---------------------------------------------------|
+| Ideas     | 10    | considering 2 · inbox 8                           |
+| Resources | 43    | backlog 38 · done 1 · in-progress 2 · reference 2 |
+| Goals     | 2     | active 2                                          |
+| Areas     | 2     | —                                                 |
+| Plans     | 3     | —                                                 |
