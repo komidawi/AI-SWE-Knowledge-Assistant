@@ -1,0 +1,51 @@
+# The stack the current job actually requires.
+#
+# Not a vocabulary — a judgement input. Every id below must exist in `topics.yml`, and the wording
+# the requirements were stated in (Hibernate, Liquibase, Swagger, Spock, Cursor, ...) lives there as
+# an alias, so a query for it resolves to the id used here.
+#
+# What it is for: `active` goals say what is being aimed at right now, this says what the job
+# demands regardless. Both are used when judging worth — a thing serving neither is a `skip`.
+# Anything absent here is off-stack: still capturable, never a priority, never planned hours ahead
+# of an on-stack item. Groups mirror how the requirements were stated and carry no ranking.
+#
+# Update this when the job changes, not when interest does.
+version: 1
+captured: 2026-09-08
+
+groups:
+  - id: backend
+    label: Backend
+    topics: [ java, kotlin, spring, jvm-build ]
+
+  - id: databases
+    label: Databases & Persistence
+    topics: [ databases, sql, nosql, orm, schema-migrations ]
+
+  - id: devops
+    label: DevOps & Infrastructure
+    topics: [ ci-cd, docker, kubernetes, observability ]
+
+  - id: architecture
+    label: Architecture
+    topics: [ design-patterns, integration-patterns, service-mesh ]
+
+  - id: api
+    label: APIs
+    topics: [ rest-api, soap ]
+
+  - id: messaging
+    label: Messaging
+    topics: [ messaging, streaming ]
+
+  - id: testing
+    label: Testing
+    topics: [ testing, test-automation ]
+
+  - id: frontend
+    label: Frontend
+    topics: [ typescript, angular, html-css ]
+
+  - id: ai
+    label: AI
+    topics: [ llm, ai-engineering, ai-tooling ]

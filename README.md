@@ -19,6 +19,7 @@ Markdown files are the source of truth. `CLAUDE.md` holds the conventions that k
 | `logs/`               | Optional record of what was actually done                    |
 | `taxonomy/topics.yml` | The controlled vocabulary every `topics:` field draws from   |
 | `taxonomy/rubrics.md` | How ideas, resources and goals get scored                    |
+| `taxonomy/stack.yml`  | Topics the current job requires — the second axis of worth   |
 | `templates/`          | Copy these when creating anything                            |
 | `.claude/commands/`   | Slash commands                                               |
 | `scripts/`            | `dashboard.mjs`; Stage B indexer and validator (not built)   |
@@ -76,6 +77,12 @@ The three are independent: a ten-minute curio and a ten-minute foundational expl
 `kind` and a `scale`, and only `nature` tells them apart. Both vocabularies are in `CLAUDE.md`.
 
 Expand aliases through `taxonomy/topics.yml` first — a raw search for "k8s" will miss `kubernetes`.
+
+## Two axes of worth
+
+`goals/` says what is being aimed at this month. `taxonomy/stack.yml` says what the job requires
+regardless. Something serving neither is a `skip`; a stack topic no entry covers is a blind spot,
+and `/groom` reports it. Both axes are read wherever priority gets set — see `CLAUDE.md`.
 
 ## The one rule that matters
 

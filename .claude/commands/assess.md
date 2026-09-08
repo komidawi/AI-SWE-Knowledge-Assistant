@@ -8,11 +8,14 @@ Assess: $ARGUMENTS
 1. Read `taxonomy/rubrics.md` and use its dimensions exactly. Do not invent or reweight dimensions.
 2. Read every goal with `status: active` - assessment is relative to what is being aimed at now. If
    no goal is active, say so and assess against the gaps in `areas/` instead.
-3. For each target entity, score every dimension 1-5 with a one-line justification per score. A
+3. Read `taxonomy/stack.yml`. Say for each target whether its topics are on-stack. When no active
+   goal covers it, Goal fit is scored against the stack per `taxonomy/rubrics.md` - on-stack caps
+   at 3, off-stack at 1.
+4. For each target entity, score every dimension 1-5 with a one-line justification per score. A
    score without a reason is noise.
-4. Give the verdict from the rubric: `do-now` / `queue` / `reference` / `skip` for resources,
+5. Give the verdict from the rubric: `do-now` / `queue` / `reference` / `skip` for resources,
    `accept` / `keep` / `drop` for ideas, the five well-formedness checks for goals.
-5. Append to the entity file under `## Assessments`, never overwriting an earlier one, in the form:
+6. Append to the entity file under `## Assessments`, never overwriting an earlier one, in the form:
 
        ### Assessment 2026-09-07
        Goal fit 4/5 - directly serves [[goal-id]]

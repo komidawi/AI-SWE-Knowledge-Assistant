@@ -88,12 +88,30 @@ rg --no-heading 'topics:' resources | rg 'system-design'
 Do the alias expansion before searching. A query for "JS" must find `javascript`, and a query for
 "Frontend" must find every topic in that area.
 
+## The stack
+
+`taxonomy/stack.yml` lists the topic ids the current job requires. It is a judgement input, not a
+vocabulary — every id in it must exist in `topics.yml`, and the wording the requirements came in
+(Hibernate, Liquibase, Swagger, Spock, Cursor) lives there as an alias.
+
+Two axes decide worth, and both are used everywhere priority is set — `/capture`, `/assess`,
+`/plan-week`, `/groom`:
+
+- **Goals** — what is being aimed at this month. Urgency.
+- **Stack** — what the job demands regardless. Whether the subject is the right one at all.
+
+On neither axis → `skip`. Off-stack but on-goal → fine, it serves the goal. On-stack but on no
+goal → capture it, and it never takes planned hours from an on-goal item. A stack topic no entity
+covers anywhere is a blind spot; `/groom` reports them.
+
+Edit it when the job changes, not when interest does.
+
 ## Assessing
 
 Score against `taxonomy/rubrics.md`. Never invent dimensions or weights ad hoc — the point of the
 rubric is that a resource assessed in March and one assessed in November are comparable.
-Assessment always references the currently `active` goals; a resource is only "worth it" relative to
-what is being aimed at right now.
+Assessment references the currently `active` goals and `taxonomy/stack.yml`: a resource is only
+"worth it" relative to what is being aimed at right now and what the job requires.
 
 ## Writing new entries
 

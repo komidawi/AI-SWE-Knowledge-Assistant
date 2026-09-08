@@ -10,7 +10,9 @@ Give the current state of the knowledge base.
 2. **In flight** - resources with `status: in-progress`, with progress and days since `updated`.
 3. **This week** - committed items from the current week file, and how many are done.
 4. **Areas** - current level vs target, and the largest gap.
-5. **Needs attention** - at most five items. Stalled work, slipped milestones, untriaged inbox,
+5. **Stack** - topic ids in `taxonomy/stack.yml` that nothing in flight or planned touches, at most
+   three, worst first.
+6. **Needs attention** - at most five items. Stalled work, slipped milestones, untriaged inbox,
    goals still sitting in `draft`.
 
 Lead with the single thing most worth acting on today, then the detail. Counts alone are not a

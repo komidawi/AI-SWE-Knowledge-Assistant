@@ -21,4 +21,6 @@ Plan the week: $ARGUMENTS (default: the current ISO week)
       it that finishes this week. `short` and `snack` items are what the 20% reserve absorbs, so
       they are added last and cut first.
     - `nature: trivia` never gets planned hours. It is read in the gaps or not at all.
+    - Tie-break on the stack. Two items advancing goals equally: the one whose topics are in
+      `taxonomy/stack.yml` wins. An item on neither axis is not committed at all.
 7. Say plainly what did not fit and why, rather than quietly dropping it.

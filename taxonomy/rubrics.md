@@ -4,8 +4,10 @@ The point of a fixed rubric is comparability: a resource scored in March and one
 must be judgeable against each other. Do not invent dimensions per assessment.
 
 Every assessment is written into the entity's own file as a dated block and is **relative to the
-goals that are `active` right now**. When the active goals change, old assessments become stale
-rather than wrong — re-assess instead of editing history.
+goals that are `active` right now**. The second axis is `taxonomy/stack.yml` — what the job
+requires regardless of what is aimed at this month; scoring well on neither is a `skip`. When the
+active goals change, old assessments become stale rather than wrong — re-assess instead of editing
+history.
 
 ## Resource rubric
 
@@ -18,6 +20,10 @@ Score each dimension 1–5.
 | **Effort vs payoff** | `multi-day` for a marginal skill                 | `deep-dive` or smaller for something used weekly                |
 | **Prerequisite fit** | Needs foundations not yet held → will bounce off | Sits exactly at the edge of current ability                     |
 | **Decay risk**       | Framework-version-specific, stale in 12 months   | Concepts that outlive the tools (protocols, tradeoffs, theory)  |
+
+**Goal fit when no `active` goal covers it.** Score against `taxonomy/stack.yml` instead:
+on-stack caps at 3, off-stack at 1. Never higher — goals decide urgency, the stack decides whether
+the subject is the right one at all.
 
 **Verdict** — one of:
 - `do-now` — schedule it into the current month's plan

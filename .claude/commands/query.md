@@ -19,7 +19,8 @@ Find everything related to: $ARGUMENTS
     - **Areas** - current level vs target
     - **Planning** - which weeks and months committed to this
 
-4. Close with what the results actually show: what is stalled, what is unlinked to any goal, what
-   is duplicated, and what is missing given the goals that are `active`.
+4. Say whether the expanded ids are on-stack per `taxonomy/stack.yml`, and which group.
+5. Close with what the results actually show: what is stalled, what is unlinked to any goal, what
+   is duplicated, and what is missing given the goals that are `active` and the stack.
 
 State which topic ids you expanded to, so a wrong expansion is visible rather than silent.

@@ -18,6 +18,7 @@ areas:
       - { id: go,          label: Go,          aliases: [ golang ] }
       - { id: rust,        label: Rust }
       - { id: sql,         label: SQL }
+      - { id: jvm-build,   label: JVM Build Tools, aliases: [ maven, gradle ] }
 
   - id: frontend
     label: Frontend
@@ -35,7 +36,8 @@ areas:
     label: Backend
     topics:
       - { id: spring,      label: Spring / Spring Boot, aliases: [ spring-boot ] }
-      - { id: rest-api,    label: REST API Design, aliases: [ rest, http-api ] }
+      - { id: rest-api,    label: REST API Design, aliases: [ rest, http-api, openapi, swagger ] }
+      - { id: soap,        label: SOAP & WS-*,    aliases: [ wsdl, ws-security, xml-services ] }
       - { id: graphql,     label: GraphQL }
       - { id: grpc,        label: gRPC,        aliases: [ protobuf ] }
       - { id: auth,        label: AuthN / AuthZ, aliases: [ oauth, oidc, jwt, authentication, authorization ] }
@@ -48,6 +50,8 @@ areas:
       - { id: databases,       label: Databases,       aliases: [ rdbms, postgres, postgresql, mysql ] }
       - { id: nosql,           label: NoSQL,           aliases: [ mongodb, cassandra, dynamodb ], parent: databases }
       - { id: data-modeling,   label: Data Modeling,   aliases: [ schema-design, normalization ] }
+      - { id: orm,             label: ORM & Persistence, aliases: [ hibernate, jpa, jdbc ] }
+      - { id: schema-migrations, label: Schema Migrations, aliases: [ liquibase, flyway, migrations ] }
       - { id: transactions,    label: Transactions & Consistency, aliases: [ acid, isolation-levels ] }
       - { id: streaming,       label: Stream Processing, aliases: [ kafka, flink, kafka-streams ] }
       - { id: data-engineering, label: Data Engineering, aliases: [ etl, elt, warehouse ] }
@@ -60,6 +64,8 @@ areas:
       - { id: microservices,       label: Microservices,        aliases: [ service-decomposition ] }
       - { id: event-driven,        label: Event-Driven Architecture, aliases: [ eda, event-sourcing, cqrs, pub-sub ] }
       - { id: integration-patterns, label: Integration Patterns, aliases: [ eip, messaging-patterns ] }
+      - { id: messaging,           label: Messaging & Queues,  aliases: [ message-queue, queues, rabbitmq, activemq, jms, amqp ] }
+      - { id: service-mesh,        label: Service Mesh,        aliases: [ istio, envoy, linkerd, sidecar ] }
       - { id: clean-architecture,  label: Clean & Hexagonal Architecture, aliases: [ hexagonal, ports-and-adapters, onion ] }
       - { id: ddd,                 label: Domain-Driven Design, aliases: [ domain-driven-design, bounded-context ] }
       - { id: design-patterns,     label: Design Patterns,      aliases: [ gof, patterns ] }
@@ -69,19 +75,19 @@ areas:
     label: DevOps & Infrastructure
     topics:
       - { id: docker,       label: Docker,       aliases: [ containers, containerization ] }
-      - { id: kubernetes,   label: Kubernetes,   aliases: [ k8s ], parent: docker }
+      - { id: kubernetes,   label: Kubernetes,   aliases: [ k8s, openshift ], parent: docker }
       - { id: ci-cd,        label: CI/CD,        aliases: [ pipelines, github-actions, jenkins ] }
       - { id: iac,          label: Infrastructure as Code, aliases: [ terraform, pulumi, ansible ] }
       - { id: cloud,        label: Cloud Platforms, aliases: [ aws, azure, gcp ] }
-      - { id: observability, label: Observability, aliases: [ monitoring, tracing, logging, opentelemetry, prometheus ] }
+      - { id: observability, label: Observability, aliases: [ monitoring, tracing, logging, opentelemetry, prometheus, grafana, elk, elastic-stack, kibana ] }
       - { id: linux,        label: Linux & Shell, aliases: [ bash, unix, cli ] }
       - { id: networking,   label: Networking,   aliases: [ tcp, dns, http, tls ] }
 
   - id: quality
     label: Quality & Craft
     topics:
-      - { id: testing,       label: Testing,        aliases: [ unit-tests, integration-tests, tdd ] }
-      - { id: test-automation, label: Test Automation, aliases: [ e2e, selenium, playwright, cypress ], parent: testing }
+      - { id: testing,       label: Testing,        aliases: [ unit-tests, integration-tests, tdd, junit, mockito, spock ] }
+      - { id: test-automation, label: Test Automation, aliases: [ e2e, selenium, playwright, cypress, cucumber, bdd, api-testing ], parent: testing }
       - { id: refactoring,   label: Refactoring,    aliases: [ legacy-code, code-smells ] }
       - { id: clean-code,    label: Clean Code,     aliases: [ readability, naming ] }
       - { id: code-review,   label: Code Review }
@@ -100,6 +106,7 @@ areas:
     topics:
       - { id: llm,           label: LLMs,           aliases: [ gpt, claude, prompt-engineering ] }
       - { id: ai-engineering, label: AI Engineering, aliases: [ rag, agents, embeddings, vector-db ] }
+      - { id: ai-tooling,    label: AI Coding Tools, aliases: [ cursor, copilot, claude-code, coding-agents ] }
       - { id: ml-basics,     label: ML Fundamentals, aliases: [ machine-learning, ml ] }
 
   - id: career

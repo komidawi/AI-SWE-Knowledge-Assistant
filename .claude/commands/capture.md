@@ -17,7 +17,9 @@ Capture this into the knowledge base: $ARGUMENTS
 5. Map topics to ids in `taxonomy/topics.yml`. If a needed topic is missing, add it to the taxonomy
    in the same change, under the right area, with the aliases someone would actually type.
 6. Link it: set `goals:` if it serves an active goal, and add a `[[link]]` from any related entry.
-7. Print the path and the frontmatter you wrote.
+7. Set `priority:` from the two axes: serves an active goal, or is on-stack per `taxonomy/stack.yml`.
+   Neither - it is `low`, and say so in one line rather than filing it silently.
+8. Print the path and the frontmatter you wrote.
 
 Capture is meant to be cheap. Do not interrogate. Fill in what is knowable, leave optional fields
 empty, and let triage happen later in `/groom`.
