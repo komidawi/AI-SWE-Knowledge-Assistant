@@ -10,7 +10,7 @@ topics: [ system-design, distributed-systems, databases, caching, streaming, net
 priority: high
 weekly_hours: 4
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-08
 ---
 
 ## Why this matters
@@ -52,6 +52,10 @@ the guided practices are worth redoing, and Networking Essentials alone is a 125
 Ideas: `[[second-pass-on-architecture-books]]` — this goal supersedes it for now; decide there
 whether the books are a second pass or a drop.
 · Resources: `[[hello-interview-system-design-course]]` (the spine).
+Goals: `[[interview-gap-coverage]]` — added 2026-09-08, runs in parallel on its own 4h and does not
+take hours from this one. Division of labour: this goal builds the ability to design a system, that
+one makes sure no single named pattern inside it is missing. A gap it surfaces that needs real depth
+rather than a label comes back here.
 Adjacent, not committed: `[[kafka-system-design-deep-dive]]`, `[[building-microservices]]`,
 `[[designing-event-driven-systems]]`, `[[databases-in-depth-course]]` — the course covers Kafka,
 Cassandra and sharding itself, so none of these are started before it is finished.

@@ -3,7 +3,7 @@
 
 # Dashboard
 
-`2026-09-07` · 1 active goal(s) · 2 in flight · 0 in inbox · `2026-W37` 1/5 done
+`2026-09-08` · 2 active goal(s) · 2 in flight · 0 in inbox · `2026-W37` 1/8 done
 
 ## Right now
 
@@ -15,26 +15,27 @@ _None._
 
 ## Goals
 
-| Goal                      | Status   | Target       | Weeks left | Milestones | Criteria | h/wk |
-|---------------------------|----------|--------------|------------|------------|----------|------|
-| [[system-design-fluency]] | `active` | `2026-12-13` | 14         | 0/5        | 0/4      | 4    |
+| Goal                       | Status   | Target       | Weeks left | Milestones | Criteria | h/wk |
+|----------------------------|----------|--------------|------------|------------|----------|------|
+| [[interview-gap-coverage]] | `active` | `2026-10-11` | 5          | 0/5        | 0/7      | 4    |
+| [[system-design-fluency]]  | `active` | `2026-12-13` | 14         | 0/5        | 0/4      | 4    |
 
 ### Next milestones
 
-| Due          | In  | Goal                      | Milestone                                                                       |
-|--------------|-----|---------------------------|---------------------------------------------------------------------------------|
-| `2026-09-27` | 20d | [[system-design-fluency]] | Part 1 done: Orientation, Foundations, Thinking in Scale (~8h)                  |
-| `2026-10-18` | 41d | [[system-design-fluency]] | Scaling Reads and Scaling Writes, incl. Postgres, Redis, Kafka, Cassandra (~8h) |
-| `2026-11-08` | 62d | [[system-design-fluency]] | Real-time Updates, Contention, Multi-step Processes (~7h)                       |
-| `2026-11-29` | 83d | [[system-design-fluency]] | Large Blobs, Long Running Tasks, Proximity-Based Services (~5h)                 |
-| `2026-12-13` | 97d | [[system-design-fluency]] | Final Designs, plus the cold design that is not from the course (~6h)           |
+| Due          | In  | Goal                       | Milestone                                                                      |
+|--------------|-----|----------------------------|--------------------------------------------------------------------------------|
+| `2026-09-13` | 5d  | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews for every term I remember not |
+| `2026-09-20` | 12d | [[interview-gap-coverage]] | Messaging sweep part 1: `[[microservices-io-pattern-catalogue]]` marked end to |
+| `2026-09-27` | 19d | [[interview-gap-coverage]] | Messaging sweep part 2: `[[enterprise-integration-patterns]]` headings marked; |
+| `2026-09-27` | 19d | [[system-design-fluency]]  | Part 1 done: Orientation, Foundations, Thinking in Scale (~8h)                 |
+| `2026-10-04` | 26d | [[interview-gap-coverage]] | Runtime boundary sweep: the negative question asked for browser, JVM process,  |
 
 ## In flight
 
 | Resource                           | Kind | Scale     | Progress                             | Effort | Priority | Updated |
 |------------------------------------|------|-----------|--------------------------------------|--------|----------|---------|
-| [[building-microservices]]         | book | multi-day | first pass done, second pass pending | 20h    | high     | today   |
-| [[designing-event-driven-systems]] | book | multi-day | first pass done, second pass pending | 10h    | high     | today   |
+| [[building-microservices]]         | book | multi-day | first pass done, second pass pending | 20h    | high     | 1d ago  |
+| [[designing-event-driven-systems]] | book | multi-day | first pass done, second pass pending | 10h    | high     | 1d ago  |
 
 ## Pick by time
 
@@ -44,33 +45,37 @@ _None._
 
 ## This week — `2026-W37`
 
-1/5 committed done · capacity `4h` · `2026-09-07` → `2026-09-13`
+1/8 committed done · capacity `8h` · `2026-09-07` → `2026-09-13`
 
 - [x] (1h) — replace the example goal with `[[system-design-fluency]]`
 - [ ] (1h) — `[[hello-interview-system-design-course]]` module 01 Orientation + start 02 Foundations
 - [ ] (1h) — `[[hello-interview-system-design-course]]` Networking Essentials, first half
 - [ ] (0.5h) — correct the seeded statuses in `resources/` (two are guesses)
 - [ ] (0.5h) — decide on `[[second-pass-on-architecture-books]]`: finish or drop
+- [ ] (1h) — seed the gap ledger in `[[interviewing]]`: recall pass over past interviews, one row per
+- [ ] (1h) — rewrite the two seed entries in `[[interviewing]]` (Outbox, browser-cannot-listen) in my
+- [ ] (2h) — `[[microservices-io-pattern-catalogue]]`: mark the index end to end, `cold` only where
 
 ## Areas
 
-| Area             | Level | Target | Gap | Reviewed             |
-|------------------|-------|--------|-----|----------------------|
-| [[architecture]] | 1     | 3      | +2  | `2026-09-07` (today) |
+| Area             | Level | Target | Gap | Reviewed              |
+|------------------|-------|--------|-----|-----------------------|
+| [[architecture]] | 1     | 3      | +2  | `2026-09-07` (1d ago) |
+| [[interviewing]] | 2     | 3      | +1  | `2026-09-08` (today)  |
 
 ## Resource shape
 
 | Axis      | Breakdown                              |
 |-----------|----------------------------------------|
-| By scale  | multi-day 7 · full-day 2 · deep-dive 2 |
-| By nature | applied 2 · core 8 · lookup 1          |
+| By scale  | multi-day 7 · full-day 3 · deep-dive 2 |
+| By nature | applied 2 · core 8 · lookup 2          |
 
 ## Everything else
 
 | Entity    | Count | By status                                        |
 |-----------|-------|--------------------------------------------------|
-| Ideas     | 1     | considering 1                                    |
-| Resources | 11    | backlog 7 · done 1 · in-progress 2 · reference 1 |
-| Goals     | 1     | active 1                                         |
-| Areas     | 1     | —                                                |
+| Ideas     | 2     | considering 2                                    |
+| Resources | 12    | backlog 7 · done 1 · in-progress 2 · reference 2 |
+| Goals     | 2     | active 2                                         |
+| Areas     | 2     | —                                                |
 | Plans     | 3     | —                                                |
