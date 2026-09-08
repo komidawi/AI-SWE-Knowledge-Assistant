@@ -54,6 +54,9 @@ One to three sentences on what and why.
 - **Removed:** `path/d.md`
 ```
 
+- A `.claude/settings.json` Stop hook checks, on every turn end, whether tracked/untracked repo
+  files changed without a matching change to this log, and flags it if so. It only checks that the
+  log was touched — not its content or format.
 - Omit any of the four category lines with nothing in it — don't write "**Removed:** none".
 - For a bulk operation touching many files the same way, summarize with a glob and a count
   instead of enumerating every path.

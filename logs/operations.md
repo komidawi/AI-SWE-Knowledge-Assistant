@@ -5,6 +5,15 @@ created: 2026-09-08
 updated: 2026-09-08
 ---
 
+## 2026-09-09 00:05 — Add Stop hook enforcing the operations log convention
+
+Added a `.claude/settings.json` Stop hook that flags when tracked/untracked repo files changed
+without a matching change to `logs/operations.md` (checks presence of an update only, not
+content/format). Noted its existence in `CLAUDE.md`.
+
+- **Added:** `.claude/settings.json`
+- **Modified:** `CLAUDE.md`
+
 ## 2026-09-08 23:55 — Add Working agreements section to CLAUDE.md
 
 Established that principles/rules/agreements/ways of operating are sourced from `CLAUDE.md` (not
