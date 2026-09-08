@@ -36,8 +36,8 @@
 
 | Resource                           | Kind | Scale     | Progress                             | Effort | Priority | Updated |
 |------------------------------------|------|-----------|--------------------------------------|--------|----------|---------|
-| [[building-microservices]]         | book | multi-day | first pass done, second pass pending | 20h    | high     | 1d ago  |
 | [[designing-event-driven-systems]] | book | multi-day | first pass done, second pass pending | 10h    | high     | 1d ago  |
+| [[building-microservices]]         | book | multi-day | first pass done, second pass pending | 20h    | high     | 1d ago  |
 
 ## Pick by time
 
@@ -46,20 +46,20 @@ _Backlog resources small enough to finish in a gap._
 | Resource                                | Scale | Effort | Nature      | Priority |
 |-----------------------------------------|-------|--------|-------------|----------|
 | [[fowler-evolutionary-database-design]] | short | 30m    | core        | high     |
+| [[functional-core-imperative-shell]]    | short | 30m    | core        | medium   |
+| [[distributed-snapshots-paper]]         | short | 45m    | core        | medium   |
+| [[google-cloud-spanner-talk]]           | short | 45m    | case-study  | medium   |
+| [[why-pick-strong-consistency]]         | short | 20m    | core        | medium   |
+| [[calculus-of-service-availability]]    | short | 45m    | core        | medium   |
+| [[service-mesh-survey]]                 | short | 25m    | case-study  | medium   |
+| [[discord-trillions-of-messages]]       | short | 25m    | case-study  | medium   |
+| [[netflix-system-design]]               | short | 30m    | case-study  | medium   |
+| [[inverse-conway-maneuver]]             | short | 20m    | core        | medium   |
 | [[allegro-db-maintenance-3tb-to-100gb]] | short | 20m    | case-study  | medium   |
 | [[allegro-transactions-in-mongodb]]     | short | 20m    | core        | medium   |
-| [[calculus-of-service-availability]]    | short | 45m    | core        | medium   |
-| [[discord-trillions-of-messages]]       | short | 25m    | case-study  | medium   |
-| [[distributed-snapshots-paper]]         | short | 45m    | core        | medium   |
 | [[feature-flags-primer]]                | short | 30m    | core        | medium   |
-| [[functional-core-imperative-shell]]    | short | 30m    | core        | medium   |
-| [[google-cloud-spanner-talk]]           | short | 45m    | case-study  | medium   |
-| [[inverse-conway-maneuver]]             | short | 20m    | core        | medium   |
-| [[joel-things-you-should-never-do]]     | short | 20m    | perspective | medium   |
 | [[kotlin-programming-with-result]]      | short | 20m    | applied     | medium   |
-| [[netflix-system-design]]               | short | 30m    | case-study  | medium   |
-| [[service-mesh-survey]]                 | short | 25m    | case-study  | medium   |
-| [[why-pick-strong-consistency]]         | short | 20m    | core        | medium   |
+| [[joel-things-you-should-never-do]]     | short | 20m    | perspective | medium   |
 | [[fowler-tolerant-reader]]              | snack | 10m    | core        | medium   |
 | [[mocking-is-a-code-smell]]             | snack | 15m    | perspective | medium   |
 | [[google-monorepo-billions-of-lines]]   | short | 25m    | case-study  | low      |

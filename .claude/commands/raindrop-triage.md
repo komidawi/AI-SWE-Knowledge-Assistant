@@ -42,6 +42,9 @@ clearly a single study cluster.
 - `topics:` — map through `taxonomy/topics.yml`. The Raindrop collection is a **hint, not a topic**:
   `Kafka` suggests the `kafka` id, but `Great Courses` is a quality signal and maps to nothing.
   If a needed topic is missing, add it to the taxonomy in the same change (rule 3 in `CLAUDE.md`).
+  The file's folder follows from the primary (first-listed) topic's area, per the layout rule in
+  `CLAUDE.md`: `<entity>/<area>/<id>.md`, `general/` if `topics: []`, or `<area>/<topic>/` where
+  that area is already split.
 - `kind:` — from the bookmark `type` where it is set (`video`, `article`), corrected by the URL.
 - `scale:`/`nature:` — the vocabularies in `CLAUDE.md`. These sharpen the call in step 3 rather than
   repeat it: a bookmark that reads `snack` + `trivia` is usually a **drop**, and one whose value is

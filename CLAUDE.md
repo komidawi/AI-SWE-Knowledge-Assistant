@@ -14,12 +14,45 @@ rebuilt with `node scripts/dashboard.mjs`; rerun it after any change that would 
 | `goals/`     | Goal     | An outcome with a horizon and success criteria. Milestones live inside the goal file. |
 | `areas/`     | Area     | Living self-assessment of one skill area: current level, evidence, gaps.              |
 | `planning/`  | Plan     | Year / month / week files. What is actually committed to, plus retros.                |
-| `logs/`      | Log      | Optional record of what was actually done.                                            |
+| `logs/`      | Log      | `logs/operations.md` — self-reported log of file-modifying operations. See below.     |
+
+`resources/` and `ideas/` are grouped into subfolders by taxonomy **area** (the area ids in
+`taxonomy/topics.yml`: `languages`, `frontend`, `backend`, `data`, `architecture`, `devops`,
+`quality`, `security`, `ai`, `career`), plus `general/` for anything with `topics: []`. A new
+entry's folder is the area of its primary (first-listed) topic: `<entity>/<area>/<id>.md`. If an
+area folder passes ~15 files, split it further by topic id: `<entity>/<area>/<topic>/<id>.md` —
+`resources/architecture/` is split this way today; nothing else needs it yet. `goals/` and
+`areas/` stay flat, they're too few to bother.
+
+## Operation log
+
+`logs/operations.md` is a single running file, self-reported (not hook-enforced): after
+completing an operation that adds, modifies, moves or removes any file in this repo, append an
+entry — an operation is one coherent task/request, not one entry per tool call. New entries go
+**on top**, right after the frontmatter, newest first.
+
+```
+## YYYY-MM-DD HH:MM — Title of the operation
+
+One to three sentences on what and why.
+
+- **Added:** `path/a.md`, `path/b.md`
+- **Modified:** `path/c.md`
+- **Moved:** `old/path.md` → `new/path.md`
+- **Removed:** `path/d.md`
+```
+
+- Omit any of the four category lines with nothing in it — don't write "**Removed:** none".
+- For a bulk operation touching many files the same way, summarize with a glob and a count
+  instead of enumerating every path.
+- A file both moved and edited in the same operation is listed once, under **Modified**, with the
+  path change noted inline — not under both.
 
 ## Hard rules
 
-1. **Filename = ID.** `resources/ddia.md` has `id: ddia`. IDs are kebab-case, stable, never renamed
-   casually (renaming breaks every `[[link]]`). No dates or numbers in IDs.
+1. **Filename = ID.** `resources/architecture/distributed-systems/ddia.md` has `id: ddia`. IDs are
+   kebab-case, stable, never renamed casually (renaming breaks every `[[link]]`). No dates or
+   numbers in IDs. Path is not part of identity — `[[link]]`s resolve by id regardless of folder.
 2. **Every file starts with YAML frontmatter** matching `templates/`. Missing or extra fields are a bug.
 3. **`topics:` accepts only topic IDs from `taxonomy/topics.yml`.** Never labels, never aliases,
    never free text. If a topic is missing, add it to the taxonomy first, in the same change.

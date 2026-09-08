@@ -25,6 +25,9 @@ and move it to `considering`, `accepted` or `dropped`. Nothing stays in `inbox` 
 - **Taxonomy breaks** - `topics:` values not present in `taxonomy/topics.yml`, and ids in
   `taxonomy/stack.yml` not present there either; topics defined in the taxonomy, used by nothing and
   off-stack (candidates for removal).
+- **Misfiled** - an entry whose folder doesn't match its primary (first-listed) topic's area per
+  `taxonomy/topics.yml` (or isn't in `general/` despite `topics: []`), and area folders that have
+  passed ~15 files without the topic-level split described in `CLAUDE.md`.
 - **Broken links** - `[[ids]]` pointing at files that do not exist.
 
 Report findings grouped by category, most consequential first. Propose the specific fix for each,
