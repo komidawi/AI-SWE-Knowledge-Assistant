@@ -5,6 +5,8 @@ kind: article
 title: "Boolean Blindness"
 author: Dan Piponi
 url: https://existentialtype.wordpress.com/2011/03/15/boolean-blindness/
+source:
+raindrop_id:
 topics: [ design-patterns ]
 goals: [ ]
 status: backlog

@@ -5,6 +5,8 @@ kind: article
 title: "ValueObject"
 author: Martin Fowler
 url: https://martinfowler.com/bliki/ValueObject.html
+source:
+raindrop_id:
 topics: [ design-patterns ]
 goals: [ ]
 status: backlog

@@ -5,6 +5,8 @@ kind: article
 title: "TolerantReader"
 author: Martin Fowler
 url: https://martinfowler.com/bliki/TolerantReader.html
+source:
+raindrop_id:
 topics: [ rest-api, integration-patterns ]
 goals: [ ]
 status: backlog

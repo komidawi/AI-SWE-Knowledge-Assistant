@@ -5,6 +5,8 @@ kind: video
 title: "How Discord Stores TRILLIONS of Messages"
 author:
 url: https://www.youtube.com/watch?v=O3PwuzCvAjI
+source:
+raindrop_id:
 topics: [ system-design, databases ]
 goals: [ ]
 status: backlog

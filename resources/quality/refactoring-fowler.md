@@ -5,6 +5,8 @@ kind: book
 title: "Refactoring: Improving the Design of Existing Code"
 author: Martin Fowler
 url:
+source:
+raindrop_id:
 topics: [ refactoring ]
 goals: [ ]
 status: backlog

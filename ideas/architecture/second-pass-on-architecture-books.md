@@ -7,6 +7,9 @@ priority: high
 topics: [ microservices, event-driven, system-design ]
 goals: [ ]
 resources: [ building-microservices, designing-event-driven-systems ]
+url:
+source:
+raindrop_id:
 effort: 15h
 created: 2026-09-07
 updated: 2026-09-07
@@ -24,5 +27,7 @@ plannable unit.
 
 `2026-09-07` — `[[system-design-fluency]]` owns the whole 4h/week budget, so this cannot run
 alongside. The choice is drop vs. queue behind 2026-12-13, not now vs. later.
+
+`2026-09-08` — Decision: on hold, not dropped. Revisit once the active job search is over.
 
 ## Assessments

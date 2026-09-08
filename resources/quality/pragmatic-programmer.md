@@ -5,6 +5,8 @@ kind: book
 title: "The Pragmatic Programmer: Your Journey to Mastery (20th Anniversary Edition)"
 author: David Thomas, Andrew Hunt
 url:
+source:
+raindrop_id:
 topics: [ clean-code ]
 goals: [ ]
 status: backlog

@@ -2,7 +2,7 @@
 id: build-rag-poc
 type: idea
 title: Build a small RAG pipeline end to end
-status: inbox
+status: considering
 priority: medium
 topics: [ ai-engineering ]
 goals: [ ]
@@ -12,7 +12,7 @@ source: manual
 raindrop_id:
 effort: 8h
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Why

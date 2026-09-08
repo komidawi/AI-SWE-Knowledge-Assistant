@@ -5,6 +5,8 @@ kind: book
 title: "Working Effectively with Legacy Code"
 author: Michael Feathers
 url:
+source:
+raindrop_id:
 topics: [ refactoring, testing ]
 goals: [ ]
 status: backlog

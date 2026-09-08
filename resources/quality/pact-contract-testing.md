@@ -5,6 +5,8 @@ kind: docs
 title: "Pact — consumer-driven contract testing"
 author: Pact Foundation
 url: https://docs.pact.io/
+source:
+raindrop_id:
 topics: [ test-automation, rest-api ]
 goals: [ ]
 status: backlog

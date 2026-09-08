@@ -5,6 +5,8 @@ kind: article
 title: "Reactive programming primer (Spring x2 + Polish overview)"
 author:
 url: https://spring.io/blog/2016/04/19/understanding-reactive-types
+source:
+raindrop_id:
 topics: [ spring, concurrency ]
 goals: [ ]
 status: backlog

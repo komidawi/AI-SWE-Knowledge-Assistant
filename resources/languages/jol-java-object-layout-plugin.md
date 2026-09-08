@@ -5,6 +5,8 @@ kind: repo
 title: "JOL (Java Object Layout) — IntelliJ plugin"
 author:
 url: https://plugins.jetbrains.com/plugin/10953-jol-java-object-layout
+source:
+raindrop_id:
 topics: [ java, performance ]
 goals: [ ]
 status: backlog

@@ -5,6 +5,8 @@ kind: docs
 title: "Serverless on Kubernetes (Knative, OpenFaaS)"
 author:
 url: https://knative.dev/docs/
+source:
+raindrop_id:
 topics: [ kubernetes ]
 goals: [ ]
 status: backlog

@@ -5,6 +5,8 @@ kind: article
 title: "Mocking is a Code Smell"
 author: Eric Elliott
 url: https://medium.com/javascript-scene/mocking-is-a-code-smell-944a70c90a6a
+source:
+raindrop_id:
 topics: [ testing ]
 goals: [ ]
 status: backlog

@@ -5,6 +5,8 @@ kind: article
 title: "Evolutionary Database Design"
 author: Martin Fowler, Pramod Sadalage
 url: https://www.martinfowler.com/articles/evodb.html
+source:
+raindrop_id:
 topics: [ schema-migrations, databases ]
 goals: [ ]
 status: backlog

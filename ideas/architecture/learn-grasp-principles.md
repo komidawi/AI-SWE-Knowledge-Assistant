@@ -2,7 +2,7 @@
 id: learn-grasp-principles
 type: idea
 title: Learn GRASP principles for OO responsibility assignment
-status: inbox
+status: considering
 priority: medium
 topics: [ design-patterns ]
 goals: [ ]
@@ -12,7 +12,7 @@ source: manual
 raindrop_id:
 effort: 3h
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Why

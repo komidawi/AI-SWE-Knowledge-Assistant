@@ -5,6 +5,8 @@ kind: repo
 title: "tests-execution-chart (Gradle plugin)"
 author: platan
 url: https://github.com/platan/tests-execution-chart
+source:
+raindrop_id:
 topics: [ testing, jvm-build ]
 goals: [ ]
 status: backlog

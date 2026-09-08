@@ -2,14 +2,17 @@
 id: object-calisthenics
 type: idea
 title: Practice Object Calisthenics rules to sharpen OO design habits
-status: inbox
+status: considering
 priority: low
 topics: [ clean-code, design-patterns ]
 goals: [ ]
 resources: [ ]
+url:
+source:
+raindrop_id:
 effort: 4h
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Why

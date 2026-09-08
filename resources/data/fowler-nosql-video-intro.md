@@ -5,6 +5,8 @@ kind: video
 title: "Intro to NoSQL (Martin Fowler video collection)"
 author: Martin Fowler
 url: https://martinfowler.com/videos.html#intro-nosql
+source:
+raindrop_id:
 topics: [ nosql, databases ]
 goals: [ ]
 status: backlog
