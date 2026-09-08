@@ -12,10 +12,10 @@ ways of operating. Whenever one is established (by the user or discovered while 
 it here (or into the relevant file, e.g. a template or taxonomy file), not only into chat or an
 AI's private memory. This rule applies to itself: keep it here.
 
-- **Commit directly to `master`.** No feature branches — this is a single-user knowledge base, not
-  shared code, and every commit in its history is direct-to-master. Commit only when the user
-  asks; split unrelated changes into separate commits; never push unless asked (local `master` is
-  expected to run ahead of `origin`).
+- **Commit directly to whatever branch is currently checked out.** No feature branches — this is a
+  single-user knowledge base, not shared code. Don't switch branches to commit. Commit only when
+  the user asks; split unrelated changes into separate commits; never push unless asked (the local
+  branch is expected to run ahead of `origin`).
 
 ## Entities
 
