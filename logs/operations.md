@@ -5,6 +5,14 @@ created: 2026-09-08
 updated: 2026-09-08
 ---
 
+## 2026-09-09 11:15 — Correct the commit-branch working agreement
+
+The rule said "commit directly to master," but the repo is actually checked out on `develop`. Fixed
+the agreement to say "commit to whatever branch is currently checked out" instead of naming a
+specific branch, since the point was never pushing/branching, not which branch.
+
+- **Modified:** `CLAUDE.md`
+
 ## 2026-09-09 10:30 — Confirm two guessed resource statuses, put second pass on hold, groom the inbox
 
 Confirmed the two seeded resource statuses the week plan flagged as guesses (both checked out
