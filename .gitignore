@@ -40,6 +40,8 @@
 
 # -----------------------------------------------------------------------------
 
+.obsidian
+
 # Created by https://www.toptal.com/developers/gitignore/api/git,angular,terraform,gradle,maven,jetbrains+all,windows,linux,macos,node,visualstudiocode,zsh,yarn
 # Edit at https://www.toptal.com/developers/gitignore?templates=git,angular,terraform,gradle,maven,jetbrains+all,windows,linux,macos,node,visualstudiocode,zsh,yarn
 
