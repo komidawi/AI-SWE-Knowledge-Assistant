@@ -18,17 +18,18 @@ and move it to `considering`, `accepted` or `dropped`. Nothing stays in `inbox` 
   date in the past.
 - **Duplicates** - near-identical entries, and resources that substantially overlap something
   already `done`.
-- **Schema breaks** - missing or unknown frontmatter fields, statuses outside the vocabulary in
-  `CLAUDE.md`, dates not in ISO form. Resources additionally need `scale:` and `nature:`, both from
-  the vocabularies in `CLAUDE.md`. Do not re-derive the `scale:`/`effort:` bands here - run
+- **Schema, taxonomy and link breaks** - missing/unknown frontmatter fields, statuses outside the
+  vocabulary in `CLAUDE.md`, dates not in ISO form, `topics:`/`stack.yml` ids not present in
+  `taxonomy/topics.yml`, `goals:` ids with no such goal, `[[links]]` pointing at files that don't
+  exist. Do not re-derive any of this by hand - run `node scripts/validate.mjs` and read its
+  output directly. Do not re-derive the `scale:`/`effort:` bands either - run
   `node scripts/dashboard.mjs` and read the disagreements off **Needs attention**.
-- **Taxonomy breaks** - `topics:` values not present in `taxonomy/topics.yml`, and ids in
-  `taxonomy/stack.yml` not present there either; topics defined in the taxonomy, used by nothing and
-  off-stack (candidates for removal).
+- **Taxonomy dead weight** - topics defined in `taxonomy/topics.yml`, used by nothing and
+  off-stack (candidates for removal). `validate.mjs` checks ids resolve; it does not check for
+  unused ones - that still takes reading `topics.yml` against actual usage.
 - **Misfiled** - an entry whose folder doesn't match its primary (first-listed) topic's area per
   `taxonomy/topics.yml` (or isn't in `general/` despite `topics: []`), and area folders that have
   passed ~15 files without the topic-level split described in `CLAUDE.md`.
-- **Broken links** - `[[ids]]` pointing at files that do not exist.
 
 Report findings grouped by category, most consequential first. Propose the specific fix for each,
 then apply the mechanical ones (schema, links, taxonomy) directly. Ask before dropping anything -

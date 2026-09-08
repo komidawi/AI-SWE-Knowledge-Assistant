@@ -188,7 +188,27 @@ The relationship is deliberately **one-way and one-time — promotion, not sync*
 
 Nothing in this repo may depend on Raindrop being reachable. The MCP server is not always
 connected, and every command except `/raindrop-triage` must work without it.
-## Stage B (planned, not built)
+## Stage B (built)
 
-`scripts/` will hold a Node indexer producing `.index/index.json` plus a frontmatter validator.
-The Markdown stays authoritative — the index is a cache and must be rebuildable from scratch.
+`scripts/validate.mjs` checks every entity against its template — required fields, unknown fields,
+controlled vocabularies, ISO dates, `id` = filename, `topics:`/`stack.yml` ids resolving against
+`taxonomy/topics.yml`, `[[links]]` resolving to a real file. Manual command, not wired to any hook:
+
+```bash
+node scripts/validate.mjs
+```
+
+`scripts/index.mjs` writes `.index/index.json`: a frontmatter mirror plus `by_topic`/`by_goal`
+reverse indexes, topics pre-expanded through `taxonomy/topics.yml` alias/parent/area chains.
+Gitignored, disposable, rebuildable from scratch — the Markdown stays authoritative, this is a
+cache. Query it with a small `node`/`jq` snippet against the file; don't read the whole thing into
+a conversation.
+
+```bash
+node scripts/index.mjs
+```
+
+Both share `scripts/lib/entities.mjs` (frontmatter loading, used by `dashboard.mjs` too) and
+`scripts/lib/taxonomy.mjs` (the one hand-rolled parser for `topics.yml`/`stack.yml`'s nested
+shape — deliberately not a general YAML library). See `scripts/README.md` for what's still
+planned (`query.mjs`, `report.mjs`).

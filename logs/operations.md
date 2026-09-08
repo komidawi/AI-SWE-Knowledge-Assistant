@@ -5,6 +5,27 @@ created: 2026-09-08
 updated: 2026-09-08
 ---
 
+## 2026-09-09 13:30 — Build Stage B: frontmatter validator and index
+
+Built the indexer and validator CLAUDE.md had listed as "planned, not built," now that the repo
+has grown to 91 entities. `scripts/validate.mjs` checks every file against its template (required/
+unknown fields, controlled vocab, ISO dates, `id` = filename, `topics:`/`stack.yml`/`goals:` ids
+resolving, `[[links]]` resolving) — manual command, verified clean against the real repo and
+against a deliberately broken smoke-test file (reverted). `scripts/index.mjs` writes
+`.index/index.json` (gitignored, rebuildable) with per-entity frontmatter plus `by_topic`/`by_goal`
+reverse indexes, topics pre-expanded through `taxonomy/topics.yml` alias/parent/area chains.
+Extracted `dashboard.mjs`'s frontmatter-loading helpers into `scripts/lib/entities.mjs` so all
+three scripts share one implementation — confirmed `DASHBOARD.md` output is byte-identical after
+the refactor. Added `scripts/lib/taxonomy.mjs`, the one hand-rolled parser for `topics.yml`'s
+nested shape (no new dependency). Updated `groom.md`'s schema/taxonomy/link-break bullets to point
+at `validate.mjs` instead of describing manual re-derivation, mirroring its existing
+`dashboard.mjs` pointer for scale/effort.
+
+- **Added:** `scripts/validate.mjs`, `scripts/index.mjs`, `scripts/lib/entities.mjs`,
+  `scripts/lib/taxonomy.mjs`
+- **Modified:** `scripts/dashboard.mjs`, `scripts/README.md`, `CLAUDE.md`,
+  `.claude/commands/groom.md`, `DASHBOARD.md` (regenerated)
+
 ## 2026-09-09 12:00 — Capture stack blind spots, fix a real orphan, decide the rest stay
 
 Captured all 9 stack topics that had zero coverage (`sql`, `orm`, `docker`, `observability`, `soap`,

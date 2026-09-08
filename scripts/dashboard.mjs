@@ -6,62 +6,17 @@
 //
 // Reads nothing but the entity files. Writes nothing but DASHBOARD.md.
 
-import {readdirSync, readFileSync, writeFileSync} from 'node:fs'
-import {basename, dirname, join} from 'node:path'
+import {writeFileSync} from 'node:fs'
+import {dirname, join} from 'node:path'
 import {fileURLToPath} from 'node:url'
+import {load as loadEntities, isoDate, isDate, pad} from './lib/entities.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const TODAY = isoDate(new Date())
 const STALE_DAYS = 21
 
-// --- Reading -----------------------------------------------------------------------------------
-
-function walk(dir) {
-    let entries
-    try {
-        entries = readdirSync(join(ROOT, dir), {withFileTypes: true})
-    } catch {
-        return []
-    }
-    return entries.flatMap(e =>
-        e.isDirectory() ? walk(join(dir, e.name))
-            : e.name.endsWith('.md') ? [join(dir, e.name)]
-                : []
-    )
-}
-
 function load(dir) {
-    return walk(dir).map(rel => {
-        const text = readFileSync(join(ROOT, rel), 'utf8')
-        const split = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(text)
-        if (!split) return {rel, id: basename(rel, '.md'), fm: {}, body: text}
-        return {rel, id: basename(rel, '.md'), fm: parseFrontmatter(split[1]), body: split[2]}
-    })
-}
-
-// A deliberately small YAML subset: `key: scalar` and `key: [ a, b ]`. That is all the templates
-// use. Anything more and this should pull in a real parser rather than grow a fake one.
-function parseFrontmatter(block) {
-    const fm = {}
-    for (const line of block.split(/\r?\n/)) {
-        const kv = /^([A-Za-z_][\w-]*):\s*(.*)$/.exec(line)
-        if (kv) fm[kv[1]] = parseValue(kv[2])
-    }
-    return fm
-}
-
-function parseValue(raw) {
-    const value = raw.trim()
-    if (value.startsWith('[') && value.endsWith(']')) {
-        return value.slice(1, -1).split(',').map(item => unquote(item)).filter(Boolean)
-    }
-    return unquote(value)
-}
-
-function unquote(raw) {
-    const value = raw.trim()
-    if (/^"[\s\S]*"$/.test(value) || /^'[\s\S]*'$/.test(value)) return value.slice(1, -1)
-    return value.replace(/\s+#.*$/, '').trim()
+    return loadEntities(ROOT, dir)
 }
 
 // --- Markdown body helpers ---------------------------------------------------------------------
@@ -87,18 +42,6 @@ function stripDate(text) {
 }
 
 // --- Dates -------------------------------------------------------------------------------------
-
-function isoDate(d) {
-    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`
-}
-
-function pad(n) {
-    return String(n).padStart(2, '0')
-}
-
-function isDate(value) {
-    return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)
-}
 
 function daysBetween(from, to) {
     if (!isDate(from) || !isDate(to)) return null

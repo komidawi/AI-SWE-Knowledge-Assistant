@@ -14,29 +14,42 @@ node scripts/dashboard.mjs
 
 Output is derived and rebuildable. Edit the entity files, never `DASHBOARD.md`.
 
-# Stage B — indexer and validator (not built yet)
+**`validate.mjs`** — checks every file against its template: required frontmatter present, no
+unknown fields, statuses/priorities/kinds/scales/natures within the vocabularies in `CLAUDE.md`,
+ISO dates, `id` matching filename, every `topics:`/`stack.yml` value present in
+`taxonomy/topics.yml`, every `goals:` value resolving to a real goal, every `[[link]]` resolving
+to a real file. Manual command — not wired to a hook. Exits non-zero if it finds anything, so it
+*can* be scripted later, but nothing here invokes it for you.
 
-Deliberately deferred. Building query tooling against an empty repository means guessing at the
-queries. Build this once there are ~50–100 real entries and the actual query patterns are visible.
+```bash
+node scripts/validate.mjs
+```
 
-Planned, in order of value:
+**`index.mjs`** — parses all Markdown into `.index/index.json`: per-entity frontmatter, plus
+`by_topic`/`by_goal` reverse indexes with topics pre-expanded through `taxonomy/topics.yml`'s
+alias/parent/area chains (an entity tagged `kubernetes` shows up under `kubernetes`, `docker`
+[its parent] and `devops` [its area]). Rebuildable from scratch, never hand-edited, gitignored.
 
-1. **`validate.mjs`** — the highest-value piece, and the one to write first.
-   Checks every file against its template: required frontmatter present, no unknown fields, statuses
-   within the vocabularies in `CLAUDE.md`, ISO dates, `id` matching filename, every `topics:` value
-   present in `taxonomy/topics.yml`, every `[[link]]` resolving to a real file.
-   Exit non-zero on failure; wire to `.git/hooks/pre-commit`.
+```bash
+node scripts/index.mjs
+```
 
-2. **`index.mjs`** — parses all Markdown into `.index/index.json`: entities with frontmatter,
-   resolved topic closures (topic → parent → area), and a reverse link graph. Rebuildable from
-   scratch, never hand-edited, gitignored.
+**`lib/entities.mjs`** and **`lib/taxonomy.mjs`** — shared helpers `dashboard.mjs`, `validate.mjs`
+and `index.mjs` all import: frontmatter loading (the same deliberately small YAML subset as
+before), and the one hand-rolled parser for `topics.yml`/`stack.yml`'s richer nested shape
+(`{ id, label, aliases: […], parent }` entries) — scoped to exactly that shape, not a general
+YAML library.
 
-3. **`query.mjs <term>`** — alias- and hierarchy-aware search over the index, grouped by entity
-   type. What `/query` does today by reading files, done in milliseconds over thousands of entries.
+## Still planned
 
-4. **`report.mjs`** — derived views worth having once there is history, which `dashboard.mjs`
+1. **`query.mjs <term>`** — alias- and hierarchy-aware search over `.index/index.json`, grouped by
+   entity type. What `/query` does today by reading files and expanding `taxonomy/topics.yml` by
+   hand, done in milliseconds over the index instead. Not yet wired up — `/query` still does its
+   own expansion for now.
+
+2. **`report.mjs`** — derived views worth having once there is history, which `dashboard.mjs`
    deliberately does not attempt: hours planned vs actual over time, topic coverage against active
    goals, completion rates by resource kind. The dashboard is a snapshot; this is the trend.
 
 Node 24 is available locally, with a built-in test runner and `node:sqlite` if the JSON index ever
-outgrows itself. No dependencies needed for any of the above beyond a YAML parser.
+outgrows itself. No dependencies used or needed anywhere above.
