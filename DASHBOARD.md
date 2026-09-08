@@ -97,7 +97,7 @@ _Backlog resources small enough to finish in a gap._
 
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
-| Ideas     | 17    | accepted 1 · considering 15 · dropped 1           |
+| Ideas     | 26    | accepted 1 · considering 24 · dropped 1           |
 | Resources | 61    | backlog 56 · done 1 · in-progress 2 · reference 2 |
 | Goals     | 2     | active 2                                          |
 | Areas     | 2     | —                                                 |

@@ -2,7 +2,7 @@
 id: architecture
 type: area
 title: Architecture & Distributed Systems
-topics: [ system-design, microservices, event-driven, clean-architecture, integration-patterns, distributed-systems ]
+topics: [ system-design, microservices, event-driven, clean-architecture, integration-patterns, distributed-systems, resilience ]
 level: 1
 target_level: 3
 reviewed: 2026-09-07
