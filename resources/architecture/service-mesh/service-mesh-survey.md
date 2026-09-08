@@ -5,6 +5,8 @@ kind: article
 title: "Service mesh in practice (Envoy at Monzo)"
 author: Monzo
 url: https://monzo.com/blog/2019/04/03/deploying-envoy-proxy
+source:
+raindrop_id:
 topics: [ service-mesh, networking ]
 goals: [ ]
 status: backlog

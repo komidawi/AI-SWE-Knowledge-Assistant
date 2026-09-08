@@ -2,14 +2,17 @@
 id: neo4j-graph-databases
 type: idea
 title: Get hands-on with Neo4j / graph databases
-status: inbox
+status: considering
 priority: medium
 topics: [ nosql, databases ]
 goals: [ ]
 resources: [ ]
+url:
+source:
+raindrop_id:
 effort: 6h
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Why

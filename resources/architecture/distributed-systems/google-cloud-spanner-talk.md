@@ -5,6 +5,8 @@ kind: video
 title: "Google Cloud Spanner: Global consistency at scale"
 author: Robert Kubis
 url: https://www.youtube.com/watch?v=iKQhPwbzzxU
+source:
+raindrop_id:
 topics: [ distributed-systems, databases ]
 goals: [ ]
 status: backlog

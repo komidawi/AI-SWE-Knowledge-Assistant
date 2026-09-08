@@ -5,6 +5,8 @@ kind: repo
 title: "API/schema diff tooling (json-schema-diff-validator, openapi-diff)"
 author:
 url: https://www.npmjs.com/package/json-schema-diff-validator
+source:
+raindrop_id:
 topics: [ rest-api, schema-migrations ]
 goals: [ ]
 status: backlog

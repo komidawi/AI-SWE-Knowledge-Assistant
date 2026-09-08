@@ -2,7 +2,7 @@
 id: learn-crdts
 type: idea
 title: Learn CRDTs (Conflict-free Replicated Data Types)
-status: inbox
+status: considering
 priority: medium
 topics: [ distributed-systems ]
 goals: [ ]
@@ -12,7 +12,7 @@ source: manual
 raindrop_id:
 effort: 4h
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Why

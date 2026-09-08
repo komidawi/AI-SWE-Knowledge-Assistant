@@ -5,6 +5,8 @@ kind: book
 title: Designing Event-Driven Systems
 author: Ben Stopford
 url: https://www.confluent.io/designing-event-driven-systems/
+source:
+raindrop_id:
 topics: [ event-driven, streaming, microservices, integration-patterns ]
 goals: [ ]
 status: in-progress

@@ -5,6 +5,8 @@ kind: docs
 title: "microservices.io — Pattern Catalogue"
 author: Chris Richardson
 url: https://microservices.io/patterns/
+source:
+raindrop_id:
 topics: [ microservices, event-driven, integration-patterns, distributed-systems ]
 goals: [ interview-gap-coverage ]
 status: reference

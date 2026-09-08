@@ -2,17 +2,17 @@
 id: learn-c4-model
 type: idea
 title: Learn and apply the C4 model for architecture diagrams
-status: inbox
+status: accepted
 priority: medium
 topics: [ system-design ]
-goals: [ ]
+goals: [ system-design-fluency ]
 resources: [ software-architecture-for-developers ]
 url:
 source: manual
 raindrop_id:
 effort: 3h
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Why

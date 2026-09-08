@@ -2,7 +2,7 @@
 id: build-food-rating-app
 type: idea
 title: Build or find an app that rates a food product's healthiness from its label
-status: inbox
+status: considering
 priority: high
 topics: [ ai-tooling ]
 goals: [ ]
@@ -12,7 +12,7 @@ source: manual
 raindrop_id:
 effort: 6h
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Why

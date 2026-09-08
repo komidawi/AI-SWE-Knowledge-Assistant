@@ -5,6 +5,8 @@ kind: book
 title: "REST in Practice"
 author: Jim Webber, Savas Parastatidis, Ian Robinson
 url:
+source:
+raindrop_id:
 topics: [ rest-api ]
 goals: [ ]
 status: backlog

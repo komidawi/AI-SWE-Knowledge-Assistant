@@ -5,6 +5,8 @@ kind: article
 title: "Netflix System Design — Backend Architecture"
 author: gbengelebs
 url: https://dev.to/gbengelebs/netflix-system-design-backend-architecture-10i3
+source:
+raindrop_id:
 topics: [ system-design ]
 goals: [ ]
 status: backlog

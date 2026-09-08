@@ -5,6 +5,8 @@ kind: course
 title: "MongoDB for SQL Professionals"
 author: MongoDB University
 url: https://learn.mongodb.com/learning-paths/mongodb-for-sql-professionals
+source:
+raindrop_id:
 topics: [ nosql, databases ]
 goals: [ ]
 status: backlog

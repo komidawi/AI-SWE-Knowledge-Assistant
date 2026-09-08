@@ -5,6 +5,8 @@ kind: book
 title: "Thinking, Fast and Slow"
 author: Daniel Kahneman
 url:
+source:
+raindrop_id:
 topics: [ ]
 goals: [ ]
 status: backlog

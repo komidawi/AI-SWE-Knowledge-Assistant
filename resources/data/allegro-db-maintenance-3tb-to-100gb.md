@@ -5,6 +5,8 @@ kind: article
 title: "From 3TB to 100GB: A Cost-Saving Journey in Database Maintenance"
 author: Allegro Tech
 url: https://blog.allegro.tech/2023/07/save-money-on-large-database.html
+source:
+raindrop_id:
 topics: [ databases, performance ]
 goals: [ ]
 status: backlog

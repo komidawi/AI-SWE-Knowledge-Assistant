@@ -5,6 +5,8 @@ kind: book
 title: "Crucial Conversations: Tools for Talking When Stakes are High"
 author: Kerry Patterson et al.
 url:
+source:
+raindrop_id:
 topics: [ communication ]
 goals: [ ]
 status: backlog

@@ -7,6 +7,9 @@ priority: medium
 topics: [ interviewing, communication ]
 goals: [ ]
 resources: [ ]
+url:
+source:
+raindrop_id:
 effort: 8h
 created: 2026-09-08
 updated: 2026-09-08

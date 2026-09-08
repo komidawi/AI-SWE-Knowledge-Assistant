@@ -2,14 +2,17 @@
 id: rest-api-etag-caching
 type: idea
 title: Apply ETag caching to a REST API
-status: inbox
+status: considering
 priority: medium
 topics: [ rest-api, caching ]
 goals: [ ]
 resources: [ ]
+url:
+source:
+raindrop_id:
 effort: 4h
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Why

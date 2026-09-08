@@ -5,6 +5,8 @@ kind: book
 title: "Patterns of Enterprise Application Architecture"
 author: Martin Fowler
 url:
+source:
+raindrop_id:
 topics: [ design-patterns, system-design ]
 goals: [ ]
 status: backlog

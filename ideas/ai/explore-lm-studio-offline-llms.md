@@ -2,7 +2,7 @@
 id: explore-lm-studio-offline-llms
 type: idea
 title: Try LM Studio for running LLMs locally/offline
-status: inbox
+status: considering
 priority: medium
 topics: [ ai-tooling, llm ]
 goals: [ ]
@@ -12,7 +12,7 @@ source: manual
 raindrop_id:
 effort: 2h
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Why

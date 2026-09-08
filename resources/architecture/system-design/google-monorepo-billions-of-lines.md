@@ -5,6 +5,8 @@ kind: article
 title: "Why Google Stores Billions of Lines of Code in a Single Repository"
 author: Rachel Potvin, Josh Levenberg
 url: https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext
+source:
+raindrop_id:
 topics: [ system-design ]
 goals: [ ]
 status: backlog

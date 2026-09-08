@@ -5,6 +5,24 @@ created: 2026-09-08
 updated: 2026-09-08
 ---
 
+## 2026-09-09 10:30 — Confirm two guessed resource statuses, put second pass on hold, groom the inbox
+
+Confirmed the two seeded resource statuses the week plan flagged as guesses (both checked out
+correct on inspection). Put `[[second-pass-on-architecture-books]]` on hold per user decision
+(revisit after the job search). Ran `/groom`: triaged all 15 inbox ideas (11 → `considering`, 1
+`learn-c4-model` → `accepted` and linked to `[[system-design-fluency]]`, 1
+`kali-linux-ethical-hacking` → `dropped` per user), fixed a repo-wide schema gap where 37 resources
+and 10 ideas were missing the templated `source:`/`raindrop_id:` fields entirely, and confirmed no
+broken links, misfiled entries, or duplicate titles. Flagged (not yet actioned): 9 stack topics with
+zero coverage anywhere, and ~12 orphan resources/ideas with empty `goals:` and no stack/goal/area tie.
+
+- **Modified:** `resources/architecture/integration-patterns/enterprise-integration-patterns.md`,
+  `resources/architecture/microservices/monolith-to-microservices.md` (status confirmed, uncertainty
+  note removed), 37 resource files (added missing `source:`/`raindrop_id:` fields), 15 idea files
+  under `ideas/` (triage status + schema fields), `ideas/architecture/second-pass-on-architecture-books.md`
+  (on-hold note + schema fields), `ideas/career/interview-story-bank.md` (schema fields),
+  `planning/2026/2026-W37.md` (checked off second-pass decision), `DASHBOARD.md` (regenerated)
+
 ## 2026-09-09 00:05 — Add Stop hook enforcing the operations log convention
 
 Added a `.claude/settings.json` Stop hook that flags when tracked/untracked repo files changed

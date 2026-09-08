@@ -5,6 +5,8 @@ kind: book
 title: "Software Architecture for Developers"
 author: Simon Brown
 url: https://leanpub.com/software-architecture-for-developers
+source:
+raindrop_id:
 topics: [ system-design ]
 goals: [ ]
 status: backlog

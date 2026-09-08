@@ -5,6 +5,8 @@ kind: book
 title: "Deep Work: Rules for Focused Success in a Distracted World"
 author: Cal Newport
 url: https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692
+source:
+raindrop_id:
 topics: [ productivity ]
 goals: [ ]
 status: backlog

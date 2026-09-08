@@ -5,6 +5,8 @@ kind: book
 title: "Building Microservices, 2nd Edition"
 author: Sam Newman
 url: https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/
+source:
+raindrop_id:
 topics: [ microservices, system-design, distributed-systems, resilience ]
 goals: [ ]
 status: in-progress

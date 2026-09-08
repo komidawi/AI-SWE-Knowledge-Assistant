@@ -2,7 +2,7 @@
 id: apply-strangler-fig-pattern
 type: idea
 title: Apply the Strangler Fig pattern to a legacy component
-status: inbox
+status: considering
 priority: medium
 topics: [ refactoring, microservices ]
 goals: [ ]
@@ -12,7 +12,7 @@ source: manual
 raindrop_id:
 effort: 4h
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Why

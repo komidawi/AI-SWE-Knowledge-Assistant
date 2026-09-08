@@ -5,6 +5,8 @@ kind: article
 title: "Programming with Result: Combining and Composing Results"
 author: The Kotlin Primer
 url: https://medium.com/the-kotlin-primer/programming-with-result-combining-and-composing-results-2a56ea3a890c
+source:
+raindrop_id:
 topics: [ kotlin ]
 goals: [ ]
 status: backlog
