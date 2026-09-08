@@ -5,6 +5,24 @@ created: 2026-09-08
 updated: 2026-09-08
 ---
 
+## 2026-09-09 12:00 — Capture stack blind spots, fix a real orphan, decide the rest stay
+
+Captured all 9 stack topics that had zero coverage (`sql`, `orm`, `docker`, `observability`, `soap`,
+`messaging`, `typescript`, `angular`, `html-css`) as new ideas in `considering`, each a concrete
+learnable thing rather than a vague "learn X". Added `resilience` to the `[[architecture]]` area's
+`topics:` — it was already treated as a queued gap in `[[interviewing]]`'s body text but missing from
+any area's frontmatter, which is what made `[[calculus-of-service-availability]]` and `[[release-it]]`
+look like orphans. Asked about dropping the remaining 10 career/quality orphans (off-stack, off-goal,
+but not junk); user said keep all of them as-is — no goal or stack currently claims them, and that's
+fine.
+
+- **Added:** `ideas/languages/sql-window-functions-and-query-plans.md`,
+  `ideas/data/orm-fundamentals.md`, `ideas/devops/docker-hands-on.md`,
+  `ideas/devops/observability-fundamentals.md`, `ideas/backend/soap-ws-basics.md`,
+  `ideas/architecture/message-broker-end-to-end.md`, `ideas/languages/typescript-hands-on.md`,
+  `ideas/frontend/angular-fundamentals.md`, `ideas/frontend/html-css-refresh.md`
+- **Modified:** `areas/architecture.md`, `DASHBOARD.md` (regenerated)
+
 ## 2026-09-09 11:15 — Correct the commit-branch working agreement
 
 The rule said "commit directly to master," but the repo is actually checked out on `develop`. Fixed
