@@ -21,20 +21,24 @@ What was shipped, debugged or taught. No evidence → level 2 at most.
 
 ### Gaps
 
-The gap ledger. One row per term, three states only:
+The gap ledger. One row per term, a 6-point confidence scale:
 
-| State         | Means                                                                 |
-|---------------|------------------------------------------------------------------------|
-| `cold`        | Explain unprompted, name the tradeoff, say when *not* to use it        |
-| `heard-of`    | Recognise the name, cannot use it. **The dangerous one — feels like knowing** |
-| `never-heard` | Genuinely new                                                          |
+| # | State     | Means                                                                          |
+|---|-----------|---------------------------------------------------------------------------------|
+| 1 | `none`    | Genuinely new                                                                  |
+| 2 | `minimal` | Recognise the name, cannot use it. **The dangerous one — feels like knowing** |
+| 3 | `basic`   | Rough idea of what it does, cannot state the tradeoff or when *not* to use it  |
+| 4 | `mid`     | Can explain with effort; tradeoff or the "when not" is incomplete             |
+| 5 | `high`    | Explain unprompted, name the tradeoff, say when *not* to use it               |
+| 6 | `highest` | Same as `high`, confirmed by surviving the closed-notes re-test               |
 
-`cold` is only reached by surviving the closed-notes re-test, never on the day it was written.
+`highest` is only reached by surviving the closed-notes re-test, never on the day it was written —
+the ceiling on write-up day is `high`.
 
 | Term                            | State      | Class    | Found       | Written up |
 |---------------------------------|------------|----------|-------------|------------|
-| Outbox Pattern                  | `heard-of` | label    | `interview` | yes        |
-| Browser cannot listen on a port | `heard-of` | boundary | `interview` | yes        |
+| Outbox Pattern                  | `high`     | label    | `interview` | yes        |
+| Browser cannot listen on a port | `high`     | boundary | `interview` | yes        |
 
 Class: `label` (mechanism held, name missing) · `node` (never encountered) · `boundary` (what a
 runtime cannot do). Found: `interview` · `sweep` · `self`.

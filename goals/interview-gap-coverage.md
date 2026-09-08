@@ -34,7 +34,7 @@ Behavioral is **out of scope**, parked as `[[interview-story-bank]]`, so this go
 
 ## Success criteria
 
-- [ ] Gap ledger in `[[interviewing]]`: every term marked `cold` / `heard-of` / `never-heard`, none left unmarked
+- [ ] Gap ledger in `[[interviewing]]`: every term marked on the confidence scale (`none`..`highest`), none left unmarked
 - [ ] Messaging & distributed patterns swept end to end against `[[microservices-io-pattern-catalogue]]` and `[[enterprise-integration-patterns]]` headings; every term of both in the ledger
 - [ ] Runtime boundary checklist for at least 4 runtimes (browser, JVM process, container, serverless), each entry naming the mechanism, not just the rule
 - [ ] Every `never-heard` / `heard-of` term written up in my own words: what it is, the problem it solves, what breaks without it, and **the nearest thing I already knew**
