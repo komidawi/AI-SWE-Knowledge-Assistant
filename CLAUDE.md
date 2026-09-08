@@ -31,6 +31,11 @@ rebuilt with `node scripts/dashboard.mjs`; rerun it after any change that would 
    separately so `rg` can find a bucket without tooling; `node scripts/dashboard.mjs` flags any
    disagreement under **Needs attention**. New values for any vocabulary below go in, in the same
    change — the discipline rule 3 imposes on topics applies to every controlled field.
+8. **Be terse.** Every file here is read fast and re-read often. Write the shortest text that
+   carries the information: bullets and tables over prose, no preamble, no restating the question,
+   no filler caveats. Assessment notes are 1-3 sentences, not paragraphs. This is a hard rule, not
+   a style suggestion — a verbose entry is as much a bug as a missing field. It applies to chat
+   answers too.
 
 ## Vocabularies
 
@@ -97,6 +102,8 @@ what is being aimed at right now.
 - Prefer one specific entry over one vague entry. "Learn Kafka consumer-group rebalancing" beats
   "Learn Kafka".
 - New topics go into `taxonomy/topics.yml` under the right area, with aliases people actually type.
+- Keep the body short (rule 8). Notes exist to remind, not to explain — if it takes a paragraph,
+  the entry is probably two entries.
 
 ## External capture (Raindrop)
 

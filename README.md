@@ -83,6 +83,12 @@ Expand aliases through `taxonomy/topics.yml` first — a raw search for "k8s" wi
 `ES6`) and quietly break every query afterwards. Missing topic? Add it to the
 taxonomy in the same change.
 
+## House style
+
+**Terse by default.** Entries, assessments, plans and retros are written to be re-read in seconds:
+bullets and tables over prose, no preamble, no filler. A verbose entry is a bug — see hard rule 8
+in `CLAUDE.md`.
+
 ## Stage B
 
 `scripts/` will also hold a Node indexer that builds `.index/index.json` from the Markdown, plus a
