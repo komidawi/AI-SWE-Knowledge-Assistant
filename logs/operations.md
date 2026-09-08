@@ -5,6 +5,13 @@ created: 2026-09-08
 updated: 2026-09-08
 ---
 
+## 2026-09-08 23:55 — Add Working agreements section to CLAUDE.md
+
+Established that principles/rules/agreements/ways of operating are sourced from `CLAUDE.md` (not
+chat or AI memory), per user request. Moved the commit-directly-to-master rule in from memory.
+
+- **Modified:** `CLAUDE.md`
+
 ## 2026-09-08 23:39 — Add self-reported operation log convention
 
 Stood up `logs/operations.md` as the running, self-reported record of file-modifying operations,

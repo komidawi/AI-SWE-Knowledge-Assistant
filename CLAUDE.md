@@ -5,6 +5,18 @@ Markdown files under the entity folders are the **single source of truth**. `DAS
 anything under `.index/` are generated and disposable — never hand-edit them. `DASHBOARD.md` is
 rebuilt with `node scripts/dashboard.mjs`; rerun it after any change that would move the numbers.
 
+## Working agreements
+
+This file is the source of truth for how to work in this repo — principles, rules, agreements,
+ways of operating. Whenever one is established (by the user or discovered while working), write
+it here (or into the relevant file, e.g. a template or taxonomy file), not only into chat or an
+AI's private memory. This rule applies to itself: keep it here.
+
+- **Commit directly to `master`.** No feature branches — this is a single-user knowledge base, not
+  shared code, and every commit in its history is direct-to-master. Commit only when the user
+  asks; split unrelated changes into separate commits; never push unless asked (local `master` is
+  expected to run ahead of `origin`).
+
 ## Entities
 
 | Folder       | Entity   | What it holds                                                                         |
