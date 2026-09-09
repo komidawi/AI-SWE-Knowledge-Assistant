@@ -2,8 +2,18 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
+
+## 2026-09-09 14:20 — Process the gap-ledger checklist into the ledger
+
+The checklist is fully marked (F was the last part), so all 216 terms moved into the gap ledger in
+`[[interviewing]]` as tables grouped by source part, plus counts and the 87-term write-up queue.
+State only — class is left for write-up time, since confidence does not say whether the mechanism
+is held. Sweep milestones ticked in the goal and plans; the sweeps landed ~5 weeks early, so the
+goal's capacity check now flags that the unsized write-ups are the whole remaining cost.
+
+- **Modified:** `areas/interviewing.md`, `goals/interview-gap-coverage.md`, `planning/2026/2026-09.md`, `planning/2026/2026-W37.md`, `scratch/gap-ledger-checklist.md`, `DASHBOARD.md`
 
 ## 2026-09-09 13:30 — Build Stage B: frontmatter validator and index
 

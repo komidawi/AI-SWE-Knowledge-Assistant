@@ -3,7 +3,7 @@
 
 # Dashboard
 
-`2026-09-09` · 2 active goal(s) · 2 in flight · 0 in inbox · `2026-W37` 2/8 done
+`2026-09-09` · 2 active goal(s) · 2 in flight · 0 in inbox · `2026-W37` 3/8 done
 
 ## Right now
 
@@ -17,18 +17,18 @@ _None._
 
 | Goal                       | Status   | Target       | Weeks left | Milestones | Criteria | h/wk |
 |----------------------------|----------|--------------|------------|------------|----------|------|
-| [[interview-gap-coverage]] | `active` | `2026-10-11` | 5          | 0/5        | 0/7      | 4    |
+| [[interview-gap-coverage]] | `active` | `2026-10-11` | 5          | 1/5        | 2/7      | 4    |
 | [[system-design-fluency]]  | `active` | `2026-12-13` | 14         | 0/5        | 0/4      | 4    |
 
 ### Next milestones
 
-| Due          | In  | Goal                       | Milestone                                                                                                                     |
-|--------------|-----|----------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `2026-09-13` | 4d  | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) |
-| `2026-09-20` | 11d | [[interview-gap-coverage]] | Messaging sweep 1: `[[microservices-io-pattern-catalogue]]` marked end to end, no skipping the obvious (~4h)                  |
-| `2026-09-27` | 18d | [[interview-gap-coverage]] | Messaging sweep 2: `[[enterprise-integration-patterns]]` headings marked; all unknowns from both sweeps written up (~4h)      |
-| `2026-09-27` | 18d | [[system-design-fluency]]  | Part 1: Orientation, Foundations, Thinking in Scale (~8h)                                                                     |
-| `2026-10-04` | 25d | [[interview-gap-coverage]] | Runtime boundary sweep: browser, JVM process, container, serverless; findings written up (~4h)                                |
+| Due          | In  | Goal                       | Milestone                                                                                                                                                           |
+|--------------|-----|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2026-09-13` | 4d  | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h)                                       |
+| `2026-09-27` | 18d | [[interview-gap-coverage]] | Messaging sweep 2: `[[enterprise-integration-patterns]]` headings marked; all unknowns from both sweeps written up (~4h) — marked 2026-09-09, write-ups outstanding |
+| `2026-09-27` | 18d | [[system-design-fluency]]  | Part 1: Orientation, Foundations, Thinking in Scale (~8h)                                                                                                           |
+| `2026-10-04` | 25d | [[interview-gap-coverage]] | Runtime boundary sweep: browser, JVM process, container, serverless; findings written up (~4h) — marked 2026-09-09, write-ups outstanding                           |
+| `2026-10-11` | 32d | [[interview-gap-coverage]] | Cold re-test on everything written before 2026-09-27; `[[interviewing]]` re-assessed; next two sweeps chosen (~3h)                                                  |
 
 ## In flight
 
@@ -68,7 +68,7 @@ _Backlog resources small enough to finish in a gap._
 
 ## This week — `2026-W37`
 
-2/8 committed done · capacity `8h` · `2026-09-07` → `2026-09-13`
+3/8 committed done · capacity `8h` · `2026-09-07` → `2026-09-13`
 
 - [x] (1h) — replace the example goal with `[[system-design-fluency]]`
 - [ ] (1h) — `[[hello-interview-system-design-course]]` module 01 Orientation + start 02 Foundations
@@ -77,7 +77,7 @@ _Backlog resources small enough to finish in a gap._
 - [x] (0.5h) — decide `[[second-pass-on-architecture-books]]`: finish or drop — decided: on hold until job search is over
 - [ ] (1h) — seed the gap ledger in `[[interviewing]]` from recall of past interviews
 - [ ] (1h) — rewrite the two seed entries in `[[interviewing]]` (Outbox, browser-cannot-listen) in my own words — they were drafted for me, which does not count as knowing them
-- [ ] (2h) — `[[microservices-io-pattern-catalogue]]`: mark the index end to end, `cold` only where the tradeoff can be said out loud without opening the page
+- [x] (2h) — `[[microservices-io-pattern-catalogue]]`: mark the index end to end, `cold` only where the tradeoff can be said out loud without opening the page — plus B-F, 216 terms total
 
 ## Areas
 

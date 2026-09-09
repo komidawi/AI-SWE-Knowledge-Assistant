@@ -10,7 +10,7 @@ topics: [ interviewing, integration-patterns, event-driven, distributed-systems,
 priority: high
 weekly_hours: 4
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Why this matters
@@ -34,8 +34,8 @@ Behavioral is **out of scope**, parked as `[[interview-story-bank]]`, so this go
 
 ## Success criteria
 
-- [ ] Gap ledger in `[[interviewing]]`: every term marked on the confidence scale (`none`..`highest`), none left unmarked
-- [ ] Messaging & distributed patterns swept end to end against `[[microservices-io-pattern-catalogue]]` and `[[enterprise-integration-patterns]]` headings; every term of both in the ledger
+- [x] Gap ledger in `[[interviewing]]`: every term marked on the confidence scale (`none`..`highest`), none left unmarked
+- [x] Messaging & distributed patterns swept end to end against `[[microservices-io-pattern-catalogue]]` and `[[enterprise-integration-patterns]]` headings; every term of both in the ledger
 - [ ] Runtime boundary checklist for at least 4 runtimes (browser, JVM process, container, serverless), each entry naming the mechanism, not just the rule
 - [ ] Every `never-heard` / `heard-of` term written up in my own words: what it is, the problem it solves, what breaks without it, and **the nearest thing I already knew**
 - [ ] Cold re-test at least 14 days after writing, notes closed. Anything missed drops to `heard-of` and is rewritten
@@ -45,12 +45,16 @@ Behavioral is **out of scope**, parked as `[[interview-story-bank]]`, so this go
 ## Milestones
 
 - [ ] `2026-09-13` — Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h)
-- [ ] `2026-09-20` — Messaging sweep 1: `[[microservices-io-pattern-catalogue]]` marked end to end, no skipping the obvious (~4h)
-- [ ] `2026-09-27` — Messaging sweep 2: `[[enterprise-integration-patterns]]` headings marked; all unknowns from both sweeps written up (~4h)
-- [ ] `2026-10-04` — Runtime boundary sweep: browser, JVM process, container, serverless; findings written up (~4h)
+- [x] `2026-09-20` — Messaging sweep 1: `[[microservices-io-pattern-catalogue]]` marked end to end, no skipping the obvious (~4h) — done 2026-09-09
+- [ ] `2026-09-27` — Messaging sweep 2: `[[enterprise-integration-patterns]]` headings marked; all unknowns from both sweeps written up (~4h) — marked 2026-09-09, write-ups outstanding
+- [ ] `2026-10-04` — Runtime boundary sweep: browser, JVM process, container, serverless; findings written up (~4h) — marked 2026-09-09, write-ups outstanding
 - [ ] `2026-10-11` — Cold re-test on everything written before 2026-09-27; `[[interviewing]]` re-assessed; next two sweeps chosen (~3h)
 
 ## Capacity check
+
+Re-check 2026-09-09: all six sweeps marked in one pass, ~5 weeks early. The 87 `none`/`minimal`
+write-ups are now the whole remaining cost and were never sized — the ~18h below assumed sweeping
+dominated. Re-size at the W37 retro.
 
 ~18h · `weekly_hours` 4 × 5 weeks = 20h · **fits, ~2h slack.** Thin knowingly: the sweeps are
 predictable, the volume of unknowns they surface is not. Overflow carries as write-ups into a second
