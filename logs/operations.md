@@ -5,6 +5,14 @@ created: 2026-09-08
 updated: 2026-09-09
 ---
 
+## 2026-09-09 14:40 — Mirror the operations-log Stop hook for Codex
+
+`.codex/hooks.json` was staged but uncommitted, which kept the Stop hook firing every turn. It is
+byte-identical to `.claude/settings.json`, so Codex enforces the same log convention Claude does —
+consistent with `AGENTS.md` pointing at `CLAUDE.md` as the single source of truth.
+
+- **Added:** `.codex/hooks.json`
+
 ## 2026-09-09 14:20 — Process the gap-ledger checklist into the ledger
 
 The checklist is fully marked (F was the last part), so all 216 terms moved into the gap ledger in
