@@ -2,8 +2,26 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-09-09
+updated: 2026-09-11
 ---
+
+## 2026-09-11 00:10 — Capture two more learning-gap ideas (Idempotency, UUID vs ID)
+
+Idempotency is tied to `[[interview-gap-coverage]]` as a depth gap — the ledger already has it at
+`basic`/`mid`, not `none`/`minimal`. UUID vs sequential ID is an unattached schema-design decision.
+
+- **Added:** `ideas/architecture/idempotency.md`, `ideas/data/uuid-vs-sequential-id.md`
+- **Modified:** `taxonomy/topics.yml` (added `idempotency`; added `uuid`/`primary-key` aliases to `data-modeling`)
+
+## 2026-09-11 00:00 — Capture four learning-gap ideas (OSGi, ODS, Canonical Data Model, Java version features)
+
+Four named-concept gaps the user flagged were captured as ideas, with new taxonomy topics added
+for the three that had no existing id. `canonical-data-model` ties into `[[interview-gap-coverage]]`
+since it's an EIP-family pattern that goal is already sweeping; the other three are unattached.
+
+- **Added:** `ideas/languages/osgi.md`, `ideas/data/operational-data-store.md`,
+  `ideas/architecture/canonical-data-model.md`, `ideas/languages/java-version-features-in-daily-use.md`
+- **Modified:** `taxonomy/topics.yml` (added `osgi`, `operational-data-store`, `canonical-data-model`)
 
 ## 2026-09-09 14:40 — Mirror the operations-log Stop hook for Codex
 
