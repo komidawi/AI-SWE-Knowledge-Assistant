@@ -3,7 +3,7 @@
 
 # Dashboard
 
-`2026-09-15` · 2 active goal(s) · 3 in flight · 6 in inbox · `2026-W38` 0/0 done
+`2026-09-15` · 2 active goal(s) · 3 in flight · 6 in inbox · `W38(14-20.09)` 0/0 done
 
 ## Right now
 
@@ -15,7 +15,7 @@
 |--------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Milestone slipped `2026-09-13` | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) — **slipped**: ledger done, recall pass and rewrites not started |
 | 6 untriaged ideas              | `ideas/`                   | Run `/groom` — inbox items are invisible to planning                                                                                                                                           |
-| No plan for 2026-W38           | `planning/`                | Run `/plan-week`                                                                                                                                                                               |
+| No plan for W38(14-20.09)      | `planning/`                | Run `/plan-week`                                                                                                                                                                               |
 
 ## Goals
 
@@ -71,7 +71,7 @@ _Backlog resources small enough to finish in a gap._
 | [[boolean-blindness]]                   | snack | 15m    | perspective | low      |
 | [[fowler-value-object]]                 | snack | 10m    | core        | low      |
 
-## This week — `2026-W38`
+## This week — `W38(14-20.09)`
 
 _No week file. Run `/plan-week`._
 

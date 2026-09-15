@@ -60,7 +60,8 @@ One to three sentences on what and why.
 3. **`topics:` takes only ids from `taxonomy/topics.yml`** — never labels, aliases or free text.
    Missing topic → add it to the taxonomy in the same change.
 4. **Cross-reference with wiki links by id**: `[[ddia]]`, `[[system-design-fluency]]`.
-5. **Dates are ISO `YYYY-MM-DD`.** Never relative.
+5. **Dates are ISO `YYYY-MM-DD`.** Never relative. A week in text is written with its days:
+   `W37(07-13.09)`, across months `W40(28.09-04.10)`. Ids, links and frontmatter stay `2026-W37`.
 6. **Append assessments, never overwrite.** Each is a dated `### Assessment YYYY-MM-DD` block.
 7. **`scale:` must agree with `effort:`** (bucket vs number; `dashboard.mjs` flags mismatches).
    New values for any controlled vocabulary are added in the same change, as rule 3 does for topics.

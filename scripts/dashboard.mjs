@@ -56,6 +56,17 @@ function isoWeekId(date) {
     return `${d.getUTCFullYear()}-W${pad(week)}`
 }
 
+// Display form, e.g. `W37(07-13.09)`, `W40(28.09-04.10)` — see CLAUDE.md rule 5.
+function weekLabel(date) {
+    const mon = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()))
+    mon.setUTCDate(mon.getUTCDate() + 1 - (mon.getUTCDay() || 7))
+    const sun = new Date(mon)
+    sun.setUTCDate(mon.getUTCDate() + 6)
+    const dm = x => `${pad(x.getUTCDate())}.${pad(x.getUTCMonth() + 1)}`
+    const from = mon.getUTCMonth() === sun.getUTCMonth() ? pad(mon.getUTCDate()) : dm(mon)
+    return `${isoWeekId(date).slice(5)}(${from}-${dm(sun)})`
+}
+
 function age(date) {
     const days = daysBetween(date, TODAY)
     if (days === null) return '?'
@@ -146,6 +157,7 @@ const misScaled = resources
 const unclassified = resources.filter(r => !r.fm.scale || !r.fm.nature)
 
 const weekId = isoWeekId(new Date())
+const weekText = weekLabel(new Date())
 const week = plans.find(p => p.id === weekId)
 const committed = week ? tasks(section(week.body, 'Committed')) : []
 const weekDone = committed.filter(t => t.done).length
@@ -230,7 +242,7 @@ if (inbox.length > 4) {
 
 if (!week) {
     attention.push({
-        what: `No plan for ${weekId}`,
+        what: `No plan for ${weekText}`,
         where: '`planning/`',
         why: 'Run `/plan-week`'
     })
@@ -263,7 +275,7 @@ out.push('')
 out.push('# Dashboard')
 out.push('')
 out.push(`\`${TODAY}\` · ${activeGoals.length} active goal(s) · ${inFlight.length} in flight`
-    + ` · ${inbox.length} in inbox · \`${weekId}\` ${weekDone}/${committed.length} done`)
+    + ` · ${inbox.length} in inbox · \`${weekText}\` ${weekDone}/${committed.length} done`)
 out.push('')
 
 out.push('## Right now')
@@ -342,7 +354,7 @@ out.push(table(
     ])
 ))
 
-out.push(`## This week — \`${weekId}\``)
+out.push(`## This week — \`${weekText}\``)
 out.push('')
 if (!week) {
     out.push('_No week file. Run `/plan-week`._')

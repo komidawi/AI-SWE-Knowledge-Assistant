@@ -16,7 +16,7 @@ At most two themes. A month with five priorities has none.
 
 ## Weeks
 
-- `[[YYYY-Www]]`
+- `[[YYYY-Www]]` Www(DD-DD.MM)
 
 ## Retro
 

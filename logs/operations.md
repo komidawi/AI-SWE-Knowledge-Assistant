@@ -5,6 +5,13 @@ created: 2026-09-08
 updated: 2026-09-15
 ---
 
+## 2026-09-15 13:20 — Show weeks with their day range
+
+Weeks in text now read `W37(07-13.09)`, and `W40(28.09-04.10)` when a week spans two months. Ids,
+links and frontmatter stay `2026-W37`. `dashboard.mjs` generates the label.
+
+- **Modified:** `CLAUDE.md`, `scripts/dashboard.mjs`, `templates/month.md`, `planning/2026/2026-09.md`, `goals/interview-gap-coverage.md`, `DASHBOARD.md`
+
 ## 2026-09-15 13:00 — Review week W37
 
 Filled the W37 retro from the user's answers. Course moved to `in-progress`. The goal's

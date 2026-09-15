@@ -54,10 +54,10 @@ Behavioral is **out of scope** (`[[interview-story-bank]]`).
 sweeps dominated.
 
 - `2026-09-09` — all six sweeps marked, ~5 weeks early. The 87 `none`/`minimal` write-ups are now
-  the whole cost and unsized. Re-size at the W37 retro.
-- `2026-09-15` — W37 re-size: 0 write-ups done, so no measured rate. Guess 87 × 10–15m ≈ 15–22h,
+  the whole cost and unsized. Re-size at the W37(07-13.09) retro.
+- `2026-09-15` — W37(07-13.09) re-size: 0 write-ups done, so no measured rate. Guess 87 × 10–15m ≈ 15–22h,
   plus recall pass and re-test ≈ 20–27h. Left to target: 4 × 4h = 16h. **Does not fit.** Time
-  the first two write-ups in W38, then move dates or split the queue.
+  the first two write-ups in W38(14-20.09), then move dates or split the queue.
 - Overflow carries into a second month as write-ups. Never leave a sweep half-marked — it looks done.
 - Live goals total 8h/week. If observed hours come in lower, dates move; criteria don't weaken.
 
