@@ -5,6 +5,12 @@ created: 2026-09-08
 updated: 2026-09-15
 ---
 
+## 2026-09-15 22:30 — Second-pass books back to `backlog`
+
+`building-microservices` and `designing-event-driven-systems` were `in-progress` only because a second pass was owed; no goal, no scope. Moved to `backlog` until planned.
+
+- **Modified:** `resources/architecture/microservices/building-microservices.md`, `resources/architecture/event-driven/designing-event-driven-systems.md`, `README.md`, `system/assets/dashboard/*.svg`
+
 ## 2026-09-15 22:00 — Defer `interview-gap-coverage`
 
 Goal `active` → `on-hold` (new goal status); resume after `hello-interview-system-design-course`. Pulled from year/month/W38 plans; its 3h of W38 write-ups cut. Dashboard: only active goals' milestones slip or show as next; on-hold goals not shown (dashboard is current work only).

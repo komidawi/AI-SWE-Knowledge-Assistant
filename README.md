@@ -8,7 +8,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
-  <img src="system/assets/dashboard/kpi-light.svg" alt="1 active goals, 3 in flight, 1 needing attention, week 0/2 done">
+  <img src="system/assets/dashboard/kpi-light.svg" alt="1 active goals, 1 in flight, 1 needing attention, week 0/2 done">
 </picture>
 
 > [!WARNING]
@@ -44,8 +44,6 @@
 
 | Resource                                                                                                                | Kind   | Progress                                                                | Effort | Priority | Updated |
 |-------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------|--------|----------|---------|
-| [designing-event-driven-systems](kb/resources/architecture/event-driven/designing-event-driven-systems.md)              | book   | first pass done, second pass pending                                    | 10h    | high     | 8d ago  |
-| [building-microservices](kb/resources/architecture/microservices/building-microservices.md)                             | book   | first pass done, second pass pending                                    | 20h    | high     | 8d ago  |
 | [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | 01 done; 02: Networking, API Design, Data Modeling done — Indexing next | 31h    | high     | today   |
 
 ## 📈 Areas
@@ -98,7 +96,7 @@
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
 | Ideas     | 32    | inbox 6 · considering 24 · accepted 1 · dropped 1 |
-| Resources | 61    | backlog 55 · in-progress 3 · done 1 · reference 2 |
+| Resources | 61    | backlog 57 · in-progress 1 · done 1 · reference 2 |
 | Goals     | 2     | active 1 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
 | Plans     | 4     | —                                                 |

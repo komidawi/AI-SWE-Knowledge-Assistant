@@ -9,7 +9,7 @@ source:
 raindrop_id:
 topics: [ event-driven, streaming, microservices, integration-patterns ]
 goals: [ ]
-status: in-progress
+status: backlog
 priority: high
 effort: 10h
 scale: multi-day
@@ -19,12 +19,13 @@ rating:
 started:
 finished:
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-15
 ---
 
 ## Why this one
 
-Seeded from `../DESIGNING EVENT DRIVEN SYSTEMS - NEEDS 2ND PASS/`.
+Seeded from `../DESIGNING EVENT DRIVEN SYSTEMS - NEEDS 2ND PASS/`. `backlog` until a goal or week
+plan scopes the second pass.
 
 ## Notes
 

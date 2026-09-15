@@ -9,7 +9,7 @@ source:
 raindrop_id:
 topics: [ microservices, system-design, distributed-systems, resilience ]
 goals: [ ]
-status: in-progress
+status: backlog
 priority: high
 effort: 20h
 scale: multi-day
@@ -19,13 +19,13 @@ rating:
 started:
 finished:
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-15
 ---
 
 ## Why this one
 
-Seeded from `../BUILDING MICROSERVICES - NEEDS 2ND PASS/`. `in-progress` because a second pass is
-outstanding — name the chapters before scheduling time.
+Seeded from `../BUILDING MICROSERVICES - NEEDS 2ND PASS/`. `backlog` until a goal or week plan
+scopes the second pass — name the chapters before scheduling time.
 
 ## Notes
 
