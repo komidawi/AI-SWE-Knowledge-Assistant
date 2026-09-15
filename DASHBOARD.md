@@ -3,7 +3,7 @@
 
 # Dashboard
 
-`2026-09-15` · 2 active goal(s) · 3 in flight · 6 in inbox · `W38(14-20.09)` 0/0 done
+`2026-09-15` · 2 active goal(s) · 3 in flight · 6 in inbox · `W38(14-20.09)` 0/5 done
 
 ## Right now
 
@@ -15,7 +15,6 @@
 |--------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Milestone slipped `2026-09-13` | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) — **slipped**: ledger done, recall pass and rewrites not started |
 | 6 untriaged ideas              | `ideas/`                   | Run `/groom` — inbox items are invisible to planning                                                                                                                                           |
-| No plan for W38(14-20.09)      | `planning/`                | Run `/plan-week`                                                                                                                                                                               |
 
 ## Goals
 
@@ -73,7 +72,13 @@ _Backlog resources small enough to finish in a gap._
 
 ## This week — `W38(14-20.09)`
 
-_No week file. Run `/plan-week`._
+0/5 committed done · capacity `8h` · `2026-09-14` → `2026-09-20`
+
+- [ ] (1h) — `[[interview-gap-coverage]]`: Outbox + browser-cannot-listen rewritten in `[[interviewing]]` from memory, each timed — carried from W37(07-13.09)
+- [ ] (1h) — `[[interview-gap-coverage]]`: recall pass over past interviews into the `[[interviewing]]` ledger — carried from W37(07-13.09)
+- [ ] (1h) — `[[interview-gap-coverage]]`: first `none`/`minimal` write-ups from the 87-term queue, timed; re-size the goal's capacity check from the measured rate
+- [ ] (1h) — `[[hello-interview-system-design-course]]`: 02 Indexing + quiz — closes 02 Foundations
+- [ ] (2h) — `[[hello-interview-system-design-course]]`: 03 Caching, Sharding, Consistent Hashing
 
 ## Areas
 
@@ -97,4 +102,4 @@ _No week file. Run `/plan-week`._
 | Resources | 61    | backlog 55 · done 1 · in-progress 3 · reference 2 |
 | Goals     | 2     | active 2                                          |
 | Areas     | 2     | —                                                 |
-| Plans     | 3     | —                                                 |
+| Plans     | 4     | —                                                 |

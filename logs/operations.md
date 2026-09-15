@@ -5,6 +5,13 @@ created: 2026-09-08
 updated: 2026-09-15
 ---
 
+## 2026-09-15 18:55 — Plan week W38
+
+6h committed of 8h capacity. Write-ups carried from W37 go first, then course 02 Indexing and 03 in part.
+
+- **Added:** `planning/2026/2026-W38.md`
+- **Modified:** `planning/2026/2026-09.md`, `DASHBOARD.md`
+
 ## 2026-09-15 13:20 — Show weeks with their day range
 
 Weeks in text now read `W37(07-13.09)`, and `W40(28.09-04.10)` when a week spans two months. Ids,
