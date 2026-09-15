@@ -51,7 +51,7 @@ const VOCAB = {
     source: ['raindrop', 'manual'],
     'idea.status': ['inbox', 'considering', 'accepted', 'active', 'done', 'dropped'],
     'resource.status': ['backlog', 'in-progress', 'done', 'dropped', 'reference'],
-    'goal.status': ['draft', 'active', 'achieved', 'missed', 'dropped'],
+    'goal.status': ['draft', 'active', 'on-hold', 'achieved', 'missed', 'dropped'],
     kind: ['book', 'course', 'article', 'video', 'talk', 'repo', 'docs', 'newsletter'],
     scale: ['multi-day', 'full-day', 'deep-dive', 'short', 'snack'],
     nature: ['core', 'applied', 'case-study', 'perspective', 'lookup', 'trivia'],

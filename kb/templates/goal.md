@@ -3,7 +3,7 @@ id: kebab-case-id
 type: goal
 title: Outcome, not activity
 horizon: year                # year | quarter | month
-status: draft                # draft | active | achieved | missed | dropped
+status: draft                # draft | active | on-hold | achieved | missed | dropped
 start: YYYY-MM-DD
 target: YYYY-MM-DD
 topics: [ ]

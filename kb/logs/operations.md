@@ -5,6 +5,12 @@ created: 2026-09-08
 updated: 2026-09-15
 ---
 
+## 2026-09-15 22:00 — Defer `interview-gap-coverage`
+
+Goal `active` → `on-hold` (new goal status); resume after `hello-interview-system-design-course`. Pulled from year/month/W38 plans; its 3h of W38 write-ups cut. Dashboard: only active goals' milestones slip or show as next; on-hold goals not shown (dashboard is current work only).
+
+- **Modified:** `CLAUDE.md`, `templates/goal.md`, `system/scripts/validate.mjs`, `system/scripts/dashboard.mjs`, `goals/interview-gap-coverage.md`, `planning/2026/2026.md`, `planning/2026/2026-09.md`, `planning/2026/2026-W38.md`, `areas/interviewing.md`, `README.md`, `system/assets/dashboard/*.svg`
+
 ## 2026-09-15 21:30 — Split repo into `kb/` content and `system/` tooling
 
 Content (entities, logs, taxonomy, templates, scratch) moved under `kb/`; scripts, assets and the

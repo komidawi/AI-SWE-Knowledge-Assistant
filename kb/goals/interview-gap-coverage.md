@@ -3,7 +3,7 @@ id: interview-gap-coverage
 type: goal
 title: Find and close the named-concept gaps that are costing interviews
 horizon: month
-status: active
+status: on-hold
 start: 2026-09-08
 target: 2026-10-11
 topics: [ interviewing, integration-patterns, event-driven, distributed-systems, networking, browser-apis ]
@@ -12,6 +12,8 @@ weekly_hours: 4
 created: 2026-09-08
 updated: 2026-09-15
 ---
+
+> **Deferred 2026-09-15** — `active` → `on-hold`. Resume after `[[hello-interview-system-design-course]]`; re-date milestones then. Ledger and sweeps stay as done.
 
 ## Why this matters
 

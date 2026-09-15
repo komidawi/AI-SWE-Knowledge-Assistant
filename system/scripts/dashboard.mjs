@@ -143,7 +143,8 @@ const goals = load('kb/goals').map(g => {
         milestones,
         criteria,
         weeksLeft: isDate(g.fm.target) ? Math.round(daysBetween(TODAY, g.fm.target) / 7) : null,
-        overdue: milestones.filter(m => !m.done && isDate(m.date) && m.date < TODAY)
+        // Only an active goal's dates are commitments; draft and on-hold goals cannot slip.
+        overdue: g.fm.status === 'active' ? milestones.filter(m => !m.done && isDate(m.date) && m.date < TODAY) : []
     }
 })
 
@@ -153,7 +154,6 @@ const paths = new Map([...ideas, ...resources, ...areas, ...plans, ...goals]
 const activeGoals = goals.filter(g => g.fm.status === 'active')
 const draftGoals = goals.filter(g => g.fm.status === 'draft')
 const liveGoals = [...activeGoals, ...draftGoals]
-
 const inFlight = resources.filter(r => r.fm.status === 'in-progress')
 const stalled = inFlight.filter(r => (daysBetween(r.fm.updated, TODAY) ?? 0) > STALE_DAYS)
 const inbox = ideas.filter(i => i.fm.status === 'inbox')
@@ -494,7 +494,7 @@ if (liveGoals.length === 0) {
     out.push('')
 }
 
-const nextMilestones = goals
+const nextMilestones = activeGoals
     .flatMap(g => g.milestones.filter(m => !m.done && isDate(m.date)).map(m => ({...m, goal: g.id})))
     .sort((a, b) => a.date.localeCompare(b.date))
     .slice(0, 5)

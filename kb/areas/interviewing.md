@@ -465,7 +465,7 @@ at write-up — confidence does not say whether the mechanism is held; part C is
 
 ### Next moves
 
-- `[[interview-gap-coverage]]` (active): sweeps A-F marked 2026-09-09; write-ups next, cold re-test + re-assessment 2026-10-11.
+- `[[interview-gap-coverage]]` (on-hold since 2026-09-15): sweeps A-F marked 2026-09-09; write-ups resume after `[[hello-interview-system-design-course]]`.
 - **Write-up queue: 87 terms** at `none`/`minimal` — the actual work. Order: on-stack (F) and boundaries (C) first, then A/B/D/E.
 - Confirm **Brownout** — left blank on the checklist, recorded `high` per the blank-means-5 rule, but its neighbours are `minimal`. Likely a slip.
 - Standing rule, no exceptions: every interview produces a same-day row here for every term not fully owned — pass or fail.

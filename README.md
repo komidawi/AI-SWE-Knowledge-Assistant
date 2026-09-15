@@ -8,44 +8,35 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
-  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 3 in flight, 2 needing attention, week 0/5 done">
+  <img src="system/assets/dashboard/kpi-light.svg" alt="1 active goals, 3 in flight, 1 needing attention, week 0/2 done">
 </picture>
 
 > [!WARNING]
-> **Milestone slipped `2026-09-13`** — [interview-gap-coverage](kb/goals/interview-gap-coverage.md). Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) — **slipped**: ledger done, recall pass and rewrites not started.
-
-## ⚠️ Also needs attention
-
-| What              | Where       | Why it matters                                       |
-|-------------------|-------------|------------------------------------------------------|
-| 6 untriaged ideas | `kb/ideas/` | Run `/groom` — inbox items are invisible to planning |
+> **6 untriaged ideas** — `kb/ideas/`. Run `/groom` — inbox items are invisible to planning.
 
 ## 🎯 Goals
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/goals-dark.svg">
-  <img src="system/assets/dashboard/goals-light.svg" alt="interview-gap-coverage, system-design-fluency">
+  <img src="system/assets/dashboard/goals-light.svg" alt="system-design-fluency">
 </picture>
 
-[interview-gap-coverage](kb/goals/interview-gap-coverage.md) · [system-design-fluency](kb/goals/system-design-fluency.md)
+[system-design-fluency](kb/goals/system-design-fluency.md)
 
 ### Next milestones
 
-| Due          | In         | Goal                                                         | Milestone                                                                                                                                                                                                                                          |
-|--------------|------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `2026-09-13` | 🔴 2d late | [interview-gap-coverage](kb/goals/interview-gap-coverage.md) | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) — **slipped**: ledger done, recall pass and rewrites not started                                                     |
-| `2026-09-27` | 12d        | [interview-gap-coverage](kb/goals/interview-gap-coverage.md) | Messaging sweep 2: [enterprise-integration-patterns](kb/resources/architecture/integration-patterns/enterprise-integration-patterns.md) headings marked; all unknowns from both sweeps written up (~4h) — marked 2026-09-09, write-ups outstanding |
-| `2026-09-27` | 12d        | [system-design-fluency](kb/goals/system-design-fluency.md)   | Part 1: Orientation, Foundations, Thinking in Scale (~8h)                                                                                                                                                                                          |
-| `2026-10-04` | 19d        | [interview-gap-coverage](kb/goals/interview-gap-coverage.md) | Runtime boundary sweep: browser, JVM process, container, serverless; findings written up (~4h) — marked 2026-09-09, write-ups outstanding                                                                                                          |
-| `2026-10-11` | 26d        | [interview-gap-coverage](kb/goals/interview-gap-coverage.md) | Cold re-test on everything written before 2026-09-27; [interviewing](kb/areas/interviewing.md) re-assessed; next two sweeps chosen (~3h)                                                                                                           |
+| Due          | In  | Goal                                                       | Milestone                                                               |
+|--------------|-----|------------------------------------------------------------|-------------------------------------------------------------------------|
+| `2026-09-27` | 12d | [system-design-fluency](kb/goals/system-design-fluency.md) | Part 1: Orientation, Foundations, Thinking in Scale (~8h)               |
+| `2026-10-18` | 33d | [system-design-fluency](kb/goals/system-design-fluency.md) | Scaling Reads and Writes, incl. Postgres, Redis, Kafka, Cassandra (~8h) |
+| `2026-11-08` | 54d | [system-design-fluency](kb/goals/system-design-fluency.md) | Real-time Updates, Contention, Multi-step Processes (~7h)               |
+| `2026-11-29` | 75d | [system-design-fluency](kb/goals/system-design-fluency.md) | Large Blobs, Long Running Tasks, Proximity-Based Services (~5h)         |
+| `2026-12-13` | 89d | [system-design-fluency](kb/goals/system-design-fluency.md) | Final Designs, plus the cold non-course design (~6h)                    |
 
 ## 🗓️ This week — `W38(14-20.09)`
 
-0/5 done · 6h committed of `8h` · [2026-W38](kb/planning/2026/2026-W38.md)
+0/2 done · 3h committed of `8h` · [2026-W38](kb/planning/2026/2026-W38.md)
 
-- [ ] (1h) — [interview-gap-coverage](kb/goals/interview-gap-coverage.md): Outbox + browser-cannot-listen rewritten in [interviewing](kb/areas/interviewing.md) from memory, each timed — carried from W37(07-13.09)
-- [ ] (1h) — [interview-gap-coverage](kb/goals/interview-gap-coverage.md): recall pass over past interviews into the [interviewing](kb/areas/interviewing.md) ledger — carried from W37(07-13.09)
-- [ ] (1h) — [interview-gap-coverage](kb/goals/interview-gap-coverage.md): first `none`/`minimal` write-ups from the 87-term queue, timed; re-size the goal's capacity check from the measured rate
 - [ ] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 02 Indexing + quiz — closes 02 Foundations
 - [ ] (2h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 03 Caching, Sharding, Consistent Hashing
 
@@ -108,7 +99,7 @@
 |-----------|-------|---------------------------------------------------|
 | Ideas     | 32    | inbox 6 · considering 24 · accepted 1 · dropped 1 |
 | Resources | 61    | backlog 55 · in-progress 3 · done 1 · reference 2 |
-| Goals     | 2     | active 2                                          |
+| Goals     | 2     | active 1 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
 | Plans     | 4     | —                                                 |
 

@@ -75,7 +75,8 @@ One to three sentences on what and why.
 
 - Idea status: `inbox` → `considering` → `accepted` → `active` → `done` | `dropped`
 - Resource status: `backlog` → `in-progress` → `done` | `dropped` | `reference` (lookup, not read through)
-- Goal status: `draft` → `active` → `achieved` | `missed` | `dropped`
+- Goal status: `draft` → `active` → `achieved` | `missed` | `dropped`; `active` ⇄ `on-hold` (deferred
+  with a resume trigger; out of plans and the dashboard, dates are not commitments)
 - Priority: `high` | `medium` | `low`
 - Resource `kind:` (medium): `book` | `course` | `article` | `video` | `talk` | `repo` | `docs` | `newsletter`
 
