@@ -1,42 +1,25 @@
 # scripts
 
+Zero dependencies, Node 24. All output is derived and rebuildable.
+
 ## Built
 
-**`dashboard.mjs`** — reads the entity frontmatter and writes `DASHBOARD.md`, the front page you
-open without asking anything: active goals with milestone counts and weeks remaining, in-flight
-resources with staleness, the current week's commitments, area gaps, and the five items most
-worth attention. Zero dependencies; it parses the small YAML subset the templates actually use, and
-should pull in a real parser rather than grow a fake one if the frontmatter ever gets richer.
+| Script              | Does                                                                                                                                  |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| `dashboard.mjs`     | Writes `README.md` (repo front page) and its light/dark SVG charts in `assets/dashboard/`: needs attention, goals, this week, in flight, areas, pick by time. Never hand-edit the output. |
+| `lib/svg.mjs`       | SVG string helpers and GitHub-matched light/dark themes for the dashboard charts.                                                     |
+| `validate.mjs`      | Checks every entity against its template: fields, vocabularies, ISO dates, `id` = filename, topic/goal ids, `[[links]]`. Exits non-zero on findings. Manual, no hook. |
+| `index.mjs`         | Writes gitignored `.index/index.json`: frontmatter plus `by_topic`/`by_goal`, topics expanded through alias/parent/area (`kubernetes` also lists under `docker` and `devops`). |
+| `lib/entities.mjs`  | Shared frontmatter loader — small YAML subset. Swap in a real parser if frontmatter gets richer.                                      |
+| `lib/taxonomy.mjs`  | Parser for `topics.yml`/`stack.yml`'s nested shape only — not a general YAML library.                                                |
 
 ```bash
 node scripts/dashboard.mjs
+node scripts/validate.mjs
+node scripts/index.mjs
 ```
 
-Output is derived and rebuildable. Edit the entity files, never `DASHBOARD.md`.
+## Planned
 
-# Stage B — indexer and validator (not built yet)
-
-Deliberately deferred. Building query tooling against an empty repository means guessing at the
-queries. Build this once there are ~50–100 real entries and the actual query patterns are visible.
-
-Planned, in order of value:
-
-1. **`validate.mjs`** — the highest-value piece, and the one to write first.
-   Checks every file against its template: required frontmatter present, no unknown fields, statuses
-   within the vocabularies in `CLAUDE.md`, ISO dates, `id` matching filename, every `topics:` value
-   present in `taxonomy/topics.yml`, every `[[link]]` resolving to a real file.
-   Exit non-zero on failure; wire to `.git/hooks/pre-commit`.
-
-2. **`index.mjs`** — parses all Markdown into `.index/index.json`: entities with frontmatter,
-   resolved topic closures (topic → parent → area), and a reverse link graph. Rebuildable from
-   scratch, never hand-edited, gitignored.
-
-3. **`query.mjs <term>`** — alias- and hierarchy-aware search over the index, grouped by entity
-   type. What `/query` does today by reading files, done in milliseconds over thousands of entries.
-
-4. **`report.mjs`** — derived views worth having once there is history, which `dashboard.mjs`
-   deliberately does not attempt: hours planned vs actual over time, topic coverage against active
-   goals, completion rates by resource kind. The dashboard is a snapshot; this is the trend.
-
-Node 24 is available locally, with a built-in test runner and `node:sqlite` if the JSON index ever
-outgrows itself. No dependencies needed for any of the above beyond a YAML parser.
+- **`query.mjs <term>`** — alias/hierarchy-aware search over the index, grouped by entity type. `/query` expands by hand until then.
+- **`report.mjs`** — trends once history exists: planned vs actual hours, topic coverage vs goals, completion by `kind`.

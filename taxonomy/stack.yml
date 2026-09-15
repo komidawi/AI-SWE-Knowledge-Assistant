@@ -1,15 +1,5 @@
-# The stack the current job actually requires.
-#
-# Not a vocabulary — a judgement input. Every id below must exist in `topics.yml`, and the wording
-# the requirements were stated in (Hibernate, Liquibase, Swagger, Spock, Cursor, ...) lives there as
-# an alias, so a query for it resolves to the id used here.
-#
-# What it is for: `active` goals say what is being aimed at right now, this says what the job
-# demands regardless. Both are used when judging worth — a thing serving neither is a `skip`.
-# Anything absent here is off-stack: still capturable, never a priority, never planned hours ahead
-# of an on-stack item. Groups mirror how the requirements were stated and carry no ranking.
-#
-# Update this when the job changes, not when interest does.
+# Topics the current job requires. Rules: CLAUDE.md → The stack.
+# Groups mirror how the requirements were stated; no ranking.
 version: 1
 captured: 2026-09-08
 

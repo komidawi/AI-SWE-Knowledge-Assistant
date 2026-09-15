@@ -2,8 +2,134 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-15
 ---
+
+## 2026-09-15 20:30 — README becomes the visual dashboard
+
+GitHub shows `README.md`, so `dashboard.mjs` now writes it, with light/dark SVG charts and real
+links instead of `[[wiki]]`. Old README moved to `docs/guide.md`; `DASHBOARD.md` retired.
+
+- **Added:** `scripts/lib/svg.mjs`, `assets/dashboard/*.svg` (8)
+- **Modified:** `scripts/dashboard.mjs`, `README.md`, `CLAUDE.md`, `scripts/README.md`, `.claude/settings.json`, `.codex/hooks.json`, `README.md` → `docs/guide.md` (new `README.md` generated)
+- **Removed:** `DASHBOARD.md`
+
+## 2026-09-15 18:55 — Plan week W38
+
+6h committed of 8h capacity. Write-ups carried from W37 go first, then course 02 Indexing and 03 in part.
+
+- **Added:** `planning/2026/2026-W38.md`
+- **Modified:** `planning/2026/2026-09.md`, `DASHBOARD.md`
+
+## 2026-09-15 13:20 — Show weeks with their day range
+
+Weeks in text now read `W37(07-13.09)`, and `W40(28.09-04.10)` when a week spans two months. Ids,
+links and frontmatter stay `2026-W37`. `dashboard.mjs` generates the label.
+
+- **Modified:** `CLAUDE.md`, `scripts/dashboard.mjs`, `templates/month.md`, `planning/2026/2026-09.md`, `goals/interview-gap-coverage.md`, `DASHBOARD.md`
+
+## 2026-09-15 13:00 — Review week W37
+
+Filled the W37 retro from the user's answers. Course moved to `in-progress`. The goal's
+2026-09-13 milestone slipped, and the write-up queue was re-sized: it doesn't fit before target.
+
+- **Modified:** `planning/2026/2026-W37.md`, `planning/2026/2026-09.md`, `goals/interview-gap-coverage.md`, `resources/architecture/system-design/hello-interview-system-design-course.md`, `DASHBOARD.md`
+
+## 2026-09-15 12:00 — Enforce rule 8 (terse) across docs and entries
+
+Audited all files for verbosity. Trimmed prose and cross-file duplication. Rule 8 now names docs,
+instructions, commands, templates and comments, and bans duplicating another file. No meaning changed.
+
+- **Modified:** `CLAUDE.md`, `README.md`, `scripts/README.md`, `.claude/commands/raindrop-triage.md`, `taxonomy/rubrics.md`, `taxonomy/stack.yml`, `goals/interview-gap-coverage.md`, `goals/system-design-fluency.md`, `ideas/architecture/second-pass-on-architecture-books.md`, `ideas/career/interview-story-bank.md`, `planning/2026/2026.md`, `resources/architecture/system-design/hello-interview-system-design-course.md`, `DASHBOARD.md`
+
+## 2026-09-11 14:20 — Search out the Kraków groups the original list missed
+
+Swept the stack topic by topic plus crossweb.pl, dev.events and the MOTIFE community index. Ten new
+groups worth a verdict, two more picks (KraQA, GenAI Cracow — the latter runs on Luma, not
+meetup.com), a conference shortlist led by JDD 2026, and a note on where to search next time.
+
+- **Modified:** `scratch/krakow-meetups.md`
+
+## 2026-09-11 13:55 — Rework the meetup assessment into one ordered pros/cons table
+
+Replaced the verdict table with a single table in link order carrying pros, cons and a comment per
+group, and added Developer Productivity Group — it was in the provided links and had been dropped
+from the first pass. The three missing groups moved to their own table.
+
+- **Modified:** `scratch/krakow-meetups.md`
+
+## 2026-09-11 13:40 — Assess 31 Kraków meetup groups against goals and stack
+
+Checked every group's meetup.com page for activity, size and topic, then scored on goals + stack +
+whether it is still alive. Seven picks, three of them groups missing from the original list (PJUG,
+SCKRK, DDD-KRK); nine are dead. Kept in `scratch/` — an analysis note, not an entity.
+
+- **Added:** `scratch/krakow-meetups.md`
+
+## 2026-09-11 00:20 — Bump priority on an existing resource instead of duplicating it
+
+User flagged `https://cstack.github.io/db_tutorial/` as very valuable — already captured as
+`[[how-does-a-database-work]]` (same URL), so raised priority `medium` → `high` instead of adding
+a near-duplicate file.
+
+- **Modified:** `resources/data/how-does-a-database-work.md`
+
+## 2026-09-11 00:10 — Capture two more learning-gap ideas (Idempotency, UUID vs ID)
+
+Idempotency is tied to `[[interview-gap-coverage]]` as a depth gap — the ledger already has it at
+`basic`/`mid`, not `none`/`minimal`. UUID vs sequential ID is an unattached schema-design decision.
+
+- **Added:** `ideas/architecture/idempotency.md`, `ideas/data/uuid-vs-sequential-id.md`
+- **Modified:** `taxonomy/topics.yml` (added `idempotency`; added `uuid`/`primary-key` aliases to `data-modeling`)
+
+## 2026-09-11 00:00 — Capture four learning-gap ideas (OSGi, ODS, Canonical Data Model, Java version features)
+
+Four named-concept gaps the user flagged were captured as ideas, with new taxonomy topics added
+for the three that had no existing id. `canonical-data-model` ties into `[[interview-gap-coverage]]`
+since it's an EIP-family pattern that goal is already sweeping; the other three are unattached.
+
+- **Added:** `ideas/languages/osgi.md`, `ideas/data/operational-data-store.md`,
+  `ideas/architecture/canonical-data-model.md`, `ideas/languages/java-version-features-in-daily-use.md`
+- **Modified:** `taxonomy/topics.yml` (added `osgi`, `operational-data-store`, `canonical-data-model`)
+
+## 2026-09-09 14:40 — Mirror the operations-log Stop hook for Codex
+
+`.codex/hooks.json` was staged but uncommitted, which kept the Stop hook firing every turn. It is
+byte-identical to `.claude/settings.json`, so Codex enforces the same log convention Claude does —
+consistent with `AGENTS.md` pointing at `CLAUDE.md` as the single source of truth.
+
+- **Added:** `.codex/hooks.json`
+
+## 2026-09-09 14:20 — Process the gap-ledger checklist into the ledger
+
+The checklist is fully marked (F was the last part), so all 216 terms moved into the gap ledger in
+`[[interviewing]]` as tables grouped by source part, plus counts and the 87-term write-up queue.
+State only — class is left for write-up time, since confidence does not say whether the mechanism
+is held. Sweep milestones ticked in the goal and plans; the sweeps landed ~5 weeks early, so the
+goal's capacity check now flags that the unsized write-ups are the whole remaining cost.
+
+- **Modified:** `areas/interviewing.md`, `goals/interview-gap-coverage.md`, `planning/2026/2026-09.md`, `planning/2026/2026-W37.md`, `scratch/gap-ledger-checklist.md`, `DASHBOARD.md`
+
+## 2026-09-09 13:30 — Build Stage B: frontmatter validator and index
+
+Built the indexer and validator CLAUDE.md had listed as "planned, not built," now that the repo
+has grown to 91 entities. `scripts/validate.mjs` checks every file against its template (required/
+unknown fields, controlled vocab, ISO dates, `id` = filename, `topics:`/`stack.yml`/`goals:` ids
+resolving, `[[links]]` resolving) — manual command, verified clean against the real repo and
+against a deliberately broken smoke-test file (reverted). `scripts/index.mjs` writes
+`.index/index.json` (gitignored, rebuildable) with per-entity frontmatter plus `by_topic`/`by_goal`
+reverse indexes, topics pre-expanded through `taxonomy/topics.yml` alias/parent/area chains.
+Extracted `dashboard.mjs`'s frontmatter-loading helpers into `scripts/lib/entities.mjs` so all
+three scripts share one implementation — confirmed `DASHBOARD.md` output is byte-identical after
+the refactor. Added `scripts/lib/taxonomy.mjs`, the one hand-rolled parser for `topics.yml`'s
+nested shape (no new dependency). Updated `groom.md`'s schema/taxonomy/link-break bullets to point
+at `validate.mjs` instead of describing manual re-derivation, mirroring its existing
+`dashboard.mjs` pointer for scale/effort.
+
+- **Added:** `scripts/validate.mjs`, `scripts/index.mjs`, `scripts/lib/entities.mjs`,
+  `scripts/lib/taxonomy.mjs`
+- **Modified:** `scripts/dashboard.mjs`, `scripts/README.md`, `CLAUDE.md`,
+  `.claude/commands/groom.md`, `DASHBOARD.md` (regenerated)
 
 ## 2026-09-09 12:00 — Capture stack blind spots, fix a real orphan, decide the rest stay
 

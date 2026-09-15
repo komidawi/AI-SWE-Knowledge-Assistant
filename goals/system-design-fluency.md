@@ -15,10 +15,9 @@ updated: 2026-09-08
 
 ## Why this matters
 
-Architecture has the most shelf-reading and the least demonstrated ability — `[[architecture]]` is
-level 1 with an empty evidence list. Five half-read books, zero systems designed end to end.
-`[[hello-interview-system-design-course]]` is the opposite shape: fixed syllabus, delivery
-framework, a design produced at every step. Finishing it converts reading into evidence.
+Most reading, least demonstrated ability: `[[architecture]]` is level 1, no evidence — five
+half-read books, zero systems designed. `[[hello-interview-system-design-course]]` forces a design
+at every step, turning reading into evidence.
 
 ## Success criteria
 
@@ -38,14 +37,13 @@ framework, a design produced at every step. Finishing it converts reading into e
 ## Capacity check
 
 ~40h (31h course, plus first-attempt designs and notes) · `weekly_hours` 4 × 14 weeks = 56h ·
-**fits, ~16h slack.** The slack is the point: guided practices are worth redoing, and Networking
-Essentials alone is 125 minutes.
+**fits, ~16h slack** — deliberate: guided practices are worth redoing.
 
 ## Linked
 
 - Ideas: `[[second-pass-on-architecture-books]]` — superseded for now; decide there, second pass or drop.
 - Resources: `[[hello-interview-system-design-course]]` (the spine).
-- Goals: `[[interview-gap-coverage]]` — added 2026-09-08, parallel on its own 4h, takes no hours from this. This goal builds the ability to design a system; that one ensures no named pattern inside it is missing. Gaps needing depth come back here.
+- Goals: `[[interview-gap-coverage]]` — added 2026-09-08, parallel on its own 4h; catches missing pattern names. Gaps needing depth come here.
 - Adjacent, not committed: `[[kafka-system-design-deep-dive]]`, `[[building-microservices]]`, `[[designing-event-driven-systems]]`, `[[databases-in-depth-course]]` — the course covers Kafka, Cassandra and sharding, so none start before it finishes.
 
 ## Assessments

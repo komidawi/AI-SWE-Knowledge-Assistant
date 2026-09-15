@@ -19,6 +19,7 @@ areas:
       - { id: rust,        label: Rust }
       - { id: sql,         label: SQL }
       - { id: jvm-build,   label: JVM Build Tools, aliases: [ maven, gradle ] }
+      - { id: osgi,        label: OSGi,        aliases: [ open-service-gateway-initiative, bundles, java-modules ], parent: java }
 
   - id: frontend
     label: Frontend
@@ -49,12 +50,13 @@ areas:
     topics:
       - { id: databases,       label: Databases,       aliases: [ rdbms, postgres, postgresql, mysql ] }
       - { id: nosql,           label: NoSQL,           aliases: [ mongodb, cassandra, dynamodb ], parent: databases }
-      - { id: data-modeling,   label: Data Modeling,   aliases: [ schema-design, normalization ] }
+      - { id: data-modeling,   label: Data Modeling,   aliases: [ schema-design, normalization, uuid, primary-key ] }
       - { id: orm,             label: ORM & Persistence, aliases: [ hibernate, jpa, jdbc ] }
       - { id: schema-migrations, label: Schema Migrations, aliases: [ liquibase, flyway, migrations ] }
       - { id: transactions,    label: Transactions & Consistency, aliases: [ acid, isolation-levels ] }
       - { id: streaming,       label: Stream Processing, aliases: [ kafka, flink, kafka-streams ] }
       - { id: data-engineering, label: Data Engineering, aliases: [ etl, elt, warehouse ] }
+      - { id: operational-data-store, label: Operational Data Store, aliases: [ ods ] }
 
   - id: architecture
     label: Architecture & Distributed Systems
@@ -64,12 +66,14 @@ areas:
       - { id: microservices,       label: Microservices,        aliases: [ service-decomposition ] }
       - { id: event-driven,        label: Event-Driven Architecture, aliases: [ eda, event-sourcing, cqrs, pub-sub ] }
       - { id: integration-patterns, label: Integration Patterns, aliases: [ eip, messaging-patterns ] }
+      - { id: canonical-data-model, label: Canonical Data Model, aliases: [ canonical-model, cdm ], parent: integration-patterns }
       - { id: messaging,           label: Messaging & Queues,  aliases: [ message-queue, queues, rabbitmq, activemq, jms, amqp ] }
       - { id: service-mesh,        label: Service Mesh,        aliases: [ istio, envoy, linkerd, sidecar ] }
       - { id: clean-architecture,  label: Clean & Hexagonal Architecture, aliases: [ hexagonal, ports-and-adapters, onion ] }
       - { id: ddd,                 label: Domain-Driven Design, aliases: [ domain-driven-design, bounded-context ] }
       - { id: design-patterns,     label: Design Patterns,      aliases: [ gof, patterns ] }
       - { id: resilience,          label: Resilience,           aliases: [ circuit-breaker, retry, backpressure, fault-tolerance ] }
+      - { id: idempotency,         label: Idempotency,          aliases: [ idempotent, idempotent-consumer, idempotent-receiver ] }
 
   - id: devops
     label: DevOps & Infrastructure

@@ -1,5 +1,8 @@
 # Gap ledger checklist — mark, then tell Claude to process
 
+**Processed into the ledger in `[[interviewing]]` on 2026-09-09 — all 216 terms.** Kept as the raw
+marking sheet; the ledger is authoritative from here.
+
 For each term, write a number after the arrow (1-6, Polish-school style) — leave it blank only if
 you're confident it's a 5 (6 is not available on write-up day, it requires a later closed-notes
 re-test):
@@ -242,74 +245,74 @@ Already ledgered, not repeated here: Outbox Pattern, "browser cannot listen on a
 ## F — `taxonomy/stack.yml` sweep (on-stack, not covered by A-E)
 
 ### Backend (Java / Kotlin / Spring / Build)
-- [ ] Dependency Injection: constructor vs field injection →
-- [ ] Spring Bean lifecycle & scopes →
-- [ ] Spring AOP / proxies →
-- [ ] Spring Data repositories →
-- [ ] Spring Security filter chain →
-- [ ] Spring Cloud Config / service discovery (Eureka) →
-- [ ] Kotlin coroutines vs Java threads →
-- [ ] Kotlin null safety / sealed classes →
-- [ ] Maven/Gradle dependency scopes →
-- [ ] Multi-module build & BOM →
+- [ ] Dependency Injection: constructor vs field injection →5
+- [ ] Spring Bean lifecycle & scopes →3
+- [ ] Spring AOP / proxies →2
+- [ ] Spring Data repositories →3
+- [ ] Spring Security filter chain →2
+- [ ] Spring Cloud Config / service discovery (Eureka) →3
+- [ ] Kotlin coroutines vs Java threads →2
+- [ ] Kotlin null safety / sealed classes →4
+- [ ] Maven/Gradle dependency scopes →4
+- [ ] Multi-module build & BOM →4
 
 ### Databases / ORM / Migrations
-- [ ] Hibernate first-level vs second-level cache →
-- [ ] Lazy vs eager loading →
-- [ ] JPA entity lifecycle (transient/managed/detached) →
-- [ ] Liquibase changelog & rollback →
-- [ ] Flyway versioned vs repeatable migrations →
-- [ ] Database indexing strategy →
-- [ ] Connection pooling (HikariCP) →
+- [ ] Hibernate first-level vs second-level cache →2
+- [ ] Lazy vs eager loading →3
+- [ ] JPA entity lifecycle (transient/managed/detached) →3
+- [ ] Liquibase changelog & rollback →3
+- [ ] Flyway versioned vs repeatable migrations →3
+- [ ] Database indexing strategy →4
+- [ ] Connection pooling (HikariCP) →2
 
 ### DevOps (Kubernetes / CI-CD / Observability)
-- [ ] Kubernetes Pod / Deployment / ReplicaSet →
-- [ ] Kubernetes Service vs Ingress →
-- [ ] ConfigMap vs Secret →
-- [ ] Readiness vs liveness probe →
-- [ ] Horizontal Pod Autoscaler →
-- [ ] CI/CD pipeline stages & quality gates →
-- [ ] OpenTelemetry spans/traces →
-- [ ] Prometheus metrics & Grafana dashboards →
+- [ ] Kubernetes Pod / Deployment / ReplicaSet →3
+- [ ] Kubernetes Service vs Ingress →3
+- [ ] ConfigMap vs Secret →3
+- [ ] Readiness vs liveness probe →3
+- [ ] Horizontal Pod Autoscaler →4
+- [ ] CI/CD pipeline stages & quality gates →3
+- [ ] OpenTelemetry spans/traces →3
+- [ ] Prometheus metrics & Grafana dashboards →3
 
 ### Architecture (Service Mesh / Design Patterns)
-- [ ] Service mesh sidecar proxy →
-- [ ] Istio traffic management (VirtualService/DestinationRule) →
-- [ ] mTLS between services →
-- [ ] GoF: Strategy, Decorator, Observer, Factory, Adapter, Builder →
-- [ ] Hexagonal / ports & adapters →
+- [ ] Service mesh sidecar proxy →3
+- [ ] Istio traffic management (VirtualService/DestinationRule) →3
+- [ ] mTLS between services →3
+- [ ] GoF: Strategy, Decorator, Observer, Factory, Adapter, Builder →3
+- [ ] Hexagonal / ports & adapters →3
 
 ### APIs (REST / SOAP)
-- [ ] REST idempotent methods (PUT vs POST) →
-- [ ] HATEOAS →
-- [ ] API versioning strategies →
-- [ ] OpenAPI/Swagger: contract-first vs code-first →
-- [ ] SOAP envelope / WSDL contract →
-- [ ] WS-Security →
+- [ ] REST idempotent methods (PUT vs POST) →4
+- [ ] HATEOAS →4
+- [ ] API versioning strategies →4
+- [ ] OpenAPI/Swagger: contract-first vs code-first →4
+- [ ] SOAP envelope / WSDL contract →4
+- [ ] WS-Security →2
 
 ### Messaging (Streaming)
-- [ ] Kafka partitions & consumer groups →
-- [ ] Kafka offsets & consumer lag →
-- [ ] Kafka Streams: KTable vs KStream →
-- [ ] Exactly-once vs at-least-once semantics →
+- [ ] Kafka partitions & consumer groups →3
+- [ ] Kafka offsets & consumer lag →3
+- [ ] Kafka Streams: KTable vs KStream →1
+- [ ] Exactly-once vs at-least-once semantics →2
 
 ### Testing
-- [ ] Test doubles: mock vs stub vs fake vs spy →
-- [ ] TDD red-green-refactor →
-- [ ] BDD / Gherkin →
-- [ ] Test pyramid →
-- [ ] Contract testing tooling (Pact) →
+- [ ] Test doubles: mock vs stub vs fake vs spy →3
+- [ ] TDD red-green-refactor →5
+- [ ] BDD / Gherkin →3
+- [ ] Test pyramid →4
+- [ ] Contract testing tooling (Pact) →2
 
 ### Frontend (Angular / TypeScript)
-- [ ] Angular change detection (zone.js, OnPush) →
-- [ ] RxJS operators & subscription management →
-- [ ] Angular dependency injection hierarchy →
-- [ ] TypeScript generics & utility types →
-- [ ] Standalone components vs NgModules →
+- [ ] Angular change detection (zone.js, OnPush) →1
+- [ ] RxJS operators & subscription management →1
+- [ ] Angular dependency injection hierarchy →2
+- [ ] TypeScript generics & utility types →2
+- [ ] Standalone components vs NgModules →2
 
 ### AI (LLM / AI Engineering / AI Tooling)
-- [ ] RAG pipeline: retrieval + generation →
-- [ ] Embeddings & vector search →
-- [ ] Prompt engineering / few-shot →
-- [ ] Agent tool-use loop →
-- [ ] Context window / token limits →
+- [ ] RAG pipeline: retrieval + generation →2
+- [ ] Embeddings & vector search →2
+- [ ] Prompt engineering / few-shot →3
+- [ ] Agent tool-use loop →3
+- [ ] Context window / token limits →3
