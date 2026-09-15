@@ -5,6 +5,15 @@ created: 2026-09-08
 updated: 2026-09-15
 ---
 
+## 2026-09-15 20:30 — README becomes the visual dashboard
+
+GitHub shows `README.md`, so `dashboard.mjs` now writes it, with light/dark SVG charts and real
+links instead of `[[wiki]]`. Old README moved to `docs/guide.md`; `DASHBOARD.md` retired.
+
+- **Added:** `scripts/lib/svg.mjs`, `assets/dashboard/*.svg` (8)
+- **Modified:** `scripts/dashboard.mjs`, `README.md`, `CLAUDE.md`, `scripts/README.md`, `.claude/settings.json`, `.codex/hooks.json`, `README.md` → `docs/guide.md` (new `README.md` generated)
+- **Removed:** `DASHBOARD.md`
+
 ## 2026-09-15 18:55 — Plan week W38
 
 6h committed of 8h capacity. Write-ups carried from W37 go first, then course 02 Indexing and 03 in part.

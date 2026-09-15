@@ -1,8 +1,8 @@
 # AI_SKILL_ASSISTANT — conventions
 
 Git + Markdown knowledge base for software-engineering skill growth. Markdown under the entity
-folders is the **single source of truth**. `DASHBOARD.md` and `.index/` are generated — never
-hand-edit. Rerun `node scripts/dashboard.mjs` after any change that moves the numbers.
+folders is the **single source of truth**. `README.md` (the dashboard), `assets/dashboard/`
+and `.index/` are generated — never hand-edit; the repo guide is `docs/guide.md`. Rerun `node scripts/dashboard.mjs` after any change that moves the numbers.
 
 ## Working agreements
 
