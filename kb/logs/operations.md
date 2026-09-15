@@ -5,6 +5,12 @@ created: 2026-09-08
 updated: 2026-09-15
 ---
 
+## 2026-09-15 23:00 — Set `started:` on the system design course
+
+`in-progress` with blank `started:`; set to the goal's start date, exact day unrecorded.
+
+- **Modified:** `resources/architecture/system-design/hello-interview-system-design-course.md`
+
 ## 2026-09-15 22:30 — Second-pass books back to `backlog`
 
 `building-microservices` and `designing-event-driven-systems` were `in-progress` only because a second pass was owed; no goal, no scope. Moved to `backlog` until planned.
