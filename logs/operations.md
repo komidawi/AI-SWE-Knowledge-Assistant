@@ -2,8 +2,15 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-09-11
+updated: 2026-09-15
 ---
+
+## 2026-09-15 12:00 — Enforce rule 8 (terse) across docs and entries
+
+Audited all files for verbosity. Trimmed prose and cross-file duplication. Rule 8 now names docs,
+instructions, commands, templates and comments, and bans duplicating another file. No meaning changed.
+
+- **Modified:** `CLAUDE.md`, `README.md`, `scripts/README.md`, `.claude/commands/raindrop-triage.md`, `taxonomy/rubrics.md`, `taxonomy/stack.yml`, `goals/interview-gap-coverage.md`, `goals/system-design-fluency.md`, `ideas/architecture/second-pass-on-architecture-books.md`, `ideas/career/interview-story-bank.md`, `planning/2026/2026.md`, `resources/architecture/system-design/hello-interview-system-design-course.md`, `DASHBOARD.md`
 
 ## 2026-09-11 14:20 — Search out the Kraków groups the original list missed
 

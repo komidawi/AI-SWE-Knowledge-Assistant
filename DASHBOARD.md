@@ -3,39 +3,43 @@
 
 # Dashboard
 
-`2026-09-09` · 2 active goal(s) · 2 in flight · 0 in inbox · `2026-W37` 3/8 done
+`2026-09-15` · 2 active goal(s) · 2 in flight · 6 in inbox · `2026-W38` 0/0 done
 
 ## Right now
 
-> **Nothing is blocked.** Goals, the week and in-flight work are all current.
+> **Milestone slipped `2026-09-13`** — [[interview-gap-coverage]]. Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h).
 
 ## Needs attention
 
-_None._
+| What                           | Where                      | Why it matters                                                                                                                |
+|--------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Milestone slipped `2026-09-13` | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) |
+| 6 untriaged ideas              | `ideas/`                   | Run `/groom` — inbox items are invisible to planning                                                                          |
+| No plan for 2026-W38           | `planning/`                | Run `/plan-week`                                                                                                              |
 
 ## Goals
 
 | Goal                       | Status   | Target       | Weeks left | Milestones | Criteria | h/wk |
 |----------------------------|----------|--------------|------------|------------|----------|------|
-| [[interview-gap-coverage]] | `active` | `2026-10-11` | 5          | 1/5        | 2/7      | 4    |
-| [[system-design-fluency]]  | `active` | `2026-12-13` | 14         | 0/5        | 0/4      | 4    |
+| [[interview-gap-coverage]] | `active` | `2026-10-11` | 4          | 1/5        | 2/7      | 4    |
+| [[system-design-fluency]]  | `active` | `2026-12-13` | 13         | 0/5        | 0/4      | 4    |
 
 ### Next milestones
 
 | Due          | In  | Goal                       | Milestone                                                                                                                                                           |
 |--------------|-----|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `2026-09-13` | 4d  | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h)                                       |
-| `2026-09-27` | 18d | [[interview-gap-coverage]] | Messaging sweep 2: `[[enterprise-integration-patterns]]` headings marked; all unknowns from both sweeps written up (~4h) — marked 2026-09-09, write-ups outstanding |
-| `2026-09-27` | 18d | [[system-design-fluency]]  | Part 1: Orientation, Foundations, Thinking in Scale (~8h)                                                                                                           |
-| `2026-10-04` | 25d | [[interview-gap-coverage]] | Runtime boundary sweep: browser, JVM process, container, serverless; findings written up (~4h) — marked 2026-09-09, write-ups outstanding                           |
-| `2026-10-11` | 32d | [[interview-gap-coverage]] | Cold re-test on everything written before 2026-09-27; `[[interviewing]]` re-assessed; next two sweeps chosen (~3h)                                                  |
+| `2026-09-13` | -2d | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h)                                       |
+| `2026-09-27` | 12d | [[interview-gap-coverage]] | Messaging sweep 2: `[[enterprise-integration-patterns]]` headings marked; all unknowns from both sweeps written up (~4h) — marked 2026-09-09, write-ups outstanding |
+| `2026-09-27` | 12d | [[system-design-fluency]]  | Part 1: Orientation, Foundations, Thinking in Scale (~8h)                                                                                                           |
+| `2026-10-04` | 19d | [[interview-gap-coverage]] | Runtime boundary sweep: browser, JVM process, container, serverless; findings written up (~4h) — marked 2026-09-09, write-ups outstanding                           |
+| `2026-10-11` | 26d | [[interview-gap-coverage]] | Cold re-test on everything written before 2026-09-27; `[[interviewing]]` re-assessed; next two sweeps chosen (~3h)                                                  |
 
 ## In flight
 
 | Resource                           | Kind | Scale     | Progress                             | Effort | Priority | Updated |
 |------------------------------------|------|-----------|--------------------------------------|--------|----------|---------|
-| [[designing-event-driven-systems]] | book | multi-day | first pass done, second pass pending | 10h    | high     | 2d ago  |
-| [[building-microservices]]         | book | multi-day | first pass done, second pass pending | 20h    | high     | 2d ago  |
+| [[designing-event-driven-systems]] | book | multi-day | first pass done, second pass pending | 10h    | high     | 8d ago  |
+| [[building-microservices]]         | book | multi-day | first pass done, second pass pending | 20h    | high     | 8d ago  |
 
 ## Pick by time
 
@@ -66,25 +70,16 @@ _Backlog resources small enough to finish in a gap._
 | [[boolean-blindness]]                   | snack | 15m    | perspective | low      |
 | [[fowler-value-object]]                 | snack | 10m    | core        | low      |
 
-## This week — `2026-W37`
+## This week — `2026-W38`
 
-3/8 committed done · capacity `8h` · `2026-09-07` → `2026-09-13`
-
-- [x] (1h) — replace the example goal with `[[system-design-fluency]]`
-- [ ] (1h) — `[[hello-interview-system-design-course]]` module 01 Orientation + start 02 Foundations
-- [ ] (1h) — `[[hello-interview-system-design-course]]` Networking Essentials, first half
-- [ ] (0.5h) — correct the seeded statuses in `resources/` (two are guesses)
-- [x] (0.5h) — decide `[[second-pass-on-architecture-books]]`: finish or drop — decided: on hold until job search is over
-- [ ] (1h) — seed the gap ledger in `[[interviewing]]` from recall of past interviews
-- [ ] (1h) — rewrite the two seed entries in `[[interviewing]]` (Outbox, browser-cannot-listen) in my own words — they were drafted for me, which does not count as knowing them
-- [x] (2h) — `[[microservices-io-pattern-catalogue]]`: mark the index end to end, `cold` only where the tradeoff can be said out loud without opening the page — plus B-F, 216 terms total
+_No week file. Run `/plan-week`._
 
 ## Areas
 
 | Area             | Level | Target | Gap | Reviewed              |
 |------------------|-------|--------|-----|-----------------------|
-| [[architecture]] | 1     | 3      | +2  | `2026-09-07` (2d ago) |
-| [[interviewing]] | 2     | 3      | +1  | `2026-09-08` (1d ago) |
+| [[architecture]] | 1     | 3      | +2  | `2026-09-07` (8d ago) |
+| [[interviewing]] | 2     | 3      | +1  | `2026-09-08` (7d ago) |
 
 ## Resource shape
 
@@ -97,7 +92,7 @@ _Backlog resources small enough to finish in a gap._
 
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
-| Ideas     | 26    | accepted 1 · considering 24 · dropped 1           |
+| Ideas     | 32    | accepted 1 · considering 24 · dropped 1 · inbox 6 |
 | Resources | 61    | backlog 56 · done 1 · in-progress 2 · reference 2 |
 | Goals     | 2     | active 2                                          |
 | Areas     | 2     | —                                                 |

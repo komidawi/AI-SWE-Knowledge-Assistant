@@ -17,18 +17,15 @@ updated: 2026-09-08
 
 ## Why
 
-Behavioral rounds are a named failure mode and there is no story bank, so every answer is composed
-live. That produces the observed pattern: good on a familiar prompt, bad on an unfamiliar one.
+No story bank, so behavioral answers are composed live: good on familiar prompts, bad on unfamiliar.
 
-If accepted: 8 STAR stories, a number in every Result — conflict, my own failure, ownership beyond
+If accepted: 8 STAR stories, a number in every Result — conflict, own failure, ownership beyond
 the brief, ambiguity, influence without authority, hardest technical problem, disagreeing with a
-decision, proudest shipped thing. Each spoken aloud and timed; anything over 2:30 cut.
+decision, proudest shipped thing. Spoken aloud, timed, cut past 2:30.
 
 ## Notes
 
-`2026-09-08` — cut from `[[interview-gap-coverage]]` to keep that goal doing one thing. Knowledge
-gaps are sharper: a rejection traced to one missing pattern name, nothing comparable traced to a
-story. Reconsider at 2026-10-11, or sooner if `[[interviewing]]` records a real loss on a behavioral
-round.
+`2026-09-08` — cut from `[[interview-gap-coverage]]`: a rejection traced to a missing pattern name,
+none yet to a story. Reconsider 2026-10-11, or sooner if `[[interviewing]]` logs a behavioral loss.
 
 ## Assessments

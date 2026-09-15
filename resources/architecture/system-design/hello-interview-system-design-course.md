@@ -24,13 +24,9 @@ updated: 2026-09-07
 
 ## Why this one
 
-The spine of `[[system-design-fluency]]`, and the only resource here that forces output: every
-pattern module opens with a design attempted cold, before its walkthrough. Reading about a tradeoff
-is not having made it.
-
-Also sequencing: it teaches Kafka, Cassandra, Redis and sharding where they matter, which is why
-`[[kafka-system-design-deep-dive]]` and `[[databases-in-depth-course]]` stay in the backlog until it
-is finished.
+Spine of `[[system-design-fluency]]`; the only resource that forces output — each pattern module
+opens with a cold design attempt. Covers Kafka, Cassandra, Redis and sharding, so
+`[[kafka-system-design-deep-dive]]` and `[[databases-in-depth-course]]` wait until it is done.
 
 ## Notes
 
@@ -63,7 +59,6 @@ is finished.
 |------------------|----------------------------------|-------|
 | 12 Final Designs | FB News Feed, Metrics Monitoring | ~170m |
 
-Practice rule, per `[[system-design-fluency]]`: attempt first, read second, record the delta here.
-A module counted done without a first attempt does not count.
+Practice rule: attempt first, read second, record the delta here. No first attempt → module not done.
 
 ## Assessments

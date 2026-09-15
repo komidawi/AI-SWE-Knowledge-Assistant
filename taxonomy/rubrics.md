@@ -1,13 +1,8 @@
 # Assessment rubrics
 
-The point of a fixed rubric is comparability: a resource scored in March and one scored in November
-must be judgeable against each other. Do not invent dimensions per assessment.
-
-Every assessment is written into the entity's own file as a dated block and is **relative to the
-goals that are `active` right now**. The second axis is `taxonomy/stack.yml` — what the job
-requires regardless of what is aimed at this month; scoring well on neither is a `skip`. When the
-active goals change, old assessments become stale rather than wrong — re-assess instead of editing
-history.
+Fixed dimensions keep assessments comparable over time — never invent new ones. Each assessment is
+a dated block in the entity's file, **relative to `active` goals** and `taxonomy/stack.yml`
+(neither → `skip`). When goals change, old assessments go stale, not wrong: re-assess, don't edit.
 
 ## Resource rubric
 
@@ -21,9 +16,8 @@ Score each dimension 1–5.
 | **Prerequisite fit** | Needs foundations not yet held → will bounce off | Sits exactly at the edge of current ability                     |
 | **Decay risk**       | Framework-version-specific, stale in 12 months   | Concepts that outlive the tools (protocols, tradeoffs, theory)  |
 
-**Goal fit when no `active` goal covers it.** Score against `taxonomy/stack.yml` instead:
-on-stack caps at 3, off-stack at 1. Never higher — goals decide urgency, the stack decides whether
-the subject is the right one at all.
+**Goal fit with no covering `active` goal:** score against `taxonomy/stack.yml` — on-stack caps
+at 3, off-stack at 1.
 
 **Verdict** — one of:
 - `do-now` — schedule it into the current month's plan
@@ -35,10 +29,9 @@ A high total with poor prerequisite fit is still `queue`, never `do-now`. Sequen
 
 `nature:` gates the verdict before the scores are weighed:
 
-- `trivia` is never `do-now`. It scores what it scores and is still read in the gaps or not at all.
-- `lookup` is `reference` by definition — that is what the value means, so do not re-argue it.
-- `perspective` is judged on whether the argument changes a decision, not on how much it teaches.
-  A convincing one usually belongs in `ideas/` as well as here.
+- `trivia` is never `do-now` — read in the gaps or not at all.
+- `lookup` is always `reference`.
+- `perspective` is judged on whether it changes a decision. A convincing one also belongs in `ideas/`.
 
 ## Idea rubric
 
@@ -50,22 +43,20 @@ A high total with poor prerequisite fit is still `queue`, never `do-now`. Sequen
 | **Cost to first value** | Hours until it produces something usable, not until mastery           |
 | **Overlap**             | Does an existing skill in `areas/` already cover 80% of this?         |
 
-**Verdict**: `accept` (promote to a goal or schedule it), `keep` (leave in `considering`),
-`drop` (with a reason). Be willing to say `drop` — an idea list that only grows is a liability.
+**Verdict**: `accept` (promote to a goal or schedule), `keep` (stays `considering`), `drop` (with
+a reason). Drop freely — an idea list that only grows is a liability.
 
 ## Goal rubric
 
-A goal is well-formed only if all five hold. Flag every failure explicitly:
+Well-formed only if all five hold. Flag every failure:
 
 1. **Outcome, not activity.** "Ship a deployed fullstack app" beats "study React".
 2. **Falsifiable success criteria.** Someone else could rule on whether it was met.
 3. **Dated horizon.** A target date exists.
 4. **Milestones with dates**, each independently checkable.
-5. **Capacity-checked.** Estimated hours fit the weekly hours actually available — count real weeks,
-   subtract holidays and known crunch periods.
+5. **Capacity-checked.** Estimated hours fit real available weeks, minus holidays and crunch.
 
-Goals failing #5 are the normal failure mode. Say plainly how many hours the plan needs versus how
-many exist, and propose what to cut.
+#5 is the usual failure: state hours needed vs available, propose what to cut.
 
 ## Self-assessment levels (`areas/*.md`)
 
@@ -77,5 +68,5 @@ many exist, and propose what to cut.
 | 4     | Fluent — can debug the hard cases and make design tradeoffs  |
 | 5     | Authoritative — others come here for decisions; can teach it |
 
-Claim a level only with **evidence** — something shipped, debugged, or taught. No evidence means
-level 2 at most, regardless of how much has been read.
+A level needs **evidence** — shipped, debugged or taught. No evidence → level 2 at most, however
+much was read.

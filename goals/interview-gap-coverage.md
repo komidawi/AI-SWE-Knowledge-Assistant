@@ -15,22 +15,20 @@ updated: 2026-09-09
 
 ## Why this matters
 
-Not breadth failures — single-node failures: the neighbourhood of a concept is held, the one node
-with a name on it is missing.
+Single-node failures, not breadth: the neighbourhood is held, the named node is missing.
 
-- **Outbox Pattern** — rejected on it. Kafka, pub/sub, queues, competing consumers, idempotency, saga all held. Outbox sits between two of them and could have been derived live. The interviewer was testing the label, not the derivation.
-- **A browser cannot spawn a listening server.** Client–server, REST, Angular held. The missing piece was a boundary, not a concept.
+- **Outbox Pattern** — rejected on it. Kafka, queues, idempotency, saga all held; the label was tested, not the derivation.
+- **A browser cannot spawn a listening server.** Client–server, REST, Angular held; the gap was a boundary.
 
-Coverage problems are tractable — someone already wrote the catalogue. Most entries come back `cold`
-in minutes; the 10% that does not is the entire yield.
+Tractable — the catalogues exist. Most entries are known in minutes; the rest is the yield.
 
-Three gap classes, three hunts:
+| Class        | Gap                                  | Found by                          |
+|--------------|--------------------------------------|-----------------------------------|
+| **label**    | Mechanism held, name missing         | Sweeping catalogues. Cheapest.    |
+| **node**     | Never encountered                    | Same sweep, costs real reading    |
+| **boundary** | What a runtime *cannot* do           | Negative question per runtime — no catalogue lists these |
 
-1. **Missing label** — mechanism held, industry name missing. Cheapest: renaming, not learning. Found by sweeping pattern catalogues.
-2. **Missing node** — never encountered. Same hunt, costs real reading.
-3. **Missing boundary** — what a runtime *cannot* do. In no catalogue, since catalogues list what exists. Found only by asking the negative question per runtime.
-
-Behavioral is **out of scope**, parked as `[[interview-story-bank]]`, so this goal stays falsifiable.
+Behavioral is **out of scope** (`[[interview-story-bank]]`).
 
 ## Success criteria
 
@@ -52,21 +50,18 @@ Behavioral is **out of scope**, parked as `[[interview-story-bank]]`, so this go
 
 ## Capacity check
 
-Re-check 2026-09-09: all six sweeps marked in one pass, ~5 weeks early. The 87 `none`/`minimal`
-write-ups are now the whole remaining cost and were never sized — the ~18h below assumed sweeping
-dominated. Re-size at the W37 retro.
+~18h · `weekly_hours` 4 × 5 weeks = 20h · **fits, ~2h slack** — as sized 2026-09-08, assuming
+sweeps dominated.
 
-~18h · `weekly_hours` 4 × 5 weeks = 20h · **fits, ~2h slack.** Thin knowingly: the sweeps are
-predictable, the volume of unknowns they surface is not. Overflow carries as write-ups into a second
-month; a sweep is never left half-marked — a partly-marked catalogue looks done.
-
-Total `weekly_hours` across live goals is 8, up from 4. Check at the first retro: if observed hours
-come in at 5, dates move rather than criteria weakening.
+- `2026-09-09` — all six sweeps marked, ~5 weeks early. The 87 `none`/`minimal` write-ups are now
+  the whole cost and unsized. Re-size at the W37 retro.
+- Overflow carries into a second month as write-ups. Never leave a sweep half-marked — it looks done.
+- Live goals total 8h/week. If observed hours come in lower, dates move; criteria don't weaken.
 
 ## Linked
 
 - Areas: `[[interviewing]]` — holds the ledger.
-- Goals: `[[system-design-fluency]]` — parallel, own 4h. That one builds the ability to design a system; this one ensures no named pattern inside it is missing. Gaps needing depth rather than a label go there.
+- Goals: `[[system-design-fluency]]` — parallel, own 4h; builds design ability. Gaps needing depth, not a label, go there.
 - Resources: `[[microservices-io-pattern-catalogue]]`, `[[enterprise-integration-patterns]]` — both `nature: lookup`, swept not read.
 - Ideas: `[[interview-story-bank]]` — behavioral, cut from this goal.
 
