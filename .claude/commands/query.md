@@ -5,11 +5,11 @@ argument-hint: <topic, e.g. JavaScript | Frontend | System Design>
 
 Find everything related to: $ARGUMENTS
 
-1. Resolve the term against `taxonomy/topics.yml`: match on label, id or alias, case-insensitively.
+1. Resolve the term against `kb/taxonomy/topics.yml`: match on label, id or alias, case-insensitively.
     - If it names an **area**, expand to every topic in that area.
     - If it names a **topic**, expand to that topic plus its children (topics with `parent:` set).
     - If it matches nothing, say so, show the closest candidates, and search free-text as a fallback.
-2. Search frontmatter across `ideas/`, `resources/`, `goals/`, `areas/` and `planning/` for any of
+2. Search frontmatter across `kb/ideas/`, `kb/resources/`, `kb/goals/`, `kb/areas/` and `kb/planning/` for any of
    the expanded ids.
 3. Report grouped by entity type, and within each group sorted by status then priority:
 
@@ -19,7 +19,7 @@ Find everything related to: $ARGUMENTS
     - **Areas** - current level vs target
     - **Planning** - which weeks and months committed to this
 
-4. Say whether the expanded ids are on-stack per `taxonomy/stack.yml`, and which group.
+4. Say whether the expanded ids are on-stack per `kb/taxonomy/stack.yml`, and which group.
 5. Close with what the results actually show: what is stalled, what is unlinked to any goal, what
    is duplicated, and what is missing given the goals that are `active` and the stack.
 

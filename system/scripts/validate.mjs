@@ -3,9 +3,9 @@
 // Checks every entity file against its template and the controlled vocabularies in CLAUDE.md.
 // Manual command, not wired to any hook - run it yourself, or from /groom.
 //
-//   node scripts/validate.mjs
+//   node system/scripts/validate.mjs
 //
-// Reads entity files and taxonomy/*.yml. Writes nothing. Exits non-zero if anything is found, so
+// Reads entity files and kb/taxonomy/*.yml. Writes nothing. Exits non-zero if anything is found, so
 // it can be scripted later if that ever becomes useful - nothing in this repo invokes it for you.
 
 import {dirname, join} from 'node:path'
@@ -13,7 +13,7 @@ import {fileURLToPath} from 'node:url'
 import {load, isDate} from './lib/entities.mjs'
 import {loadTopics, loadStack} from './lib/taxonomy.mjs'
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..')
 
 // --- Schema: required (non-empty) keys and the full known key set, per template -----------------
 
@@ -61,12 +61,12 @@ const VOCAB = {
 // --- Load ----------------------------------------------------------------------------------------
 
 const byType = {
-    idea: load(ROOT, 'ideas'),
-    resource: load(ROOT, 'resources'),
-    goal: load(ROOT, 'goals'),
-    area: load(ROOT, 'areas')
+    idea: load(ROOT, 'kb/ideas'),
+    resource: load(ROOT, 'kb/resources'),
+    goal: load(ROOT, 'kb/goals'),
+    area: load(ROOT, 'kb/areas')
 }
-const plans = load(ROOT, 'planning')
+const plans = load(ROOT, 'kb/planning')
 const allEntities = [...byType.idea, ...byType.resource, ...byType.goal, ...byType.area, ...plans]
 const allIds = new Set(allEntities.map(e => e.id))
 const goalIds = new Set(byType.goal.map(g => g.id))
@@ -121,22 +121,22 @@ for (const g of byType.goal) {
 // topics: values must be real topic ids (never labels, never aliases - rule 3)
 for (const e of [...byType.idea, ...byType.resource, ...byType.goal, ...byType.area]) {
     for (const t of e.fm.topics ?? []) {
-        if (!topicsById.has(t)) report(e, `\`topics:\` has \`${t}\`, not a topic id in taxonomy/topics.yml`)
+        if (!topicsById.has(t)) report(e, `\`topics:\` has \`${t}\`, not a topic id in kb/taxonomy/topics.yml`)
     }
 }
 
 // goals: values must resolve to a real goal file
 for (const e of [...byType.idea, ...byType.resource]) {
     for (const g of e.fm.goals ?? []) {
-        if (!goalIds.has(g)) report(e, `\`goals:\` has \`${g}\`, no such goal in goals/`)
+        if (!goalIds.has(g)) report(e, `\`goals:\` has \`${g}\`, no such goal in kb/goals/`)
     }
 }
 
-// taxonomy/stack.yml self-check: every id it lists must exist in topics.yml
+// kb/taxonomy/stack.yml self-check: every id it lists must exist in topics.yml
 for (const group of stackGroups) {
     for (const t of group.topicIds) {
         if (!topicsById.has(t)) {
-            problems.push({rel: 'taxonomy/stack.yml', message: `group \`${group.id}\` has \`${t}\`, not a topic id in taxonomy/topics.yml`})
+            problems.push({rel: 'kb/taxonomy/stack.yml', message: `group \`${group.id}\` has \`${t}\`, not a topic id in kb/taxonomy/topics.yml`})
         }
     }
 }

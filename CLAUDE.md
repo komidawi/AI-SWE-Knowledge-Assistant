@@ -1,8 +1,8 @@
 # AI_SKILL_ASSISTANT — conventions
 
-Git + Markdown knowledge base for software-engineering skill growth. Markdown under the entity
-folders is the **single source of truth**. `README.md` (the dashboard), `assets/dashboard/`
-and `.index/` are generated — never hand-edit; the repo guide is `docs/guide.md`. Rerun `node scripts/dashboard.mjs` after any change that moves the numbers.
+Git + Markdown knowledge base for software-engineering skill growth. Markdown under `kb/` is the
+**single source of truth**; `system/` holds tooling. `README.md` (the dashboard), `system/assets/dashboard/`
+and `system/.index/` are generated — never hand-edit; the repo guide is `docs/guide.md`. Rerun `node system/scripts/dashboard.mjs` after any change that moves the numbers.
 
 ## Working agreements
 
@@ -16,24 +16,24 @@ into chat or an AI's private memory. This rule included.
 
 ## Entities
 
-| Folder       | Entity   | Holds                                                               |
-|--------------|----------|---------------------------------------------------------------------|
-| `ideas/`     | Idea     | Something I might learn or build. Cheap to add, triaged later.      |
-| `resources/` | Resource | A concrete artifact to consume: book, course, article, video, repo. |
-| `goals/`     | Goal     | Outcome with horizon and success criteria; milestones inside.       |
-| `areas/`     | Area     | Living self-assessment of one skill area: level, evidence, gaps.    |
-| `planning/`  | Plan     | Year / month / week commitments, plus retros.                       |
-| `logs/`      | Log      | `logs/operations.md` — see below.                                   |
+| Folder          | Entity   | Holds                                                               |
+|-----------------|----------|---------------------------------------------------------------------|
+| `kb/ideas/`     | Idea     | Something I might learn or build. Cheap to add, triaged later.      |
+| `kb/resources/` | Resource | A concrete artifact to consume: book, course, article, video, repo. |
+| `kb/goals/`     | Goal     | Outcome with horizon and success criteria; milestones inside.       |
+| `kb/areas/`     | Area     | Living self-assessment of one skill area: level, evidence, gaps.    |
+| `kb/planning/`  | Plan     | Year / month / week commitments, plus retros.                       |
+| `kb/logs/`      | Log      | `kb/logs/operations.md` — see below.                                |
 
-`resources/` and `ideas/` are foldered by the taxonomy **area** of the primary (first-listed)
+`kb/resources/` and `kb/ideas/` are foldered by the taxonomy **area** of the primary (first-listed)
 topic: `<entity>/<area>/<id>.md`, or `general/` for `topics: []`. Past ~15 files, split by topic:
 `<entity>/<area>/<topic>/<id>.md` — only `resources/architecture/` so far. `goals/` and `areas/`
-stay flat.
+stay flat. Paths written inside `kb/` are relative to `kb/`.
 
 ## Operation log
 
 After any operation that adds, modifies, moves or removes a repo file, add one entry per
-task/request (not per tool call) to `logs/operations.md` — **on top**, right after the frontmatter.
+task/request (not per tool call) to `kb/logs/operations.md` — **on top**, right after the frontmatter.
 
 ```
 ## YYYY-MM-DD HH:MM — Title of the operation
@@ -56,8 +56,8 @@ One to three sentences on what and why.
 
 1. **Filename = ID.** `ddia.md` has `id: ddia`. Kebab-case, stable, no dates or numbers; renaming
    breaks every `[[link]]`. Path is not identity — links resolve by id.
-2. **Every file starts with YAML frontmatter** matching `templates/`. Missing or extra fields are a bug.
-3. **`topics:` takes only ids from `taxonomy/topics.yml`** — never labels, aliases or free text.
+2. **Every file starts with YAML frontmatter** matching `kb/templates/`. Missing or extra fields are a bug.
+3. **`topics:` takes only ids from `kb/taxonomy/topics.yml`** — never labels, aliases or free text.
    Missing topic → add it to the taxonomy in the same change.
 4. **Cross-reference with wiki links by id**: `[[ddia]]`, `[[system-design-fluency]]`.
 5. **Dates are ISO `YYYY-MM-DD`.** Never relative. A week in text is written with its days:
@@ -106,18 +106,18 @@ Orthogonal to `scale:` — separates a 10-minute curio from a 10-minute foundati
 
 ## Querying
 
-Expand the term through `taxonomy/topics.yml` first (label → id → aliases → children; an area →
+Expand the term through `kb/taxonomy/topics.yml` first (label → id → aliases → children; an area →
 all its topics), then search frontmatter across entity folders, group by entity type. "JS" must
 find `javascript`.
 
 ```bash
-rg -l 'topics:.*\bjavascript\b' ideas resources goals areas
-rg -l 'status: active' goals
+rg -l 'topics:.*\bjavascript\b' kb/ideas kb/resources kb/goals kb/areas
+rg -l 'status: active' kb/goals
 ```
 
 ## The stack
 
-`taxonomy/stack.yml` lists topic ids the current job requires — a judgement input, not a
+`kb/taxonomy/stack.yml` lists topic ids the current job requires — a judgement input, not a
 vocabulary. Ids must exist in `topics.yml`; requirement wording (Hibernate, Swagger, …) lives
 there as aliases. Edit it when the job changes, not when interest does.
 
@@ -131,14 +131,14 @@ an on-goal item. A stack topic nothing covers is a blind spot; `/groom` reports 
 
 ## Assessing
 
-Score against `taxonomy/rubrics.md` only — no ad hoc dimensions or weights, so assessments stay
-comparable over time. Worth is relative to `active` goals and `taxonomy/stack.yml`.
+Score against `kb/taxonomy/rubrics.md` only — no ad hoc dimensions or weights, so assessments stay
+comparable over time. Worth is relative to `active` goals and `kb/taxonomy/stack.yml`.
 
 ## Writing new entries
 
-- Copy from `templates/`; fill frontmatter completely (omit only fields marked optional).
+- Copy from `kb/templates/`; fill frontmatter completely (omit only fields marked optional).
 - Specific over vague: "Kafka consumer-group rebalancing", not "Learn Kafka".
-- New topics go under the right area in `taxonomy/topics.yml`, with aliases people type.
+- New topics go under the right area in `kb/taxonomy/topics.yml`, with aliases people type.
 - Body short (rule 8). If a note needs a paragraph, it is probably two entries.
 
 ## External capture (Raindrop)
@@ -156,6 +156,6 @@ comparable over time. Worth is relative to `active` goals and `taxonomy/stack.ym
 
 ## Scripts
 
-`node scripts/validate.mjs` (schema, vocabularies, ids, links; manual, no hook) and
-`node scripts/index.mjs` (gitignored `.index/index.json` cache — query it with a small
-`node`/`jq` snippet, never read it whole into a conversation). Details: `scripts/README.md`.
+`node system/scripts/validate.mjs` (schema, vocabularies, ids, links; manual, no hook) and
+`node system/scripts/index.mjs` (gitignored `system/.index/index.json` cache — query it with a small
+`node`/`jq` snippet, never read it whole into a conversation). Details: `system/scripts/README.md`.

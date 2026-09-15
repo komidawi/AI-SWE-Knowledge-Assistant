@@ -24,17 +24,17 @@ Already present → tag `captured`, move on.
 
 | Call         | When                                                     | Result                                    |
 |--------------|----------------------------------------------------------|-------------------------------------------|
-| **resource** | Concrete artifact worth consuming end to end             | File in `resources/`, tagged `captured`   |
-| **idea**     | Suggests something to learn or build, more than to read  | File in `ideas/`, tagged `captured`       |
+| **resource** | Concrete artifact worth consuming end to end             | File in `kb/resources/`, tagged `captured`   |
+| **idea**     | Suggests something to learn or build, more than to read  | File in `kb/ideas/`, tagged `captured`       |
 | **drop**     | Noise, stray tab, or covered by something already `done` | No file, tagged `captured`                |
 | **skip**     | Needs the user's judgement                               | No file, **not** tagged, returns next run |
 
 Drop freely — most inboxes are half noise. Several bookmarks on one narrow subject → **one**
 resource, the rest under `## Notes`.
 
-**4. Fill the entry** from `templates/`:
+**4. Fill the entry** from `kb/templates/`:
 
-- `topics:` — via `taxonomy/topics.yml`. The collection is a hint, not a topic (`Kafka` → `kafka`;
+- `topics:` — via `kb/taxonomy/topics.yml`. The collection is a hint, not a topic (`Kafka` → `kafka`;
   `Great Courses` → nothing). Folder per `CLAUDE.md` layout.
 - `kind:` — bookmark `type`, corrected by the URL.
 - `scale:`/`nature:` — page reading-time beats a title guess. `snack` + `trivia` → usually
@@ -50,4 +50,4 @@ resource, the rest under `## Notes`.
 failed write leaves the bookmark untriaged. That tag is the only Raindrop write: no
 `delete_bookmarks`, no collection/title/link changes.
 
-**7. Rebuild** with `node scripts/dashboard.mjs`. Report promoted, dropped (why), skipped.
+**7. Rebuild** with `node system/scripts/dashboard.mjs`. Report promoted, dropped (why), skipped.

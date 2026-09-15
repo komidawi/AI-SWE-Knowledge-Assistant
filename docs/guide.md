@@ -5,23 +5,26 @@ topic, driven through Claude Code. Markdown is the source of truth; conventions 
 
 ## Layout
 
-| Path                  | Holds                                                        |
-|-----------------------|--------------------------------------------------------------|
-| `README.md`           | Generated front page (dashboard) — where everything stands   |
-| `assets/dashboard/`   | Generated SVG charts the dashboard embeds, light + dark      |
-| `docs/`               | This guide                                                   |
-| `ideas/`              | Things worth learning or building, one file each             |
-| `resources/`          | Books, courses, articles, videos, talks, repos               |
-| `goals/`              | Outcomes with horizons, success criteria and milestones      |
-| `areas/`              | Living self-assessment per skill area: level, evidence, gaps |
-| `planning/`           | Year, month and week plans, each with a retro                |
-| `logs/`               | `operations.md` — log of file-modifying operations           |
-| `taxonomy/topics.yml` | Controlled vocabulary for every `topics:` field              |
-| `taxonomy/rubrics.md` | How ideas, resources and goals get scored                    |
-| `taxonomy/stack.yml`  | Topics the current job requires — the second axis of worth   |
-| `templates/`          | Copy these when creating anything                            |
-| `.claude/commands/`   | Slash commands                                               |
-| `scripts/`            | Dashboard, validator, indexer — see `scripts/README.md`      |
+`kb/` is the content, `system/` is tooling and generated output.
+
+| Path                        | Holds                                                        |
+|-----------------------------|--------------------------------------------------------------|
+| `README.md`                 | Generated front page (dashboard) — where everything stands   |
+| `docs/`                     | This guide                                                   |
+| `kb/ideas/`                 | Things worth learning or building, one file each             |
+| `kb/resources/`             | Books, courses, articles, videos, talks, repos               |
+| `kb/goals/`                 | Outcomes with horizons, success criteria and milestones      |
+| `kb/areas/`                 | Living self-assessment per skill area: level, evidence, gaps |
+| `kb/planning/`              | Year, month and week plans, each with a retro                |
+| `kb/logs/`                  | `operations.md` — log of file-modifying operations           |
+| `kb/taxonomy/topics.yml`    | Controlled vocabulary for every `topics:` field              |
+| `kb/taxonomy/rubrics.md`    | How ideas, resources and goals get scored                    |
+| `kb/taxonomy/stack.yml`     | Topics the current job requires — the second axis of worth   |
+| `kb/templates/`             | Copy these when creating anything                            |
+| `kb/scratch/`               | Working notes, not entities                                  |
+| `system/scripts/`           | Dashboard, validator, indexer — see `system/scripts/README.md` |
+| `system/assets/dashboard/`  | Generated SVG charts the dashboard embeds, light + dark      |
+| `.claude/commands/`         | Slash commands                                               |
 
 ## Commands
 
@@ -39,10 +42,10 @@ topic, driven through Claude Code. Markdown is the source of truth; conventions 
 ## Without Claude
 
 ```bash
-node scripts/dashboard.mjs                                   # regenerate README.md
-rg -l 'topics:.*\bmicroservices\b' ideas resources goals areas
-rg -l 'status: in-progress' resources
-rg -l 'scale: snack' resources                               # fits a 20-minute gap
+node system/scripts/dashboard.mjs                            # regenerate README.md
+rg -l 'topics:.*\bmicroservices\b' kb/ideas kb/resources kb/goals kb/areas
+rg -l 'status: in-progress' kb/resources
+rg -l 'scale: snack' kb/resources                            # fits a 20-minute gap
 ```
 
-Expand aliases through `taxonomy/topics.yml` first — "k8s" misses `kubernetes`.
+Expand aliases through `kb/taxonomy/topics.yml` first — "k8s" misses `kubernetes`.

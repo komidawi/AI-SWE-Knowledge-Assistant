@@ -1,4 +1,4 @@
-// Parses taxonomy/topics.yml and taxonomy/stack.yml - the one place in this repo with YAML richer
+// Parses kb/taxonomy/topics.yml and kb/taxonomy/stack.yml - the one place in this repo with YAML richer
 // than the flat `key: scalar` / `key: [a, b]` subset entities.mjs handles. Scoped only to the exact
 // shapes those two files use today; not a general YAML parser.
 
@@ -12,7 +12,7 @@ import {join} from 'node:path'
 //       topics:
 //         - { id: x, label: y, aliases: [ a, b ], parent: z }
 export function loadTopics(root) {
-    const text = readFileSync(join(root, 'taxonomy/topics.yml'), 'utf8')
+    const text = readFileSync(join(root, 'kb/taxonomy/topics.yml'), 'utf8')
     const areas = new Map()      // area-id -> { id, label, topicIds: [] }
     const topicsById = new Map() // topic-id -> { id, label, aliases: [], parent, area }
 
@@ -85,7 +85,7 @@ function splitFlowFields(inner) {
 //       label: <label>
 //       topics: [ a, b, c ]
 export function loadStack(root) {
-    const text = readFileSync(join(root, 'taxonomy/stack.yml'), 'utf8')
+    const text = readFileSync(join(root, 'kb/taxonomy/stack.yml'), 'utf8')
     const groups = []
     let current = null
 

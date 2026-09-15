@@ -5,11 +5,11 @@ argument-hint: <entity id, or a topic to assess everything under it>
 
 Assess: $ARGUMENTS
 
-1. Read `taxonomy/rubrics.md` and use its dimensions exactly. Do not invent or reweight dimensions.
+1. Read `kb/taxonomy/rubrics.md` and use its dimensions exactly. Do not invent or reweight dimensions.
 2. Read every goal with `status: active` - assessment is relative to what is being aimed at now. If
-   no goal is active, say so and assess against the gaps in `areas/` instead.
-3. Read `taxonomy/stack.yml`. Say for each target whether its topics are on-stack. When no active
-   goal covers it, Goal fit is scored against the stack per `taxonomy/rubrics.md` - on-stack caps
+   no goal is active, say so and assess against the gaps in `kb/areas/` instead.
+3. Read `kb/taxonomy/stack.yml`. Say for each target whether its topics are on-stack. When no active
+   goal covers it, Goal fit is scored against the stack per `kb/taxonomy/rubrics.md` - on-stack caps
    at 3, off-stack at 1.
 4. For each target entity, score every dimension 1-5 with a one-line justification per score. A
    score without a reason is noise.

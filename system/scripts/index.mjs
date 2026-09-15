@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-// Builds .index/index.json: a frontmatter mirror plus topic/goal reverse indexes, topics
-// pre-expanded through taxonomy/topics.yml's alias/parent/area chains. Gitignored, disposable,
+// Builds system/.index/index.json: a frontmatter mirror plus topic/goal reverse indexes, topics
+// pre-expanded through kb/taxonomy/topics.yml's alias/parent/area chains. Gitignored, disposable,
 // rebuildable from scratch - the Markdown stays authoritative.
 //
-//   node scripts/index.mjs
+//   node system/scripts/index.mjs
 //
 // Query it with small node/jq snippets against the file, not by reading the whole thing into a
 // conversation - it mirrors the same content the Markdown already has.
@@ -15,13 +15,13 @@ import {fileURLToPath} from 'node:url'
 import {load, isoDate} from './lib/entities.mjs'
 import {loadTopics, upwardClosure} from './lib/taxonomy.mjs'
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..')
 
 const entities = [
-    ...load(ROOT, 'ideas'),
-    ...load(ROOT, 'resources'),
-    ...load(ROOT, 'goals'),
-    ...load(ROOT, 'areas')
+    ...load(ROOT, 'kb/ideas'),
+    ...load(ROOT, 'kb/resources'),
+    ...load(ROOT, 'kb/goals'),
+    ...load(ROOT, 'kb/areas')
 ]
 
 const {topicsById} = loadTopics(ROOT)
@@ -50,6 +50,6 @@ const index = {
     by_goal: byGoal
 }
 
-mkdirSync(join(ROOT, '.index'), {recursive: true})
-writeFileSync(join(ROOT, '.index/index.json'), JSON.stringify(index, null, 2) + '\n')
-console.log(`.index/index.json written - ${entities.length} entities, ${Object.keys(byTopic).length} topics, ${Object.keys(byGoal).length} goals`)
+mkdirSync(join(ROOT, 'system/.index'), {recursive: true})
+writeFileSync(join(ROOT, 'system/.index/index.json'), JSON.stringify(index, null, 2) + '\n')
+console.log(`system/.index/index.json written - ${entities.length} entities, ${Object.keys(byTopic).length} topics, ${Object.keys(byGoal).length} goals`)

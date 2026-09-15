@@ -1,4 +1,4 @@
-// Shared frontmatter/file-loading helpers for scripts/*.mjs. Pure functions - callers pass their
+// Shared frontmatter/file-loading helpers for system/scripts/*.mjs. Pure functions - callers pass their
 // own repo root (computed from their own import.meta.url), nothing here bakes in a path.
 
 import {readdirSync, readFileSync} from 'node:fs'

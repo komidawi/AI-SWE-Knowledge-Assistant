@@ -5,6 +5,14 @@ created: 2026-09-08
 updated: 2026-09-15
 ---
 
+## 2026-09-15 21:30 — Split repo into `kb/` content and `system/` tooling
+
+Content (entities, logs, taxonomy, templates, scratch) moved under `kb/`; scripts, assets and the
+index cache under `system/`. Paths inside `kb/` stay `kb/`-relative; ids and links unchanged.
+
+- **Moved:** `ideas|resources|goals|areas|planning|logs|taxonomy|templates|scratch/**` → `kb/…` (114 files), `scripts/**`, `assets/**` → `system/…` (15 files)
+- **Modified:** `system/scripts/*.mjs`, `system/scripts/lib/{entities,taxonomy}.mjs`, `system/scripts/README.md`, `.claude/commands/*.md` (7), `.claude/settings.json`, `.codex/hooks.json`, `CLAUDE.md`, `docs/guide.md`, `README.md`
+
 ## 2026-09-15 20:30 — README becomes the visual dashboard
 
 GitHub shows `README.md`, so `dashboard.mjs` now writes it, with light/dark SVG charts and real
