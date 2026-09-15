@@ -3,19 +3,19 @@
 
 # Dashboard
 
-`2026-09-15` · 2 active goal(s) · 2 in flight · 6 in inbox · `2026-W38` 0/0 done
+`2026-09-15` · 2 active goal(s) · 3 in flight · 6 in inbox · `2026-W38` 0/0 done
 
 ## Right now
 
-> **Milestone slipped `2026-09-13`** — [[interview-gap-coverage]]. Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h).
+> **Milestone slipped `2026-09-13`** — [[interview-gap-coverage]]. Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) — **slipped**: ledger done, recall pass and rewrites not started.
 
 ## Needs attention
 
-| What                           | Where                      | Why it matters                                                                                                                |
-|--------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Milestone slipped `2026-09-13` | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) |
-| 6 untriaged ideas              | `ideas/`                   | Run `/groom` — inbox items are invisible to planning                                                                          |
-| No plan for 2026-W38           | `planning/`                | Run `/plan-week`                                                                                                              |
+| What                           | Where                      | Why it matters                                                                                                                                                                                 |
+|--------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Milestone slipped `2026-09-13` | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) — **slipped**: ledger done, recall pass and rewrites not started |
+| 6 untriaged ideas              | `ideas/`                   | Run `/groom` — inbox items are invisible to planning                                                                                                                                           |
+| No plan for 2026-W38           | `planning/`                | Run `/plan-week`                                                                                                                                                                               |
 
 ## Goals
 
@@ -26,20 +26,21 @@
 
 ### Next milestones
 
-| Due          | In  | Goal                       | Milestone                                                                                                                                                           |
-|--------------|-----|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `2026-09-13` | -2d | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h)                                       |
-| `2026-09-27` | 12d | [[interview-gap-coverage]] | Messaging sweep 2: `[[enterprise-integration-patterns]]` headings marked; all unknowns from both sweeps written up (~4h) — marked 2026-09-09, write-ups outstanding |
-| `2026-09-27` | 12d | [[system-design-fluency]]  | Part 1: Orientation, Foundations, Thinking in Scale (~8h)                                                                                                           |
-| `2026-10-04` | 19d | [[interview-gap-coverage]] | Runtime boundary sweep: browser, JVM process, container, serverless; findings written up (~4h) — marked 2026-09-09, write-ups outstanding                           |
-| `2026-10-11` | 26d | [[interview-gap-coverage]] | Cold re-test on everything written before 2026-09-27; `[[interviewing]]` re-assessed; next two sweeps chosen (~3h)                                                  |
+| Due          | In  | Goal                       | Milestone                                                                                                                                                                                      |
+|--------------|-----|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2026-09-13` | -2d | [[interview-gap-coverage]] | Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) — **slipped**: ledger done, recall pass and rewrites not started |
+| `2026-09-27` | 12d | [[interview-gap-coverage]] | Messaging sweep 2: `[[enterprise-integration-patterns]]` headings marked; all unknowns from both sweeps written up (~4h) — marked 2026-09-09, write-ups outstanding                            |
+| `2026-09-27` | 12d | [[system-design-fluency]]  | Part 1: Orientation, Foundations, Thinking in Scale (~8h)                                                                                                                                      |
+| `2026-10-04` | 19d | [[interview-gap-coverage]] | Runtime boundary sweep: browser, JVM process, container, serverless; findings written up (~4h) — marked 2026-09-09, write-ups outstanding                                                      |
+| `2026-10-11` | 26d | [[interview-gap-coverage]] | Cold re-test on everything written before 2026-09-27; `[[interviewing]]` re-assessed; next two sweeps chosen (~3h)                                                                             |
 
 ## In flight
 
-| Resource                           | Kind | Scale     | Progress                             | Effort | Priority | Updated |
-|------------------------------------|------|-----------|--------------------------------------|--------|----------|---------|
-| [[designing-event-driven-systems]] | book | multi-day | first pass done, second pass pending | 10h    | high     | 8d ago  |
-| [[building-microservices]]         | book | multi-day | first pass done, second pass pending | 20h    | high     | 8d ago  |
+| Resource                                 | Kind   | Scale     | Progress                                                                | Effort | Priority | Updated |
+|------------------------------------------|--------|-----------|-------------------------------------------------------------------------|--------|----------|---------|
+| [[designing-event-driven-systems]]       | book   | multi-day | first pass done, second pass pending                                    | 10h    | high     | 8d ago  |
+| [[building-microservices]]               | book   | multi-day | first pass done, second pass pending                                    | 20h    | high     | 8d ago  |
+| [[hello-interview-system-design-course]] | course | multi-day | 01 done; 02: Networking, API Design, Data Modeling done — Indexing next | 31h    | high     | today   |
 
 ## Pick by time
 
@@ -93,7 +94,7 @@ _No week file. Run `/plan-week`._
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
 | Ideas     | 32    | accepted 1 · considering 24 · dropped 1 · inbox 6 |
-| Resources | 61    | backlog 56 · done 1 · in-progress 2 · reference 2 |
+| Resources | 61    | backlog 55 · done 1 · in-progress 3 · reference 2 |
 | Goals     | 2     | active 2                                          |
 | Areas     | 2     | —                                                 |
 | Plans     | 3     | —                                                 |

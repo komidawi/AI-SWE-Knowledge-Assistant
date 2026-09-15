@@ -10,7 +10,7 @@ topics: [ interviewing, integration-patterns, event-driven, distributed-systems,
 priority: high
 weekly_hours: 4
 created: 2026-09-08
-updated: 2026-09-09
+updated: 2026-09-15
 ---
 
 ## Why this matters
@@ -42,7 +42,7 @@ Behavioral is **out of scope** (`[[interview-story-bank]]`).
 
 ## Milestones
 
-- [ ] `2026-09-13` — Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h)
+- [ ] `2026-09-13` — Ledger created; recall pass over past interviews; Outbox and the browser boundary written up as the two worked examples (~3h) — **slipped**: ledger done, recall pass and rewrites not started
 - [x] `2026-09-20` — Messaging sweep 1: `[[microservices-io-pattern-catalogue]]` marked end to end, no skipping the obvious (~4h) — done 2026-09-09
 - [ ] `2026-09-27` — Messaging sweep 2: `[[enterprise-integration-patterns]]` headings marked; all unknowns from both sweeps written up (~4h) — marked 2026-09-09, write-ups outstanding
 - [ ] `2026-10-04` — Runtime boundary sweep: browser, JVM process, container, serverless; findings written up (~4h) — marked 2026-09-09, write-ups outstanding
@@ -55,6 +55,9 @@ sweeps dominated.
 
 - `2026-09-09` — all six sweeps marked, ~5 weeks early. The 87 `none`/`minimal` write-ups are now
   the whole cost and unsized. Re-size at the W37 retro.
+- `2026-09-15` — W37 re-size: 0 write-ups done, so no measured rate. Guess 87 × 10–15m ≈ 15–22h,
+  plus recall pass and re-test ≈ 20–27h. Left to target: 4 × 4h = 16h. **Does not fit.** Time
+  the first two write-ups in W38, then move dates or split the queue.
 - Overflow carries into a second month as write-ups. Never leave a sweep half-marked — it looks done.
 - Live goals total 8h/week. If observed hours come in lower, dates move; criteria don't weaken.
 

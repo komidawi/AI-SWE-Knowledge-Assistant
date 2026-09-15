@@ -9,17 +9,17 @@ source: manual
 raindrop_id:
 topics: [ system-design, distributed-systems, databases, caching, streaming, networking, rest-api ]
 goals: [ system-design-fluency ]
-status: backlog
+status: in-progress
 priority: high
 effort: 31h
 scale: multi-day
 nature: core
-progress:
+progress: "01 done; 02: Networking, API Design, Data Modeling done — Indexing next"
 rating:
 started:
 finished:
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-15
 ---
 
 ## Why this one

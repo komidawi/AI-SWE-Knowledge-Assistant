@@ -5,6 +5,13 @@ created: 2026-09-08
 updated: 2026-09-15
 ---
 
+## 2026-09-15 13:00 — Review week W37
+
+Filled the W37 retro from the user's answers. Course moved to `in-progress`. The goal's
+2026-09-13 milestone slipped, and the write-up queue was re-sized: it doesn't fit before target.
+
+- **Modified:** `planning/2026/2026-W37.md`, `planning/2026/2026-09.md`, `goals/interview-gap-coverage.md`, `resources/architecture/system-design/hello-interview-system-design-course.md`, `DASHBOARD.md`
+
 ## 2026-09-15 12:00 — Enforce rule 8 (terse) across docs and entries
 
 Audited all files for verbosity. Trimmed prose and cross-file duplication. Rule 8 now names docs,
