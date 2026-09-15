@@ -10,7 +10,7 @@ raindrop_id: 1840426065
 topics: [ databases ]
 goals: [ ]
 status: backlog
-priority: medium
+priority: high
 effort: 15h
 scale: multi-day
 nature: applied
@@ -19,13 +19,14 @@ rating:
 started:
 finished:
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-11
 ---
 
 ## Why this one
 
 Builds a SQLite clone in C from scratch — REPL, pager, cursor, B-tree, SQL parsing. Hands-on, so it
 produces real evidence of understanding database internals rather than familiarity with them.
+Flagged again on 2026-09-11 as genuinely high-value, not just backlog filler.
 
 ## Notes
 

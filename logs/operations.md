@@ -5,6 +5,38 @@ created: 2026-09-08
 updated: 2026-09-11
 ---
 
+## 2026-09-11 14:20 — Search out the Kraków groups the original list missed
+
+Swept the stack topic by topic plus crossweb.pl, dev.events and the MOTIFE community index. Ten new
+groups worth a verdict, two more picks (KraQA, GenAI Cracow — the latter runs on Luma, not
+meetup.com), a conference shortlist led by JDD 2026, and a note on where to search next time.
+
+- **Modified:** `scratch/krakow-meetups.md`
+
+## 2026-09-11 13:55 — Rework the meetup assessment into one ordered pros/cons table
+
+Replaced the verdict table with a single table in link order carrying pros, cons and a comment per
+group, and added Developer Productivity Group — it was in the provided links and had been dropped
+from the first pass. The three missing groups moved to their own table.
+
+- **Modified:** `scratch/krakow-meetups.md`
+
+## 2026-09-11 13:40 — Assess 31 Kraków meetup groups against goals and stack
+
+Checked every group's meetup.com page for activity, size and topic, then scored on goals + stack +
+whether it is still alive. Seven picks, three of them groups missing from the original list (PJUG,
+SCKRK, DDD-KRK); nine are dead. Kept in `scratch/` — an analysis note, not an entity.
+
+- **Added:** `scratch/krakow-meetups.md`
+
+## 2026-09-11 00:20 — Bump priority on an existing resource instead of duplicating it
+
+User flagged `https://cstack.github.io/db_tutorial/` as very valuable — already captured as
+`[[how-does-a-database-work]]` (same URL), so raised priority `medium` → `high` instead of adding
+a near-duplicate file.
+
+- **Modified:** `resources/data/how-does-a-database-work.md`
+
 ## 2026-09-11 00:10 — Capture two more learning-gap ideas (Idempotency, UUID vs ID)
 
 Idempotency is tied to `[[interview-gap-coverage]]` as a depth gap — the ledger already has it at
