@@ -5,6 +5,13 @@ created: 2026-09-08
 updated: 2026-09-17
 ---
 
+## 2026-09-17 — Module 02 Foundations closed, 03 Thinking in Scale started
+
+Indexing done, so 01 and 02 are complete. W38's Indexing item ticked; the two estimation articles
+added to W38 (+20m) since 03 covers Numbers to Know.
+
+- **Modified:** `resources/architecture/system-design/hello-interview-system-design-course.md`, `planning/2026/2026-W38.md`, `README.md`, `system/assets/dashboard/*.svg`
+
 ## 2026-09-17 — Capture the two Hello Interview estimation articles
 
 Estimates are the untrained step of the Delivery Framework; both `high`, on `system-design-fluency`.

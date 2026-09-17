@@ -14,12 +14,12 @@ priority: high
 effort: 31h
 scale: multi-day
 nature: core
-progress: "01 done; 02: Networking, API Design, Data Modeling done — Indexing next"
+progress: "01, 02 done — 03 Thinking in Scale started 2026-09-17"
 rating:
 started: 2026-09-07
 finished:
 created: 2026-09-07
-updated: 2026-09-15
+updated: 2026-09-17
 ---
 
 ## Why this one

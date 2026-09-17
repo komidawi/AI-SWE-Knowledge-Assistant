@@ -8,7 +8,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
-  <img src="system/assets/dashboard/kpi-light.svg" alt="1 active goals, 1 in flight, 1 needing attention, week 0/2 done">
+  <img src="system/assets/dashboard/kpi-light.svg" alt="1 active goals, 1 in flight, 1 needing attention, week 1/3 done">
 </picture>
 
 > [!WARNING]
@@ -35,16 +35,17 @@
 
 ## 🗓️ This week — `W38(14-20.09)`
 
-0/2 done · 3h committed of `8h` · [2026-W38](kb/planning/2026/2026-W38.md)
+1/3 done · 3h committed of `8h` · [2026-W38](kb/planning/2026/2026-W38.md)
 
-- [ ] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 02 Indexing + quiz — closes 02 Foundations
+- [x] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 02 Indexing + quiz — closes 02 Foundations
 - [ ] (2h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 03 Caching, Sharding, Consistent Hashing
+- [ ] (20m) — [hello-interview-mastering-estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) + [hello-interview-numbers-to-know](kb/resources/architecture/system-design/hello-interview-numbers-to-know.md), added 2026-09-17 — 03 covers Numbers to Know
 
 ## 📖 In flight
 
-| Resource                                                                                                                | Kind   | Progress                                                                | Effort | Priority | Updated |
-|-------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------|--------|----------|---------|
-| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | 01 done; 02: Networking, API Design, Data Modeling done — Indexing next | 31h    | high     | 2d ago  |
+| Resource                                                                                                                | Kind   | Progress                                              | Effort | Priority | Updated |
+|-------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------|--------|----------|---------|
+| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | 01, 02 done — 03 Thinking in Scale started 2026-09-17 | 31h    | high     | today   |
 
 ## 📈 Areas
 
