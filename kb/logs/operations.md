@@ -2,8 +2,16 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-09-15
+updated: 2026-09-17
 ---
+
+## 2026-09-17 — Capture the two Hello Interview estimation articles
+
+Estimates are the untrained step of the Delivery Framework; both `high`, on `system-design-fluency`.
+New topic `capacity-estimation` (the existing `estimation` is agile planning, not sizing).
+
+- **Added:** `resources/architecture/system-design/hello-interview-mastering-estimation.md`, `resources/architecture/system-design/hello-interview-numbers-to-know.md`
+- **Modified:** `taxonomy/topics.yml`, `goals/system-design-fluency.md`, `README.md`, `system/assets/dashboard/*.svg`
 
 ## 2026-09-15 23:00 — Set `started:` on the system design course
 

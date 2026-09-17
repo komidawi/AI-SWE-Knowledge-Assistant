@@ -62,6 +62,7 @@ areas:
     label: Architecture & Distributed Systems
     topics:
       - { id: system-design,       label: System Design,        aliases: [ sysdesign, scalability, hld ] }
+      - { id: capacity-estimation, label: Capacity Estimation,  aliases: [ estimates, back-of-envelope, napkin-math, fermi, qps, sizing, numbers-to-know ], parent: system-design }
       - { id: distributed-systems, label: Distributed Systems,  aliases: [ consensus, raft, cap ] }
       - { id: microservices,       label: Microservices,        aliases: [ service-decomposition ] }
       - { id: event-driven,        label: Event-Driven Architecture, aliases: [ eda, event-sourcing, cqrs, pub-sub ] }

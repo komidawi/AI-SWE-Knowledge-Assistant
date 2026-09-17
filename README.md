@@ -4,7 +4,7 @@
 <h1 align="center">AI_SKILL_ASSISTANT</h1>
 
 <p align="center">Software-engineering skill growth — goals, resources, weekly plans.<br>
-<code>2026-09-15</code> · <code>W38(14-20.09)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
+<code>2026-09-17</code> · <code>W38(14-20.09)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
@@ -27,11 +27,11 @@
 
 | Due          | In  | Goal                                                       | Milestone                                                               |
 |--------------|-----|------------------------------------------------------------|-------------------------------------------------------------------------|
-| `2026-09-27` | 12d | [system-design-fluency](kb/goals/system-design-fluency.md) | Part 1: Orientation, Foundations, Thinking in Scale (~8h)               |
-| `2026-10-18` | 33d | [system-design-fluency](kb/goals/system-design-fluency.md) | Scaling Reads and Writes, incl. Postgres, Redis, Kafka, Cassandra (~8h) |
-| `2026-11-08` | 54d | [system-design-fluency](kb/goals/system-design-fluency.md) | Real-time Updates, Contention, Multi-step Processes (~7h)               |
-| `2026-11-29` | 75d | [system-design-fluency](kb/goals/system-design-fluency.md) | Large Blobs, Long Running Tasks, Proximity-Based Services (~5h)         |
-| `2026-12-13` | 89d | [system-design-fluency](kb/goals/system-design-fluency.md) | Final Designs, plus the cold non-course design (~6h)                    |
+| `2026-09-27` | 10d | [system-design-fluency](kb/goals/system-design-fluency.md) | Part 1: Orientation, Foundations, Thinking in Scale (~8h)               |
+| `2026-10-18` | 31d | [system-design-fluency](kb/goals/system-design-fluency.md) | Scaling Reads and Writes, incl. Postgres, Redis, Kafka, Cassandra (~8h) |
+| `2026-11-08` | 52d | [system-design-fluency](kb/goals/system-design-fluency.md) | Real-time Updates, Contention, Multi-step Processes (~7h)               |
+| `2026-11-29` | 73d | [system-design-fluency](kb/goals/system-design-fluency.md) | Large Blobs, Long Running Tasks, Proximity-Based Services (~5h)         |
+| `2026-12-13` | 87d | [system-design-fluency](kb/goals/system-design-fluency.md) | Final Designs, plus the cold non-course design (~6h)                    |
 
 ## 🗓️ This week — `W38(14-20.09)`
 
@@ -44,7 +44,7 @@
 
 | Resource                                                                                                                | Kind   | Progress                                                                | Effort | Priority | Updated |
 |-------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------|--------|----------|---------|
-| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | 01 done; 02: Networking, API Design, Data Modeling done — Indexing next | 31h    | high     | today   |
+| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | 01 done; 02: Networking, API Design, Data Modeling done — Indexing next | 31h    | high     | 2d ago  |
 
 ## 📈 Areas
 
@@ -56,37 +56,38 @@
 [architecture](kb/areas/architecture.md) · [interviewing](kb/areas/interviewing.md)
 
 <details>
-<summary><b>⏱️ Pick by time</b> — 22 backlog resources that fit a gap</summary>
+<summary><b>⏱️ Pick by time</b> — 23 backlog resources that fit a gap</summary>
 
-| Resource                                                                                                             | Scale | Effort | Nature      | Priority |
-|----------------------------------------------------------------------------------------------------------------------|-------|--------|-------------|----------|
-| [fowler-evolutionary-database-design](kb/resources/data/fowler-evolutionary-database-design.md)                      | short | 30m    | core        | high     |
-| [functional-core-imperative-shell](kb/resources/architecture/clean-architecture/functional-core-imperative-shell.md) | short | 30m    | core        | medium   |
-| [distributed-snapshots-paper](kb/resources/architecture/distributed-systems/distributed-snapshots-paper.md)          | short | 45m    | core        | medium   |
-| [google-cloud-spanner-talk](kb/resources/architecture/distributed-systems/google-cloud-spanner-talk.md)              | short | 45m    | case-study  | medium   |
-| [why-pick-strong-consistency](kb/resources/architecture/distributed-systems/why-pick-strong-consistency.md)          | short | 20m    | core        | medium   |
-| [calculus-of-service-availability](kb/resources/architecture/resilience/calculus-of-service-availability.md)         | short | 45m    | core        | medium   |
-| [service-mesh-survey](kb/resources/architecture/service-mesh/service-mesh-survey.md)                                 | short | 25m    | case-study  | medium   |
-| [discord-trillions-of-messages](kb/resources/architecture/system-design/discord-trillions-of-messages.md)            | short | 25m    | case-study  | medium   |
-| [netflix-system-design](kb/resources/architecture/system-design/netflix-system-design.md)                            | short | 30m    | case-study  | medium   |
-| [inverse-conway-maneuver](kb/resources/career/inverse-conway-maneuver.md)                                            | short | 20m    | core        | medium   |
-| [allegro-db-maintenance-3tb-to-100gb](kb/resources/data/allegro-db-maintenance-3tb-to-100gb.md)                      | short | 20m    | case-study  | medium   |
-| [allegro-transactions-in-mongodb](kb/resources/data/allegro-transactions-in-mongodb.md)                              | short | 20m    | core        | medium   |
-| [feature-flags-primer](kb/resources/devops/feature-flags-primer.md)                                                  | short | 30m    | core        | medium   |
-| [kotlin-programming-with-result](kb/resources/languages/kotlin-programming-with-result.md)                           | short | 20m    | applied     | medium   |
-| [joel-things-you-should-never-do](kb/resources/quality/joel-things-you-should-never-do.md)                           | short | 20m    | perspective | medium   |
-| [fowler-tolerant-reader](kb/resources/backend/fowler-tolerant-reader.md)                                             | snack | 10m    | core        | medium   |
-| [mocking-is-a-code-smell](kb/resources/quality/mocking-is-a-code-smell.md)                                           | snack | 15m    | perspective | medium   |
-| [google-monorepo-billions-of-lines](kb/resources/architecture/system-design/google-monorepo-billions-of-lines.md)    | short | 25m    | case-study  | low      |
-| [jol-java-object-layout-plugin](kb/resources/languages/jol-java-object-layout-plugin.md)                             | short | 20m    | lookup      | low      |
-| [tests-execution-chart](kb/resources/quality/tests-execution-chart.md)                                               | short | 30m    | lookup      | low      |
-| [boolean-blindness](kb/resources/architecture/design-patterns/boolean-blindness.md)                                  | snack | 15m    | perspective | low      |
-| [fowler-value-object](kb/resources/architecture/design-patterns/fowler-value-object.md)                              | snack | 10m    | core        | low      |
+| Resource                                                                                                                | Scale | Effort | Nature      | Priority |
+|-------------------------------------------------------------------------------------------------------------------------|-------|--------|-------------|----------|
+| [fowler-evolutionary-database-design](kb/resources/data/fowler-evolutionary-database-design.md)                         | short | 30m    | core        | high     |
+| [hello-interview-mastering-estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) | snack | 10m    | core        | high     |
+| [functional-core-imperative-shell](kb/resources/architecture/clean-architecture/functional-core-imperative-shell.md)    | short | 30m    | core        | medium   |
+| [distributed-snapshots-paper](kb/resources/architecture/distributed-systems/distributed-snapshots-paper.md)             | short | 45m    | core        | medium   |
+| [google-cloud-spanner-talk](kb/resources/architecture/distributed-systems/google-cloud-spanner-talk.md)                 | short | 45m    | case-study  | medium   |
+| [why-pick-strong-consistency](kb/resources/architecture/distributed-systems/why-pick-strong-consistency.md)             | short | 20m    | core        | medium   |
+| [calculus-of-service-availability](kb/resources/architecture/resilience/calculus-of-service-availability.md)            | short | 45m    | core        | medium   |
+| [service-mesh-survey](kb/resources/architecture/service-mesh/service-mesh-survey.md)                                    | short | 25m    | case-study  | medium   |
+| [discord-trillions-of-messages](kb/resources/architecture/system-design/discord-trillions-of-messages.md)               | short | 25m    | case-study  | medium   |
+| [netflix-system-design](kb/resources/architecture/system-design/netflix-system-design.md)                               | short | 30m    | case-study  | medium   |
+| [inverse-conway-maneuver](kb/resources/career/inverse-conway-maneuver.md)                                               | short | 20m    | core        | medium   |
+| [allegro-db-maintenance-3tb-to-100gb](kb/resources/data/allegro-db-maintenance-3tb-to-100gb.md)                         | short | 20m    | case-study  | medium   |
+| [allegro-transactions-in-mongodb](kb/resources/data/allegro-transactions-in-mongodb.md)                                 | short | 20m    | core        | medium   |
+| [feature-flags-primer](kb/resources/devops/feature-flags-primer.md)                                                     | short | 30m    | core        | medium   |
+| [kotlin-programming-with-result](kb/resources/languages/kotlin-programming-with-result.md)                              | short | 20m    | applied     | medium   |
+| [joel-things-you-should-never-do](kb/resources/quality/joel-things-you-should-never-do.md)                              | short | 20m    | perspective | medium   |
+| [fowler-tolerant-reader](kb/resources/backend/fowler-tolerant-reader.md)                                                | snack | 10m    | core        | medium   |
+| [mocking-is-a-code-smell](kb/resources/quality/mocking-is-a-code-smell.md)                                              | snack | 15m    | perspective | medium   |
+| [google-monorepo-billions-of-lines](kb/resources/architecture/system-design/google-monorepo-billions-of-lines.md)       | short | 25m    | case-study  | low      |
+| [jol-java-object-layout-plugin](kb/resources/languages/jol-java-object-layout-plugin.md)                                | short | 20m    | lookup      | low      |
+| [tests-execution-chart](kb/resources/quality/tests-execution-chart.md)                                                  | short | 30m    | lookup      | low      |
+| [boolean-blindness](kb/resources/architecture/design-patterns/boolean-blindness.md)                                     | snack | 15m    | perspective | low      |
+| [fowler-value-object](kb/resources/architecture/design-patterns/fowler-value-object.md)                                 | snack | 10m    | core        | low      |
 
 </details>
 
 <details>
-<summary><b>📚 Library</b> — 61 resources, 32 ideas, 2 goals, 2 areas, 4 plans</summary>
+<summary><b>📚 Library</b> — 63 resources, 32 ideas, 2 goals, 2 areas, 4 plans</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/shape-dark.svg">
@@ -96,7 +97,7 @@
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
 | Ideas     | 32    | inbox 6 · considering 24 · accepted 1 · dropped 1 |
-| Resources | 61    | backlog 57 · in-progress 1 · done 1 · reference 2 |
+| Resources | 63    | backlog 58 · in-progress 1 · done 1 · reference 3 |
 | Goals     | 2     | active 1 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
 | Plans     | 4     | —                                                 |

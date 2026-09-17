@@ -42,7 +42,9 @@ at every step, turning reading into evidence.
 ## Linked
 
 - Ideas: `[[second-pass-on-architecture-books]]` — superseded for now; decide there, second pass or drop.
-- Resources: `[[hello-interview-system-design-course]]` (the spine).
+- Resources: `[[hello-interview-system-design-course]]` (the spine);
+  `[[hello-interview-mastering-estimation]]` + `[[hello-interview-numbers-to-know]]` — the estimates
+  step of the Delivery Framework, read before module 03.
 - Goals: `[[interview-gap-coverage]]` — added 2026-09-08, parallel on its own 4h; catches missing pattern names. Gaps needing depth come here.
 - Adjacent, not committed: `[[kafka-system-design-deep-dive]]`, `[[building-microservices]]`, `[[designing-event-driven-systems]]`, `[[databases-in-depth-course]]` — the course covers Kafka, Cassandra and sharding, so none start before it finishes.
 
