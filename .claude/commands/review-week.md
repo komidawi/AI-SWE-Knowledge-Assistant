@@ -10,6 +10,8 @@ Review the week: $ARGUMENTS (default: the current ISO week)
 2. Update the underlying entities: `status`, `progress`, `updated`, `rating` on anything finished.
    The week file records the week; the entity files hold the truth.
 3. Fill the retro: done, not done **and why**, actual vs planned hours, adjustment for next week.
+   Actual hours come from `node system/scripts/toggl.mjs <week> --json`; ask about every `?` or
+   ambiguous row rather than guessing. Token missing or Toggl down → ask the user for hours.
    The "why" is the part with value - chase the real cause, not "was busy".
 4. Update the month file's retro section if this is the last week of the month.
 5. Flag honestly:

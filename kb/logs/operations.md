@@ -5,6 +5,14 @@ created: 2026-09-08
 updated: 2026-09-18
 ---
 
+## 2026-09-18 — Toggl Track hours script
+
+Read-only `toggl.mjs` pulls actual hours per entry description and matches them to kb ids;
+`/review-week` uses it for actual vs planned and asks about unmatched rows.
+
+- **Added:** `system/scripts/toggl.mjs`
+- **Modified:** `.claude/commands/review-week.md`, `CLAUDE.md`, `docs/guide.md`, `system/scripts/README.md`
+
 ## 2026-09-18 — System design course split into tracks: videos, texts, practice
 
 Syllabus formats verified: 15 video+guide lessons, 10 text-only, 17 exercises. Theory stays in

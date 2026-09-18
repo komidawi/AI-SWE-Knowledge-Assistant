@@ -22,7 +22,7 @@ topic, driven through Claude Code. Markdown is the source of truth; conventions 
 | `kb/taxonomy/stack.yml`     | Topics the current job requires — the second axis of worth   |
 | `kb/templates/`             | Copy these when creating anything                            |
 | `kb/scratch/`               | Working notes, not entities                                  |
-| `system/scripts/`           | Dashboard, validator, indexer — see `system/scripts/README.md` |
+| `system/scripts/`           | Dashboard, validator, indexer, Toggl hours — see `system/scripts/README.md` |
 | `system/assets/dashboard/`  | Generated SVG charts the dashboard embeds, light + dark      |
 | `.claude/commands/`         | Slash commands                                               |
 
