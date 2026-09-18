@@ -159,7 +159,8 @@ comparable over time. Worth is relative to `active` goals and `kb/taxonomy/stack
 
 `system/scripts/toggl.mjs` reads actual hours (env `TOGGL_API_TOKEN`, never committed). Read-only;
 Toggl holds time, the week file holds the retro. Entries are named descriptively; a row it can't
-match to one id → ask, never guess. Only `/review-week` uses it, and falls back to asking.
+match to one id → ask, never guess. Finished entries only — running timers never count. Only
+`/review-week` uses it, and falls back to asking.
 
 ## Scripts
 

@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 // Actual hours from Toggl Track, grouped by entry description and matched to kb ids by name.
-// Read-only: prints, writes nothing. Token from env TOGGL_API_TOKEN (Toggl → Profile → API Token).
+// Finished entries only - running timers are skipped. Read-only: prints, writes nothing.
+// Token from env TOGGL_API_TOKEN (Toggl → Profile → API Token).
 //
 //   node system/scripts/toggl.mjs                 # current ISO week
 //   node system/scripts/toggl.mjs 2026-W38        # an ISO week
@@ -46,12 +47,10 @@ async function main() {
     ].map(e => ({id: e.id, keys: [norm(e.id), norm(e.fm.title ?? '')].filter(Boolean)}))
 
     const groups = new Map()
-    for (const e of entries) {
-        const seconds = e.duration >= 0 ? e.duration : Math.round(Date.now() / 1000 + e.duration) // running
+    for (const e of entries.filter(e => e.duration >= 0)) { // running timers (duration < 0) never count
         const desc = (e.description ?? '').trim() || '(no description)'
-        const g = groups.get(desc) ?? {description: desc, project: e.project_name ?? null, seconds: 0, running: false}
-        g.seconds += seconds
-        g.running ||= e.duration < 0
+        const g = groups.get(desc) ?? {description: desc, project: e.project_name ?? null, seconds: 0}
+        g.seconds += e.duration
         groups.set(desc, g)
     }
 
@@ -66,7 +65,7 @@ async function main() {
         console.log(`Toggl ${from} … ${to} — ${total}h`)
         for (const r of rows) {
             const id = r.matches.length === 1 ? r.matches[0] : r.matches.length ? `? ${r.matches.join(' | ')}` : '?'
-            console.log(`${r.hours.toFixed(2).padStart(6)}h  ${id.padEnd(40)}  ${r.description}${r.running ? '  (running)' : ''}`)
+            console.log(`${r.hours.toFixed(2).padStart(6)}h  ${id.padEnd(40)}  ${r.description}`)
         }
     }
 }

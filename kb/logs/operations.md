@@ -5,6 +5,12 @@ created: 2026-09-08
 updated: 2026-09-18
 ---
 
+## 2026-09-18 — Toggl: running timers excluded
+
+Only finished entries count toward hours.
+
+- **Modified:** `system/scripts/toggl.mjs`, `CLAUDE.md`, `system/scripts/README.md`
+
 ## 2026-09-18 — Toggl Track hours script
 
 Read-only `toggl.mjs` pulls actual hours per entry description and matches them to kb ids;
