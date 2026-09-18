@@ -8,57 +8,58 @@ url: https://www.hellointerview.com/learn/courses/system-design
 source: manual
 raindrop_id:
 topics: [ system-design, distributed-systems, databases, caching, streaming, networking, rest-api ]
-goals: [ system-design-fluency ]
+goals: [ system-design-fluency, system-design-practice ]
 status: in-progress
 priority: high
 effort: 31h
 scale: multi-day
 nature: core
-progress: "01, 02 done — 03 Thinking in Scale started 2026-09-17"
+progress: "Videos: 02 done, 03 started · Texts: 01 done · Practice: none"
 rating:
 started: 2026-09-07
 finished:
 created: 2026-09-07
-updated: 2026-09-17
+updated: 2026-09-18
 ---
 
 ## Why this one
 
-Spine of `[[system-design-fluency]]`; the only resource that forces output — each pattern module
-opens with a cold design attempt. Covers Kafka, Cassandra, Redis and sharding, so
-`[[kafka-system-design-deep-dive]]` and `[[databases-in-depth-course]]` wait until it is done.
+Spine of `[[system-design-fluency]]` (theory) and `[[system-design-practice]]` (exercises).
+Covers Kafka, Cassandra, Redis and sharding, so `[[kafka-system-design-deep-dive]]` and
+`[[databases-in-depth-course]]` wait until it is done.
 
 ## Notes
 
-~31h total · 24 video lessons · 17 quizzes · 9 guided practices.
+~31h listed · formats verified on the syllabus page 2026-09-18.
 
-**Part 1 — Fundamentals (~8h)**
+**Three tracks, never mixed:**
 
-| Module               | Contents                                                           | Time  |
-|----------------------|--------------------------------------------------------------------|-------|
-| 01 Orientation       | Introduction, Delivery Framework                                   | ~25m  |
-| 02 Foundations       | Networking Essentials (~125m), API Design, Data Modeling, Indexing  | ~285m |
-| 03 Thinking in Scale | Caching, Sharding, Consistent Hashing, CAP Theorem, Numbers to Know | ~165m |
+| Track    | Goal                         | Items                                                          |
+|----------|------------------------------|----------------------------------------------------------------|
+| Videos   | `[[system-design-fluency]]`  | Pass 1 — 15 "video and guide" lessons, their 12 quizzes        |
+| Texts    | `[[system-design-fluency]]`  | Pass 2 — 15 guides + 10 text-only lessons, their 4 quizzes     |
+| Practice | `[[system-design-practice]]` | Concurrent — 17 exercises with their video reviews and quizzes |
 
-**Part 2 — The Patterns (~18h)**
+A quiz goes with its lesson's first pass. A named system (Bitly, Uber, Metrics Monitoring, …) is
+practice, whatever its format. Practice rule: attempt first, review second, record the delta here.
+No first attempt → exercise not done.
 
-| Module                         | Practice designs                          | Time  |
-|--------------------------------|-------------------------------------------|-------|
-| 04 Scaling Reads               | Bitly, News Aggregator; PostgreSQL, Redis | ~225m |
-| 05 Scaling Writes              | Ad Click Aggregator; Kafka, Cassandra     | ~235m |
-| 06 Real-time Updates           | FB Live Comments, WhatsApp                | ~170m |
-| 07 Dealing with Contention     | Ticketmaster, Online Auction              | ~105m |
-| 08 Multi-step Processes        | Notification System, Payment System       | ~135m |
-| 09 Handling Large Blobs        | Dropbox, YouTube                          | ~90m  |
-| 10 Managing Long Running Tasks | LeetCode, Web Crawler                     | ~100m |
-| 11 Proximity-Based Services    | Yelp, Uber; Elasticsearch                 | ~130m |
+| Module                         | Video + guide                                                       | Text only                        | Practice                                                        |
+|--------------------------------|---------------------------------------------------------------------|----------------------------------|-----------------------------------------------------------------|
+| 01 Orientation                 | —                                                                   | Introduction, Delivery Framework | —                                                               |
+| 02 Foundations                 | Networking Essentials, API Design, Data Modeling, Database Indexing | —                                | —                                                               |
+| 03 Thinking in Scale           | Caching, Sharding, Consistent Hashing, CAP Theorem                  | Numbers to Know                  | —                                                               |
+| Part 2 intro                   | —                                                                   | Common Patterns                  | —                                                               |
+| 04 Scaling Reads               | Scaling Reads, Redis                                                | PostgreSQL                       | Bitly + review, News Aggregator                                 |
+| 05 Scaling Writes              | Scaling Writes, Kafka, Cassandra                                    | —                                | Ad Click Aggregator + review                                    |
+| 06 Real-time Updates           | Real-time Updates                                                   | —                                | FB Live Comments + review, WhatsApp                             |
+| 07 Dealing with Contention     | —                                                                   | Dealing with Contention          | Ticketmaster + review, Online Auction                           |
+| 08 Multi-step Processes        | Multi-step Processes                                                | —                                | Notification System, Payment System                             |
+| 09 Handling Large Blobs        | —                                                                   | Handling Large Blobs             | Dropbox + review, YouTube                                       |
+| 10 Managing Long Running Tasks | —                                                                   | Managing Long Running Tasks      | LeetCode + review, Web Crawler                                  |
+| 11 Proximity-Based Services    | —                                                                   | Proximity Search, Elasticsearch  | Yelp + review, Uber                                             |
+| 12 Final Designs               | —                                                                   | —                                | FB News Feed + review, Metrics Monitoring (video + guide, quiz) |
 
-**Part 3 — Put It All Together (~3h)**
-
-| Module           | Contents                         | Time  |
-|------------------|----------------------------------|-------|
-| 12 Final Designs | FB News Feed, Metrics Monitoring | ~170m |
-
-Practice rule: attempt first, read second, record the delta here. No first attempt → module not done.
+Numbers to Know text = `[[hello-interview-numbers-to-know]]`.
 
 ## Assessments

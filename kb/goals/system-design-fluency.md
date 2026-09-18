@@ -1,7 +1,7 @@
 ---
 id: system-design-fluency
 type: goal
-title: Design a large-scale system end to end, unaided, using a repeatable framework
+title: Know the system design building blocks and patterns — course theory, videos then texts
 horizon: quarter
 status: active
 start: 2026-09-07
@@ -10,34 +10,33 @@ topics: [ system-design, distributed-systems, databases, caching, streaming, net
 priority: high
 weekly_hours: 4
 created: 2026-09-07
-updated: 2026-09-08
+updated: 2026-09-18
 ---
 
 ## Why this matters
 
 Most reading, least demonstrated ability: `[[architecture]]` is level 1, no evidence — five
-half-read books, zero systems designed. `[[hello-interview-system-design-course]]` forces a design
-at every step, turning reading into evidence.
+half-read books, zero systems designed. This is the theory half of
+`[[hello-interview-system-design-course]]`; the design half is `[[system-design-practice]]`.
 
 ## Success criteria
 
-- [ ] Every module of `[[hello-interview-system-design-course]]` completed, quizzes included
-- [ ] All 9 guided designs attempted **before** the walkthrough, then compared, delta written into the resource's Notes
-- [ ] One design produced cold — no course tab — for a system not covered by the course, following the Delivery Framework: requirements, estimates, API, data model, high-level design, deep dives
-- [ ] `[[architecture]]` re-assessed against `taxonomy/rubrics.md` citing this work
+Theory track only — lesson split in the resource's Notes. Exercises belong to `[[system-design-practice]]`.
+
+- [ ] Pass 1: all 15 video lessons watched, their 12 quizzes done
+- [ ] Pass 2: all 25 texts read — 15 video-lesson guides + 10 text-only lessons — their 4 quizzes done
 
 ## Milestones
 
-- [ ] `2026-09-27` — Part 1: Orientation, Foundations, Thinking in Scale (~8h)
-- [ ] `2026-10-18` — Scaling Reads and Writes, incl. Postgres, Redis, Kafka, Cassandra (~8h)
-- [ ] `2026-11-08` — Real-time Updates, Contention, Multi-step Processes (~7h)
-- [ ] `2026-11-29` — Large Blobs, Long Running Tasks, Proximity-Based Services (~5h)
-- [ ] `2026-12-13` — Final Designs, plus the cold non-course design (~6h)
+- [ ] `2026-09-27` — Videos: Part 1 — 02 Foundations, 03 Thinking in Scale (~2.5h left)
+- [ ] `2026-10-11` — Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h)
+- [ ] `2026-10-25` — Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)
+- [ ] `2026-11-15` — Texts: Part 2 — Common Patterns, 04–11 guides and text-only lessons (~8h)
 
 ## Capacity check
 
-~40h (31h course, plus first-attempt designs and notes) · `weekly_hours` 4 × 14 weeks = 56h ·
-**fits, ~16h slack** — deliberate: guided practices are worth redoing.
+~26h (videos ~14h, texts ~12h; guide re-read assumed ~60% of listed time) · `weekly_hours` 4 × 14
+weeks = 56h · **fits** — slack sits in `[[system-design-practice]]`'s side of the 8h/week.
 
 ## Linked
 
@@ -45,7 +44,7 @@ at every step, turning reading into evidence.
 - Resources: `[[hello-interview-system-design-course]]` (the spine);
   `[[hello-interview-mastering-estimation]]` + `[[hello-interview-numbers-to-know]]` — the estimates
   step of the Delivery Framework, read before module 03.
-- Goals: `[[interview-gap-coverage]]` — added 2026-09-08, parallel on its own 4h; catches missing pattern names. Gaps needing depth come here.
+- Goals: `[[system-design-practice]]` — the exercises, concurrent. `[[interview-gap-coverage]]` — on hold.
 - Adjacent, not committed: `[[kafka-system-design-deep-dive]]`, `[[building-microservices]]`, `[[designing-event-driven-systems]]`, `[[databases-in-depth-course]]` — the course covers Kafka, Cassandra and sharding, so none start before it finishes.
 
 ## Assessments

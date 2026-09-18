@@ -2,8 +2,17 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-09-17
+updated: 2026-09-18
 ---
+
+## 2026-09-18 — System design course split into tracks: videos, texts, practice
+
+Syllabus formats verified: 15 video+guide lessons, 10 text-only, 17 exercises. Theory stays in
+`system-design-fluency` (pass 1 videos, pass 2 texts); exercises moved to new concurrent goal
+`system-design-practice`, taking the freed 4h/week.
+
+- **Added:** `goals/system-design-practice.md`
+- **Modified:** `resources/architecture/system-design/hello-interview-system-design-course.md`, `goals/system-design-fluency.md`, `planning/2026/2026.md`, `planning/2026/2026-09.md`, `planning/2026/2026-W38.md`, `areas/architecture.md`, `README.md`, `system/assets/dashboard/*.svg`
 
 ## 2026-09-17 — Module 02 Foundations closed, 03 Thinking in Scale started
 

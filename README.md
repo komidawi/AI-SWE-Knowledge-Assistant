@@ -4,11 +4,11 @@
 <h1 align="center">AI_SKILL_ASSISTANT</h1>
 
 <p align="center">Software-engineering skill growth — goals, resources, weekly plans.<br>
-<code>2026-09-17</code> · <code>W38(14-20.09)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
+<code>2026-09-18</code> · <code>W38(14-20.09)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
-  <img src="system/assets/dashboard/kpi-light.svg" alt="1 active goals, 1 in flight, 1 needing attention, week 1/3 done">
+  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 1 in flight, 1 needing attention, week 1/3 done">
 </picture>
 
 > [!WARNING]
@@ -18,34 +18,34 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/goals-dark.svg">
-  <img src="system/assets/dashboard/goals-light.svg" alt="system-design-fluency">
+  <img src="system/assets/dashboard/goals-light.svg" alt="system-design-fluency, system-design-practice">
 </picture>
 
-[system-design-fluency](kb/goals/system-design-fluency.md)
+[system-design-fluency](kb/goals/system-design-fluency.md) · [system-design-practice](kb/goals/system-design-practice.md)
 
 ### Next milestones
 
-| Due          | In  | Goal                                                       | Milestone                                                               |
-|--------------|-----|------------------------------------------------------------|-------------------------------------------------------------------------|
-| `2026-09-27` | 10d | [system-design-fluency](kb/goals/system-design-fluency.md) | Part 1: Orientation, Foundations, Thinking in Scale (~8h)               |
-| `2026-10-18` | 31d | [system-design-fluency](kb/goals/system-design-fluency.md) | Scaling Reads and Writes, incl. Postgres, Redis, Kafka, Cassandra (~8h) |
-| `2026-11-08` | 52d | [system-design-fluency](kb/goals/system-design-fluency.md) | Real-time Updates, Contention, Multi-step Processes (~7h)               |
-| `2026-11-29` | 73d | [system-design-fluency](kb/goals/system-design-fluency.md) | Large Blobs, Long Running Tasks, Proximity-Based Services (~5h)         |
-| `2026-12-13` | 87d | [system-design-fluency](kb/goals/system-design-fluency.md) | Final Designs, plus the cold non-course design (~6h)                    |
+| Due          | In  | Goal                                                         | Milestone                                                                                                              |
+|--------------|-----|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| `2026-09-27` | 9d  | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 1 — 02 Foundations, 03 Thinking in Scale (~2.5h left)                                                     |
+| `2026-10-04` | 16d | [system-design-practice](kb/goals/system-design-practice.md) | Bitly, News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp (~6.5h)                                        |
+| `2026-10-11` | 23d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h) |
+| `2026-10-25` | 37d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)                                                          |
+| `2026-10-25` | 37d | [system-design-practice](kb/goals/system-design-practice.md) | Ticketmaster, Online Auction, Notification System, Payment System, Dropbox, YouTube (~6.5h)                            |
 
 ## 🗓️ This week — `W38(14-20.09)`
 
 1/3 done · 3h committed of `8h` · [2026-W38](kb/planning/2026/2026-W38.md)
 
-- [x] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 02 Indexing + quiz — closes 02 Foundations
-- [ ] (2h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 03 Caching, Sharding, Consistent Hashing
+- [x] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 02 Indexing video + quiz — closes 02 Foundations (pass 1)
+- [ ] (2h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 03 Caching, Sharding, Consistent Hashing videos
 - [ ] (20m) — [hello-interview-mastering-estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) + [hello-interview-numbers-to-know](kb/resources/architecture/system-design/hello-interview-numbers-to-know.md), added 2026-09-17 — 03 covers Numbers to Know
 
 ## 📖 In flight
 
-| Resource                                                                                                                | Kind   | Progress                                              | Effort | Priority | Updated |
-|-------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------|--------|----------|---------|
-| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | 01, 02 done — 03 Thinking in Scale started 2026-09-17 | 31h    | high     | today   |
+| Resource                                                                                                                | Kind   | Progress                                                      | Effort | Priority | Updated |
+|-------------------------------------------------------------------------------------------------------------------------|--------|---------------------------------------------------------------|--------|----------|---------|
+| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | Videos: 02 done, 03 started · Texts: 01 done · Practice: none | 31h    | high     | today   |
 
 ## 📈 Areas
 
@@ -88,7 +88,7 @@
 </details>
 
 <details>
-<summary><b>📚 Library</b> — 63 resources, 32 ideas, 2 goals, 2 areas, 4 plans</summary>
+<summary><b>📚 Library</b> — 63 resources, 32 ideas, 3 goals, 2 areas, 4 plans</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/shape-dark.svg">
@@ -99,7 +99,7 @@
 |-----------|-------|---------------------------------------------------|
 | Ideas     | 32    | inbox 6 · considering 24 · accepted 1 · dropped 1 |
 | Resources | 63    | backlog 58 · in-progress 1 · done 1 · reference 3 |
-| Goals     | 2     | active 1 · on-hold 1                              |
+| Goals     | 3     | active 2 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
 | Plans     | 4     | —                                                 |
 
