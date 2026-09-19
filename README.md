@@ -8,7 +8,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
-  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 1 in flight, 1 needing attention, week 2/3 done">
+  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 2 in flight, 1 needing attention, week 2/3 done">
 </picture>
 
 > [!WARNING]
@@ -27,11 +27,11 @@
 
 | Due          | In  | Goal                                                         | Milestone                                                                                                              |
 |--------------|-----|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| `2026-10-04` | 15d | [system-design-practice](kb/goals/system-design-practice.md) | Bitly, News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp (~6.5h)                                        |
 | `2026-10-11` | 22d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h) |
+| `2026-10-18` | 29d | [system-design-practice](kb/goals/system-design-practice.md) | Bitly (done), News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp (~16h left)                             |
 | `2026-10-25` | 36d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)                                                          |
-| `2026-10-25` | 36d | [system-design-practice](kb/goals/system-design-practice.md) | Ticketmaster, Online Auction, Notification System, Payment System, Dropbox, YouTube (~6.5h)                            |
 | `2026-11-15` | 57d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2 — Common Patterns, 04–11 guides and text-only lessons (~8h)                                              |
+| `2026-11-22` | 64d | [system-design-practice](kb/goals/system-design-practice.md) | Ticketmaster, Online Auction, Notification System, Payment System, Dropbox (done), YouTube (~20h left)                 |
 
 ## 🗓️ This week — `W38(14-20.09)`
 
@@ -43,9 +43,10 @@
 
 ## 📖 In flight
 
-| Resource                                                                                                                | Kind   | Progress                                                                                              | Effort | Priority | Updated |
-|-------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------|--------|----------|---------|
-| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19 — Redis next · Texts: 01 done · Practice: none | 31h    | high     | today   |
+| Resource                                                                                                                | Kind   | Progress                                                                                                                   | Effort | Priority | Updated |
+|-------------------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------|--------|----------|---------|
+| [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)           | course | Easy: 3/4 · Medium: 0/13 · Hard: 0/12 · No write-up: 0/4                                                                   | 124h   | high     | today   |
+| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19 — Redis next · Texts: 01 done · Practice: Bitly, Dropbox, Yelp done | 31h    | high     | today   |
 
 ## 📈 Areas
 
@@ -88,7 +89,7 @@
 </details>
 
 <details>
-<summary><b>📚 Library</b> — 63 resources, 32 ideas, 3 goals, 2 areas, 4 plans</summary>
+<summary><b>📚 Library</b> — 64 resources, 32 ideas, 3 goals, 2 areas, 4 plans</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/shape-dark.svg">
@@ -98,7 +99,7 @@
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
 | Ideas     | 32    | inbox 6 · considering 24 · accepted 1 · dropped 1 |
-| Resources | 63    | backlog 58 · in-progress 1 · done 1 · reference 3 |
+| Resources | 64    | backlog 58 · in-progress 2 · done 1 · reference 3 |
 | Goals     | 3     | active 2 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
 | Plans     | 4     | —                                                 |

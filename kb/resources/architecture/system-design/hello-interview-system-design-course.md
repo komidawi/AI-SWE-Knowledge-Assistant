@@ -14,7 +14,7 @@ priority: high
 effort: 31h
 scale: multi-day
 nature: core
-progress: "Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19 — Redis next · Texts: 01 done · Practice: none"
+progress: "Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19 — Redis next · Texts: 01 done · Practice: Bitly, Dropbox, Yelp done"
 rating:
 started: 2026-09-07
 finished:
@@ -61,5 +61,6 @@ No first attempt → exercise not done.
 | 12 Final Designs               | —                                                                   | —                                | FB News Feed + review, Metrics Monitoring (video + guide, quiz) |
 
 Numbers to Know text = `[[hello-interview-numbers-to-know]]`.
+Exercises are done in `[[hello-interview-guided-practice]]`.
 
 ## Assessments

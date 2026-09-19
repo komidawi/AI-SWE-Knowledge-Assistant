@@ -22,5 +22,5 @@ Set honestly against `taxonomy/rubrics.md`, with evidence. Five books read is no
 
 ### Next moves
 
-- `[[system-design-fluency]]` + `[[system-design-practice]]` (active): finish `[[hello-interview-system-design-course]]` theory and exercises by 2026-12-13, then re-assess here citing the designs produced.
+- `[[system-design-fluency]]` + `[[system-design-practice]]` (active): finish `[[hello-interview-system-design-course]]` theory by 2026-12-13 and exercises by 2027-01-03, then re-assess here citing the designs produced.
 - Decide `[[second-pass-on-architecture-books]]` — queue behind that goal, or drop.

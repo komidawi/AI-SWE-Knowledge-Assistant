@@ -5,6 +5,19 @@ created: 2026-09-08
 updated: 2026-09-19
 ---
 
+## 2026-09-19 — Practice goal extended to 2027-01-03
+
+~71h at 4h/week didn't fit by 2026-12-13; dates moved, scope kept. New agreement: scope over dates.
+
+- **Modified:** `CLAUDE.md`, `goals/system-design-practice.md`, `planning/2026/2026.md`, `areas/architecture.md`
+
+## 2026-09-19 — Guided practice: Bitly, Dropbox, Yelp done
+
+Hello Interview Guided Practice added as the exercise platform, split by level; problem = own attempt ~2h + write-up ~2h. Practice goal rescaled to ~71h — over capacity.
+
+- **Added:** `resources/architecture/system-design/hello-interview-guided-practice.md`
+- **Modified:** `resources/architecture/system-design/hello-interview-system-design-course.md`, `goals/system-design-practice.md`
+
 ## 2026-09-19 — Shorthand: `cp` = commit and push
 
 - **Modified:** `CLAUDE.md`

@@ -13,6 +13,7 @@ into chat or an AI's private memory. This rule included.
 - **Commit to the checked-out branch.** No feature branches, no switching — single-user repo.
   Commit only when asked; split unrelated changes; never push unless asked (local runs ahead of
   `origin`).
+- **Scope over dates.** When scope doesn't fit capacity, move dates later — don't cut scope.
 - **`cp` = commit and push** — that message is the ask for both.
 
 ## Entities
