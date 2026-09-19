@@ -14,12 +14,12 @@ priority: high
 effort: 31h
 scale: multi-day
 nature: core
-progress: "Videos: 02 done, 03 started · Texts: 01 done · Practice: none"
+progress: "Videos: 02 done, 03: Caching done 2026-09-18 — Sharding next · Texts: 01 done · Practice: none"
 rating:
 started: 2026-09-07
 finished:
 created: 2026-09-07
-updated: 2026-09-18
+updated: 2026-09-19
 ---
 
 ## Why this one

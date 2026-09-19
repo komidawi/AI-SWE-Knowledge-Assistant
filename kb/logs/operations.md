@@ -2,8 +2,14 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-09-18
+updated: 2026-09-19
 ---
+
+## 2026-09-19 — 03 Caching video done
+
+Caching video (pass 1) finished 2026-09-18; Sharding next. W38 item stays open.
+
+- **Modified:** `resources/architecture/system-design/hello-interview-system-design-course.md`, `planning/2026/2026-W38.md`
 
 ## 2026-09-18 — Toggl: running timers excluded
 

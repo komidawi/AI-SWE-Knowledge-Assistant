@@ -4,7 +4,7 @@
 <h1 align="center">AI_SKILL_ASSISTANT</h1>
 
 <p align="center">Software-engineering skill growth — goals, resources, weekly plans.<br>
-<code>2026-09-18</code> · <code>W38(14-20.09)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
+<code>2026-09-19</code> · <code>W38(14-20.09)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
@@ -27,25 +27,25 @@
 
 | Due          | In  | Goal                                                         | Milestone                                                                                                              |
 |--------------|-----|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| `2026-09-27` | 9d  | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 1 — 02 Foundations, 03 Thinking in Scale (~2.5h left)                                                     |
-| `2026-10-04` | 16d | [system-design-practice](kb/goals/system-design-practice.md) | Bitly, News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp (~6.5h)                                        |
-| `2026-10-11` | 23d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h) |
-| `2026-10-25` | 37d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)                                                          |
-| `2026-10-25` | 37d | [system-design-practice](kb/goals/system-design-practice.md) | Ticketmaster, Online Auction, Notification System, Payment System, Dropbox, YouTube (~6.5h)                            |
+| `2026-09-27` | 8d  | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 1 — 02 Foundations, 03 Thinking in Scale (~2.5h left)                                                     |
+| `2026-10-04` | 15d | [system-design-practice](kb/goals/system-design-practice.md) | Bitly, News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp (~6.5h)                                        |
+| `2026-10-11` | 22d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h) |
+| `2026-10-25` | 36d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)                                                          |
+| `2026-10-25` | 36d | [system-design-practice](kb/goals/system-design-practice.md) | Ticketmaster, Online Auction, Notification System, Payment System, Dropbox, YouTube (~6.5h)                            |
 
 ## 🗓️ This week — `W38(14-20.09)`
 
 1/3 done · 3h committed of `8h` · [2026-W38](kb/planning/2026/2026-W38.md)
 
 - [x] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 02 Indexing video + quiz — closes 02 Foundations (pass 1)
-- [ ] (2h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 03 Caching, Sharding, Consistent Hashing videos
+- [ ] (2h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 03 Caching, Sharding, Consistent Hashing videos — Caching done 2026-09-18
 - [ ] (20m) — [hello-interview-mastering-estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) + [hello-interview-numbers-to-know](kb/resources/architecture/system-design/hello-interview-numbers-to-know.md), added 2026-09-17 — 03 covers Numbers to Know
 
 ## 📖 In flight
 
-| Resource                                                                                                                | Kind   | Progress                                                      | Effort | Priority | Updated |
-|-------------------------------------------------------------------------------------------------------------------------|--------|---------------------------------------------------------------|--------|----------|---------|
-| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | Videos: 02 done, 03 started · Texts: 01 done · Practice: none | 31h    | high     | today   |
+| Resource                                                                                                                | Kind   | Progress                                                                                       | Effort | Priority | Updated |
+|-------------------------------------------------------------------------------------------------------------------------|--------|------------------------------------------------------------------------------------------------|--------|----------|---------|
+| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | Videos: 02 done, 03: Caching done 2026-09-18 — Sharding next · Texts: 01 done · Practice: none | 31h    | high     | today   |
 
 ## 📈 Areas
 
