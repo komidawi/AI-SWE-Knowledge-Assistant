@@ -5,6 +5,12 @@ created: 2026-09-08
 updated: 2026-09-19
 ---
 
+## 2026-09-19 — Videos through 04 Scaling Reads done
+
+03 Thinking in Scale videos finished, closing the Part 1 videos milestone 8d early; 04 Scaling Reads done too, Redis next.
+
+- **Modified:** `resources/architecture/system-design/hello-interview-system-design-course.md`, `goals/system-design-fluency.md`, `planning/2026/2026-W38.md`
+
 ## 2026-09-19 — 03 Caching video done
 
 Caching video (pass 1) finished 2026-09-18; Sharding next. W38 item stays open.

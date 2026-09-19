@@ -10,7 +10,7 @@ topics: [ system-design, distributed-systems, databases, caching, streaming, net
 priority: high
 weekly_hours: 4
 created: 2026-09-07
-updated: 2026-09-18
+updated: 2026-09-19
 ---
 
 ## Why this matters
@@ -28,7 +28,7 @@ Theory track only — lesson split in the resource's Notes. Exercises belong to 
 
 ## Milestones
 
-- [ ] `2026-09-27` — Videos: Part 1 — 02 Foundations, 03 Thinking in Scale (~2.5h left)
+- [x] `2026-09-27` — Videos: Part 1 — 02 Foundations, 03 Thinking in Scale — done 2026-09-19
 - [ ] `2026-10-11` — Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h)
 - [ ] `2026-10-25` — Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)
 - [ ] `2026-11-15` — Texts: Part 2 — Common Patterns, 04–11 guides and text-only lessons (~8h)

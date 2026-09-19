@@ -14,7 +14,7 @@ priority: high
 effort: 31h
 scale: multi-day
 nature: core
-progress: "Videos: 02 done, 03: Caching done 2026-09-18 — Sharding next · Texts: 01 done · Practice: none"
+progress: "Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19 — Redis next · Texts: 01 done · Practice: none"
 rating:
 started: 2026-09-07
 finished:
