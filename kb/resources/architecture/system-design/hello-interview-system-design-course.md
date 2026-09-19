@@ -40,7 +40,7 @@ Covers Kafka, Cassandra, Redis and sharding, so `[[kafka-system-design-deep-dive
 | Texts    | `[[system-design-fluency]]`  | Pass 2 — 15 guides + 10 text-only lessons, their 4 quizzes     |
 | Practice | `[[system-design-practice]]` | Concurrent — 17 exercises with their video reviews and quizzes |
 
-A quiz goes with its lesson's first pass. A named system (Bitly, Uber, Metrics Monitoring, …) is
+A video and its quiz are one unit — video done means quiz done. Texts and exercises are separate units. A named system (Bitly, Uber, Metrics Monitoring, …) is
 practice, whatever its format. Practice rule: attempt first, review second, record the delta here.
 No first attempt → exercise not done.
 

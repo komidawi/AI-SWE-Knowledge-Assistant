@@ -5,6 +5,12 @@ created: 2026-09-08
 updated: 2026-09-19
 ---
 
+## 2026-09-19 — Course rule: video + quiz = one unit
+
+Video done implies its quiz done; texts and exercises stay separate units.
+
+- **Modified:** `resources/architecture/system-design/hello-interview-system-design-course.md`
+
 ## 2026-09-19 — Videos through 04 Scaling Reads done
 
 03 Thinking in Scale videos finished, closing the Part 1 videos milestone 8d early; 04 Scaling Reads done too, Redis next.
