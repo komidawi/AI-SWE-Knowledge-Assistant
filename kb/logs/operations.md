@@ -5,6 +5,10 @@ created: 2026-09-08
 updated: 2026-09-19
 ---
 
+## 2026-09-19 — Shorthand: `cp` = commit and push
+
+- **Modified:** `CLAUDE.md`
+
 ## 2026-09-19 — Course rule: video + quiz = one unit
 
 Video done implies its quiz done; texts and exercises stay separate units.
