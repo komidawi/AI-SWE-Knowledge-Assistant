@@ -2,8 +2,16 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-09-19
+updated: 2026-09-21
 ---
+
+## 2026-09-21 — Raindrop triage: 6 bookmarks, 2 resources
+
+First triage since Raindrop was wired through Composio. Two promoted, four dropped as noise or
+single opinion pieces; all six tagged `captured`, queue now empty.
+
+- **Added:** `resources/ai/agent-ready-environments.md`, `resources/career/productive-software-engineer.md`
+- **Modified:** `logs/operations.md`
 
 ## 2026-09-19 — Practice goal extended to 2027-01-03
 

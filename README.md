@@ -4,15 +4,21 @@
 <h1 align="center">AI_SKILL_ASSISTANT</h1>
 
 <p align="center">Software-engineering skill growth — goals, resources, weekly plans.<br>
-<code>2026-09-19</code> · <code>W38(14-20.09)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
+<code>2026-09-21</code> · <code>W39(21-27.09)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
-  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 2 in flight, 1 needing attention, week 2/3 done">
+  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 2 in flight, 2 needing attention, week 0/0 done">
 </picture>
 
 > [!WARNING]
 > **6 untriaged ideas** — `kb/ideas/`. Run `/groom` — inbox items are invisible to planning.
+
+## ⚠️ Also needs attention
+
+| What                      | Where          | Why it matters   |
+|---------------------------|----------------|------------------|
+| No plan for W39(21-27.09) | `kb/planning/` | Run `/plan-week` |
 
 ## 🎯 Goals
 
@@ -27,26 +33,22 @@
 
 | Due          | In  | Goal                                                         | Milestone                                                                                                              |
 |--------------|-----|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| `2026-10-11` | 22d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h) |
-| `2026-10-18` | 29d | [system-design-practice](kb/goals/system-design-practice.md) | Bitly (done), News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp (~16h left)                             |
-| `2026-10-25` | 36d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)                                                          |
-| `2026-11-15` | 57d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2 — Common Patterns, 04–11 guides and text-only lessons (~8h)                                              |
-| `2026-11-22` | 64d | [system-design-practice](kb/goals/system-design-practice.md) | Ticketmaster, Online Auction, Notification System, Payment System, Dropbox (done), YouTube (~20h left)                 |
+| `2026-10-11` | 20d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h) |
+| `2026-10-18` | 27d | [system-design-practice](kb/goals/system-design-practice.md) | Bitly (done), News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp (~16h left)                             |
+| `2026-10-25` | 34d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)                                                          |
+| `2026-11-15` | 55d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2 — Common Patterns, 04–11 guides and text-only lessons (~8h)                                              |
+| `2026-11-22` | 62d | [system-design-practice](kb/goals/system-design-practice.md) | Ticketmaster, Online Auction, Notification System, Payment System, Dropbox (done), YouTube (~20h left)                 |
 
-## 🗓️ This week — `W38(14-20.09)`
+## 🗓️ This week — `W39(21-27.09)`
 
-2/3 done · 3h committed of `8h` · [2026-W38](kb/planning/2026/2026-W38.md)
-
-- [x] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 02 Indexing video + quiz — closes 02 Foundations (pass 1)
-- [x] (2h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): 03 Caching, Sharding, Consistent Hashing videos — closes 03; plus CAP and 04 Scaling Reads (unplanned), done 2026-09-19
-- [ ] (20m) — [hello-interview-mastering-estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) + [hello-interview-numbers-to-know](kb/resources/architecture/system-design/hello-interview-numbers-to-know.md), added 2026-09-17 — 03 covers Numbers to Know
+_No week file. Run `/plan-week`._
 
 ## 📖 In flight
 
 | Resource                                                                                                                | Kind   | Progress                                                                                                                   | Effort | Priority | Updated |
 |-------------------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------|--------|----------|---------|
-| [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)           | course | Easy: 3/4 · Medium: 0/13 · Hard: 0/12 · No write-up: 0/4                                                                   | 124h   | high     | today   |
-| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19 — Redis next · Texts: 01 done · Practice: Bitly, Dropbox, Yelp done | 31h    | high     | today   |
+| [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)           | course | Easy: 3/4 · Medium: 0/13 · Hard: 0/12 · No write-up: 0/4                                                                   | 124h   | high     | 2d ago  |
+| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19 — Redis next · Texts: 01 done · Practice: Bitly, Dropbox, Yelp done | 31h    | high     | 2d ago  |
 
 ## 📈 Areas
 
@@ -58,7 +60,7 @@
 [architecture](kb/areas/architecture.md) · [interviewing](kb/areas/interviewing.md)
 
 <details>
-<summary><b>⏱️ Pick by time</b> — 23 backlog resources that fit a gap</summary>
+<summary><b>⏱️ Pick by time</b> — 25 backlog resources that fit a gap</summary>
 
 | Resource                                                                                                                | Scale | Effort | Nature      | Priority |
 |-------------------------------------------------------------------------------------------------------------------------|-------|--------|-------------|----------|
@@ -80,7 +82,9 @@
 | [joel-things-you-should-never-do](kb/resources/quality/joel-things-you-should-never-do.md)                              | short | 20m    | perspective | medium   |
 | [fowler-tolerant-reader](kb/resources/backend/fowler-tolerant-reader.md)                                                | snack | 10m    | core        | medium   |
 | [mocking-is-a-code-smell](kb/resources/quality/mocking-is-a-code-smell.md)                                              | snack | 15m    | perspective | medium   |
+| [agent-ready-environments](kb/resources/ai/agent-ready-environments.md)                                                 | short | 20m    | perspective | low      |
 | [google-monorepo-billions-of-lines](kb/resources/architecture/system-design/google-monorepo-billions-of-lines.md)       | short | 25m    | case-study  | low      |
+| [productive-software-engineer](kb/resources/career/productive-software-engineer.md)                                     | short | 30m    | applied     | low      |
 | [jol-java-object-layout-plugin](kb/resources/languages/jol-java-object-layout-plugin.md)                                | short | 20m    | lookup      | low      |
 | [tests-execution-chart](kb/resources/quality/tests-execution-chart.md)                                                  | short | 30m    | lookup      | low      |
 | [boolean-blindness](kb/resources/architecture/design-patterns/boolean-blindness.md)                                     | snack | 15m    | perspective | low      |
@@ -89,7 +93,7 @@
 </details>
 
 <details>
-<summary><b>📚 Library</b> — 64 resources, 32 ideas, 3 goals, 2 areas, 4 plans</summary>
+<summary><b>📚 Library</b> — 66 resources, 32 ideas, 3 goals, 2 areas, 4 plans</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/shape-dark.svg">
@@ -99,7 +103,7 @@
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
 | Ideas     | 32    | inbox 6 · considering 24 · accepted 1 · dropped 1 |
-| Resources | 64    | backlog 58 · in-progress 2 · done 1 · reference 3 |
+| Resources | 66    | backlog 60 · in-progress 2 · done 1 · reference 3 |
 | Goals     | 3     | active 2 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
 | Plans     | 4     | —                                                 |
