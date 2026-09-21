@@ -5,6 +5,19 @@ created: 2026-09-08
 updated: 2026-09-21
 ---
 
+## 2026-09-21 14:05 — W38 closed, W39 planned, practice write-ups batched
+
+Retro for W38 filled from Toggl via Composio (4.15h actual vs 3.3h planned). W39 planned at 4.3h of
+6.4h cap, first design attempt ahead of the videos. Per komidawi's decision the practice write-ups
+move out of the per-exercise loop into one block after all 17 attempts — `system-design-practice`
+milestones and capacity restructured, target date unchanged.
+
+- **Added:** `planning/2026/2026-W39.md`
+- **Modified:** `CLAUDE.md`, `planning/2026/2026-W38.md`, `planning/2026/2026-09.md`,
+  `goals/system-design-practice.md`,
+  `resources/architecture/system-design/hello-interview-system-design-course.md`,
+  `resources/architecture/system-design/hello-interview-guided-practice.md`
+
 ## 2026-09-21 — Raindrop triage: 6 bookmarks, 2 resources
 
 First triage since Raindrop was wired through Composio. Two promoted, four dropped as noise or

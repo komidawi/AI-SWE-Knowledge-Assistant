@@ -30,6 +30,8 @@ with AI feedback before the write-up — attempt-first by construction. Superset
 ## Notes
 
 One problem = own first attempt in the guided session (~2h), then the write-up (~2h). 29 × 4h + 4 without write-up × 2h = 124h.
+Sequencing since 2026-09-21: attempts run first as their own block, write-ups follow behind — the
+per-problem cost is unchanged, only the order.
 
 | Level              | Done                 | In progress            | Left                                                                                                                                           |
 |--------------------|----------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -42,7 +42,8 @@ Covers Kafka, Cassandra, Redis and sharding, so `[[kafka-system-design-deep-dive
 
 A video and its quiz are one unit — video done means quiz done. Texts and exercises are separate units. A named system (Bitly, Uber, Metrics Monitoring, …) is
 practice, whatever its format. Practice rule: attempt first, review second, record the delta here.
-No first attempt → exercise not done.
+No first attempt → exercise not done. Since 2026-09-21 the review+delta step is batched — all
+attempts first, write-ups in one block behind them (`[[system-design-practice]]` milestones).
 
 | Module                         | Video + guide                                                       | Text only                        | Practice                                                        |
 |--------------------------------|---------------------------------------------------------------------|----------------------------------|-----------------------------------------------------------------|

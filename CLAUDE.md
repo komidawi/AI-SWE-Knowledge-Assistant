@@ -164,6 +164,11 @@ Toggl holds time, the week file holds the retro. Entries are named descriptively
 match to one id → ask, never guess. Finished entries only — running timers never count. Only
 `/review-week` uses it, and falls back to asking.
 
+Where `TOGGL_API_TOKEN` is unset, the same data is reachable through the Composio CLI, toolkit
+`toggl_track` (`TOGGL_TRACK_LIST_TIME_ENTRIES`, workspace 3096519) — try that before asking.
+Descriptions map to KB entities, not projects: `System Design Videos` is the course, `Teoria` and
+`Interviews` are off-KB and never count toward goal hours.
+
 ## Scripts
 
 `node system/scripts/validate.mjs` (schema, vocabularies, ids, links; manual, no hook) and

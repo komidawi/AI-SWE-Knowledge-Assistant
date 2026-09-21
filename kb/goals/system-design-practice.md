@@ -10,7 +10,7 @@ topics: [ system-design, distributed-systems, databases, caching, streaming, net
 priority: high
 weekly_hours: 4
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-09-21
 ---
 
 ## Why this matters
@@ -20,23 +20,31 @@ Theory (`[[system-design-fluency]]`) is not evidence; designs are. The exercise 
 
 ## Success criteria
 
-- [ ] All 17 course exercises (9 guided, 8 breakdowns) attempted **before** the walkthrough, then compared, delta written into the resource's Notes
+- [ ] All 17 course exercises (9 guided, 8 breakdowns) attempted **before** the walkthrough — attempts first, in one run
+- [ ] Write-ups: every attempt compared against the walkthrough, delta written into the resource's Notes — one block after the last attempt, not per exercise
 - [ ] One design produced cold — no course tab — for a system not covered by the course, following the Delivery Framework: requirements, estimates, API, data model, high-level design, deep dives
 - [ ] `[[architecture]]` re-assessed against `taxonomy/rubrics.md` citing this work
 
 ## Milestones
 
-Each exercise (~4h): own attempt in `[[hello-interview-guided-practice]]` (~2h), then the write-up (~2h), then delta.
+Split 2026-09-21: attempts first (~2h each), write-ups as one block behind them (~2h each). Deltas
+are written from the attempt notes, so the notes must carry the reasoning, not just the diagram.
 
-- [ ] `2026-10-18` — Bitly (done), News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp (~16h left)
-- [ ] `2026-11-22` — Ticketmaster, Online Auction, Notification System, Payment System, Dropbox (done), YouTube (~20h left)
-- [ ] `2026-12-27` — LeetCode, Web Crawler, Yelp (done), Uber, FB News Feed, Metrics Monitoring (~20h left)
+- [ ] `2026-10-11` — Attempts: News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp, Ticketmaster, Online Auction (~12h)
+- [ ] `2026-11-08` — Attempts: Notification System, Payment System, YouTube, LeetCode, Web Crawler, Uber, FB News Feed, Metrics Monitoring (~16h) — all 17 attempted
+- [ ] `2026-12-27` — Write-ups + deltas for all 14 attempts, in attempt order (~28h)
 - [ ] `2027-01-03` — Cold non-course design (~3h); `[[architecture]]` re-assessed
 
 ## Capacity check
 
-~71h (17 × ~4h + cold design ~3h) · ~59h left after Bitly, Dropbox, Yelp · `weekly_hours` 4 × 15 weeks from 2026-09-21 = 60h · **fits** —
-target moved 2026-12-13 → 2027-01-03 on 2026-09-19 (scope kept).
+~59h left (14 × 2h attempts + 14 × 2h write-ups + cold design ~3h; Bitly, Dropbox, Yelp done) ·
+`weekly_hours` 4 × 15 weeks from 2026-09-21 = 60h · **fits** — target 2027-01-03 unchanged, total
+work identical; only the order changed on 2026-09-21, which pulls the attempt milestones earlier.
+
+**Known cost of the split:** a delta written weeks after its attempt corrects less — the reasoning
+behind a choice fades faster than the diagram. Accepted deliberately: the block doubles as a
+refresher pass before the cold design. If the first batch of deltas turns out to be recall rather
+than correction, move write-ups back next to their attempts.
 
 ## Linked
 

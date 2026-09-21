@@ -8,17 +8,11 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
-  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 2 in flight, 2 needing attention, week 0/0 done">
+  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 2 in flight, 1 needing attention, week 0/4 done">
 </picture>
 
 > [!WARNING]
 > **6 untriaged ideas** — `kb/ideas/`. Run `/groom` — inbox items are invisible to planning.
-
-## ⚠️ Also needs attention
-
-| What                      | Where          | Why it matters   |
-|---------------------------|----------------|------------------|
-| No plan for W39(21-27.09) | `kb/planning/` | Run `/plan-week` |
 
 ## 🎯 Goals
 
@@ -31,17 +25,22 @@
 
 ### Next milestones
 
-| Due          | In  | Goal                                                         | Milestone                                                                                                              |
-|--------------|-----|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| `2026-10-11` | 20d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h) |
-| `2026-10-18` | 27d | [system-design-practice](kb/goals/system-design-practice.md) | Bitly (done), News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp (~16h left)                             |
-| `2026-10-25` | 34d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)                                                          |
-| `2026-11-15` | 55d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2 — Common Patterns, 04–11 guides and text-only lessons (~8h)                                              |
-| `2026-11-22` | 62d | [system-design-practice](kb/goals/system-design-practice.md) | Ticketmaster, Online Auction, Notification System, Payment System, Dropbox (done), YouTube (~20h left)                 |
+| Due          | In  | Goal                                                         | Milestone                                                                                                                                       |
+|--------------|-----|--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2026-10-11` | 20d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h)                          |
+| `2026-10-11` | 20d | [system-design-practice](kb/goals/system-design-practice.md) | Attempts: News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp, Ticketmaster, Online Auction (~12h)                                 |
+| `2026-10-25` | 34d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)                                                                                   |
+| `2026-11-08` | 48d | [system-design-practice](kb/goals/system-design-practice.md) | Attempts: Notification System, Payment System, YouTube, LeetCode, Web Crawler, Uber, FB News Feed, Metrics Monitoring (~16h) — all 17 attempted |
+| `2026-11-15` | 55d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2 — Common Patterns, 04–11 guides and text-only lessons (~8h)                                                                       |
 
 ## 🗓️ This week — `W39(21-27.09)`
 
-_No week file. Run `/plan-week`._
+0/4 done · 4h committed of `8h` · [2026-W39](kb/planning/2026/2026-W39.md)
+
+- [ ] (2h) — [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md): News Aggregator, own attempt, no course tab — first exercise of [system-design-practice](kb/goals/system-design-practice.md)
+- [ ] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Redis video + quiz — closes 04 Scaling Reads
+- [ ] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Scaling Writes video + quiz — opens 05
+- [ ] (20m) — [hello-interview-mastering-estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) + [hello-interview-numbers-to-know](kb/resources/architecture/system-design/hello-interview-numbers-to-know.md), carried from [2026-W38](kb/planning/2026/2026-W38.md)
 
 ## 📖 In flight
 
@@ -93,7 +92,7 @@ _No week file. Run `/plan-week`._
 </details>
 
 <details>
-<summary><b>📚 Library</b> — 66 resources, 32 ideas, 3 goals, 2 areas, 4 plans</summary>
+<summary><b>📚 Library</b> — 66 resources, 32 ideas, 3 goals, 2 areas, 5 plans</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/shape-dark.svg">
@@ -106,7 +105,7 @@ _No week file. Run `/plan-week`._
 | Resources | 66    | backlog 60 · in-progress 2 · done 1 · reference 3 |
 | Goals     | 3     | active 2 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
-| Plans     | 4     | —                                                 |
+| Plans     | 5     | —                                                 |
 
 </details>
 
