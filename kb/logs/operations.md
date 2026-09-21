@@ -5,6 +5,15 @@ created: 2026-09-08
 updated: 2026-09-21
 ---
 
+## 2026-09-21 14:40 — Groom: inbox cleared, 6 ideas triaged
+
+First groom since the ideas backlog built up. All six `inbox` ideas assessed against the idea
+rubric: one accepted, five kept in `considering`. No stack blind spots, no stale entries, no
+overdue milestones, `validate` clean. Noted for next groom: 25 ideas now sit in `considering`
+against 1 `accepted` — the rubric says drop freely and that is not happening.
+
+- **Modified:** `ideas/**` (6 files — status + dated assessment), `logs/operations.md`
+
 ## 2026-09-21 14:05 — W38 closed, W39 planned, practice write-ups batched
 
 Retro for W38 filled from Toggl via Composio (4.15h actual vs 3.3h planned). W39 planned at 4.3h of

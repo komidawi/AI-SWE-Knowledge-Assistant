@@ -2,7 +2,7 @@
 id: java-version-features-in-daily-use
 type: idea
 title: Map which Java version introduced each feature actually used day to day
-status: inbox
+status: accepted
 priority: medium
 topics: [ java ]
 goals: [ ]
@@ -12,7 +12,7 @@ source: manual
 raindrop_id:
 effort: unknown
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-21
 ---
 
 ## Why
@@ -24,3 +24,7 @@ feature (var, records, switch expressions, text blocks, streams, etc.) closes a 
 ## Notes
 
 ## Assessments
+
+### Assessment 2026-09-21
+
+On-stack directly (`java` in `stack.yml`), low cost to first value, durable — a version→feature table does not decay. No existing entry covers it. Verdict: `accept`.

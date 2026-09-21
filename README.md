@@ -8,11 +8,11 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
-  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 2 in flight, 1 needing attention, week 0/4 done">
+  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 2 in flight, 0 needing attention, week 0/4 done">
 </picture>
 
-> [!WARNING]
-> **6 untriaged ideas** — `kb/ideas/`. Run `/groom` — inbox items are invisible to planning.
+> [!TIP]
+> **Nothing is blocked.** Goals, the week and in-flight work are all current.
 
 ## 🎯 Goals
 
@@ -101,7 +101,7 @@
 
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
-| Ideas     | 32    | inbox 6 · considering 24 · accepted 1 · dropped 1 |
+| Ideas     | 32    | considering 29 · accepted 2 · dropped 1           |
 | Resources | 66    | backlog 60 · in-progress 2 · done 1 · reference 3 |
 | Goals     | 3     | active 2 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
