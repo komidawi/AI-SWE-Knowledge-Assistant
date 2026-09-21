@@ -11,10 +11,10 @@ topics: [ system-design, distributed-systems ]
 goals: [ system-design-practice ]
 status: in-progress
 priority: high
-effort: 124h
+effort: 136h
 scale: multi-day
 nature: applied
-progress: "Easy: 3/4 · Medium: 0/13 · Hard: 0/12 · No write-up: 0/4"
+progress: "Easy: 3/4 · Medium: 1/16 · Hard: 0/12 · No write-up: 0/4"
 rating:
 started:
 finished:
@@ -29,15 +29,19 @@ with AI feedback before the write-up — attempt-first by construction. Superset
 
 ## Notes
 
-One problem = own first attempt in the guided session (~2h), then the write-up (~2h). 29 × 4h + 4 without write-up × 2h = 124h.
+One problem = own first attempt in the guided session (~2h), then the write-up (~2h). 32 × 4h + 4 without write-up × 2h = 136h.
 Sequencing since 2026-09-21: attempts run first as their own block, write-ups follow behind — the
 per-problem cost is unchanged, only the order.
 
-| Level              | Done                 | In progress            | Left                                                                                                                                           |
-|--------------------|----------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Easy               | Bitly, Dropbox, Yelp | Local Delivery Service | —                                                                                                                                              |
-| Medium             | —                    | —                      | Ticketmaster, Instagram, Tinder, LeetCode, WhatsApp, Strava, Rate Limiter, Online Auction, YouTube, Job Scheduler, News Aggregator, Price Tracking Service, Notification System |
-| Hard               | —                    | —                      | YouTube Top K, Uber, Robinhood, Google Docs, Web Crawler, Ad Click Aggregator, FB Post Search, Payment System, Metrics Monitoring, Online Chess, ChatGPT, Flash Sale |
-| No write-up        | —                    | —                      | Food Review App (M), Game Leaderboard (M), Donations Website (H), GitHub Actions (H)                                                           |
+| Level              | Done                              | In progress            | Left                                                                                                                                           |
+|--------------------|-----------------------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| Easy               | Bitly, Dropbox, Yelp              | Local Delivery Service | —                                                                                                                                              |
+| Medium             | Ticketmaster                      | —                      | Instagram, FB News Feed, Tinder, LeetCode, WhatsApp, Strava, Distributed Cache, Rate Limiter, Online Auction, YouTube, Job Scheduler, FB Live Comments, News Aggregator, Price Tracking Service, Notification System |
+| Hard               | —                                 | —                      | YouTube Top K, Uber, Robinhood, Google Docs, Web Crawler, Ad Click Aggregator, FB Post Search, Payment System, Metrics Monitoring, Online Chess, ChatGPT, Flash Sale |
+| No write-up        | —                                 | —                      | Food Review App (M), Game Leaderboard (M), Donations Website (H), GitHub Actions (H)                                                           |
+
+Order: the platform's own listing (Easy → Medium → Hard, as shown on the practice page), not the
+course module order. Verified against the site 2026-09-21 — Medium is 16, not 13; FB News Feed,
+Distributed Cache and FB Live Comments were missing here.
 
 ## Assessments

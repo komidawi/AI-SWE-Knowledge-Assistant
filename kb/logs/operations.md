@@ -5,6 +5,18 @@ created: 2026-09-08
 updated: 2026-09-21
 ---
 
+## 2026-09-21 15:20 — Practice scope corrected against the platform
+
+komidawi's screenshots of the Guided Practice page: the catalogue is 36 problems, not the course's
+17 — Medium is 16 and FB News Feed, Distributed Cache and FB Live Comments were missing here
+entirely. Ticketmaster is done, Local Delivery Service in progress. Order follows the platform
+(Easy → Medium → Hard, More Practice last), not the course modules, so News Aggregator leaves W39
+and Local Delivery Service takes the slot. Scope kept, target moved per **scope over dates**.
+
+- **Modified:** `goals/system-design-practice.md` (target 2027-01-03 → 2027-04-25, horizon quarter
+  → year, milestones and capacity rebuilt), `planning/2026/2026-W39.md`, `planning/2026/2026-09.md`,
+  `resources/architecture/system-design/hello-interview-guided-practice.md` (effort 124h → 136h)
+
 ## 2026-09-21 14:40 — Groom: inbox cleared, 6 ideas triaged
 
 First groom since the ideas backlog built up. All six `inbox` ideas assessed against the idea

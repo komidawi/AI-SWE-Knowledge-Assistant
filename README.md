@@ -25,19 +25,19 @@
 
 ### Next milestones
 
-| Due          | In  | Goal                                                         | Milestone                                                                                                                                       |
-|--------------|-----|--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `2026-10-11` | 20d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h)                          |
-| `2026-10-11` | 20d | [system-design-practice](kb/goals/system-design-practice.md) | Attempts: News Aggregator, Ad Click Aggregator, FB Live Comments, WhatsApp, Ticketmaster, Online Auction (~12h)                                 |
-| `2026-10-25` | 34d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)                                                                                   |
-| `2026-11-08` | 48d | [system-design-practice](kb/goals/system-design-practice.md) | Attempts: Notification System, Payment System, YouTube, LeetCode, Web Crawler, Uber, FB News Feed, Metrics Monitoring (~16h) — all 17 attempted |
-| `2026-11-15` | 55d | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2 — Common Patterns, 04–11 guides and text-only lessons (~8h)                                                                       |
+| Due          | In   | Goal                                                         | Milestone                                                                                                                                                                                                                                                                                         |
+|--------------|------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2026-10-11` | 20d  | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2 — Scaling Reads, Redis, Scaling Writes, Kafka, Cassandra, Real-time Updates, Multi-step Processes (~7h)                                                                                                                                                                            |
+| `2026-10-25` | 34d  | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)                                                                                                                                                                                                                                     |
+| `2026-11-15` | 55d  | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2 — Common Patterns, 04–11 guides and text-only lessons (~8h)                                                                                                                                                                                                                         |
+| `2026-11-15` | 55d  | [system-design-practice](kb/goals/system-design-practice.md) | Attempts, Easy + Medium: Local Delivery Service, Instagram, FB News Feed, Tinder, LeetCode, WhatsApp, Strava, Distributed Cache, Rate Limiter, Online Auction, YouTube, Job Scheduler, FB Live Comments, News Aggregator, Price Tracking Service, Notification System (~32h)                      |
+| `2027-01-10` | 111d | [system-design-practice](kb/goals/system-design-practice.md) | Attempts, Hard + More Practice: YouTube Top K, Uber, Robinhood, Google Docs, Web Crawler, Ad Click Aggregator, FB Post Search, Payment System, Metrics Monitoring, Online Chess, ChatGPT, Flash Sale, Food Review App, Game Leaderboard, Donations Website, GitHub Actions (~32h) — all attempted |
 
 ## 🗓️ This week — `W39(21-27.09)`
 
 0/4 done · 4h committed of `8h` · [2026-W39](kb/planning/2026/2026-W39.md)
 
-- [ ] (2h) — [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md): News Aggregator, own attempt, no course tab — first exercise of [system-design-practice](kb/goals/system-design-practice.md)
+- [ ] (2h) — [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md): Local Delivery Service — finish the in-progress attempt before starting anything new
 - [ ] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Redis video + quiz — closes 04 Scaling Reads
 - [ ] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Scaling Writes video + quiz — opens 05
 - [ ] (20m) — [hello-interview-mastering-estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) + [hello-interview-numbers-to-know](kb/resources/architecture/system-design/hello-interview-numbers-to-know.md), carried from [2026-W38](kb/planning/2026/2026-W38.md)
@@ -46,7 +46,7 @@
 
 | Resource                                                                                                                | Kind   | Progress                                                                                                                   | Effort | Priority | Updated |
 |-------------------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------|--------|----------|---------|
-| [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)           | course | Easy: 3/4 · Medium: 0/13 · Hard: 0/12 · No write-up: 0/4                                                                   | 124h   | high     | 2d ago  |
+| [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)           | course | Easy: 3/4 · Medium: 1/16 · Hard: 0/12 · No write-up: 0/4                                                                   | 136h   | high     | 2d ago  |
 | [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19 — Redis next · Texts: 01 done · Practice: Bitly, Dropbox, Yelp done | 31h    | high     | 2d ago  |
 
 ## 📈 Areas
