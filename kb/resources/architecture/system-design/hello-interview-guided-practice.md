@@ -14,12 +14,12 @@ priority: high
 effort: 136h
 scale: multi-day
 nature: applied
-progress: "Easy: 3/4 · Medium: 1/16 · Hard: 0/12 · No write-up: 0/4"
+progress: "Easy: 3/4 · Medium: 1/16 · Hard: 0/12 · No write-up: 0/4 — reprioritized 2026-09-23: Online Auction, Payment System next, ahead of platform tier order"
 rating:
 started:
 finished:
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-23
 ---
 
 ## Why this one

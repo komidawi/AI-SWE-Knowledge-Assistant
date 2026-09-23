@@ -10,7 +10,7 @@ topics: [ system-design, distributed-systems, databases, caching, streaming, net
 priority: high
 weekly_hours: 4
 created: 2026-09-18
-updated: 2026-09-21
+updated: 2026-09-23
 ---
 
 ## Why this matters
@@ -31,11 +31,12 @@ course's 17 — corrected 2026-09-21 against the site.
 ## Milestones
 
 Order is the platform's own (Easy → Medium → Hard), with the 4 write-up-less "More Practice"
-problems last. Attempts first (~2h each), write-ups as one block behind them (~2h each). Deltas are
-written from the attempt notes, so the notes must carry the reasoning, not just the diagram.
+problems last — overridden 2026-09-23 for Online Auction and Payment System, pulled next
+regardless of tier. Attempts first (~2h each), write-ups as one block behind them (~2h each). Deltas
+are written from the attempt notes, so the notes must carry the reasoning, not just the diagram.
 
-- [ ] `2026-11-15` — Attempts, Easy + Medium: Local Delivery Service, Instagram, FB News Feed, Tinder, LeetCode, WhatsApp, Strava, Distributed Cache, Rate Limiter, Online Auction, YouTube, Job Scheduler, FB Live Comments, News Aggregator, Price Tracking Service, Notification System (~32h)
-- [ ] `2027-01-10` — Attempts, Hard + More Practice: YouTube Top K, Uber, Robinhood, Google Docs, Web Crawler, Ad Click Aggregator, FB Post Search, Payment System, Metrics Monitoring, Online Chess, ChatGPT, Flash Sale, Food Review App, Game Leaderboard, Donations Website, GitHub Actions (~32h) — all attempted
+- [ ] `2026-11-15` — Attempts, Easy + Medium: Local Delivery Service, Instagram, FB News Feed, Tinder, LeetCode, WhatsApp, Strava, Distributed Cache, Rate Limiter, Online Auction, YouTube, Job Scheduler, FB Live Comments, News Aggregator, Price Tracking Service, Notification System (~32h). Reprioritized 2026-09-23: Online Auction moves next after Local Delivery Service, ahead of platform order.
+- [ ] `2027-01-10` — Attempts, Hard + More Practice: YouTube Top K, Uber, Robinhood, Google Docs, Web Crawler, Ad Click Aggregator, FB Post Search, Payment System, Metrics Monitoring, Online Chess, ChatGPT, Flash Sale, Food Review App, Game Leaderboard, Donations Website, GitHub Actions (~32h) — all attempted. Reprioritized 2026-09-23: Payment System pulled forward, attempted right after Online Auction, ahead of the rest of this batch.
 - [ ] `2027-03-07` — Write-ups + deltas, first 16 attempts in attempt order (~32h)
 - [ ] `2027-04-25` — Write-ups + deltas, remaining 12 (~24h); cold non-course design (~3h); `[[architecture]]` re-assessed
 

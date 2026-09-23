@@ -2,8 +2,22 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-09-21
+updated: 2026-09-23
 ---
+
+## 2026-09-23 — Reprioritize system design next steps (theory + practice)
+
+komidawi reordered next steps: theory Redis dropped behind Scaling Writes, Kafka, Real-time
+Updates, Dealing with Contention, Multi-step Processes (Cassandra also pushed back, off-list);
+practice pulls Online Auction and Payment System next, ahead of the platform's Easy→Medium→Hard
+order (Online Auction after Local Delivery Service, Payment System right after it). Scope and
+targets unchanged — order only. Correction: the practice `progress:` note first landed on
+`hello-interview-system-design-course` instead of the actual practice tracker,
+`hello-interview-guided-practice` — moved.
+
+- **Modified:** `goals/system-design-fluency.md`, `goals/system-design-practice.md`,
+  `planning/2026/2026-W39.md`, `resources/architecture/system-design/hello-interview-system-design-course.md`,
+  `resources/architecture/system-design/hello-interview-guided-practice.md`
 
 ## 2026-09-21 15:20 — Practice scope corrected against the platform
 

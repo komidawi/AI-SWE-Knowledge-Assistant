@@ -14,12 +14,12 @@ priority: high
 effort: 31h
 scale: multi-day
 nature: core
-progress: "Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19 — Redis next · Texts: 01 done · Practice: Bitly, Dropbox, Yelp done"
+progress: "Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19 — reprioritized 2026-09-23: Scaling Writes, Kafka, Real-time Updates, Dealing with Contention, Multi-step Processes next, Redis behind them · Texts: 01 done"
 rating:
 started: 2026-09-07
 finished:
 created: 2026-09-07
-updated: 2026-09-19
+updated: 2026-09-23
 ---
 
 ## Why this one
