@@ -8,7 +8,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
-  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 2 in flight, 0 needing attention, week 0/4 done">
+  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 2 in flight, 0 needing attention, week 1/4 done">
 </picture>
 
 > [!TIP]
@@ -35,19 +35,19 @@
 
 ## 🗓️ This week — `W39(21-27.09)`
 
-0/4 done · 4h committed of `8h` · [2026-W39](kb/planning/2026/2026-W39.md)
+1/4 done · 4h committed of `8h` · [2026-W39](kb/planning/2026/2026-W39.md)
 
 - [ ] (2h) — [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md): Local Delivery Service — finish the in-progress attempt before starting anything new
-- [ ] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Scaling Writes video + quiz — opens 05, Redis moved behind it
+- [x] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Scaling Writes video + quiz — opens 05, Redis moved behind it
 - [ ] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Kafka video + quiz
 - [ ] (20m) — [hello-interview-mastering-estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) + [hello-interview-numbers-to-know](kb/resources/architecture/system-design/hello-interview-numbers-to-know.md), carried from [2026-W38](kb/planning/2026/2026-W38.md)
 
 ## 📖 In flight
 
-| Resource                                                                                                                | Kind   | Progress                                                                                                                                                                                                            | Effort | Priority | Updated |
-|-------------------------------------------------------------------------------------------------------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|----------|---------|
-| [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)           | course | Easy: 3/4 · Medium: 1/16 · Hard: 0/12 · No write-up: 0/4 — reprioritized 2026-09-23: Online Auction, Payment System next, ahead of platform tier order                                                              | 136h   | high     | today   |
-| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19 — reprioritized 2026-09-23: Scaling Writes, Kafka, Real-time Updates, Dealing with Contention, Multi-step Processes next, Redis behind them · Texts: 01 done | 31h    | high     | today   |
+| Resource                                                                                                                | Kind   | Progress                                                                                                                                                                                                           | Effort | Priority | Updated |
+|-------------------------------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|----------|---------|
+| [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)           | course | Easy: 3/4 · Medium: 1/16 · Hard: 0/12 · No write-up: 0/4 — reprioritized 2026-09-23: Online Auction, Payment System next, ahead of platform tier order                                                             | 136h   | high     | today   |
+| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19, 05: Scaling Writes done 2026-09-23 — Kafka next, then Real-time Updates, Dealing with Contention, Multi-step Processes; Redis behind them · Texts: 01 done | 31h    | high     | today   |
 
 ## 📈 Areas
 

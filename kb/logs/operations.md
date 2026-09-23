@@ -5,6 +5,13 @@ created: 2026-09-08
 updated: 2026-09-23
 ---
 
+## 2026-09-23 — Scaling Writes video + quiz done
+
+Closes module 05's video track (video and quiz are one unit). W39's item ticked; next up per the
+2026-09-23 reprioritization is Kafka.
+
+- **Modified:** `planning/2026/2026-W39.md`, `resources/architecture/system-design/hello-interview-system-design-course.md`
+
 ## 2026-09-23 — Reprioritize system design next steps (theory + practice)
 
 komidawi reordered next steps: theory Redis dropped behind Scaling Writes, Kafka, Real-time
