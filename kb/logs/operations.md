@@ -5,6 +5,15 @@ created: 2026-09-08
 updated: 2026-09-23
 ---
 
+## 2026-09-24 — Dashboard redesign: action-first, scannable
+
+README reorganised around "what now": KPI tiles (week, next milestone, goals on track, attention),
+Now section with next-up task and week progress bar, goal cards with on-track badge and next
+milestone, milestone table shortened to headlines + effort, in-flight progress as bars, titles
+instead of ids.
+
+- **Modified:** `system/scripts/dashboard.mjs`, `system/scripts/README.md`, `README.md`, `system/assets/dashboard/*.svg` (4)
+
 ## 2026-09-24 — Working agreement: shared resource links tick everywhere
 
 Added CLAUDE.md rule: one resource id linked from multiple plans/goals is completed once, not

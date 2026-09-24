@@ -4,15 +4,32 @@
 <h1 align="center">AI_SKILL_ASSISTANT</h1>
 
 <p align="center">Software-engineering skill growth — goals, resources, weekly plans.<br>
-<code>2026-09-23</code> · <code>W39(21-27.09)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
+<code>2026-09-24</code> · <code>W39(21-27.09)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
+
+<p align="center">
+<a href="#-now">Now</a> · <a href="#-goals">Goals</a> · <a href="#-in-flight">In flight</a> · <a href="#-areas">Areas</a> · <a href="#-backlog">Backlog</a>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
-  <img src="system/assets/dashboard/kpi-light.svg" alt="2 active goals, 2 in flight, 0 needing attention, week 1/4 done">
+  <img src="system/assets/dashboard/kpi-light.svg" alt="Week 2/4 done, next milestone 2026-10-11, 2/2 goals on track, 0 needing attention">
 </picture>
 
+## 🧭 Now
+
 > [!TIP]
-> **Nothing is blocked.** Goals, the week and in-flight work are all current.
+> **On track** — nothing blocked; goals, week and in-flight work are current.
+>
+> **Next up:** [System Design Guided Practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md): Local Delivery Service — finish the in-progress attempt before starting anything new · `2h`
+
+### 🗓️ This week — `W39(21-27.09)`
+
+🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜ **46%** · 2h of 4h 20m done · 2h 20m left · capacity 8h · [2026-W39](kb/planning/2026/2026-W39.md)
+
+- [ ] ` 2h` [System Design Guided Practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md): Local Delivery Service — finish the in-progress attempt before starting anything new
+- [ ] `20m` [System Design Interview Fundamentals: Mastering Estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) + [Numbers to Know for System Design Interviews](kb/resources/architecture/system-design/hello-interview-numbers-to-know.md), carried from [2026-W38](kb/planning/2026/2026-W38.md)
+- [x] ` 1h` ~~[System Design Course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Scaling Writes video + quiz — opens 05, Redis moved behind it~~
+- [x] ` 1h` ~~[System Design Course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Kafka video + quiz~~
 
 ## 🎯 Goals
 
@@ -21,33 +38,34 @@
   <img src="system/assets/dashboard/goals-light.svg" alt="system-design-fluency, system-design-practice">
 </picture>
 
-[system-design-fluency](kb/goals/system-design-fluency.md) · [system-design-practice](kb/goals/system-design-practice.md)
+**[system-design-fluency](kb/goals/system-design-fluency.md)** — Know the system design building blocks and patterns<br>
+**[system-design-practice](kb/goals/system-design-practice.md)** — Design a large-scale system end to end, unaided, using a repeatable framework
 
-### Next milestones
+### 🏁 Milestones ahead
 
-| Due          | In   | Goal                                                         | Milestone                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|--------------|------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `2026-10-11` | 18d  | [system-design-fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2, reprioritized 2026-09-23 — Scaling Writes, Kafka, Real-time Updates, Dealing with Contention, Multi-step Processes next; Redis and Cassandra pushed behind them (~7h)                                                                                                                                                                                                                                              |
-| `2026-10-25` | 32d  | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1 — 02, 03 guides, Numbers to Know (~4h; 01 done)                                                                                                                                                                                                                                                                                                                                                                      |
-| `2026-11-15` | 53d  | [system-design-fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2 — Common Patterns, 04–11 guides and text-only lessons (~8h)                                                                                                                                                                                                                                                                                                                                                          |
-| `2026-11-15` | 53d  | [system-design-practice](kb/goals/system-design-practice.md) | Attempts, Easy + Medium: Local Delivery Service, Instagram, FB News Feed, Tinder, LeetCode, WhatsApp, Strava, Distributed Cache, Rate Limiter, Online Auction, YouTube, Job Scheduler, FB Live Comments, News Aggregator, Price Tracking Service, Notification System (~32h). Reprioritized 2026-09-23: Online Auction moves next after Local Delivery Service, ahead of platform order.                                           |
-| `2027-01-10` | 109d | [system-design-practice](kb/goals/system-design-practice.md) | Attempts, Hard + More Practice: YouTube Top K, Uber, Robinhood, Google Docs, Web Crawler, Ad Click Aggregator, FB Post Search, Payment System, Metrics Monitoring, Online Chess, ChatGPT, Flash Sale, Food Review App, Game Leaderboard, Donations Website, GitHub Actions (~32h) — all attempted. Reprioritized 2026-09-23: Payment System pulled forward, attempted right after Online Auction, ahead of the rest of this batch. |
+| Due        | In   | Goal                                                         | Milestone                                              | Effort |
+|------------|------|--------------------------------------------------------------|--------------------------------------------------------|--------|
+| 2026‑10‑11 | 17d  | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2                                         | 7h     |
+| 2026‑10‑25 | 31d  | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1                                          | 4h     |
+| 2026‑11‑15 | 52d  | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2                                          | 8h     |
+| 2026‑11‑15 | 52d  | [system‑design‑practice](kb/goals/system-design-practice.md) | Attempts, Easy + Medium (16)                           | 32h    |
+| 2027‑01‑10 | 108d | [system‑design‑practice](kb/goals/system-design-practice.md) | Attempts, Hard + More Practice (16)                    | 32h    |
+| 2027‑03‑07 | 164d | [system‑design‑practice](kb/goals/system-design-practice.md) | Write-ups + deltas, first 16 attempts in attempt order | 32h    |
 
-## 🗓️ This week — `W39(21-27.09)`
-
-1/4 done · 4h committed of `8h` · [2026-W39](kb/planning/2026/2026-W39.md)
-
-- [ ] (2h) — [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md): Local Delivery Service — finish the in-progress attempt before starting anything new
-- [x] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Scaling Writes video + quiz — opens 05, Redis moved behind it
-- [ ] (1h) — [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Kafka video + quiz
-- [ ] (20m) — [hello-interview-mastering-estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) + [hello-interview-numbers-to-know](kb/resources/architecture/system-design/hello-interview-numbers-to-know.md), carried from [2026-W38](kb/planning/2026/2026-W38.md)
+<sub>🟡 due within 2 weeks · 🔴 late · full milestone text lives in the goal file</sub>
 
 ## 📖 In flight
 
-| Resource                                                                                                                | Kind   | Progress                                                                                                                                                                                                           | Effort | Priority | Updated |
-|-------------------------------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|----------|---------|
-| [hello-interview-guided-practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)           | course | Easy: 3/4 · Medium: 1/16 · Hard: 0/12 · No write-up: 0/4 — reprioritized 2026-09-23: Online Auction, Payment System next, ahead of platform tier order                                                             | 136h   | high     | today   |
-| [hello-interview-system-design-course](kb/resources/architecture/system-design/hello-interview-system-design-course.md) | course | Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19, 05: Scaling Writes done 2026-09-23 — Kafka next, then Real-time Updates, Dealing with Contention, Multi-step Processes; Redis behind them · Texts: 01 done | 31h    | high     | today   |
+**[System Design Guided Practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)** · course · 136h · high priority · updated 1d ago
+
+- 🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜ **4/36** — Easy 3/4 · Medium 1/16 · Hard 0/12 · No write-up 0/4
+- ➜ reprioritized 2026-09-23: Online Auction, Payment System next, ahead of platform tier order
+
+**[System Design Course](kb/resources/architecture/system-design/hello-interview-system-design-course.md)** · course · 31h · high priority · updated today
+
+- **Videos:** 02, 03 done, 04: Scaling Reads done 2026-09-19, 05: Scaling Writes done 2026-09-23, Kafka done 2026-09-24
+- **Texts:** 01 done
+- ➜ Cassandra next, then Real-time Updates, Dealing with Contention, Multi-step Processes; Redis behind them
 
 ## 📈 Areas
 
@@ -56,43 +74,45 @@
   <img src="system/assets/dashboard/areas-light.svg" alt="architecture level 1 of target 3, interviewing level 2 of target 3">
 </picture>
 
-[architecture](kb/areas/architecture.md) · [interviewing](kb/areas/interviewing.md)
+[Architecture & Distributed Systems](kb/areas/architecture.md) · [Interviewing](kb/areas/interviewing.md)
+
+## 📚 Backlog
 
 <details>
-<summary><b>⏱️ Pick by time</b> — 25 backlog resources that fit a gap</summary>
+<summary><b>⏱️ Pick by time</b> — 25 short reads that fit a gap</summary>
 
-| Resource                                                                                                                | Scale | Effort | Nature      | Priority |
-|-------------------------------------------------------------------------------------------------------------------------|-------|--------|-------------|----------|
-| [fowler-evolutionary-database-design](kb/resources/data/fowler-evolutionary-database-design.md)                         | short | 30m    | core        | high     |
-| [hello-interview-mastering-estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) | snack | 10m    | core        | high     |
-| [functional-core-imperative-shell](kb/resources/architecture/clean-architecture/functional-core-imperative-shell.md)    | short | 30m    | core        | medium   |
-| [distributed-snapshots-paper](kb/resources/architecture/distributed-systems/distributed-snapshots-paper.md)             | short | 45m    | core        | medium   |
-| [google-cloud-spanner-talk](kb/resources/architecture/distributed-systems/google-cloud-spanner-talk.md)                 | short | 45m    | case-study  | medium   |
-| [why-pick-strong-consistency](kb/resources/architecture/distributed-systems/why-pick-strong-consistency.md)             | short | 20m    | core        | medium   |
-| [calculus-of-service-availability](kb/resources/architecture/resilience/calculus-of-service-availability.md)            | short | 45m    | core        | medium   |
-| [service-mesh-survey](kb/resources/architecture/service-mesh/service-mesh-survey.md)                                    | short | 25m    | case-study  | medium   |
-| [discord-trillions-of-messages](kb/resources/architecture/system-design/discord-trillions-of-messages.md)               | short | 25m    | case-study  | medium   |
-| [netflix-system-design](kb/resources/architecture/system-design/netflix-system-design.md)                               | short | 30m    | case-study  | medium   |
-| [inverse-conway-maneuver](kb/resources/career/inverse-conway-maneuver.md)                                               | short | 20m    | core        | medium   |
-| [allegro-db-maintenance-3tb-to-100gb](kb/resources/data/allegro-db-maintenance-3tb-to-100gb.md)                         | short | 20m    | case-study  | medium   |
-| [allegro-transactions-in-mongodb](kb/resources/data/allegro-transactions-in-mongodb.md)                                 | short | 20m    | core        | medium   |
-| [feature-flags-primer](kb/resources/devops/feature-flags-primer.md)                                                     | short | 30m    | core        | medium   |
-| [kotlin-programming-with-result](kb/resources/languages/kotlin-programming-with-result.md)                              | short | 20m    | applied     | medium   |
-| [joel-things-you-should-never-do](kb/resources/quality/joel-things-you-should-never-do.md)                              | short | 20m    | perspective | medium   |
-| [fowler-tolerant-reader](kb/resources/backend/fowler-tolerant-reader.md)                                                | snack | 10m    | core        | medium   |
-| [mocking-is-a-code-smell](kb/resources/quality/mocking-is-a-code-smell.md)                                              | snack | 15m    | perspective | medium   |
-| [agent-ready-environments](kb/resources/ai/agent-ready-environments.md)                                                 | short | 20m    | perspective | low      |
-| [google-monorepo-billions-of-lines](kb/resources/architecture/system-design/google-monorepo-billions-of-lines.md)       | short | 25m    | case-study  | low      |
-| [productive-software-engineer](kb/resources/career/productive-software-engineer.md)                                     | short | 30m    | applied     | low      |
-| [jol-java-object-layout-plugin](kb/resources/languages/jol-java-object-layout-plugin.md)                                | short | 20m    | lookup      | low      |
-| [tests-execution-chart](kb/resources/quality/tests-execution-chart.md)                                                  | short | 30m    | lookup      | low      |
-| [boolean-blindness](kb/resources/architecture/design-patterns/boolean-blindness.md)                                     | snack | 15m    | perspective | low      |
-| [fowler-value-object](kb/resources/architecture/design-patterns/fowler-value-object.md)                                 | snack | 10m    | core        | low      |
+| Priority | Effort | Resource                                                                                                                                                | Nature      |
+|----------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 🔥 high  | 30m    | [Evolutionary Database Design](kb/resources/data/fowler-evolutionary-database-design.md)                                                                | core        |
+| 🔥 high  | 10m    | [System Design Interview Fundamentals: Mastering Estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md)           | core        |
+| medium   | 30m    | [Functional Core, Imperative Shell](kb/resources/architecture/clean-architecture/functional-core-imperative-shell.md)                                   | core        |
+| medium   | 45m    | [Distributed Snapshots: Determining Global States of Distributed Systems](kb/resources/architecture/distributed-systems/distributed-snapshots-paper.md) | core        |
+| medium   | 45m    | [Google Cloud Spanner: Global consistency at scale](kb/resources/architecture/distributed-systems/google-cloud-spanner-talk.md)                         | case-study  |
+| medium   | 20m    | [Why You Should Pick Strong Consistency, Whenever Possible](kb/resources/architecture/distributed-systems/why-pick-strong-consistency.md)               | core        |
+| medium   | 45m    | [The Calculus of Service Availability](kb/resources/architecture/resilience/calculus-of-service-availability.md)                                        | core        |
+| medium   | 25m    | [Service mesh in practice (Envoy at Monzo)](kb/resources/architecture/service-mesh/service-mesh-survey.md)                                              | case-study  |
+| medium   | 25m    | [How Discord Stores TRILLIONS of Messages](kb/resources/architecture/system-design/discord-trillions-of-messages.md)                                    | case-study  |
+| medium   | 30m    | [Netflix System Design — Backend Architecture](kb/resources/architecture/system-design/netflix-system-design.md)                                        | case-study  |
+| medium   | 20m    | [The Inverse Conway Maneuver](kb/resources/career/inverse-conway-maneuver.md)                                                                           | core        |
+| medium   | 20m    | [From 3TB to 100GB: A Cost-Saving Journey in Database Maintenance](kb/resources/data/allegro-db-maintenance-3tb-to-100gb.md)                            | case-study  |
+| medium   | 20m    | [Transactions in MongoDB](kb/resources/data/allegro-transactions-in-mongodb.md)                                                                         | core        |
+| medium   | 30m    | [Feature flags: concept + tooling (Fowler + LaunchDarkly)](kb/resources/devops/feature-flags-primer.md)                                                 | core        |
+| medium   | 20m    | [Programming with Result: Combining and Composing Results](kb/resources/languages/kotlin-programming-with-result.md)                                    | applied     |
+| medium   | 20m    | [Things You Should Never Do, Part I](kb/resources/quality/joel-things-you-should-never-do.md)                                                           | perspective |
+| medium   | 10m    | [TolerantReader](kb/resources/backend/fowler-tolerant-reader.md)                                                                                        | core        |
+| medium   | 15m    | [Mocking is a Code Smell](kb/resources/quality/mocking-is-a-code-smell.md)                                                                              | perspective |
+| low      | 20m    | [Building environments agents can work in (MEGA, 2 drops)](kb/resources/ai/agent-ready-environments.md)                                                 | perspective |
+| low      | 25m    | [Why Google Stores Billions of Lines of Code in a Single Repository](kb/resources/architecture/system-design/google-monorepo-billions-of-lines.md)      | case-study  |
+| low      | 30m    | [How To Be Productive As A Software Engineer](kb/resources/career/productive-software-engineer.md)                                                      | applied     |
+| low      | 20m    | [JOL (Java Object Layout) — IntelliJ plugin](kb/resources/languages/jol-java-object-layout-plugin.md)                                                   | lookup      |
+| low      | 30m    | [tests-execution-chart (Gradle plugin)](kb/resources/quality/tests-execution-chart.md)                                                                  | lookup      |
+| low      | 15m    | [Boolean Blindness](kb/resources/architecture/design-patterns/boolean-blindness.md)                                                                     | perspective |
+| low      | 10m    | [ValueObject](kb/resources/architecture/design-patterns/fowler-value-object.md)                                                                         | core        |
 
 </details>
 
 <details>
-<summary><b>📚 Library</b> — 66 resources, 32 ideas, 3 goals, 2 areas, 5 plans</summary>
+<summary><b>🗂️ Library</b> — 66 resources, 32 ideas, 3 goals, 2 areas, 5 plans</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/shape-dark.svg">
@@ -102,7 +122,7 @@
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
 | Ideas     | 32    | considering 29 · accepted 2 · dropped 1           |
-| Resources | 66    | backlog 60 · in-progress 2 · done 1 · reference 3 |
+| Resources | 66    | backlog 59 · in-progress 2 · done 2 · reference 3 |
 | Goals     | 3     | active 2 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
 | Plans     | 5     | —                                                 |

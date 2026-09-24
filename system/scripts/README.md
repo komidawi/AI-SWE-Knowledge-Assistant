@@ -6,7 +6,7 @@ Zero dependencies, Node 24. All output is derived and rebuildable.
 
 | Script              | Does                                                                                                                                  |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `dashboard.mjs`     | Writes `README.md` (repo front page) and its light/dark SVG charts in `system/assets/dashboard/`: needs attention, goals, this week, in flight, areas, pick by time. Never hand-edit the output. |
+| `dashboard.mjs`     | Writes `README.md` (repo front page) and its light/dark SVG charts in `system/assets/dashboard/`: now (status, next up, this week), goals + milestones ahead, in flight, areas, backlog (pick by time, library). Never hand-edit the output. |
 | `lib/svg.mjs`       | SVG string helpers and GitHub-matched light/dark themes for the dashboard charts.                                                     |
 | `validate.mjs`      | Checks every entity against its template: fields, vocabularies, ISO dates, `id` = filename, topic/goal ids, `[[links]]`. Exits non-zero on findings. Manual, no hook. |
 | `index.mjs`         | Writes gitignored `.index/index.json`: frontmatter plus `by_topic`/`by_goal`, topics expanded through alias/parent/area (`kubernetes` also lists under `docker` and `devops`). |

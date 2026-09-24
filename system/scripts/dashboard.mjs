@@ -292,6 +292,106 @@ const LEVELS = [...section(readFileSync(join(ROOT, 'kb/taxonomy/rubrics.md'), 'u
 
 const committedHours = committed.reduce((sum, t) => sum + Number((/\((\d+(?:\.\d+)?)h\)/.exec(t.text) || [])[1] ?? 0), 0)
 
+
+// --- Display helpers ---------------------------------------------------------------------------
+// The entity files are written for editing; these shorten them for scanning.
+
+function fmtHours(hours) {
+    const mins = Math.round(hours * 60)
+    const h = Math.floor(mins / 60)
+    const m = mins % 60
+    return [h ? `${h}h` : '', m ? `${m}m` : ''].filter(Boolean).join(' ') || '0h'
+}
+
+// Resources and areas read better by title; goals and plans have ids that already are one.
+function label(id) {
+    const e = byId.get(id)
+    if (!e || e.fm.type === 'goal' || e.fm.type === 'plan') return id
+    return e.fm.title || id
+}
+
+function titleLink(id) {
+    const rel = paths.get(id)
+    return rel ? `[${label(id)}](${encodeURI(rel)})` : id
+}
+
+function titleLinkify(value) {
+    return String(value ?? '').replace(/`?\[\[([^\]|#]+)(?:[|#][^\]]*)?\]\]`?/g, (_, id) => titleLink(id.trim()))
+}
+
+// "Attempts, Easy + Medium: A, B, … (~32h). Reprioritized …" → "Attempts, Easy + Medium (16)".
+// Headline = text before the first " — ", "; ", " (" or ". "; a long colon list collapses to its count.
+function headline(text) {
+    let head = stripDate(text).split(/ — |; | \(|\. /)[0].replace(/,\s*reprioriti[sz]ed \d{4}-\d{2}-\d{2}$/i, '').trim()
+    const list = /^(.*?):\s*(.+)$/.exec(head)
+    if (list && list[2].split(',').length > 3) head = `${list[1]} (${list[2].split(',').length})`
+    return head
+}
+
+function effortOf(text) {
+    return (/~(\d+(?:\.\d+)?h)/.exec(text) || [])[1] ?? '—'
+}
+
+function shortTitle(goal) {
+    return String(goal.fm.title || goal.id).split(' — ')[0]
+}
+
+// Emoji squares render the same everywhere; block characters don't in GitHub's fonts.
+function bar(done, total, width = 10) {
+    const on = total ? Math.min(width, Math.max(done > 0 ? 1 : 0, Math.round((done / total) * width))) : 0
+    return '🟩'.repeat(on) + '⬜'.repeat(width - on)
+}
+
+// Non-breaking hyphens keep dates and ids on one line in narrow table cells.
+function nb(value) {
+    return String(value).replace(/-/g, '\u2011')
+}
+
+// `progress:` is "Part: state — note · Part: state". Fractions become one bar; notes a "next" line.
+function progressLines(progress) {
+    const parts = String(progress ?? '').split(' · ').map(p => p.trim()).filter(Boolean)
+    const notes = []
+    const fractions = []
+    const states = []
+    for (const part of parts) {
+        const [state, ...rest] = part.split(' — ')
+        if (rest.length) notes.push(rest.join(' — '))
+        const f = /^(.+?):\s*(\d+)\/(\d+)$/.exec(state.trim())
+        if (f) fractions.push({name: f[1], done: Number(f[2]), total: Number(f[3])})
+        else {
+            const s = /^([^:]{1,20}):\s*(.+)$/.exec(state.trim())
+            states.push(s ? `**${s[1]}:** ${s[2]}` : state.trim())
+        }
+    }
+    const lines = []
+    if (fractions.length) {
+        const done = fractions.reduce((n, f) => n + f.done, 0)
+        const total = fractions.reduce((n, f) => n + f.total, 0)
+        lines.push(`${bar(done, total)} **${done}/${total}** — ${fractions.map(f => `${f.name} ${f.done}/${f.total}`).join(' · ')}`)
+    }
+    lines.push(...states)
+    for (const n of notes) lines.push(`➜ ${n}`)
+    return lines
+}
+
+// Week tasks: "(2h) — [[id]]: what" → hours + the rest.
+function weekTask(t) {
+    const m = /^\((\d+(?:\.\d+)?\s*(?:h|m))\)\s*[—-]\s*/.exec(t.text)
+    return {...t, effort: m ? m[1].replace(/\s/g, '') : null, hours: m ? parseEffort(m[1]) : 0, what: m ? t.text.slice(m[0].length) : t.text}
+}
+
+const byId = new Map([...ideas, ...resources, ...areas, ...plans, ...goals].map(e => [e.id, e]))
+const weekTasks = committed.map(weekTask)
+const weekOpen = weekTasks.filter(t => !t.done)
+const weekHoursDone = weekTasks.filter(t => t.done).reduce((s, t) => s + t.hours, 0)
+const weekHours = weekTasks.reduce((s, t) => s + t.hours, 0)
+
+const openMilestones = activeGoals
+    .flatMap(g => g.milestones.filter(m => !m.done && isDate(m.date)).map(m => ({...m, goal: g})))
+    .sort((a, b) => a.date.localeCompare(b.date))
+const nextMilestone = openMilestones[0]
+const behindGoals = activeGoals.filter(g => g.overdue.length > 0)
+
 // --- Charts ------------------------------------------------------------------------------------
 // Each chart is a function of a theme, rendered once per theme.
 
@@ -301,34 +401,40 @@ function kpiChart(t) {
     const gap = 12
     const w = (W - gap * 3) / 4
     const h = 112
-    const tile = (i, label, value, sub, {color = t.text, subColor = t.muted, extra = ''} = {}) => {
+    const tile = (i, label, value, sub, {color = t.text, subColor = t.muted, extra = '', valueWidth = w - 36} = {}) => {
         const x = i * (w + gap)
         return card(x, 0, w, h, t)
-            + text(x + 18, 30, label, t.muted, {size: 11, weight: 600, spacing: 0.6})
-            + text(x + 18, 74, value, color, {size: 34, weight: 600})
+            + text(x + 18, 30, fit(label, 11, w - 36), t.muted, {size: 11, weight: 600, spacing: 0.6})
+            + text(x + 18, 74, fit(value, 34, valueWidth), color, {size: 34, weight: 600})
             + text(x + 18, 97, fit(sub, 12, w - 36), subColor, {size: 12})
             + extra
     }
-    const openMilestones = liveGoals.reduce((n, g) => n + g.milestones.filter(m => !m.done).length, 0)
-    const x4 = 3 * (w + gap)
+    const x0 = 0
+    const pct = weekHours ? weekHoursDone / weekHours : 0
     const weekRing = week
-        ? ring(x4 + w - 50, 66, 28, committed.length ? weekDone / committed.length : 0, t.good, t.track)
-        + text(x4 + w - 50, 71, `${weekDone}/${committed.length}`, t.text, {size: 14, weight: 600, anchor: 'middle'})
+        ? ring(x0 + w - 44, 66, 25, pct, t.good, t.track, 7)
+        + text(x0 + w - 44, 71, `${Math.round(pct * 100)}%`, t.text, {size: 13, weight: 600, anchor: 'middle'})
         : ''
+    const nextIn = nextMilestone ? daysBetween(TODAY, nextMilestone.date) : null
     return svg(W, h, [
-        tile(0, 'ACTIVE GOALS', activeGoals.length,
-            draftGoals.length ? `${draftGoals.length} draft · ${openMilestones} milestones open` : `${openMilestones} milestones open`),
-        tile(1, 'IN FLIGHT', inFlight.length, stalled.length ? `${stalled.length} stalled > ${STALE_DAYS}d` : 'none stalled',
-            {subColor: stalled.length ? t.bad : t.muted}),
-        tile(2, 'NEEDS ATTENTION', attention.length, `${inbox.length} ideas in inbox`,
-            {color: attention.length ? t.bad : t.good}),
-        tile(3, weekText.toUpperCase(), week ? `${committedHours}h` : '—',
-            week ? `of ${week.fm.capacity_hours}h capacity` : 'no plan yet', {extra: weekRing})
+        tile(0, 'THIS WEEK', week ? `${weekTasks.length - weekOpen.length}/${weekTasks.length}` : '—',
+            week ? `${fmtHours(weekHoursDone)} / ${fmtHours(weekHours)} done` : 'no plan — run /plan-week',
+            {extra: weekRing, valueWidth: w - 110, subColor: week ? t.muted : t.bad}),
+        tile(1, nextMilestone ? `NEXT MILESTONE · ${nextMilestone.date}` : 'NEXT MILESTONE',
+            nextMilestone ? (nextIn < 0 ? `${-nextIn}d late` : `in ${nextIn}d`) : '—',
+            nextMilestone ? headline(nextMilestone.text) : 'none dated',
+            {color: nextIn !== null && nextIn < 0 ? t.bad : t.text}),
+        tile(2, 'GOALS ON TRACK', `${activeGoals.length - behindGoals.length}/${activeGoals.length}`,
+            behindGoals.length ? `${behindGoals.length} behind — milestone slipped` : `${openMilestones.length} milestones open`,
+            {color: behindGoals.length ? t.bad : t.good, subColor: behindGoals.length ? t.bad : t.muted}),
+        tile(3, 'NEEDS ATTENTION', attention.length,
+            `${stalled.length} stalled · ${inbox.length} in inbox`,
+            {color: attention.length ? t.bad : t.good})
     ].join('\n'))
 }
 
 function goalsChart(t) {
-    const h = 156
+    const h = 150
     const gap = 12
     const x0 = 24
     const x1 = W - 24
@@ -341,33 +447,38 @@ function goalsChart(t) {
         }
         const late = g.overdue.length > 0
         const left = g.weeksLeft === null ? '' : g.weeksLeft < 0 ? `${-g.weeksLeft} wk over` : `${g.weeksLeft} wk left`
-        const ty = y + 84
+        const ty = y + 88
         const todayX = at(TODAY)
+        const next = g.milestones.find(m => !m.done && isDate(m.date))
         const dots = g.milestones.filter(m => isDate(m.date)).map(m => {
             const cx = at(m.date).toFixed(1)
             if (m.done) return `<circle cx="${cx}" cy="${ty + 3}" r="6" fill="${t.good}"/>`
             if (m.date < TODAY) return `<circle cx="${cx}" cy="${ty + 3}" r="6" fill="${t.bad}"/>`
+            if (m === next) return `<circle cx="${cx}" cy="${ty + 3}" r="7" fill="${t.accent}" stroke="${t.surface}" stroke-width="2"/>`
             return `<circle cx="${cx}" cy="${ty + 3}" r="5" fill="${t.surface}" stroke="${t.accent}" stroke-width="2"/>`
         }).join('')
         const mDone = g.milestones.filter(m => m.done).length
         const cDone = g.criteria.filter(c => c.done).length
+        const badge = late ? 'BEHIND' : g.fm.status === 'active' ? 'ON TRACK' : g.fm.status.toUpperCase()
+        const badgeColor = late ? t.bad : g.fm.status === 'active' ? t.good : t.muted
+        const bw = badge.length * 7.2 + 18
+        const nextIn = next ? daysBetween(TODAY, next.date) : null
+        const nextText = next ? `Next: ${headline(next.text)} — ${next.date} (${nextIn < 0 ? `${-nextIn}d late` : `in ${nextIn}d`})` : 'No dated milestone left'
         return [
             card(0, y, W, h, t),
-            text(x0, y + 32, fit(g.fm.title || g.id, 15, W - 200), t.text, {size: 15, weight: 600}),
-            text(x1, y + 32, left, late ? t.bad : t.muted, {size: 13, weight: 600, anchor: 'end'}),
-            text(x0, y + 52, `${g.id} · ${g.fm.status} · ${g.fm.weekly_hours || 0} h/wk`, t.muted, {size: 12}),
+            text(x0, y + 32, fit(shortTitle(g), 16, W - 150), t.text, {size: 16, weight: 600}),
+            rect(x1 - bw, y + 16, bw, 22, badgeColor, {r: 11, opacity: 0.15, stroke: badgeColor}),
+            text(x1 - bw / 2, y + 31, badge, badgeColor, {size: 11, weight: 700, anchor: 'middle', spacing: 0.5}),
+            text(x0, y + 54, `${g.id} · ${g.fm.weekly_hours || 0} h/wk · milestones ${mDone}/${g.milestones.length} · criteria ${cDone}/${g.criteria.length}`, t.muted, {size: 12}),
+            text(x1, y + 54, left, late ? t.bad : t.muted, {size: 12, weight: 600, anchor: 'end'}),
             rect(x0, ty, x1 - x0, 6, t.track, {r: 3}),
             rect(x0, ty, todayX - x0, 6, t.accent, {r: 3, opacity: 0.45}),
-            `<line x1="${todayX.toFixed(1)}" y1="${ty - 9}" x2="${todayX.toFixed(1)}" y2="${ty + 15}" stroke="${t.text}" stroke-width="1.5"/>`,
-            text(todayX, ty - 14, 'today', t.text, {size: 10, weight: 600, anchor: todayX < x0 + 20 ? 'start' : todayX > x1 - 20 ? 'end' : 'middle'}),
+            `<line x1="${todayX.toFixed(1)}" y1="${ty - 8}" x2="${todayX.toFixed(1)}" y2="${ty + 14}" stroke="${t.text}" stroke-width="1.5"/>`,
+            text(todayX, ty - 12, 'today', t.text, {size: 10, weight: 600, anchor: todayX < x0 + 20 ? 'start' : todayX > x1 - 20 ? 'end' : 'middle'}),
             dots,
-            text(x0, ty + 28, g.fm.start, t.muted, {size: 11}),
-            text(x1, ty + 28, g.fm.target, t.muted, {size: 11, anchor: 'end'}),
-            text(x0, y + 138, `Milestones ${mDone}/${g.milestones.length}`, t.muted, {size: 12}),
-            segments(x0 + 110, y + 130, 290, 8, g.milestones,
-                m => m.done ? t.good : isDate(m.date) && m.date < TODAY ? t.bad : t.track),
-            text(452, y + 138, `Criteria ${cDone}/${g.criteria.length}`, t.muted, {size: 12}),
-            segments(452 + 96, y + 130, x1 - 548, 8, g.criteria, c => c.done ? t.good : t.track)
+            text(x0, ty + 26, g.fm.start, t.muted, {size: 11}),
+            text(x1, ty + 26, g.fm.target, t.muted, {size: 11, anchor: 'end'}),
+            text(x0, y + 136, fit(nextText, 13, W - 48), late ? t.bad : t.text, {size: 13, weight: 600})
         ].join('')
     })
     return svg(W, liveGoals.length * (h + gap) - gap, rows.join('\n'))
@@ -467,21 +578,60 @@ out.push('')
 out.push('<p align="center">Software-engineering skill growth — goals, resources, weekly plans.<br>')
 out.push(`<code>${TODAY}</code> · <code>${weekText}</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>`)
 out.push('')
+out.push('<p align="center">')
+out.push('<a href="#-now">Now</a> · <a href="#-goals">Goals</a> · <a href="#-in-flight">In flight</a> · <a href="#-areas">Areas</a> · <a href="#-backlog">Backlog</a>')
+out.push('</p>')
+out.push('')
 out.push(picture('kpi', kpiChart,
-    `${activeGoals.length} active goals, ${inFlight.length} in flight, ${attention.length} needing attention, week ${weekDone}/${committed.length} done`))
+    `Week ${weekTasks.length - weekOpen.length}/${weekTasks.length} done, next milestone ${nextMilestone?.date ?? 'none'}, ${activeGoals.length - behindGoals.length}/${activeGoals.length} goals on track, ${attention.length} needing attention`))
 
-out.push(attention.length ? '> [!WARNING]' : '> [!TIP]')
-out.push(`> ${lead}`)
+// --- Now: status line + the one thing to do next -----------------------------------------------
+
+out.push('## 🧭 Now')
+out.push('')
+const up = weekOpen[0]
+const nextUp = up ? `**Next up:** ${titleLinkify(up.what)}${up.effort ? ` · \`${up.effort}\`` : ''}` : ''
+if (attention.length) {
+    out.push('> [!WARNING]')
+    out.push(`> ${lead}`)
+    if (nextUp) out.push('>', `> ${nextUp}`)
+} else {
+    out.push('> [!TIP]')
+    out.push('> **On track** — nothing blocked; goals, week and in-flight work are current.')
+    if (nextUp) out.push('>', `> ${nextUp}`)
+}
 out.push('')
 
 if (attention.length > 1) {
-    out.push('## ⚠️ Also needs attention')
+    out.push('<details open>')
+    out.push(`<summary><b>⚠️ ${attention.length - 1} more need attention</b></summary>`)
     out.push('')
     out.push(table(
         ['What', 'Where', 'Why it matters'],
         attention.slice(1, 6).map(a => [cell(a.what), a.where, cell(linkify(a.why))])
     ))
+    out.push('</details>')
+    out.push('')
 }
+
+out.push(`### 🗓️ This week — \`${weekText}\``)
+out.push('')
+if (!week) {
+    out.push('_No week file. Run `/plan-week`._')
+} else {
+    const pct = weekHours ? Math.round((weekHoursDone / weekHours) * 100) : 0
+    out.push(`${bar(weekHoursDone, weekHours)} **${pct}%** · ${fmtHours(weekHoursDone)} of ${fmtHours(weekHours)} done`
+        + ` · ${fmtHours(weekHours - weekHoursDone)} left · capacity ${week.fm.capacity_hours}h · ${link(weekId)}`)
+    out.push('')
+    // Open first — the list is read top-down as a to-do.
+    for (const t of [...weekOpen, ...weekTasks.filter(x => x.done)]) {
+        const what = titleLinkify(t.what)
+        out.push(`- [${t.done ? 'x' : ' '}] ${t.effort ? `\`${t.effort.padStart(3)}\` ` : ''}${t.done ? `~~${what}~~` : what}`)
+    }
+}
+out.push('')
+
+// --- Goals ---------------------------------------------------------------------------------------
 
 out.push('## 🎯 Goals')
 out.push('')
@@ -490,73 +640,65 @@ if (liveGoals.length === 0) {
     out.push('')
 } else {
     out.push(picture('goals', goalsChart, liveGoals.map(g => g.id).join(', ')))
-    out.push(liveGoals.map(g => link(g.id)).join(' · '))
+    out.push(liveGoals.map(g => `**${link(g.id)}** — ${cell(shortTitle(g))}`).join('<br>\n'))
     out.push('')
 }
 
-const nextMilestones = activeGoals
-    .flatMap(g => g.milestones.filter(m => !m.done && isDate(m.date)).map(m => ({...m, goal: g.id})))
-    .sort((a, b) => a.date.localeCompare(b.date))
-    .slice(0, 5)
-
-if (nextMilestones.length > 0) {
-    out.push('### Next milestones')
+if (openMilestones.length > 0) {
+    out.push('### 🏁 Milestones ahead')
     out.push('')
     out.push(table(
-        ['Due', 'In', 'Goal', 'Milestone'],
-        nextMilestones.map(m => {
+        ['Due', 'In', 'Goal', 'Milestone', 'Effort'],
+        openMilestones.slice(0, 6).map(m => {
             const days = daysBetween(TODAY, m.date)
-            return [`\`${m.date}\``, days < 0 ? `🔴 ${-days}d late` : `${days}d`, link(m.goal), cell(linkify(stripDate(m.text)))]
+            return [nb(m.date), days < 0 ? `🔴 ${-days}d late` : days <= 14 ? `🟡 ${days}d` : `${days}d`,
+                `[${nb(m.goal.id)}](${encodeURI(paths.get(m.goal.id))})`, cell(headline(m.text)), effortOf(m.text)]
         })
     ))
+    out.push('<sub>🟡 due within 2 weeks · 🔴 late · full milestone text lives in the goal file</sub>')
+    out.push('')
 }
 
-out.push(`## 🗓️ This week — \`${weekText}\``)
-out.push('')
-if (!week) {
-    out.push('_No week file. Run `/plan-week`._')
-} else {
-    out.push(`${weekDone}/${committed.length} done · ${committedHours}h committed of \`${week.fm.capacity_hours}h\``
-        + ` · ${link(weekId)}`)
-    out.push('')
-    for (const t of committed) out.push(`- [${t.done ? 'x' : ' '}] ${linkify(t.text)}`)
-}
-out.push('')
+// --- In flight -----------------------------------------------------------------------------------
 
 out.push('## 📖 In flight')
 out.push('')
-out.push(table(
-    ['Resource', 'Kind', 'Progress', 'Effort', 'Priority', 'Updated'],
-    inFlight.map(r => [
-        link(r.id),
-        r.fm.kind || '—',
-        cell(r.fm.progress) || '—',
-        r.fm.effort || '—',
-        r.fm.priority || '—',
-        age(r.fm.updated)
-    ])
-))
+if (inFlight.length === 0) out.push('_Nothing in progress._')
+for (const r of inFlight) {
+    const stale = stalled.includes(r)
+    out.push(`**${titleLink(r.id)}** · ${[r.fm.kind, r.fm.effort, r.fm.priority && `${r.fm.priority} priority`].filter(Boolean).join(' · ')}`
+        + ` · ${stale ? `🔴 stalled, updated ${age(r.fm.updated)}` : `updated ${age(r.fm.updated)}`}`)
+    out.push('')
+    for (const line of progressLines(r.fm.progress)) out.push(`- ${titleLinkify(line)}`)
+    out.push('')
+}
+
+// --- Areas ---------------------------------------------------------------------------------------
 
 if (gaps.length > 0) {
     out.push('## 📈 Areas')
     out.push('')
     out.push(picture('areas', areasChart, gaps.map(a => `${a.id} level ${a.fm.level} of target ${a.fm.target_level}`).join(', ')))
-    out.push(gaps.map(a => link(a.id)).join(' · '))
+    out.push(gaps.map(a => titleLink(a.id)).join(' · '))
     out.push('')
 }
 
+// --- Backlog ---------------------------------------------------------------------------------------
+
+out.push('## 📚 Backlog')
+out.push('')
 out.push('<details>')
-out.push(`<summary><b>⏱️ Pick by time</b> — ${quickWins.length} backlog resources that fit a gap</summary>`)
+out.push(`<summary><b>⏱️ Pick by time</b> — ${quickWins.length} short reads that fit a gap</summary>`)
 out.push('')
 out.push(table(
-    ['Resource', 'Scale', 'Effort', 'Nature', 'Priority'],
-    quickWins.map(r => [link(r.id), r.fm.scale, r.fm.effort || '—', r.fm.nature || '—', r.fm.priority || '—'])
+    ['Priority', 'Effort', 'Resource', 'Nature'],
+    quickWins.map(r => [{high: '🔥 high', medium: 'medium', low: 'low'}[r.fm.priority] || '—', r.fm.effort || '—', titleLink(r.id), r.fm.nature || '—'])
 ))
 out.push('</details>')
 out.push('')
 
 out.push('<details>')
-out.push(`<summary><b>📚 Library</b> — ${resources.length} resources, ${ideas.length} ideas, ${goals.length} goals, ${areas.length} areas, ${plans.length} plans</summary>`)
+out.push(`<summary><b>🗂️ Library</b> — ${resources.length} resources, ${ideas.length} ideas, ${goals.length} goals, ${areas.length} areas, ${plans.length} plans</summary>`)
 out.push('')
 out.push(picture('shape', shapeChart, 'Resource and idea breakdown by status, scale and nature'))
 out.push(table(
@@ -578,4 +720,3 @@ out.push('<sub>Generated by <code>node system/scripts/dashboard.mjs</code> from 
 
 writeFileSync(join(ROOT, 'README.md'), out.join('\n').replace(/\n{3,}/g, '\n\n').trimEnd() + '\n')
 console.log(`README.md written — ${TODAY}, ${attention.length} item(s) needing attention`)
-
