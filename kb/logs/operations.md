@@ -5,6 +5,12 @@ created: 2026-09-08
 updated: 2026-09-23
 ---
 
+## 2026-09-24 — Kafka System Design Deep Dive: done
+
+Finished, 100%. Status in-progress → done.
+
+- **Modified:** `kb/resources/data/kafka-system-design-deep-dive.md`
+
 ## 2026-09-23 — Scaling Writes video + quiz done
 
 Closes module 05's video track (video and quiz are one unit). W39's item ticked; next up per the

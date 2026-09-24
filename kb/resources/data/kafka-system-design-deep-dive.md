@@ -9,17 +9,17 @@ source: raindrop
 raindrop_id: 1835931402
 topics: [ streaming, system-design ]
 goals: [ ]
-status: backlog
+status: done
 priority: medium
 effort: 1.5h
 scale: deep-dive
 nature: core
 progress:
 rating:
-started:
-finished:
+started: 2026-09-24
+finished: 2026-09-24
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-24
 ---
 
 ## Why this one
