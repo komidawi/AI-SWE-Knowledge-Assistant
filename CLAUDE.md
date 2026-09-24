@@ -15,6 +15,10 @@ into chat or an AI's private memory. This rule included.
   `origin`).
 - **Scope over dates.** When scope doesn't fit capacity, move dates later — don't cut scope.
 - **`cp` = commit and push** — that message is the ask for both.
+- **One resource, many linking places.** If the same resource id (`[[id]]`) is referenced from
+  several plans/goals, finishing it ticks it everywhere it's linked — one update, not one per file.
+  Two different resources on the same topic (e.g. two separate videos/courses on Kafka) are NOT
+  the same resource — each is tracked and completed independently.
 
 ## Entities
 

@@ -14,12 +14,12 @@ priority: high
 effort: 31h
 scale: multi-day
 nature: core
-progress: "Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19, 05: Scaling Writes done 2026-09-23 — Kafka next, then Real-time Updates, Dealing with Contention, Multi-step Processes; Redis behind them · Texts: 01 done"
+progress: "Videos: 02, 03 done, 04: Scaling Reads done 2026-09-19, 05: Scaling Writes done 2026-09-23, Kafka done 2026-09-24 — Cassandra next, then Real-time Updates, Dealing with Contention, Multi-step Processes; Redis behind them · Texts: 01 done"
 rating:
 started: 2026-09-07
 finished:
 created: 2026-09-07
-updated: 2026-09-23
+updated: 2026-09-24
 ---
 
 ## Why this one

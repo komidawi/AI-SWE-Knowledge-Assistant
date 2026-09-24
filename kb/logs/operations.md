@@ -5,6 +5,20 @@ created: 2026-09-08
 updated: 2026-09-23
 ---
 
+## 2026-09-24 — Working agreement: shared resource links tick everywhere
+
+Added CLAUDE.md rule: one resource id linked from multiple plans/goals is completed once, not
+per file; distinct resources on the same topic stay independently tracked.
+
+- **Modified:** `CLAUDE.md`
+
+## 2026-09-24 — Hello Interview Kafka video + quiz done
+
+Marked done per user call, alongside `[[kafka-system-design-deep-dive]]`. Module 05: Cassandra
+still open.
+
+- **Modified:** `kb/resources/architecture/system-design/hello-interview-system-design-course.md`, `kb/planning/2026/2026-W39.md`
+
 ## 2026-09-24 — Kafka System Design Deep Dive: done
 
 Finished, 100%. Status in-progress → done.
