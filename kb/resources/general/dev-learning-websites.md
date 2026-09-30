@@ -29,5 +29,6 @@ Beginner-oriented; off-goal, off-stack → `low`.
 ## Notes
 
 - The Odin Project (full-stack curriculum) · codedex.io · Bro Code (YouTube) · SQL Murder Mystery · roadmap.sh (role learning paths).
+- **Verdict:** beginner curriculum. Only roadmap.sh is useful at komidawi's level (gap-spotting across roles); the rest duplicates known ground.
 
 ## Assessments

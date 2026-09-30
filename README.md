@@ -4,7 +4,7 @@
 <h1 align="center">AI_SKILL_ASSISTANT</h1>
 
 <p align="center">Software-engineering skill growth — goals, resources, weekly plans.<br>
-<code>2026-09-24</code> · <code>W39(21-27.09)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
+<code>2026-09-30</code> · <code>W40(28.09-04.10)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
 
 <p align="center">
 <a href="#-now">Now</a> · <a href="#-goals">Goals</a> · <a href="#-in-flight">In flight</a> · <a href="#-areas">Areas</a> · <a href="#-backlog">Backlog</a>
@@ -12,24 +12,17 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/kpi-dark.svg">
-  <img src="system/assets/dashboard/kpi-light.svg" alt="Week 2/4 done, next milestone 2026-10-11, 2/2 goals on track, 0 needing attention">
+  <img src="system/assets/dashboard/kpi-light.svg" alt="Week 0/0 done, next milestone 2026-10-11, 2/2 goals on track, 1 needing attention">
 </picture>
 
 ## 🧭 Now
 
-> [!TIP]
-> **On track** — nothing blocked; goals, week and in-flight work are current.
->
-> **Next up:** [System Design Guided Practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md): Local Delivery Service — finish the in-progress attempt before starting anything new · `2h`
+> [!WARNING]
+> **No plan for W40(28.09-04.10)** — `kb/planning/`. Run `/plan-week`.
 
-### 🗓️ This week — `W39(21-27.09)`
+### 🗓️ This week — `W40(28.09-04.10)`
 
-🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜ **46%** · 2h of 4h 20m done · 2h 20m left · capacity 8h · [2026-W39](kb/planning/2026/2026-W39.md)
-
-- [ ] ` 2h` [System Design Guided Practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md): Local Delivery Service — finish the in-progress attempt before starting anything new
-- [ ] `20m` [System Design Interview Fundamentals: Mastering Estimation](kb/resources/architecture/system-design/hello-interview-mastering-estimation.md) + [Numbers to Know for System Design Interviews](kb/resources/architecture/system-design/hello-interview-numbers-to-know.md), carried from [2026-W38](kb/planning/2026/2026-W38.md)
-- [x] ` 1h` ~~[System Design Course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Scaling Writes video + quiz — opens 05, Redis moved behind it~~
-- [x] ` 1h` ~~[System Design Course](kb/resources/architecture/system-design/hello-interview-system-design-course.md): Kafka video + quiz~~
+_No week file. Run `/plan-week`._
 
 ## 🎯 Goals
 
@@ -43,25 +36,25 @@
 
 ### 🏁 Milestones ahead
 
-| Due        | In   | Goal                                                         | Milestone                                              | Effort |
-|------------|------|--------------------------------------------------------------|--------------------------------------------------------|--------|
-| 2026‑10‑11 | 17d  | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2                                         | 7h     |
-| 2026‑10‑25 | 31d  | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1                                          | 4h     |
-| 2026‑11‑15 | 52d  | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2                                          | 8h     |
-| 2026‑11‑15 | 52d  | [system‑design‑practice](kb/goals/system-design-practice.md) | Attempts, Easy + Medium (16)                           | 32h    |
-| 2027‑01‑10 | 108d | [system‑design‑practice](kb/goals/system-design-practice.md) | Attempts, Hard + More Practice (16)                    | 32h    |
-| 2027‑03‑07 | 164d | [system‑design‑practice](kb/goals/system-design-practice.md) | Write-ups + deltas, first 16 attempts in attempt order | 32h    |
+| Due        | In     | Goal                                                         | Milestone                                              | Effort |
+|------------|--------|--------------------------------------------------------------|--------------------------------------------------------|--------|
+| 2026‑10‑11 | 🟡 11d | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2                                         | 7h     |
+| 2026‑10‑25 | 25d    | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1                                          | 4h     |
+| 2026‑11‑15 | 46d    | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2                                          | 8h     |
+| 2026‑11‑15 | 46d    | [system‑design‑practice](kb/goals/system-design-practice.md) | Attempts, Easy + Medium (16)                           | 32h    |
+| 2027‑01‑10 | 102d   | [system‑design‑practice](kb/goals/system-design-practice.md) | Attempts, Hard + More Practice (16)                    | 32h    |
+| 2027‑03‑07 | 158d   | [system‑design‑practice](kb/goals/system-design-practice.md) | Write-ups + deltas, first 16 attempts in attempt order | 32h    |
 
 <sub>🟡 due within 2 weeks · 🔴 late · full milestone text lives in the goal file</sub>
 
 ## 📖 In flight
 
-**[System Design Guided Practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)** · course · 136h · high priority · updated 1d ago
+**[System Design Guided Practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)** · course · 136h · high priority · updated 7d ago
 
 - 🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜ **4/36** — Easy 3/4 · Medium 1/16 · Hard 0/12 · No write-up 0/4
 - ➜ reprioritized 2026-09-23: Online Auction, Payment System next, ahead of platform tier order
 
-**[System Design Course](kb/resources/architecture/system-design/hello-interview-system-design-course.md)** · course · 31h · high priority · updated today
+**[System Design Course](kb/resources/architecture/system-design/hello-interview-system-design-course.md)** · course · 31h · high priority · updated 6d ago
 
 - **Videos:** 02, 03 done, 04: Scaling Reads done 2026-09-19, 05: Scaling Writes done 2026-09-23, Kafka done 2026-09-24
 - **Texts:** 01 done
@@ -79,7 +72,7 @@
 ## 📚 Backlog
 
 <details>
-<summary><b>⏱️ Pick by time</b> — 25 short reads that fit a gap</summary>
+<summary><b>⏱️ Pick by time</b> — 26 short reads that fit a gap</summary>
 
 | Priority | Effort | Resource                                                                                                                                                | Nature      |
 |----------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
@@ -108,11 +101,12 @@
 | low      | 30m    | [tests-execution-chart (Gradle plugin)](kb/resources/quality/tests-execution-chart.md)                                                                  | lookup      |
 | low      | 15m    | [Boolean Blindness](kb/resources/architecture/design-patterns/boolean-blindness.md)                                                                     | perspective |
 | low      | 10m    | [ValueObject](kb/resources/architecture/design-patterns/fowler-value-object.md)                                                                         | core        |
+| low      | 0.2h   | [20 salary-negotiation traps and scripts (IG carousel)](kb/resources/career/salary-negotiation-traps.md)                                                | perspective |
 
 </details>
 
 <details>
-<summary><b>🗂️ Library</b> — 66 resources, 32 ideas, 3 goals, 2 areas, 5 plans</summary>
+<summary><b>🗂️ Library</b> — 73 resources, 32 ideas, 3 goals, 2 areas, 5 plans</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/shape-dark.svg">
@@ -122,7 +116,7 @@
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
 | Ideas     | 32    | considering 29 · accepted 2 · dropped 1           |
-| Resources | 66    | backlog 59 · in-progress 2 · done 2 · reference 3 |
+| Resources | 73    | backlog 62 · in-progress 2 · done 2 · reference 7 |
 | Goals     | 3     | active 2 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
 | Plans     | 5     | —                                                 |

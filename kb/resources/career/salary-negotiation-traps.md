@@ -29,6 +29,7 @@ Off-goal, off-stack → `low`. Situation / system / why-it-works scripts for off
 ## Notes
 
 - 20 slides, each a trap: first anchor, current salary, single number, silence panic, "cost of living", immediate acceptance, exploding offer, equity illusion, title downgrade, unwritten promise, "out of my hands", bluff, PTO surrender, gratitude, market data, apology, counter-offer, walk away.
-- Generic negotiation-coach content, unvetted.
+- Generic negotiation-coach content, unvetted; slide-level claims have no sources or data.
+- Transferable core (well-established): don't give the first number, negotiate total comp not base, get promises in writing, decide your walk-away beforehand. The rest is scripting.
 
 ## Assessments

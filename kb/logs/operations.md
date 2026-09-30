@@ -5,6 +5,13 @@ created: 2026-09-08
 updated: 2026-09-30
 ---
 
+## 2026-09-30 21:15 — Deeper analysis of 6 captured resources
+
+Verified sources; Karpathy item was a misattributed re-upload — it is Stanford CS25 V2 intro to Transformers (2023). Repos, stars, paper added for the 9-tool carousel; verdicts on the rest.
+
+- **Moved:** `kb/resources/ai/karpathy-delete-everything-keep-graph.md` → `kb/resources/ai/karpathy-cs25-intro-to-transformers.md` (new id, url, topics, nature: core)
+- **Modified:** `kb/resources/ai/open-source-ai-tools-carousel.md`, `kb/resources/ai/where-to-learn-ai-sources.md`, `kb/resources/career/salary-negotiation-traps.md`, `kb/resources/career/youtube-channels-tech-interviews-2026.md`, `kb/resources/general/dev-learning-websites.md`
+
 ## 2026-09-30 20:50 — Resources: 6 social posts captured
 
 Instagram carousels + X post from komidawi. AI items medium (on-stack, off-goal), rest low.

@@ -35,5 +35,6 @@ On-stack (`llm`, `ai-engineering`), off-goal. Curated source list; author recomm
 - Reports: Stanford HAI AI Index, OECD AI Observatory, WEF Future of Jobs, UNESCO, Our World in Data.
 - PL: Radar AI (StormIT), Alzi.pl, Kamil Głusiński, GRAI (AI.gov.pl), Microsoft Learn PL, Google Cloud Skills Boost.
 - Routine: 15-30 min daily newsletter, 1 practical task 2-3x/week, weekly talk, monthly review.
+- **Verdict:** generic list with no ranking; overlaps `[[open-source-ai-tools-carousel]]`-style curation. Useful pieces: Stanford HAI AI Index (annual report, `lookup`) and Mollick's newsletter. Low yield for an engineer who already reads vendor docs.
 
 ## Assessments
