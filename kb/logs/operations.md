@@ -5,6 +5,12 @@ created: 2026-09-08
 updated: 2026-09-30
 ---
 
+## 2026-09-30 20:50 — Resources: 6 social posts captured
+
+Instagram carousels + X post from komidawi. AI items medium (on-stack, off-goal), rest low.
+
+- **Added:** `kb/resources/ai/karpathy-delete-everything-keep-graph.md`, `kb/resources/ai/open-source-ai-tools-carousel.md`, `kb/resources/ai/where-to-learn-ai-sources.md`, `kb/resources/career/salary-negotiation-traps.md`, `kb/resources/career/youtube-channels-tech-interviews-2026.md`, `kb/resources/general/dev-learning-websites.md`
+
 ## 2026-09-30 20:25 — Working agreement: read stack.yml in full
 
 Added CLAUDE.md rule after a partial read mislabelled an on-stack resource as off-stack.
