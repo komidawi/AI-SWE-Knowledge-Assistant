@@ -2,8 +2,14 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-09-23
+updated: 2026-09-30
 ---
+
+## 2026-09-30 20:15 — Resource: Google Cloud Labs Agentic space quest
+
+Captured workshop video (+ pointer tweet) as backlog, medium priority: on-stack, off-goal.
+
+- **Added:** `kb/resources/ai/gc-labs-agentic-space-quest.md`
 
 ## 2026-09-24 — Dashboard redesign: action-first, scannable
 
