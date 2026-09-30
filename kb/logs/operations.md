@@ -5,6 +5,12 @@ created: 2026-09-08
 updated: 2026-09-30
 ---
 
+## 2026-09-30 20:25 — Working agreement: read stack.yml in full
+
+Added CLAUDE.md rule after a partial read mislabelled an on-stack resource as off-stack.
+
+- **Modified:** `CLAUDE.md`
+
 ## 2026-09-30 20:15 — Resource: Google Cloud Labs Agentic space quest
 
 Captured workshop video (+ pointer tweet) as backlog, medium priority: on-stack, off-goal.

@@ -128,6 +128,8 @@ rg -l 'status: active' kb/goals
 vocabulary. Ids must exist in `topics.yml`; requirement wording (Hibernate, Swagger, …) lives
 there as aliases. Edit it when the job changes, not when interest does.
 
+Read `stack.yml` in full (`cat`), never a head/slice — a partial read misjudges on/off-stack.
+
 Two axes set priority everywhere (`/capture`, `/assess`, `/plan-week`, `/groom`):
 
 - **Goals** — what is aimed at this month. Urgency.
