@@ -2,8 +2,14 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-09-30
+updated: 2026-10-01
 ---
+
+## 2026-10-01 12:00 — Captured Tech Interview Handbook
+
+Added as a `reference` lookup under career; off-stack, goal on-hold, so `low`.
+
+- **Added:** `kb/resources/career/tech-interview-handbook.md`
 
 ## 2026-09-30 21:15 — Deeper analysis of 6 captured resources
 
