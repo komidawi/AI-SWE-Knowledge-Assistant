@@ -11,8 +11,8 @@ the user or while working), write it here or into the relevant template/taxonomy
 into chat or an AI's private memory. This rule included.
 
 - **Commit to the checked-out branch.** No feature branches, no switching — single-user repo.
-  Commit only when asked; split unrelated changes; never push unless asked (local runs ahead of
-  `origin`).
+  Commit automatically after each finished change (no need to ask); split unrelated changes. Never
+  push unless asked (`cp`/"push"), and don't ask "push?" either — local runs ahead of `origin`.
 - **Scope over dates.** When scope doesn't fit capacity, move dates later — don't cut scope.
 - **`cp` = commit and push** — that message is the ask for both.
 - **One resource, many linking places.** If the same resource id (`[[id]]`) is referenced from
