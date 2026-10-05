@@ -4,7 +4,7 @@
 <h1 align="center">AI_SKILL_ASSISTANT</h1>
 
 <p align="center">Software-engineering skill growth — goals, resources, weekly plans.<br>
-<code>2026-09-30</code> · <code>W40(28.09-04.10)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
+<code>2026-10-05</code> · <code>W41(05-11.10)</code> · <a href="docs/guide.md">Guide</a> · <a href="CLAUDE.md">Conventions</a></p>
 
 <p align="center">
 <a href="#-now">Now</a> · <a href="#-goals">Goals</a> · <a href="#-in-flight">In flight</a> · <a href="#-areas">Areas</a> · <a href="#-backlog">Backlog</a>
@@ -18,9 +18,9 @@
 ## 🧭 Now
 
 > [!WARNING]
-> **No plan for W40(28.09-04.10)** — `kb/planning/`. Run `/plan-week`.
+> **No plan for W41(05-11.10)** — `kb/planning/`. Run `/plan-week`.
 
-### 🗓️ This week — `W40(28.09-04.10)`
+### 🗓️ This week — `W41(05-11.10)`
 
 _No week file. Run `/plan-week`._
 
@@ -36,25 +36,25 @@ _No week file. Run `/plan-week`._
 
 ### 🏁 Milestones ahead
 
-| Due        | In     | Goal                                                         | Milestone                                              | Effort |
-|------------|--------|--------------------------------------------------------------|--------------------------------------------------------|--------|
-| 2026‑10‑11 | 🟡 11d | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2                                         | 7h     |
-| 2026‑10‑25 | 25d    | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1                                          | 4h     |
-| 2026‑11‑15 | 46d    | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2                                          | 8h     |
-| 2026‑11‑15 | 46d    | [system‑design‑practice](kb/goals/system-design-practice.md) | Attempts, Easy + Medium (16)                           | 32h    |
-| 2027‑01‑10 | 102d   | [system‑design‑practice](kb/goals/system-design-practice.md) | Attempts, Hard + More Practice (16)                    | 32h    |
-| 2027‑03‑07 | 158d   | [system‑design‑practice](kb/goals/system-design-practice.md) | Write-ups + deltas, first 16 attempts in attempt order | 32h    |
+| Due        | In    | Goal                                                         | Milestone                                              | Effort |
+|------------|-------|--------------------------------------------------------------|--------------------------------------------------------|--------|
+| 2026‑10‑11 | 🟡 6d | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Videos: Part 2                                         | 7h     |
+| 2026‑10‑25 | 20d   | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Texts: Part 1                                          | 4h     |
+| 2026‑11‑15 | 41d   | [system‑design‑fluency](kb/goals/system-design-fluency.md)   | Texts: Part 2                                          | 8h     |
+| 2026‑11‑15 | 41d   | [system‑design‑practice](kb/goals/system-design-practice.md) | Attempts, Easy + Medium (16)                           | 32h    |
+| 2027‑01‑10 | 97d   | [system‑design‑practice](kb/goals/system-design-practice.md) | Attempts, Hard + More Practice (16)                    | 32h    |
+| 2027‑03‑07 | 153d  | [system‑design‑practice](kb/goals/system-design-practice.md) | Write-ups + deltas, first 16 attempts in attempt order | 32h    |
 
 <sub>🟡 due within 2 weeks · 🔴 late · full milestone text lives in the goal file</sub>
 
 ## 📖 In flight
 
-**[System Design Guided Practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)** · course · 136h · high priority · updated 7d ago
+**[System Design Guided Practice](kb/resources/architecture/system-design/hello-interview-guided-practice.md)** · course · 136h · high priority · updated 12d ago
 
 - 🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜ **4/36** — Easy 3/4 · Medium 1/16 · Hard 0/12 · No write-up 0/4
 - ➜ reprioritized 2026-09-23: Online Auction, Payment System next, ahead of platform tier order
 
-**[System Design Course](kb/resources/architecture/system-design/hello-interview-system-design-course.md)** · course · 31h · high priority · updated 6d ago
+**[System Design Course](kb/resources/architecture/system-design/hello-interview-system-design-course.md)** · course · 31h · high priority · updated 11d ago
 
 - **Videos:** 02, 03 done, 04: Scaling Reads done 2026-09-19, 05: Scaling Writes done 2026-09-23, Kafka done 2026-09-24
 - **Texts:** 01 done
@@ -106,7 +106,7 @@ _No week file. Run `/plan-week`._
 </details>
 
 <details>
-<summary><b>🗂️ Library</b> — 73 resources, 32 ideas, 3 goals, 2 areas, 5 plans</summary>
+<summary><b>🗂️ Library</b> — 75 resources, 32 ideas, 3 goals, 2 areas, 5 plans</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/shape-dark.svg">
@@ -116,7 +116,7 @@ _No week file. Run `/plan-week`._
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
 | Ideas     | 32    | considering 29 · accepted 2 · dropped 1           |
-| Resources | 73    | backlog 62 · in-progress 2 · done 2 · reference 7 |
+| Resources | 75    | backlog 63 · in-progress 2 · done 2 · reference 8 |
 | Goals     | 3     | active 2 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
 | Plans     | 5     | —                                                 |
