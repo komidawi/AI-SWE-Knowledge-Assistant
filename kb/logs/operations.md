@@ -5,6 +5,12 @@ created: 2026-09-08
 updated: 2026-10-05
 ---
 
+## 2026-10-05 18:10 — Fixed Kafka resource efforts
+
+Real lengths from YouTube: 1:00:29 and 3:29:24 (were estimates).
+
+- **Modified:** `kb/resources/data/kafka-intro-poznan-jug.md`, `kb/resources/data/kafka-od-zera-do-bohatera.md`
+
 ## 2026-10-05 17:58 — Captured Anatomia Kafki
 
 course, 10h (multi-day), applied; stack: on (streaming) · goals: on (system-design-fluency, system-design-practice), priority low.

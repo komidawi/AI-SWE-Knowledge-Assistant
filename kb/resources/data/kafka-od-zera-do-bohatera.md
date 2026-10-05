@@ -11,7 +11,7 @@ topics: [ streaming ]
 goals: [ ]
 status: backlog
 priority: medium
-effort: 4h
+effort: 3.5h
 scale: full-day
 nature: core
 progress:
@@ -24,7 +24,7 @@ updated: 2026-10-05
 
 ## Why this one
 
-Polecone jako darmowe szkolenie o dużej wartości. Czas trwania szacunkowy.
+Polecone jako darmowe szkolenie o dużej wartości.
 
 ## Notes
 

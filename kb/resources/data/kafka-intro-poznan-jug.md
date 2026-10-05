@@ -11,7 +11,7 @@ topics: [ streaming ]
 goals: [ ]
 status: backlog
 priority: medium
-effort: 1.5h
+effort: 1h
 scale: deep-dive
 nature: core
 progress:
@@ -24,7 +24,7 @@ updated: 2026-10-05
 
 ## Why this one
 
-Polecone jako wejście w Kafkę; darmowe. Czas trwania szacunkowy.
+Polecone jako wejście w Kafkę; darmowe.
 
 ## Notes
 
