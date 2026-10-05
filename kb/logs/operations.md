@@ -5,6 +5,12 @@ created: 2026-09-08
 updated: 2026-10-05
 ---
 
+## 2026-10-05 17:57 — Captured Apache Kafka od zera do bohatera - darmowe szkolenie online
+
+course, 4h (full-day), core; stack: on (streaming) · goals: on (system-design-fluency, system-design-practice), priority medium.
+
+- **Added:** `kb/resources/data/kafka-od-zera-do-bohatera.md`
+
 ## 2026-10-05 17:57 — Captured Wprowadzenie do Apache Kafka
 
 video, 1.5h (deep-dive), core; stack: on (streaming) · goals: on (system-design-fluency, system-design-practice), priority medium.

@@ -106,7 +106,7 @@ _No week file. Run `/plan-week`._
 </details>
 
 <details>
-<summary><b>🗂️ Library</b> — 75 resources, 32 ideas, 3 goals, 2 areas, 5 plans</summary>
+<summary><b>🗂️ Library</b> — 76 resources, 32 ideas, 3 goals, 2 areas, 5 plans</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="system/assets/dashboard/shape-dark.svg">
@@ -116,7 +116,7 @@ _No week file. Run `/plan-week`._
 | Entity    | Count | By status                                         |
 |-----------|-------|---------------------------------------------------|
 | Ideas     | 32    | considering 29 · accepted 2 · dropped 1           |
-| Resources | 75    | backlog 63 · in-progress 2 · done 2 · reference 8 |
+| Resources | 76    | backlog 64 · in-progress 2 · done 2 · reference 8 |
 | Goals     | 3     | active 2 · on-hold 1                              |
 | Areas     | 2     | —                                                 |
 | Plans     | 5     | —                                                 |
