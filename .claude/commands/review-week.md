@@ -7,7 +7,8 @@ Review the week: $ARGUMENTS (default: the current ISO week)
 
 1. Open the week file and go through each committed item. Ask what was actually done. Do not assume
    completion, and do not assume failure.
-2. Update the underlying entities: `status`, `progress`, `updated`, `rating` on anything finished.
+2. Update the underlying entities: `status`, `progress`, `updated`, `rating` on anything finished —
+   a finished resource via `node system/scripts/kb.mjs done <id> --rating N --tick …`.
    The week file records the week; the entity files hold the truth.
 3. Fill the retro: done, not done **and why**, actual vs planned hours, adjustment for next week.
    Actual hours come from `node system/scripts/toggl.mjs <week> --json`; ask about every `?` or

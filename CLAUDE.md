@@ -177,6 +177,10 @@ Descriptions map to KB entities, not projects: `System Design Videos` is the cou
 
 ## Scripts
 
+**Add a resource / finish one → `node system/scripts/kb.mjs add-resource --json -` / `kb.mjs done <id>`**, not
+hand edits: they do template, folder, log, validate, dashboard and commit in one call. `done` lists
+linked checkboxes; tick only the ones actually finished (`--tick 1,3`). Usage: `system/scripts/README.md`.
+
 `node system/scripts/validate.mjs` (schema, vocabularies, ids, links; manual, no hook) and
 `node system/scripts/index.mjs` (gitignored `system/.index/index.json` cache — query it with a small
 `node`/`jq` snippet, never read it whole into a conversation). Details: `system/scripts/README.md`.

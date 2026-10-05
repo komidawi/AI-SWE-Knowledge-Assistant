@@ -2,8 +2,15 @@
 id: operations
 type: log
 created: 2026-09-08
-updated: 2026-10-01
+updated: 2026-10-05
 ---
+
+## 2026-10-05 09:30 — kb.mjs: add-resource and done shortcuts
+
+One call instead of 5-12 hand edits for capturing and finishing a resource (template, folder, log, validate, dashboard, commit).
+
+- **Added:** `system/scripts/kb.mjs`
+- **Modified:** `CLAUDE.md`, `system/scripts/README.md`, `.claude/commands/capture.md`, `.claude/commands/review-week.md`
 
 ## 2026-10-01 12:00 — Captured Tech Interview Handbook
 

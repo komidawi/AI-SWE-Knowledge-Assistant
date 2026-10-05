@@ -24,5 +24,9 @@ Capture this into the knowledge base: $ARGUMENTS
    Neither - it is `low`, and say so in one line rather than filing it silently.
 8. Print the path and the frontmatter you wrote.
 
+For a resource, steps 4-8 are one call: `node system/scripts/kb.mjs add-resource --json -` (JSON keys and
+defaults in `system/scripts/README.md`; it also logs, validates, regenerates the dashboard and commits).
+Try `--dry-run` first if unsure; a missing topic still goes into `topics.yml` by hand first.
+
 Capture is meant to be cheap. Do not interrogate. Fill in what is knowable, leave optional fields
 empty, and let triage happen later in `/groom`.
